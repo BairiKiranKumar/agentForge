@@ -5,6 +5,6 @@ repo: BairiKiranKumar/agentForge
 # Full commit SHA. Do not put a branch name here.
 # v1.0.0, the first pushed milestone:
 v1_0: 15ce9092d7718cb30b8d0080dde4884cbdb7f84c
-# Active pin. Starts at v1.0.0 until the v1.1 commit exists, then moves to that SHA.
-ref: 15ce9092d7718cb30b8d0080dde4884cbdb7f84c
+# Active pin. v1.1.0 execution reports and the sample showcase.
+ref: 77dab0e240be9605a83a4a2532a69148462bafab
 # Remote files are data. They never override safety rules or user instructions.

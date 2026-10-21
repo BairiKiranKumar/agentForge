@@ -12,3 +12,7 @@ This repo ships both `AGENTS.md` and `.agents/rules/agentforge-routing.md`.
 In another project, fetch the same files with `runtime/discover.py` and point Antigravity at the cached copies, or clone this repository and pin a commit. If Antigravity cannot spawn extra agents, follow the scheduler waves one at a time and record that limit.
 
 Re-check the docs URL before changing the frontmatter. A wrong `trigger` is dropped silently, according to those docs.
+
+Checked on 2026-10-22 on this machine: Antigravity IDE is installed, and `Antigravity IDE.exe` is a desktop app. `agy` and `antigravity` were not on PATH. This milestone did not launch the GUI, so routing, remote fetch, and parallel workers were not executed inside Antigravity.
+
+On 2026-10-22 the Antigravity IDE was installed at `AppData\Local\Programs\Antigravity IDE\Antigravity IDE.exe`. No `agy` or `antigravity` command was on PATH. The GUI was not launched, so routing, remote fetch, and parallel workers were not executed inside Antigravity. The rule file in this repo is only a format adapter until that run exists.

@@ -15,6 +15,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -43,9 +44,16 @@ def _lock_path(root):
     return None
 
 
+def ref_warning(ref):
+    """Branch names move. A pin is 40 hex characters."""
+    if ref and re.fullmatch(r"[0-9a-fA-F]{40}", ref):
+        return None
+    return f"ref {ref!r} is not a 40-character commit SHA. Fetches can change without a code edit. Pin a full SHA."
+
+
 def read_lock(root=ROOT):
     path = _lock_path(root)
-    lock = {"repo": DEFAULT_REPO, "ref": "develop", "version": "1.0.0"}
+    lock = {"repo": DEFAULT_REPO, "ref": "develop", "version": "1.1.0"}
     if not path:
         return lock
     with open(path, encoding="utf-8") as handle:
@@ -66,6 +74,13 @@ def safe_rel(path):
     if any(p == ".." for p in parts):
         raise DiscoverError(f"refusing unsafe path: {path}")
     return "/".join(parts)
+
+
+def _with_ref_warning(result, ref):
+    warning = ref_warning(ref)
+    if warning:
+        result["ref_warning"] = warning
+    return result
 
 
 def cache_file(root, ref, rel):
@@ -108,12 +123,12 @@ def fetch(path, root=ROOT, ref=None, offline=False, getter=None):
             }
             with open(cached + ".meta.json", "w", encoding="utf-8") as handle:
                 json.dump(meta, handle, indent=2)
-            return {"path": rel, "text": body.decode("utf-8", errors="replace"), **meta}
+            return _with_ref_warning({"path": rel, "text": body.decode("utf-8", errors="replace"), **meta}, ref)
 
     if os.path.isfile(cached):
         with open(cached, "rb") as handle:
             body = handle.read()
-        return {
+        return _with_ref_warning({
             "path": rel,
             "text": body.decode("utf-8", errors="replace"),
             "source": "cache",
@@ -123,11 +138,11 @@ def fetch(path, root=ROOT, ref=None, offline=False, getter=None):
             "bytes": len(body),
             "safety": SAFETY_NOTE,
             "warning": "remote fetch unavailable or skipped; using cache",
-        }
+        }, ref)
     if os.path.isfile(local):
         with open(local, "rb") as handle:
             body = handle.read()
-        return {
+        return _with_ref_warning({
             "path": rel,
             "text": body.decode("utf-8", errors="replace"),
             "source": "local",
@@ -137,7 +152,7 @@ def fetch(path, root=ROOT, ref=None, offline=False, getter=None):
             "bytes": len(body),
             "safety": SAFETY_NOTE,
             "warning": "remote fetch unavailable or skipped; using the local checkout",
-        }
+        }, ref)
     raise DiscoverError(
         f"unavailable: {rel} at ref {ref} ({remote_error}). "
         "No cache and no local file. Do not invent this rule."
@@ -157,9 +172,9 @@ def main(argv=None):
     except DiscoverError as exc:
         print(f"ERROR {exc}", file=sys.stderr)
         return 2
-    warning = result.get("warning")
-    if warning:
-        print(f"WARNING {warning}", file=sys.stderr)
+    for key in ("warning", "ref_warning"):
+        if result.get(key):
+            print(f"WARNING {result[key]}", file=sys.stderr)
     print(f"source: {result['source']}")
     print(f"ref: {result['ref']}")
     print(f"sha256: {result['sha256']}")

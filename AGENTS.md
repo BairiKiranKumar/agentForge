@@ -64,3 +64,4 @@ Every agent starts as `status: untested`. Status changes only after the tasks in
 - Lead with the result. Keep reasoning short unless asked.
 - State assumptions, open questions and risks at the end of every deliverable.
 - Use the deliverable formats defined in your role file.
+- Every multi-agent run ends with one execution report: waves, agents, files each agent owned, what was verified, and what is incomplete. Use `templates/execution-report.md` or `python -m runtime.report`. Do not mark a check passed without evidence.

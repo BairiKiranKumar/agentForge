@@ -168,7 +168,7 @@ def main():
     os.makedirs(reg_dir, exist_ok=True)
     manifest = {
         "name": "agentForge",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "role_count": len(registry),
         "roles": registry,
     }

@@ -79,5 +79,7 @@ High-risk deliverables get an independent reviewer: client-facing, public, legal
 
 Done means every acceptance criterion points at evidence, files are at their final paths, and open questions are either answered or handed to a human. A polished draft with a failed check is not done.
 
+Every multi-agent run also writes one execution report (`templates/execution-report.md`). It is the audit of whether parallel work happened. Include the host, the duration if you measured it, each wave's mode (`parallel` only when more than one worker actually ran together), the role and files for each stage, verification with evidence, and incomplete work. A plan that was only scheduled is outcome `not run`.
+
 ## Worktrees and branches
 Use a separate branch or git worktree when two implementers would otherwise edit the same repository at once. Content drafts that already have exclusive files do not need a worktree. Do not force-push. Do not deploy from a worker branch.

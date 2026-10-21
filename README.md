@@ -2,7 +2,7 @@
 
 agentForge is a parallel-first multi-agent system for running a digital studio: software, design, research, client delivery, and social content. The canonical copy is this GitHub repository. Other projects fetch the rules they need instead of vendoring every role.
 
-It started as a 179-role operating handbook. Version 1.0 keeps those roles, adds production specialists and workflows, and adds a small Python runtime that can plan work, route a task, and fetch a pinned file.
+It started as a 179-role operating handbook. Version 1.0 keeps those roles, adds production specialists and workflows, and adds a small Python runtime that can plan work, route a task, and fetch a pinned file. Version 1.1 pins that fetch to a full commit SHA and requires an execution report for every multi-agent run.
 
 ## What you can ask it to do
 - Build a premium site or a full-stack slice, with research, content, design, implementation, and QA separated where the dependencies allow.

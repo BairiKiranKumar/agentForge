@@ -130,7 +130,7 @@ Partial matches: use only the needed stages. No match: build an ad hoc plan with
 7. At each stage boundary: check evidence against the stage gate, update the log, route the next handoffs.
 8. Handle rejections and disagreements with the protocol above.
 9. Stop at completion criteria; run final independent review where required.
-10. Write the final report and list anything needing human action.
+10. Write the final report and `execution-report.md` in the task folder. The execution report lists each wave, whether it actually ran in parallel, the owner and output files, the checks that were verified, and what is incomplete.
 
 ## 6. Deliverables and output formats
 **Team plan**

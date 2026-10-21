@@ -1,6 +1,6 @@
 # Install and use
 
-Canonical source: `https://github.com/BairiKiranKumar/agentForge` on branch `develop`. Pin a commit SHA for work you need to repeat. The moving branch is not a pin.
+Canonical source: `https://github.com/BairiKiranKumar/agentForge`. `agentforge.lock` pins `ref` to a full commit SHA. `develop` is only where new commits land. Do not point `ref` at a branch name.
 
 ## Requirements
 Python 3 and PyYAML (`python -m pip install -r requirements.txt`). No paid API is required to plan, route, or validate.

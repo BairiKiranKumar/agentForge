@@ -1,5 +1,8 @@
 # Troubleshooting
 
+## `ref is not a 40-character commit SHA`
+`agentforge.lock` is set to a branch. Change `ref` to the full SHA you want fetched. A branch moves, so two runs can see different rules.
+
 ## `unavailable: ... Do not invent this rule`
 Discovery could not download the file, found no cache, and found no local copy. Check the ref in `agentforge.lock`, the path, and your network. Do not write a substitute policy and treat it as the team's rule.
 

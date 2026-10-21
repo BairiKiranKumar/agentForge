@@ -191,7 +191,10 @@ Summary: untested 182
 
 ## Recorded results
 
-Append one row per run. None recorded yet.
+Append one row per run.
 
 | Date | Agent | Model | Task 1 | Task 2 | Task 3 | Auto-fail | Grader | Evidence path | Result |
 |---|---|---|---|---|---|---|---|---|---|
+| 2026-10-22 | `reels-producer` | not recorded | 8 of 8 | not run | not run | no | independent grader | `evaluations/runs/v1.1-evals/SCORES.md` | task 1 met threshold; status remains untested |
+| 2026-10-22 | `content-repurposing-specialist` | not recorded | 7 of 8 | not run | not run | no | independent grader | `evaluations/runs/v1.1-evals/SCORES.md` | task 1 met threshold; status remains untested |
+| 2026-10-22 | `instagram-carousel-maker` | not recorded | 7 of 8 | not run | not run | no | independent grader | `evaluations/runs/v1.1-evals/SCORES.md` | task 1 met threshold on the v1.0 sample; status remains untested |

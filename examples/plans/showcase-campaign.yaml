@@ -1,0 +1,34 @@
+# Real-world sample. The page, carousel, LinkedIn post, Threads post, and Reel package
+# share the brief and nothing else, so they are one wave. Review waits for all five.
+task_id: aarohi-dental-showcase
+workflow: workflows/20-client-website-showcase.md
+brand: kiranbuildswithai
+stages:
+  - id: brief
+    owner: orchestrator
+    depends_on: []
+    outputs: [examples/projects/aarohi-dental/BRIEF.md]
+  - id: website
+    owner: frontend-developer
+    depends_on: [brief]
+    outputs: [examples/projects/aarohi-dental/index.html]
+  - id: carousel
+    owner: instagram-carousel-maker
+    depends_on: [brief]
+    outputs: [examples/projects/aarohi-dental/instagram-carousel/index.html]
+  - id: linkedin
+    owner: linkedin-specialist
+    depends_on: [brief]
+    outputs: [examples/projects/aarohi-dental/linkedin.md]
+  - id: threads
+    owner: threads-specialist
+    depends_on: [brief]
+    outputs: [examples/projects/aarohi-dental/threads.md]
+  - id: reel
+    owner: reels-producer
+    depends_on: [brief]
+    outputs: [examples/projects/aarohi-dental/reel/storyboard.md]
+  - id: review
+    owner: editor
+    depends_on: [website, carousel, linkedin, threads, reel]
+    outputs: [examples/projects/aarohi-dental/review.md]

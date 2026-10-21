@@ -1,0 +1,26 @@
+# Representative software workflow. Dry-run with:
+#   python -m runtime.scheduler plan examples/plans/bugfix-regression.yaml
+# Review and regression start together only after the fix exists.
+task_id: bugfix-regression-demo
+workflow: workflows/12-bugfix-regression.md
+stages:
+  - id: reproduce
+    owner: manual-tester
+    depends_on: []
+    outputs: [work/bugfix-regression-demo/repro.md]
+  - id: fix
+    owner: maintenance-engineer
+    depends_on: [reproduce]
+    outputs: [work/bugfix-regression-demo/fix.md]
+  - id: regression
+    owner: playwright-specialist
+    depends_on: [fix]
+    outputs: [work/bugfix-regression-demo/regression.md]
+  - id: review
+    owner: code-reviewer
+    depends_on: [fix]
+    outputs: [work/bugfix-regression-demo/review.md]
+  - id: integrate
+    owner: orchestrator
+    depends_on: [regression, review]
+    outputs: [work/bugfix-regression-demo/report.md]

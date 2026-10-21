@@ -1,0 +1,24 @@
+# Research and content share no unfinished inputs, so they are one wave.
+task_id: premium-website-demo
+workflow: workflows/10-premium-website.md
+stages:
+  - id: research
+    owner: competitor-researcher
+    depends_on: []
+    outputs: [work/premium-website-demo/research.md]
+  - id: content
+    owner: copywriter
+    depends_on: []
+    outputs: [work/premium-website-demo/copy.md]
+  - id: design
+    owner: ui-designer
+    depends_on: [research, content]
+    outputs: [work/premium-website-demo/ui.md]
+  - id: implementation
+    owner: frontend-developer
+    depends_on: [design]
+    outputs: [work/premium-website-demo/build.md]
+  - id: qa
+    owner: accessibility-tester
+    depends_on: [implementation]
+    outputs: [work/premium-website-demo/qa.md]

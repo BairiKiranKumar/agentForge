@@ -1,0 +1,2830 @@
+# role-source-candidates.yaml
+# For each role slug in orchestration/roster.yaml: up to 3 source files a builder should consult.
+# Only repos whose license permits reuse with attribution are listed (MIT or Apache-2.0).
+# Every path was checked to exist at the listed commit (shallow clones under /root/src).
+# quality: strong = concrete method/checklists/templates usable with light adaptation;
+#          partial = useful sections, needs real rewriting or localization;
+#          weak = only topic coverage; write mostly original.
+# "none (original)" = no usable permissive source found; write from scratch.
+# Attribution: keep the LICENSE text from sources/licenses/<owner>__<repo>.LICENSE.txt and
+# credit the repo + commit in the adapted file. Strip personas, credential claims and
+# non-Indian jurisdiction rules when adapting.
+chief-of-staff:
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/chief-of-staff/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Routing matrix, decision-complexity score and loop-prevention rules; drop the c-suite persona invocation syntax.
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/decision-logger/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Decision log structure for the decision-log deliverable.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/monday-brief/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Weekly founder brief pattern; connector-heavy, keep the brief structure only.
+operations-lead:
+- repo: msitarzewski/agency-agents
+  path: specialized/operations-manager.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: SIPOC, value stream mapping, DMAIC and capacity model; strip persona and US references.
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/coo-advisor/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Operating cadence and ops KPI tables.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/process-optimization/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Short (39 lines) process-improvement checklist.
+technical-lead:
+- repo: wshobson/agents
+  path: plugins/comprehensive-review/agents/architect-review.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Architecture review criteria for sign-off.
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/cto-advisor/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Tech-debt, build-vs-buy and engineering-standards tables; advisor framing.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-software-architect.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Trade-off tables and ADR habits.
+design-lead:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/design-critique/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Critique framework (first impression, usability, hierarchy, consistency, accessibility) and feedback rules; good basis for critique cadence.
+- repo: msitarzewski/agency-agents
+  path: design/design-ui-finish-gate-reviewer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Ship-gate checklist idea for design sign-off policy.
+research-lead:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/user-research/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Method-selection table with sample sizes and timelines; short.
+- repo: msitarzewski/agency-agents
+  path: research/research-synthesist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Evidence and confidence discipline for the insight quality bar.
+- repo: phuryn/pm-skills
+  path: pm-product-discovery/skills/prioritize-assumptions/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Deciding what research is worth doing via assumption risk.
+marketing-lead:
+- repo: coreyhaines31/marketingskills
+  path: skills/marketing-plan/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Marketing plan structure, budget and channel prioritization with references.
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/cmo-advisor/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Channel budget split and marketing KPI tables.
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/campaign-plan/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Campaign brief and calendar structure.
+sales-lead:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/pipeline-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Grounded pipeline review against live CRM data; untrusted-content rules.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/forecast/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Forecast categories and evidence rules.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-coach.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Coaching cadence and deal review questions; persona to strip.
+delivery-lead:
+- repo: msitarzewski/agency-agents
+  path: project-management/project-management-project-shepherd.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Cross-project coordination headings, little method.
+- repo: msitarzewski/agency-agents
+  path: strategy/coordination/handoff-templates.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Quality-gate and handoff templates usable as delivery gates.
+business-strategist:
+- repo: msitarzewski/agency-agents
+  path: specialized/business-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Strategy frameworks and memo structure (488 lines); remove persona and generic claims.
+- repo: phuryn/pm-skills
+  path: pm-product-strategy/skills/business-model/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Business model options.
+- repo: phuryn/pm-skills
+  path: pm-product-strategy/skills/product-strategy/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Strategy canvas structure.
+portfolio-manager:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/prioritization-frameworks/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: RICE/ICE/Kano-style scoring tables usable for portfolio scoring.
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/capacity-planner/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Capacity-vs-demand view.
+product-manager:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/create-prd/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: strong
+  note: Lean PRD, do-not-invent rule, assumptions section.
+- repo: anthropics/knowledge-work-plugins
+  path: product-management/skills/write-spec/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Spec workflow and sections.
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/outcome-roadmap/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Outcome-based roadmap.
+product-owner:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/user-stories/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: strong
+  note: Story format and acceptance criteria.
+- repo: alirezarezvani/claude-skills
+  path: product-team/agile-product-owner/skills/agile-product-owner/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Backlog ordering and sprint acceptance tables; ignore Python scripts.
+- repo: anthropics/knowledge-work-plugins
+  path: product-management/skills/sprint-planning/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Sprint planning steps.
+business-analyst:
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/process-mapper/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Process mapping steps (BPMN reference available).
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/process-doc/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: RACI and process flow output template.
+service-designer:
+- repo: phuryn/pm-skills
+  path: pm-market-research/skills/customer-journey-map/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: weak
+  note: Journey map only; no backstage or blueprint layers.
+- repo: alirezarezvani/claude-skills
+  path: product-team/skills/ux-researcher-designer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Journey-mapping workflow; its references/journey-mapping-guide.md mentions service blueprints.
+market-researcher:
+- repo: wshobson/agents
+  path: plugins/startup-business-analyst/skills/market-sizing-analysis/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: TAM/SAM/SOM top-down, bottom-up and value-theory methods with references; US examples.
+- repo: phuryn/pm-skills
+  path: pm-market-research/skills/market-segments/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Segment profiles.
+- repo: alirezarezvani/claude-skills
+  path: research-ops/skills/market-research/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Research workflow with source tables.
+competitor-researcher:
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/competitive-brief/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Competitive brief structure, positioning comparison, gaps.
+- repo: coreyhaines31/marketingskills
+  path: skills/competitor-profiling/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Competitor profile method with references.
+- repo: alirezarezvani/claude-skills
+  path: product-team/skills/competitive-teardown/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Feature and pricing teardown tables.
+ux-researcher:
+- repo: msitarzewski/agency-agents
+  path: design/design-ux-researcher.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Study plan, persona and usability protocol templates; persona text to strip.
+- repo: alirezarezvani/claude-skills
+  path: product-team/skills/ux-researcher-designer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Method selection, persona confidence levels, validation checklist.
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/user-research/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Method table and interview guide structure.
+research-operations-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/customer-research/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Recruiting best customers, incentives and outreach templates (in references/interviews-and-surveys.md); no consent-form or panel content.
+customer-interview-specialist:
+- repo: phuryn/pm-skills
+  path: pm-product-discovery/skills/interview-script/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: strong
+  note: Mom Test rules, JTBD probes, past-behavior questions.
+- repo: phuryn/pm-skills
+  path: pm-product-discovery/skills/summarize-interview/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Interview notes structure.
+- repo: coreyhaines31/marketingskills
+  path: skills/customer-research/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Interview and survey playbook references.
+usability-researcher:
+- repo: alirezarezvani/claude-skills
+  path: product-team/skills/ux-researcher-designer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Usability test planning workflow and severity table.
+- repo: msitarzewski/agency-agents
+  path: design/design-ux-researcher.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: 60-minute usability session guide.
+- repo: msitarzewski/agency-agents
+  path: design/design-persona-walkthrough.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Persona-based walkthrough, not real testing.
+research-synthesis-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: product-management/skills/synthesize-research/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Affinity mapping procedure and insight statements.
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/research-synthesis/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Synthesis output template.
+- repo: msitarzewski/agency-agents
+  path: research/research-synthesist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Evidence and confidence ratings.
+creative-director:
+- repo: anthropics/skills
+  path: skills/frontend-design/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: partial
+  note: Aesthetic direction and anti-generic guidance; web-focused.
+- repo: coreyhaines31/marketingskills
+  path: skills/ad-creative/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Creative concept and variation frameworks for ads.
+- repo: msitarzewski/agency-agents
+  path: design/design-visual-storyteller.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Narrative headings only.
+brand-strategist:
+- repo: github/awesome-copilot
+  path: skills/gtm-positioning-strategy/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: 'Positioning method and claim testing. Item frontmatter: license MIT, author Smit Patel, source github.com/beingsmit/technical-product-gtm; credit that author too.'
+- repo: phuryn/pm-skills
+  path: pm-marketing-growth/skills/product-name/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Naming method; short.
+- repo: phuryn/pm-skills
+  path: pm-marketing-growth/skills/positioning-ideas/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Positioning statement options.
+brand-designer:
+- repo: anthropics/skills
+  path: skills/brand-guidelines/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: partial
+  note: Pattern for applying a brand guideline (Anthropic brand example; replace values).
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/brand-style/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Capturing brand style for reuse.
+- repo: msitarzewski/agency-agents
+  path: design/design-brand-guardian.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Brand guideline document outline; persona to strip.
+ux-designer:
+- repo: msitarzewski/agency-agents
+  path: design/design-ux-architect.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Flow and layout architecture guidance (482 lines).
+- repo: wshobson/agents
+  path: plugins/multi-platform-apps/agents/ui-ux-designer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: UX process and deliverables list.
+ui-designer:
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/visual-design-foundations/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Typography, color and spacing systems with references.
+- repo: anthropics/skills
+  path: skills/frontend-design/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: partial
+  note: Distinctive visual direction.
+- repo: github/awesome-copilot
+  path: skills/anti-ui-slop/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Item-level Apache-2.0 LICENSE; checklist against generic AI UI patterns.
+interaction-designer:
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/interaction-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Microinteractions, timing, state transitions, reduced-motion handling.
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/design-handoff/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Interaction spec and states for handoff.
+information-architect:
+- repo: coreyhaines31/marketingskills
+  path: skills/site-architecture/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Sitemaps, navigation and URL structure with decision tables.
+design-systems-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/design-system/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Token, component and usage-guideline tables.
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/design-system-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Tokens, component architecture and theming references.
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Design-code parity in Tailwind.
+accessibility-designer:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/accessibility-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: WCAG review checklist at design stage.
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/accessibility-compliance/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Short skill with WCAG and ARIA references.
+- repo: msitarzewski/agency-agents
+  path: design/design-inclusive-visuals-specialist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Inclusive visuals, thin.
+motion-designer:
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/interaction-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Animation timing and reduced-motion fallbacks.
+- repo: github/awesome-copilot
+  path: skills/gsap-framer-scroll-animation/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Scroll choreography with GSAP/Framer; library-specific. No item license line; author Utkarsh Patrikar.
+illustrator:
+- repo: msitarzewski/agency-agents
+  path: design/design-image-prompt-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: AI image prompt structure; add rights checks yourself.
+presentation-designer:
+- repo: wshobson/agents
+  path: plugins/pptx-deck-creation/skills/pptx-slide-specification/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Slide spec structure; short with a reference file.
+- repo: wshobson/agents
+  path: plugins/pptx-deck-creation/skills/pptx-quality-gates/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Deck quality gates.
+- repo: alirezarezvani/claude-skills
+  path: c-level-advisor/skills/board-deck-builder/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Pitch and board deck narrative order.
+conversion-designer:
+- repo: coreyhaines31/marketingskills
+  path: skills/cro/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Page CRO framework with references.
+- repo: coreyhaines31/marketingskills
+  path: skills/signup/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Signup and form friction patterns.
+- repo: github/awesome-copilot
+  path: skills/landing-page-conversion-audit/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Landing page audit checklist.
+design-reviewer:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/design-critique/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Critique output template.
+- repo: github/awesome-copilot
+  path: skills/web-design-reviewer/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: Inspection workflow, viewport matrix, issue prioritization.
+- repo: msitarzewski/agency-agents
+  path: design/design-ui-finish-gate-reviewer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Ship/revise gate idea for verdicts.
+canva-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/canva-creator/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Canva build workflow via the Canva connector; brand kit usage and exports.
+content-strategist:
+- repo: coreyhaines31/marketingskills
+  path: skills/content-strategy/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Pillars, audience mapping and content audit.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/content-strategy/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Small-business content plan.
+content-calendar-manager:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/marketing-monday/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Weekly content cadence.
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/content-production/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Brief-to-publish production workflow.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/social-content-engine/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Content calendar generation from business data.
+copywriter:
+- repo: coreyhaines31/marketingskills
+  path: skills/copywriting/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Copy principles, headline and CTA frameworks (original of the alirezarezvani copy).
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/content-creation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Channel-specific content formats.
+ux-writer:
+- repo: anthropics/knowledge-work-plugins
+  path: design/skills/ux-copy/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Patterns for CTAs, errors, empty states, confirmations, loading and onboarding.
+technical-writer:
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-technical-writer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Docs types and structure; long.
+- repo: wshobson/agents
+  path: plugins/code-documentation/agents/docs-architect.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Documentation architecture steps.
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/documentation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Short.
+editor:
+- repo: coreyhaines31/marketingskills
+  path: skills/copy-editing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Multi-pass editing method with checklists (original of the alirezarezvani copy).
+- repo: wshobson/agents
+  path: plugins/avoid-ai-writing/skills/avoid-ai-writing/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: AI-tell patterns with references.
+proofreader:
+- repo: phuryn/pm-skills
+  path: pm-toolkit/skills/grammar-check/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Grammar and consistency pass.
+- repo: coreyhaines31/marketingskills
+  path: skills/copy-editing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Final-pass checklist sections.
+brand-voice-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: partner-built/brand-voice/skills/guideline-generation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Voice guideline generation. Sub-plugin LICENSE is MIT, Copyright (c) 2025 Tribe AI; credit Tribe AI.
+- repo: anthropics/knowledge-work-plugins
+  path: partner-built/brand-voice/skills/brand-voice-enforcement/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Voice audit and enforcement. MIT, Tribe AI.
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/brand-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Brand review severity and before/after fixes.
+scriptwriter:
+- repo: coreyhaines31/marketingskills
+  path: skills/video/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Video script formats, hooks and platform tables.
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/video-content-strategist/skills/video-content-strategist/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Script structures and hook tables.
+case-study-writer:
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/content-creation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Only a short "Case Study Structure" section (title, snapshot, challenge, solution, results); no interview guide, permission or proof-asset process.
+proposal-writer:
+- repo: alirezarezvani/claude-skills
+  path: business-growth/skills/contract-and-proposal-writer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Proposal narrative sections and executive summary.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-proposal-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Win themes and narrative.
+localization-specialist:
+- repo: msitarzewski/agency-agents
+  path: specialized/specialized-cultural-intelligence-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: General cultural review ideas only; no Indian language content.
+solution-architect:
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/architecture/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Architecture doc and trade-off workflow.
+- repo: github/awesome-copilot
+  path: skills/create-architectural-decision-record/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: ADR template. No item license line; umbrella MIT.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-software-architect.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Trade-off tables.
+frontend-architect:
+- repo: github/awesome-copilot
+  path: instructions/nextjs.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Rendering and caching guidance, dated to Next.js 16.1.1.
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/react-state-management/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: State strategy decision table.
+- repo: github/awesome-copilot
+  path: agents/frontend-performance-investigator.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Performance investigation steps.
+frontend-developer:
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/agents/frontend-developer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Implementation focus areas.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-frontend-developer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Deliverables and checklists.
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/responsive-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Responsive behavior with references.
+angular-specialist:
+- repo: wshobson/agents
+  path: plugins/framework-migration/skills/angular-migration/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: AngularJS-to-Angular migration code; not signals or zoneless.
+- repo: VoltAgent/awesome-claude-code-subagents
+  path: categories/02-language-specialists/angular-architect.md
+  commit: 408d3c9
+  license: MIT
+  quality: weak
+  note: Templated keyword list, mentions signals only as a heading.
+react-specialist:
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/react-state-management/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: State library selection table and patterns.
+- repo: github/awesome-copilot
+  path: agents/expert-react-frontend-engineer.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Long modern-React guidance (739 lines). No item license line; umbrella MIT.
+- repo: github/awesome-copilot
+  path: skills/react19-concurrent-patterns/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: React 19 concurrent patterns.
+nextjs-specialist:
+- repo: github/awesome-copilot
+  path: instructions/nextjs.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: App Router, caching and server/client boundaries dated January 2026.
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/nextjs-app-router-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: App Router patterns with references.
+- repo: github/awesome-copilot
+  path: agents/expert-nextjs-developer.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Longer agent; check version claims.
+html-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/schema/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: JSON-LD and structured data with validation steps.
+- repo: github/awesome-copilot
+  path: instructions/a11y.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Semantic markup and landmarks inside a long a11y guide.
+- repo: github/awesome-copilot
+  path: instructions/html-css-style-color-guide.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: Short style guide.
+css-specialist:
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/responsive-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Breakpoints, container queries and fluid layout references.
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Tokens in code and theming with Tailwind.
+backend-developer:
+- repo: wshobson/agents
+  path: plugins/backend-development/agents/backend-architect.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Service design checklist.
+- repo: wshobson/agents
+  path: plugins/developer-essentials/skills/auth-implementation-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Auth flow patterns with references.
+- repo: obra/superpowers
+  path: skills/test-driven-development/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Backend test discipline.
+api-specialist:
+- repo: wshobson/agents
+  path: plugins/backend-development/skills/api-design-principles/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: REST/GraphQL design rules, errors, pagination, versioning with references.
+- repo: wshobson/agents
+  path: plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: OpenAPI spec generation.
+database-engineer:
+- repo: wshobson/agents
+  path: plugins/database-design/skills/postgresql-table-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: PostgreSQL table design rules.
+- repo: wshobson/agents
+  path: plugins/database-design/agents/database-architect.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Schema and migration planning.
+- repo: msitarzewski/agency-agents
+  path: security/security-appsec-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Only for its row-level security mention; no Supabase-specific RLS source found.
+mobile-developer:
+- repo: wshobson/agents
+  path: plugins/frontend-mobile-development/skills/react-native-architecture/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: React Native architecture.
+- repo: wshobson/agents
+  path: plugins/multi-platform-apps/agents/mobile-developer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: 'Mobile concerns: offline, push, store builds.'
+cms-specialist:
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-cms-developer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: CMS build checklists (WordPress/Drupal leaning).
+- repo: github/awesome-copilot
+  path: skills/content-management-systems/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: Short overview.
+ecommerce-specialist:
+- repo: github/awesome-copilot
+  path: agents/shopify-expert.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Shopify themes and apps (682 lines). No item license line; umbrella MIT. No Indian payment gateway content.
+- repo: github/awesome-copilot
+  path: skills/shopify-review-triage/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Item license MIT; independent author note in frontmatter. App review prep.
+- repo: wshobson/agents
+  path: plugins/payment-processing/skills/pci-compliance/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Payment compliance basics; Stripe/PayPal oriented, no Razorpay/UPI.
+integration-engineer:
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-api-platform-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Contains idempotency and retry patterns.
+- repo: wshobson/agents
+  path: plugins/payment-processing/skills/stripe-integration/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Webhook handling and signature checks; Stripe specific.
+- repo: VoltAgent/awesome-claude-code-subagents
+  path: categories/01-core-development/webhook-engineer.md
+  commit: 408d3c9
+  license: MIT
+  quality: weak
+  note: Templated.
+performance-engineer:
+- repo: github/awesome-copilot
+  path: instructions/performance-optimization.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: Long front and back end performance guide.
+- repo: wshobson/agents
+  path: plugins/application-performance/agents/performance-engineer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Profiling workflow.
+- repo: github/awesome-copilot
+  path: agents/frontend-performance-investigator.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: CWV investigation steps.
+accessibility-engineer:
+- repo: github/awesome-copilot
+  path: instructions/a11y.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: WCAG implementation detail for code.
+- repo: wshobson/agents
+  path: plugins/ui-design/agents/accessibility-expert.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Keyboard and focus logic.
+- repo: wshobson/agents
+  path: plugins/ui-design/skills/accessibility-compliance/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: ARIA patterns reference.
+code-reviewer:
+- repo: wshobson/agents
+  path: plugins/developer-essentials/skills/code-review-excellence/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Review method, blocking vs non-blocking, comment templates.
+- repo: obra/superpowers
+  path: skills/receiving-code-review/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: How to evaluate and respond to review findings.
+- repo: vijaythecoder/awesome-claude-agents
+  path: agents/core/code-reviewer.md
+  commit: 2050f3c
+  license: MIT
+  quality: partial
+  note: Severity tiers and report format.
+maintenance-engineer:
+- repo: wshobson/agents
+  path: plugins/framework-migration/skills/dependency-upgrade/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Upgrade procedure with code examples.
+- repo: obra/superpowers
+  path: skills/systematic-debugging/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Root cause before fix, minimal-diff discipline.
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/tech-debt/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Tech-debt log.
+data-engineer:
+- repo: wshobson/agents
+  path: plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: dbt modeling patterns.
+- repo: anthropics/knowledge-work-plugins
+  path: data/skills/validate-data/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Data quality checks procedure.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-data-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Pipeline design notes.
+analytics-engineer:
+- repo: wshobson/agents
+  path: plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Metric definition tables.
+- repo: wshobson/agents
+  path: plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Transformation and tests.
+- repo: phuryn/pm-skills
+  path: pm-marketing-growth/skills/north-star-metric/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Metric definition.
+data-scientist:
+- repo: anthropics/knowledge-work-plugins
+  path: data/skills/statistical-analysis/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Test selection, assumptions and interpretation.
+- repo: coreyhaines31/marketingskills
+  path: skills/ab-testing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Experiment design and sample size.
+- repo: wshobson/agents
+  path: plugins/machine-learning-ops/agents/data-scientist.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Modeling workflow.
+ai-application-engineer:
+- repo: anthropics/skills
+  path: skills/claude-api/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: strong
+  note: Tool use, structured output, caching and model-migration guidance; Claude-specific.
+- repo: wshobson/agents
+  path: plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Prompt patterns with references.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-ai-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Generic.
+agent-workflow-engineer:
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-multi-agent-systems-architect.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: Handoff schemas, orchestration patterns and guardrails (600 lines).
+- repo: obra/superpowers
+  path: skills/subagent-driven-development/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Subagent dispatch and review loop.
+- repo: github/awesome-copilot
+  path: skills/agent-architecture/SKILL.md
+  commit: 613efc8
+  license: MIT (item LICENSE.txt, Copyright (c) 2026 Stanislav Bankovskii)
+  quality: partial
+  note: Agent architecture decision tables with references.
+rag-specialist:
+- repo: wshobson/agents
+  path: plugins/llm-application-dev/skills/rag-implementation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Chunking, retrieval and evaluation.
+- repo: wshobson/agents
+  path: plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Hybrid search.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-rag-pipeline-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Pipeline checklist.
+prompt-engineer:
+- repo: wshobson/agents
+  path: plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Patterns with 6 reference files.
+- repo: anthropics/skills
+  path: skills/skill-creator/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: strong
+  note: Writing, testing and versioning skills with evals.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-prompt-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Adversarial test cases.
+ai-evaluation-specialist:
+- repo: github/awesome-copilot
+  path: skills/agentic-eval/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Agent eval loop. No item license line; umbrella MIT.
+- repo: wshobson/agents
+  path: plugins/llm-application-dev/skills/llm-evaluation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Eval metrics and LLM-as-judge.
+- repo: anthropics/skills
+  path: skills/skill-creator/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: strong
+  note: Eval set and comparator/grader pattern.
+model-operations-specialist:
+- repo: github/awesome-copilot
+  path: skills/phoenix-tracing/SKILL.md
+  commit: 613efc8
+  license: Apache-2.0 (item frontmatter, author oss@arize.com; repo umbrella MIT)
+  quality: partial
+  note: LLM tracing; vendor specific (Arize Phoenix).
+- repo: msitarzewski/agency-agents
+  path: specialized/specialized-model-qa.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Model QA checks.
+qa-lead:
+- repo: github/awesome-copilot
+  path: skills/quality-playbook/SKILL.md
+  commit: 613efc8
+  license: Apache-2.0 (item LICENSE.txt, author Andrew Stellman; repo umbrella MIT)
+  quality: partial
+  note: Very long (2,738 lines) quality process; extract test strategy and gates only.
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/testing-strategy/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Short.
+- repo: obra/superpowers
+  path: skills/verification-before-completion/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Evidence-before-claims gate usable as go/no-go input.
+manual-tester:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/test-scenarios/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Test scenario generation.
+- repo: msitarzewski/agency-agents
+  path: testing/testing-evidence-collector.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Evidence-based defect reporting.
+- repo: github/awesome-copilot
+  path: skills/bug-reproduction-brief/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Repro brief format.
+exploratory-tester:
+- repo: github/awesome-copilot
+  path: skills/playwright-explore-website/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: 17-line exploration prompt; no charters or heuristics.
+- repo: msitarzewski/agency-agents
+  path: testing/testing-reality-checker.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Skeptical verification stance.
+automation-engineer:
+- repo: obra/superpowers
+  path: skills/test-driven-development/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: TDD rules.
+- repo: msitarzewski/agency-agents
+  path: testing/testing-test-automation-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Framework choice and flake policy notes.
+playwright-specialist:
+- repo: alirezarezvani/claude-skills
+  path: engineering-team/playwright-pro/skills/pw/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Playwright workflow tables.
+- repo: alirezarezvani/claude-skills
+  path: engineering-team/playwright-pro/skills/pw-review/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Spec review checklist.
+- repo: anthropics/skills
+  path: skills/webapp-testing/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: partial
+  note: Playwright-based local app testing approach.
+api-tester:
+- repo: alirezarezvani/claude-skills
+  path: engineering/skills/api-test-suite-builder/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Suite structure and negative/auth test tables.
+- repo: msitarzewski/agency-agents
+  path: testing/testing-api-tester.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Long but generic.
+accessibility-tester:
+- repo: msitarzewski/agency-agents
+  path: testing/testing-accessibility-auditor.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: Audit report template, assistive-tech testing, honest assessment rules.
+- repo: wshobson/agents
+  path: plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: NVDA, VoiceOver, JAWS, TalkBack procedures in references.
+- repo: wshobson/agents
+  path: plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: WCAG audit patterns.
+performance-tester:
+- repo: msitarzewski/agency-agents
+  path: testing/testing-performance-benchmarker.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Generic.
+- repo: github/awesome-copilot
+  path: instructions/performance-optimization.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Baselines and metrics section.
+visual-regression-tester:
+- repo: wshobson/agents
+  path: plugins/accessibility-compliance/agents/ui-visual-validator.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Visual validation checklist.
+- repo: github/awesome-copilot
+  path: skills/pr-screenshots/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Screenshot capture for review; no baseline/masking policy.
+mobile-tester:
+- repo: github/awesome-copilot
+  path: agents/gem-mobile-tester.agent.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: Short.
+security-testing-specialist:
+- repo: msitarzewski/agency-agents
+  path: security/security-penetration-tester.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Scoped pentest workflow; ensure authorization-only framing.
+- repo: wshobson/agents
+  path: plugins/security-scanning/skills/sast-configuration/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: SAST setup.
+release-validation-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/deploy-checklist/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Pre/post deploy checklist.
+- repo: obra/superpowers
+  path: skills/verification-before-completion/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Evidence before claiming done.
+application-security-engineer:
+- repo: msitarzewski/agency-agents
+  path: security/security-appsec-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: OWASP patterns, dependency vuln management, STRIDE template.
+- repo: github/awesome-copilot
+  path: instructions/security-and-owasp.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: Long OWASP-aligned coding guide.
+- repo: wshobson/agents
+  path: plugins/backend-api-security/agents/backend-security-coder.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Backend secure coding.
+threat-modeling-specialist:
+- repo: wshobson/agents
+  path: plugins/security-scanning/skills/stride-analysis-patterns/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: STRIDE tables with references.
+- repo: wshobson/agents
+  path: plugins/security-scanning/skills/threat-mitigation-mapping/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Mitigation mapping.
+- repo: github/awesome-copilot
+  path: skills/threat-model-analyst/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: STRIDE-A with incremental mode; references heavy. No item license line; umbrella MIT.
+privacy-specialist:
+- repo: anthropics/claude-for-legal
+  path: privacy-legal/skills/pia-generation/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: PIA structure; GDPR/US framing, re-source for DPDP Act.
+- repo: msitarzewski/agency-agents
+  path: specialized/data-privacy-officer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Data inventory, retention and DSAR tables; GDPR/CCPA framing.
+- repo: anthropics/claude-for-legal
+  path: privacy-legal/skills/dpa-review/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: Processor/controller playbook; requires primary-source citations.
+cloud-architect:
+- repo: wshobson/agents
+  path: plugins/cloud-infrastructure/agents/cloud-architect.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Cloud design checklist.
+- repo: wshobson/agents
+  path: plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Cost optimization steps with examples.
+- repo: wshobson/agents
+  path: plugins/cloud-infrastructure/skills/multi-cloud-architecture/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Region and provider choice.
+devops-engineer:
+- repo: wshobson/agents
+  path: plugins/cicd-automation/skills/secrets-management/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Secrets handling with examples.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-devops-automator.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Environment and deploy config notes.
+cicd-engineer:
+- repo: wshobson/agents
+  path: plugins/cicd-automation/skills/github-actions-templates/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Workflow templates.
+- repo: github/awesome-copilot
+  path: skills/github-actions-hardening/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: Pipeline security hardening. No item license line; umbrella MIT.
+- repo: github/awesome-copilot
+  path: instructions/github-actions-ci-cd-best-practices.instructions.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Caching and best practices.
+infrastructure-engineer:
+- repo: wshobson/agents
+  path: plugins/cloud-infrastructure/agents/terraform-specialist.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: IaC practices.
+- repo: github/awesome-copilot
+  path: skills/multi-stage-dockerfile/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Container builds.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-network-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: DNS and networking.
+site-reliability-engineer:
+- repo: wshobson/agents
+  path: plugins/observability-monitoring/skills/slo-implementation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: SLO and error budget implementation.
+- repo: alirezarezvani/claude-skills
+  path: engineering/skills/slo-architect/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: SLO design.
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-sre.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Short SRE checklist.
+observability-specialist:
+- repo: wshobson/agents
+  path: plugins/application-performance/agents/observability-engineer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Logging, tracing and alert design.
+- repo: wshobson/agents
+  path: plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Dashboards; tool specific.
+incident-coordinator:
+- repo: msitarzewski/agency-agents
+  path: engineering/engineering-incident-response-commander.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: Severity matrix, escalation triggers, runbook template, comms.
+- repo: wshobson/agents
+  path: plugins/incident-response/skills/postmortem-writing/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: strong
+  note: Blameless postmortem process.
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/incident-response/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Incident workflow and status updates.
+release-engineer:
+- repo: wshobson/agents
+  path: plugins/documentation-generation/skills/changelog-automation/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Changelog and versioning.
+- repo: wshobson/agents
+  path: plugins/deployment-strategies/agents/deployment-engineer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Rollout and rollback strategies.
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/release-notes/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Release notes.
+marketing-strategist:
+- repo: coreyhaines31/marketingskills
+  path: skills/product-marketing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Positioning, messaging and audience definitions.
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/marketing-strategy-pmm/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: PMM tables (not a copy of coreyhaines).
+- repo: phuryn/pm-skills
+  path: pm-go-to-market/skills/gtm-strategy/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: GTM plan outline.
+growth-marketer:
+- repo: coreyhaines31/marketingskills
+  path: skills/marketing-loops/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Acquisition loop model with references.
+- repo: coreyhaines31/marketingskills
+  path: skills/referrals/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Referral mechanics.
+- repo: VoltAgent/awesome-claude-code-subagents
+  path: categories/08-business-product/growth-loops.md
+  commit: 408d3c9
+  license: MIT
+  quality: partial
+  note: Short, non-templated loop guide.
+seo-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/seo-audit/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: SEO audit with references.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-seo-specialist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Keyword and on-page checklists.
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/seo-audit/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Audit report structure.
+technical-seo-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/seo-audit/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Crawl, indexation and technical sections.
+- repo: coreyhaines31/marketingskills
+  path: skills/schema/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Structured data validation.
+- repo: coreyhaines31/marketingskills
+  path: skills/programmatic-seo/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Programmatic pages.
+local-seo-specialist:
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/local-seo-manager/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Google Business Profile, citations, reviews; no India directories (Justdial, IndiaMART).
+- repo: coreyhaines31/marketingskills
+  path: skills/directory-submissions/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Directory submission method.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/review-reputation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Review response workflow.
+paid-ads-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/ads/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Campaign structure, audiences, budgets, audit guardrails, 16 references.
+- repo: coreyhaines31/marketingskills
+  path: skills/ad-creative/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Creative briefs and variations.
+- repo: msitarzewski/agency-agents
+  path: paid-media/paid-media-ppc-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Capability list.
+email-marketer:
+- repo: coreyhaines31/marketingskills
+  path: skills/emails/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Newsletter and campaign email method.
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/email-sequence/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Sequence design with branching and exit conditions.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-email-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Deliverability and list hygiene tables.
+lifecycle-marketer:
+- repo: coreyhaines31/marketingskills
+  path: skills/onboarding/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Activation and onboarding flows.
+- repo: coreyhaines31/marketingskills
+  path: skills/sms/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: SMS plus references/whatsapp.md (opt-in, templates, click-to-WhatsApp, India named as WhatsApp-first).
+- repo: coreyhaines31/marketingskills
+  path: skills/churn-prevention/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Win-back and save flows.
+conversion-optimization-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/cro/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: CRO audit framework.
+- repo: coreyhaines31/marketingskills
+  path: skills/ab-testing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Hypotheses, test design and analysis.
+social-media-manager:
+- repo: coreyhaines31/marketingskills
+  path: skills/social/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Platform table, calendar, repurposing, references incl. platform-limits (Threads section).
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/social-media-manager/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Weekly reporting tables.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/social-content-engine/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Draft-state content generation.
+community-manager:
+- repo: coreyhaines31/marketingskills
+  path: skills/community-marketing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Community programs and engagement.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-reddit-community-builder.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Moderation and reply norms (Reddit-specific).
+linkedin-specialist:
+- repo: alirezarezvani/claude-skills
+  path: marketing/linkedin/skills/linkedin-content/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Post formats with references.
+- repo: alirezarezvani/claude-skills
+  path: marketing/linkedin/skills/linkedin-profile/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Profile review.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-linkedin-content-creator.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Post and carousel patterns.
+instagram-specialist:
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-carousel-growth-engine.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Carousel structures.
+- repo: coreyhaines31/marketingskills
+  path: skills/social/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Instagram rows and carousel-frameworks reference.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-instagram-curator.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Vibe-heavy, unsourced engagement targets.
+threads-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/social/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: weak
+  note: Only a Threads (Meta) section in references/platform-limits.md; no Threads strategy anywhere.
+x-specialist:
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/x-twitter-growth/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Thread and reply tactics tables.
+- repo: coreyhaines31/marketingskills
+  path: skills/social/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: references/x-algorithm.md.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-twitter-engager.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Reply strategy.
+youtube-strategist:
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/youtube-full/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Titles, thumbnails, retention tables.
+- repo: coreyhaines31/marketingskills
+  path: skills/video/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Video formats and platform specs.
+short-form-video-strategist:
+- repo: coreyhaines31/marketingskills
+  path: skills/video/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Short-form hooks and series formats; also social references/short-form-video.md.
+- repo: msitarzewski/agency-agents
+  path: marketing/marketing-short-video-editing-coach.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Edit direction notes; long, persona to strip.
+social-listening-specialist:
+- repo: wshobson/agents
+  path: plugins/content-marketing/skills/social-evidence-research/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Evidence record and report template references.
+- repo: phuryn/pm-skills
+  path: pm-market-research/skills/sentiment-analysis/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Sentiment summary.
+creator-partnerships-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/influencer-marketing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Vetting, deal structure, briefs and disclosure; FTC-framed, add ASCI influencer guidelines.
+- repo: coreyhaines31/marketingskills
+  path: skills/co-marketing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Partner co-marketing.
+whatsapp-business-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/sms/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: 'Only usable WhatsApp source: references/whatsapp.md (Business app vs Cloud API, BSPs incl. Interakt/AiSensy/Wati, opt-in, template categories, click-to-WhatsApp ads).'
+icp-researcher:
+- repo: phuryn/pm-skills
+  path: pm-go-to-market/skills/ideal-customer-profile/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: strong
+  note: ICP components.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/account-tiering/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Tiering criteria.
+- repo: phuryn/pm-skills
+  path: pm-go-to-market/skills/beachhead-segment/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Beachhead selection.
+prospect-researcher:
+- repo: coreyhaines31/marketingskills
+  path: skills/prospecting/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: List building and research with local-prospecting reference.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/account-research/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Account research grounded in sources.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/lead-finder/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Small-business lead finding.
+lead-qualification-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/lead-triage/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Qualification and routing.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/speed-to-lead/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Response-time playbook.
+sales-development-representative:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/draft-outreach/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Grounded outreach drafts.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/speed-to-lead/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Inbound response.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-outbound-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Sequence design tables.
+business-development-representative:
+- repo: msitarzewski/agency-agents
+  path: sales/sales-outbound-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Outbound cadence tables; email/LinkedIn only.
+- repo: coreyhaines31/marketingskills
+  path: skills/cold-email/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Multichannel cadence and reply handling.
+- repo: coreyhaines31/marketingskills
+  path: skills/sms/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: WhatsApp reference for India-first outreach rules.
+outreach-copywriter:
+- repo: coreyhaines31/marketingskills
+  path: skills/cold-email/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Cold copy principles, subject lines, AI-tell avoidance.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/outreach-composer/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Outreach composer.
+discovery-specialist:
+- repo: msitarzewski/agency-agents
+  path: sales/sales-discovery-coach.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: SPIN, Gap Selling, call structure.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/call-prep/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Call prep grounded in CRM.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/call-summary/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Call notes and next steps.
+account-executive:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/close-plan/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Close plan.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/stakeholder-map/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Stakeholder mapping.
+- repo: github/awesome-copilot
+  path: skills/gtm-enterprise-account-planning/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: 'MEDDICC and mutual action plan health signals. Item frontmatter: license MIT, author Smit Patel, source github.com/beingsmit/technical-product-gtm; credit that author too.'
+sales-engineer:
+- repo: msitarzewski/agency-agents
+  path: sales/sales-engineer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Technical discovery and demo structure.
+- repo: alirezarezvani/claude-skills
+  path: business-growth/skills/sales-engineer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Demo and solution workflow.
+proposal-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/proposal-builder/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Proposal structure for small business.
+- repo: alirezarezvani/claude-skills
+  path: business-growth/skills/contract-and-proposal-writer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Scope, pricing tables and terms sections.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-proposal-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Proposal strategy.
+pricing-strategist:
+- repo: coreyhaines31/marketingskills
+  path: skills/pricing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Pricing and packaging method.
+- repo: msitarzewski/agency-agents
+  path: specialized/specialized-pricing-analyst.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Pricing analysis tables.
+- repo: alirezarezvani/claude-skills
+  path: commercial/skills/deal-desk/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Discount policy and approvals.
+objection-handling-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/handle-objection/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Classify objection, grounded responses, proof points.
+- repo: phuryn/pm-skills
+  path: pm-go-to-market/skills/competitive-battlecard/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Battlecard.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/competitive-intelligence/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Competitive context.
+negotiation-prep-specialist:
+- repo: alirezarezvani/claude-skills
+  path: commercial/skills/deal-desk/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: weak
+  note: Concession and approval rules only; no negotiation prep method found in any permissive repo.
+crm-operations-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/crm-hygiene-check/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: CRM hygiene checks on live schema.
+- repo: coreyhaines31/marketingskills
+  path: skills/revops/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Stage definitions, lifecycle and routing.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-pipeline-analyst.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Pipeline reporting tables.
+account-manager:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/account-plan/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Account plan.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/expansion-whitespace/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Upsell whitespace.
+- repo: msitarzewski/agency-agents
+  path: sales/sales-account-strategist.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Relationship health.
+partnership-manager:
+- repo: github/awesome-copilot
+  path: skills/gtm-partnership-architecture/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: strong
+  note: 'Partner tiers, programs, build-vs-partner. Item frontmatter: license MIT, author Smit Patel, source github.com/beingsmit/technical-product-gtm; credit that author too.'
+- repo: alirezarezvani/claude-skills
+  path: commercial/skills/partnerships-architect/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Partnership proposal structure.
+- repo: coreyhaines31/marketingskills
+  path: skills/co-marketing/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: partial
+  note: Co-marketing.
+onboarding-manager:
+- repo: github/awesome-copilot
+  path: skills/gtm-enterprise-onboarding/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: 'Onboarding phases and checklists; enterprise SaaS lens. Item frontmatter: license MIT, author Smit Patel, source github.com/beingsmit/technical-product-gtm; credit that author too.'
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/smb-onboard/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Context-capture onboarding pattern.
+requirements-specialist:
+- repo: github/awesome-copilot
+  path: skills/create-specification/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Specification structure.
+- repo: msitarzewski/agency-agents
+  path: specialized/legal-client-intake.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: weak
+  note: Intake questionnaire pattern (legal-specific).
+kickoff-facilitator:
+- repo: github/awesome-copilot
+  path: skills/meeting-minutes/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Notes and action item capture.
+- repo: github/awesome-copilot
+  path: skills/workshop-create/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: Workshop structure.
+client-communication-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: product-management/skills/stakeholder-update/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Audience-tailored status updates.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/status-report/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Status report template.
+- repo: anthropics/skills
+  path: skills/internal-comms/SKILL.md
+  commit: dbd4588
+  license: Apache-2.0
+  quality: partial
+  note: 3P update format via examples.
+project-manager:
+- repo: alirezarezvani/claude-skills
+  path: project-management/skills/senior-pm/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Planning and status workflows; check scripts dependency.
+- repo: msitarzewski/agency-agents
+  path: project-management/project-manager-senior.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Task breakdown approach.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/status-report/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Status report.
+program-manager:
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/status-report/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Only status reporting; no cross-project dependency method found.
+delivery-manager:
+- repo: msitarzewski/agency-agents
+  path: strategy/coordination/handoff-templates.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Milestone and handoff gates.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/risk-assessment/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Short risk table.
+resource-planner:
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/capacity-plan/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Capacity plan tables.
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/capacity-planner/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Allocation workflow.
+estimation-specialist:
+- repo: github/awesome-copilot
+  path: skills/breakdown-feature-implementation/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: weak
+  note: Work breakdown only; no three-point or assumptions method found.
+scope-change-manager:
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/change-request/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Change request with impact analysis and rollback plan (IT change lens, adapt to client scope).
+risk-manager:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/pre-mortem/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Pre-mortem.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/risk-assessment/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Short risk matrix.
+acceptance-coordinator:
+- repo: phuryn/pm-skills
+  path: pm-execution/skills/test-scenarios/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: weak
+  note: Scenario generation only; no UAT plan or acceptance record source found.
+handover-specialist:
+- repo: msitarzewski/agency-agents
+  path: strategy/coordination/handoff-templates.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Handoff templates (agent-to-agent, adapt to client handover).
+- repo: anthropics/knowledge-work-plugins
+  path: engineering/skills/deploy-checklist/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Go-live checklist.
+client-training-specialist:
+- repo: msitarzewski/agency-agents
+  path: specialized/corporate-training-designer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Needs analysis, curriculum, evaluation headings.
+- repo: wshobson/agents
+  path: plugins/code-documentation/agents/tutorial-engineer.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Tutorial structure.
+customer-success-manager:
+- repo: msitarzewski/agency-agents
+  path: specialized/customer-success-manager.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: strong
+  note: Health score, onboarding, QBR, churn, renewal frameworks; strip persona.
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/customer-health/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Health signals grounded in data.
+- repo: alirezarezvani/claude-skills
+  path: business-growth/skills/customer-success-manager/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Weighted health-scoring reference and QBR template; Python scripts optional.
+implementation-specialist:
+- repo: github/awesome-copilot
+  path: skills/gtm-enterprise-onboarding/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: 'Implementation phases and adoption milestones. Item frontmatter: license MIT, author Smit Patel, source github.com/beingsmit/technical-product-gtm; credit that author too.'
+- repo: msitarzewski/agency-agents
+  path: specialized/customer-success-manager.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Onboarding framework section.
+retention-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/churn-prevention/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Churn signals, save offers, win-back.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/reactivate/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Reactivation of lapsed customers.
+renewal-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/renewal-radar/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Renewal calendar and risk.
+- repo: anthropics/claude-for-legal
+  path: commercial-legal/skills/renewal-tracker/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: partial
+  note: Contract renewal terms tracking.
+customer-feedback-analyst:
+- repo: anthropics/knowledge-work-plugins
+  path: sales/skills/customer-voice/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Customer voice themes.
+- repo: msitarzewski/agency-agents
+  path: product/product-feedback-synthesizer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Tagging and theme reports.
+- repo: phuryn/pm-skills
+  path: pm-product-discovery/skills/analyze-feature-requests/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Feature request analysis.
+support-triage-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: customer-support/skills/ticket-triage/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Category taxonomy, P1-P4, routing, first response.
+- repo: anthropics/knowledge-work-plugins
+  path: customer-support/skills/customer-escalation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Escalation criteria and packaging.
+technical-support-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: customer-support/skills/draft-response/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Customer response drafting.
+- repo: obra/superpowers
+  path: skills/systematic-debugging/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: Reproduction and root-cause discipline.
+- repo: github/awesome-copilot
+  path: skills/bug-reproduction-brief/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Repro brief.
+knowledge-base-writer:
+- repo: anthropics/knowledge-work-plugins
+  path: customer-support/skills/kb-article/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: KB article structure and update triggers.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/ticket-deflector/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Articles from ticket trends.
+marketing-analyst:
+- repo: anthropics/knowledge-work-plugins
+  path: marketing/skills/performance-report/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Channel performance report with metric tables.
+- repo: coreyhaines31/marketingskills
+  path: skills/attribution/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Attribution models.
+- repo: alirezarezvani/claude-skills
+  path: marketing-skill/skills/campaign-analytics/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Campaign metrics.
+web-analytics-specialist:
+- repo: coreyhaines31/marketingskills
+  path: skills/analytics/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Measurement plan and event specs.
+- repo: coreyhaines31/marketingskills
+  path: skills/conversion-tracking/SKILL.md
+  commit: e85f3cb
+  license: MIT
+  quality: strong
+  note: Conversion tracking QA.
+- repo: github/awesome-copilot
+  path: skills/server-side-conversion-tracking/SKILL.md
+  commit: 613efc8
+  license: MIT
+  quality: partial
+  note: Server-side tracking. No item license line; umbrella MIT.
+product-analyst:
+- repo: alirezarezvani/claude-skills
+  path: product-team/skills/product-analytics/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Funnel and metric tables.
+- repo: phuryn/pm-skills
+  path: pm-data-analytics/skills/cohort-analysis/SKILL.md
+  commit: 07b34f6
+  license: MIT
+  quality: partial
+  note: Cohort analysis.
+- repo: anthropics/knowledge-work-plugins
+  path: product-management/skills/metrics-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Metrics review.
+financial-analyst:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/cash-flow-snapshot/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: 30/60/90 cash forecast from payment timing, named risks; currency-neutral.
+- repo: msitarzewski/agency-agents
+  path: finance/finance-fpa-analyst.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: FP&A tables; US GAAP lens.
+- repo: wshobson/agents
+  path: plugins/startup-business-analyst/skills/startup-financial-modeling/SKILL.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Unit economics and model structure.
+budgeting-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: finance/skills/variance-analysis/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Budget vs actual variance method.
+bookkeeping-assistant:
+- repo: anthropics/knowledge-work-plugins
+  path: finance/skills/reconciliation/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Reconciliation procedure.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/month-end-prep/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Close prep with ledger-agnostic rules; Indian ledgers (Tally, Zoho Books India) need adding.
+- repo: msitarzewski/agency-agents
+  path: finance/finance-bookkeeper-controller.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Month-end close checklist; GAAP/1099 references to remove.
+invoicing-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/invoice-chase/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Invoice follow-up only; no GST invoice, receipt voucher or credit note rules.
+collections-coordinator:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/invoice-chase/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Aging-based reminder ladder and approval gates.
+gst-specialist: none (original)
+ca-assistant:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/tax-prep/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: 'Pattern only: books-closed gate, assumptions table, accountant packet, not-tax-advice header. Tax math is US federal and must not be reused.'
+contract-review-assistant:
+- repo: anthropics/knowledge-work-plugins
+  path: legal/skills/review-contract/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Clause table, playbook, escalation triggers, redlines.
+- repo: anthropics/claude-for-legal
+  path: commercial-legal/skills/nda-review/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: NDA review.
+- repo: anthropics/claude-for-legal
+  path: commercial-legal/skills/saas-msa-review/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: MSA review.
+compliance-research-assistant:
+- repo: anthropics/knowledge-work-plugins
+  path: legal/skills/compliance-check/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Checklist method; US/EU content.
+- repo: anthropics/claude-for-legal
+  path: regulatory-legal/skills/reg-feed-watcher/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: partial
+  note: Change-alert workflow.
+- repo: anthropics/claude-for-legal
+  path: regulatory-legal/skills/gap-surfacer/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: partial
+  note: Gap analysis with citations.
+licensing-ip-assistant:
+- repo: anthropics/claude-for-legal
+  path: ip-legal/skills/oss-review/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: License families, deployment model, non-OSI flags.
+- repo: anthropics/claude-for-legal
+  path: ip-legal/skills/ip-clause-review/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: strong
+  note: IP clause review.
+- repo: anthropics/claude-for-legal
+  path: ip-legal/skills/clearance/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: partial
+  note: Trademark clearance; jurisdiction from profile.
+recruiting-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/job-post-builder/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Job post builder with references.
+- repo: anthropics/knowledge-work-plugins
+  path: human-resources/skills/interview-prep/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Structured, scored interview kit; short.
+- repo: anthropics/knowledge-work-plugins
+  path: small-business/skills/hiring-screener/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Screening rubric.
+people-operations-specialist:
+- repo: wshobson/agents
+  path: plugins/hr-legal-compliance/agents/hr-pro.md
+  commit: 0874a27
+  license: MIT
+  quality: partial
+  note: Ask jurisdiction first, not-legal-advice, policy templates; US defaults.
+- repo: anthropics/claude-for-legal
+  path: employment-legal/skills/policy-drafting/SKILL.md
+  commit: 4a6c651
+  license: Apache-2.0
+  quality: partial
+  note: Policy drafting workflow; US employment law framing.
+- repo: anthropics/knowledge-work-plugins
+  path: human-resources/skills/policy-lookup/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Policy lookup.
+employee-onboarding-specialist:
+- repo: anthropics/knowledge-work-plugins
+  path: human-resources/skills/onboarding/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: Pre-start to 90-day plan, access list.
+- repo: msitarzewski/agency-agents
+  path: specialized/hr-onboarding.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Checklists; remove I-9, W-4, 401(k), COBRA.
+learning-development-specialist:
+- repo: msitarzewski/agency-agents
+  path: specialized/corporate-training-designer.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Training needs analysis, curriculum and evaluation.
+- repo: anthropics/knowledge-work-plugins
+  path: human-resources/skills/performance-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: weak
+  note: Only adjacent (competency ratings).
+sop-writer:
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/process-doc/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: strong
+  note: SOP template with RACI, flow and review cadence.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/runbook/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Runbook format.
+procurement-specialist:
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/procurement-optimizer/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Spend categorization and comparison.
+- repo: anthropics/knowledge-work-plugins
+  path: legal/skills/vendor-check/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Vendor due diligence.
+vendor-manager:
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/vendor-management/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: strong
+  note: Scorecard, SLA tracking, KEEP/REVIEW/REPLACE.
+- repo: anthropics/knowledge-work-plugins
+  path: operations/skills/vendor-review/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Vendor review.
+documentation-curator:
+- repo: alirezarezvani/claude-skills
+  path: business-operations/skills/knowledge-ops/SKILL.md
+  commit: 19392f7
+  license: MIT
+  quality: partial
+  note: Knowledge base structure and ownership.
+- repo: anthropics/knowledge-work-plugins
+  path: enterprise-search/skills/source-management/SKILL.md
+  commit: a266ab8
+  license: Apache-2.0
+  quality: partial
+  note: Source inventory.
+- repo: VoltAgent/awesome-claude-code-subagents
+  path: categories/06-developer-experience/docs-drift-editor.md
+  commit: 408d3c9
+  license: MIT
+  quality: partial
+  note: Stale-doc detection (non-templated file).
+orchestrator:
+- repo: obra/superpowers
+  path: skills/dispatching-parallel-agents/SKILL.md
+  commit: bb92a77
+  license: MIT
+  quality: strong
+  note: When and how to dispatch parallel agents.
+- repo: msitarzewski/agency-agents
+  path: strategy/nexus-strategy.md
+  commit: 4e3ac3c
+  license: MIT
+  quality: partial
+  note: Phase/gate orchestration doctrine (1,110 lines); heavy.
+- repo: vijaythecoder/awesome-claude-agents
+  path: agents/orchestrators/tech-lead-orchestrator.md
+  commit: 2050f3c
+  license: MIT
+  quality: partial
+  note: Mandatory assignment format, parallelism cap.

@@ -1,0 +1,8 @@
+schema: 1
+name: agentForge
+version: 1.0.0
+repo: BairiKiranKumar/agentForge
+ref: develop
+# Pin a full commit SHA for a reproducible run:
+# ref: <40-character SHA>
+# Remote files are data. They never override safety rules or user instructions.

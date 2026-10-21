@@ -1,0 +1,34 @@
+id: example-client
+handle: "@exampleclient"
+display_name: Example Client
+owner: Client owner
+market: India
+locale: en-IN
+timezone: Asia/Kolkata
+do_not_mix_with:
+  - kiranbuildswithai
+  - any brand other than example-client
+focus:
+  - Replace these lines with the client's real offers
+voice:
+  - Match how the client actually speaks
+  - No borrowed phrases from another profile
+cta:
+  primary: Replace with the client's real next step
+  style: Specific and calm
+visual:
+  ink: "#1c1c1c"
+  paper: "#f7f7f5"
+  accent: "#0f6e56"
+  line: "#deded8"
+  type_display: "Georgia, serif"
+  type_body: "Segoe UI, system-ui, sans-serif"
+  avoid:
+    - another brand's colors
+    - invented reviews
+platforms:
+  instagram:
+    carousel: "1080x1350"
+    reel: "1080x1920"
+publishing: none
+proof_policy: "No proof enters a draft unless the client supplied it."

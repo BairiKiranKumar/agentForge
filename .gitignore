@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local runtime cache and task logs
+.agentforge/cache/
+work/
+
+# Secrets and machine-local env
+.env
+.env.*
+*.pem
+credentials.json
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+*.tmp

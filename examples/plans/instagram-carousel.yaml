@@ -1,0 +1,30 @@
+# Brand load and research are independent. Slide art and the caption are independent
+# once the storyboard is approved. QA waits for both.
+task_id: instagram-carousel-demo
+workflow: workflows/16-instagram-carousel.md
+brand: kiranbuildswithai
+stages:
+  - id: brand
+    owner: instagram-carousel-maker
+    depends_on: []
+    outputs: [work/instagram-carousel-demo/brand.md]
+  - id: research
+    owner: instagram-specialist
+    depends_on: []
+    outputs: [work/instagram-carousel-demo/research.md]
+  - id: storyboard
+    owner: instagram-carousel-maker
+    depends_on: [brand, research]
+    outputs: [work/instagram-carousel-demo/storyboard.md]
+  - id: slides
+    owner: instagram-carousel-maker
+    depends_on: [storyboard]
+    outputs: [examples/campaigns/kiranbuildswithai/instagram-carousel/index.html]
+  - id: caption
+    owner: instagram-specialist
+    depends_on: [storyboard]
+    outputs: [examples/campaigns/kiranbuildswithai/instagram-carousel/caption.md]
+  - id: qa
+    owner: design-reviewer
+    depends_on: [slides, caption]
+    outputs: [work/instagram-carousel-demo/qa.md]

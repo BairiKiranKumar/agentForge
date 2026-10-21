@@ -1,0 +1,1710 @@
+{
+  "name": "agentForge",
+  "version": "1.0.0",
+  "role_count": 182,
+  "roles": [
+    {
+      "slug": "chief-of-staff",
+      "title": "Chief of Staff",
+      "department": "leadership",
+      "mission": "Keep the founder focused: run the operating cadence, route decisions, track commitments across departments.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "leadership/chief-of-staff/AGENT.md"
+    },
+    {
+      "slug": "operations-lead",
+      "title": "Operations Lead",
+      "department": "leadership",
+      "mission": "Own how the business runs: processes, tools, vendors, capacity and operating metrics.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "leadership/operations-lead/AGENT.md"
+    },
+    {
+      "slug": "technical-lead",
+      "title": "Technical Lead",
+      "department": "leadership",
+      "mission": "Own engineering standards, architecture direction and technical risk across projects.",
+      "aliases": [
+        "senior developer",
+        "engineering lead",
+        "tech lead"
+      ],
+      "status": "untested",
+      "definition": "leadership/technical-lead/AGENT.md"
+    },
+    {
+      "slug": "design-lead",
+      "title": "Design Lead",
+      "department": "leadership",
+      "mission": "Own design quality, design process and design staffing across projects.",
+      "aliases": [
+        "senior designer",
+        "head of design"
+      ],
+      "status": "untested",
+      "definition": "leadership/design-lead/AGENT.md"
+    },
+    {
+      "slug": "research-lead",
+      "title": "Research Lead",
+      "department": "leadership",
+      "mission": "Decide what research is worth doing, pick methods, and guarantee rigor of findings.",
+      "aliases": [
+        "lead ux researcher",
+        "head of research",
+        "senior ux researcher (strategy)"
+      ],
+      "status": "untested",
+      "definition": "leadership/research-lead/AGENT.md"
+    },
+    {
+      "slug": "marketing-lead",
+      "title": "Marketing Lead",
+      "department": "leadership",
+      "mission": "Own marketing goals, budget allocation across channels and marketing team priorities.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "leadership/marketing-lead/AGENT.md"
+    },
+    {
+      "slug": "sales-lead",
+      "title": "Sales Lead",
+      "department": "leadership",
+      "mission": "Own revenue targets, pipeline health, sales process and deal approvals.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "leadership/sales-lead/AGENT.md"
+    },
+    {
+      "slug": "delivery-lead",
+      "title": "Delivery Lead",
+      "department": "leadership",
+      "mission": "Own delivery standards and health across all client engagements.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "leadership/delivery-lead/AGENT.md"
+    },
+    {
+      "slug": "business-strategist",
+      "title": "Business Strategist",
+      "department": "strategy",
+      "mission": "Shape where the business plays and how it wins: offers, segments, business model, strategic bets.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "strategy/business-strategist/AGENT.md"
+    },
+    {
+      "slug": "portfolio-manager",
+      "title": "Portfolio Manager",
+      "department": "strategy",
+      "mission": "Prioritize the portfolio of client projects, internal products and showcase builds against capacity and goals.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "strategy/portfolio-manager/AGENT.md"
+    },
+    {
+      "slug": "product-manager",
+      "title": "Product Manager",
+      "department": "product",
+      "mission": "Decide what to build and why: problem, outcomes, priorities and roadmap.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "product/product-manager/AGENT.md"
+    },
+    {
+      "slug": "product-owner",
+      "title": "Product Owner",
+      "department": "product",
+      "mission": "Turn product decisions into a ready, ordered backlog and accept completed work.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "product/product-owner/AGENT.md"
+    },
+    {
+      "slug": "business-analyst",
+      "title": "Business Analyst",
+      "department": "product",
+      "mission": "Model business processes, rules and data so requirements are complete and testable.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "product/business-analyst/AGENT.md"
+    },
+    {
+      "slug": "service-designer",
+      "title": "Service Designer",
+      "department": "product",
+      "mission": "Design the end-to-end service across channels, people and back-office, not just the screens.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "product/service-designer/AGENT.md"
+    },
+    {
+      "slug": "market-researcher",
+      "title": "Market Researcher",
+      "department": "research",
+      "mission": "Size and describe markets and segments with sourced evidence.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/market-researcher/AGENT.md"
+    },
+    {
+      "slug": "competitor-researcher",
+      "title": "Competitor Researcher",
+      "department": "research",
+      "mission": "Analyze competitors' offers, pricing, positioning, UX and weaknesses.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/competitor-researcher/AGENT.md"
+    },
+    {
+      "slug": "ux-researcher",
+      "title": "UX Researcher",
+      "department": "research",
+      "mission": "Run generative and mixed-method research that explains user needs, contexts and behaviors.",
+      "aliases": [
+        "senior ux researcher",
+        "user researcher"
+      ],
+      "status": "untested",
+      "definition": "research/ux-researcher/AGENT.md"
+    },
+    {
+      "slug": "research-operations-specialist",
+      "title": "Research Operations Specialist",
+      "department": "research",
+      "mission": "Make research run smoothly: recruiting, consent, scheduling, incentives, tools and data storage.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/research-operations-specialist/AGENT.md"
+    },
+    {
+      "slug": "customer-interview-specialist",
+      "title": "Customer Interview Specialist",
+      "department": "research",
+      "mission": "Run customer discovery interviews that validate problems, willingness to pay and buying process.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/customer-interview-specialist/AGENT.md"
+    },
+    {
+      "slug": "usability-researcher",
+      "title": "Usability Researcher",
+      "department": "research",
+      "mission": "Evaluate whether people can use a design or product, and why they fail.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/usability-researcher/AGENT.md"
+    },
+    {
+      "slug": "research-synthesis-specialist",
+      "title": "Research Synthesis Specialist",
+      "department": "research",
+      "mission": "Turn raw research data into weighted insights, with evidence and confidence levels.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "research/research-synthesis-specialist/AGENT.md"
+    },
+    {
+      "slug": "creative-director",
+      "title": "Creative Director",
+      "department": "design",
+      "mission": "Set the creative concept and art direction for a project or campaign.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/creative-director/AGENT.md"
+    },
+    {
+      "slug": "brand-strategist",
+      "title": "Brand Strategist",
+      "department": "design",
+      "mission": "Define brand positioning, personality, promise and naming.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/brand-strategist/AGENT.md"
+    },
+    {
+      "slug": "brand-designer",
+      "title": "Brand Designer",
+      "department": "design",
+      "mission": "Create visual identities: logos, type, color, imagery rules and brand guidelines.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/brand-designer/AGENT.md"
+    },
+    {
+      "slug": "ux-designer",
+      "title": "UX Designer",
+      "department": "design",
+      "mission": "Design user flows and wireframes that solve the problem with the least friction.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/ux-designer/AGENT.md"
+    },
+    {
+      "slug": "ui-designer",
+      "title": "UI Designer",
+      "department": "design",
+      "mission": "Produce high-fidelity, on-brand, buildable interface designs.",
+      "aliases": [
+        "designer",
+        "visual designer",
+        "web designer"
+      ],
+      "status": "untested",
+      "definition": "design/ui-designer/AGENT.md"
+    },
+    {
+      "slug": "interaction-designer",
+      "title": "Interaction Designer",
+      "department": "design",
+      "mission": "Specify how interfaces behave: states, transitions, feedback, gestures and micro-interactions.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/interaction-designer/AGENT.md"
+    },
+    {
+      "slug": "information-architect",
+      "title": "Information Architect",
+      "department": "design",
+      "mission": "Organize content and navigation so people find things.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/information-architect/AGENT.md"
+    },
+    {
+      "slug": "design-systems-specialist",
+      "title": "Design Systems Specialist",
+      "department": "design",
+      "mission": "Build and govern tokens, components and patterns shared across products.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/design-systems-specialist/AGENT.md"
+    },
+    {
+      "slug": "accessibility-designer",
+      "title": "Accessibility Designer",
+      "department": "design",
+      "mission": "Design accessible experiences from the start: contrast, focus, structure, alternatives.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/accessibility-designer/AGENT.md"
+    },
+    {
+      "slug": "motion-designer",
+      "title": "Motion Designer",
+      "department": "design",
+      "mission": "Design purposeful motion, scroll storytelling and 3D web moments that stay fast and accessible.",
+      "aliases": [
+        "animator",
+        "animation designer",
+        "motion graphics designer"
+      ],
+      "status": "untested",
+      "definition": "design/motion-designer/AGENT.md"
+    },
+    {
+      "slug": "illustrator",
+      "title": "Illustrator",
+      "department": "design",
+      "mission": "Create illustration systems and spot illustrations that carry brand and meaning.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/illustrator/AGENT.md"
+    },
+    {
+      "slug": "presentation-designer",
+      "title": "Presentation Designer",
+      "department": "design",
+      "mission": "Turn content into clear, persuasive slide decks.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/presentation-designer/AGENT.md"
+    },
+    {
+      "slug": "conversion-designer",
+      "title": "Conversion Designer",
+      "department": "design",
+      "mission": "Design pages and flows to convert visitors into enquiries, sign-ups or sales.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/conversion-designer/AGENT.md"
+    },
+    {
+      "slug": "design-reviewer",
+      "title": "Design Reviewer",
+      "department": "design",
+      "mission": "Independently review designs against brief, brand, usability and accessibility before build or ship.",
+      "aliases": [
+        "senior designer (review)",
+        "design QA"
+      ],
+      "status": "untested",
+      "definition": "design/design-reviewer/AGENT.md"
+    },
+    {
+      "slug": "canva-specialist",
+      "title": "Canva Specialist",
+      "department": "design",
+      "mission": "Produce on-brand Canva designs for social, print and decks, using the Canva connector when available.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "design/canva-specialist/AGENT.md"
+    },
+    {
+      "slug": "content-strategist",
+      "title": "Content Strategist",
+      "department": "content",
+      "mission": "Decide what content to create, for whom and why, and how it supports business goals.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/content-strategist/AGENT.md"
+    },
+    {
+      "slug": "content-calendar-manager",
+      "title": "Content Calendar Manager",
+      "department": "content",
+      "mission": "Run the content pipeline: calendar, briefs, status, approvals and the asset library.",
+      "aliases": [
+        "content manager",
+        "content management",
+        "managing editor"
+      ],
+      "status": "untested",
+      "definition": "content/content-calendar-manager/AGENT.md"
+    },
+    {
+      "slug": "copywriter",
+      "title": "Copywriter",
+      "department": "content",
+      "mission": "Write persuasive marketing and website copy that sounds human and drives action.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/copywriter/AGENT.md"
+    },
+    {
+      "slug": "ux-writer",
+      "title": "UX Writer",
+      "department": "content",
+      "mission": "Write interface text that helps people complete tasks.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/ux-writer/AGENT.md"
+    },
+    {
+      "slug": "technical-writer",
+      "title": "Technical Writer",
+      "department": "content",
+      "mission": "Write accurate documentation for developers, admins and end users.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/technical-writer/AGENT.md"
+    },
+    {
+      "slug": "editor",
+      "title": "Editor",
+      "department": "content",
+      "mission": "Improve structure, argument, clarity and accuracy of drafts.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/editor/AGENT.md"
+    },
+    {
+      "slug": "proofreader",
+      "title": "Proofreader",
+      "department": "content",
+      "mission": "Catch errors before publication: spelling, grammar, consistency, formatting.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/proofreader/AGENT.md"
+    },
+    {
+      "slug": "brand-voice-specialist",
+      "title": "Brand Voice Specialist",
+      "department": "content",
+      "mission": "Define and enforce how the brand sounds across every channel.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/brand-voice-specialist/AGENT.md"
+    },
+    {
+      "slug": "scriptwriter",
+      "title": "Scriptwriter",
+      "department": "content",
+      "mission": "Write scripts for reels, shorts, explainers, walkthroughs and ads.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/scriptwriter/AGENT.md"
+    },
+    {
+      "slug": "case-study-writer",
+      "title": "Case Study Writer",
+      "department": "content",
+      "mission": "Turn delivered projects into credible, permissioned case studies.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/case-study-writer/AGENT.md"
+    },
+    {
+      "slug": "proposal-writer",
+      "title": "Proposal Writer",
+      "department": "content",
+      "mission": "Write the narrative sections of proposals: understanding, approach, why us.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/proposal-writer/AGENT.md"
+    },
+    {
+      "slug": "localization-specialist",
+      "title": "Localization Specialist",
+      "department": "content",
+      "mission": "Adapt content for Indian languages and regional audiences (Telugu, Hindi, Indian English).",
+      "aliases": [],
+      "status": "untested",
+      "definition": "content/localization-specialist/AGENT.md"
+    },
+    {
+      "slug": "content-repurposing-specialist",
+      "title": "Content Repurposing Specialist",
+      "department": "content",
+      "mission": "Turn one approved source into platform-native packages without pasting the same post everywhere.",
+      "aliases": [
+        "Content Repurposing Specialist"
+      ],
+      "status": "untested",
+      "definition": "content/content-repurposing-specialist/AGENT.md"
+    },
+    {
+      "slug": "solution-architect",
+      "title": "Solution Architect",
+      "department": "dev",
+      "mission": "Design the technical solution for a specific project: components, data, integrations, trade-offs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/solution-architect/AGENT.md"
+    },
+    {
+      "slug": "frontend-architect",
+      "title": "Frontend Architect",
+      "department": "dev",
+      "mission": "Design frontend architecture: rendering strategy, state, routing, component boundaries, performance budgets.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/frontend-architect/AGENT.md"
+    },
+    {
+      "slug": "frontend-developer",
+      "title": "Frontend Developer",
+      "department": "dev",
+      "mission": "Implement UI features that match designs, work on every device and pass tests.",
+      "aliases": [
+        "developer",
+        "web developer",
+        "ui developer"
+      ],
+      "status": "untested",
+      "definition": "dev/frontend-developer/AGENT.md"
+    },
+    {
+      "slug": "angular-specialist",
+      "title": "Angular Specialist",
+      "department": "dev",
+      "mission": "Solve Angular-specific problems: signals, RxJS, change detection, standalone APIs, SSR, upgrades.",
+      "aliases": [
+        "angular developer"
+      ],
+      "status": "untested",
+      "definition": "dev/angular-specialist/AGENT.md"
+    },
+    {
+      "slug": "react-specialist",
+      "title": "React Specialist",
+      "department": "dev",
+      "mission": "Solve React-specific problems: hooks, rendering performance, state, server components boundaries.",
+      "aliases": [
+        "react developer"
+      ],
+      "status": "untested",
+      "definition": "dev/react-specialist/AGENT.md"
+    },
+    {
+      "slug": "nextjs-specialist",
+      "title": "Next.js Specialist",
+      "department": "dev",
+      "mission": "Solve Next.js-specific problems: App Router, server actions, caching, rendering modes, deployment.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/nextjs-specialist/AGENT.md"
+    },
+    {
+      "slug": "html-specialist",
+      "title": "HTML Specialist",
+      "department": "dev",
+      "mission": "Write semantic, accessible, SEO-ready markup and structured data.",
+      "aliases": [
+        "html developer"
+      ],
+      "status": "untested",
+      "definition": "dev/html-specialist/AGENT.md"
+    },
+    {
+      "slug": "css-specialist",
+      "title": "CSS Specialist",
+      "department": "dev",
+      "mission": "Build robust layouts and styles inside the project's styling system.",
+      "aliases": [
+        "css developer"
+      ],
+      "status": "untested",
+      "definition": "dev/css-specialist/AGENT.md"
+    },
+    {
+      "slug": "backend-developer",
+      "title": "Backend Developer",
+      "department": "dev",
+      "mission": "Implement server-side logic, data access, auth and background jobs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/backend-developer/AGENT.md"
+    },
+    {
+      "slug": "api-specialist",
+      "title": "API Specialist",
+      "department": "dev",
+      "mission": "Design and document API contracts that are consistent, versioned and safe.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/api-specialist/AGENT.md"
+    },
+    {
+      "slug": "database-engineer",
+      "title": "Database Engineer",
+      "department": "dev",
+      "mission": "Design schemas, migrations, indexes and row-level security that keep data correct and fast.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/database-engineer/AGENT.md"
+    },
+    {
+      "slug": "mobile-developer",
+      "title": "Mobile Developer",
+      "department": "dev",
+      "mission": "Build mobile apps (React Native, Flutter or native) and PWAs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/mobile-developer/AGENT.md"
+    },
+    {
+      "slug": "cms-specialist",
+      "title": "CMS Specialist",
+      "department": "dev",
+      "mission": "Implement content management: headless or traditional CMS, content models in code, editor experience.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/cms-specialist/AGENT.md"
+    },
+    {
+      "slug": "ecommerce-specialist",
+      "title": "E-commerce Specialist (Shopify)",
+      "department": "dev",
+      "mission": "Build and optimize online stores on Shopify or headless commerce, including Indian payment setups.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/ecommerce-specialist/AGENT.md"
+    },
+    {
+      "slug": "integration-engineer",
+      "title": "Integration Engineer",
+      "department": "dev",
+      "mission": "Connect systems: payment gateways, WhatsApp, email, CRMs, webhooks and third-party APIs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/integration-engineer/AGENT.md"
+    },
+    {
+      "slug": "performance-engineer",
+      "title": "Performance Engineer",
+      "department": "dev",
+      "mission": "Find and fix performance bottlenecks in frontend and backend.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/performance-engineer/AGENT.md"
+    },
+    {
+      "slug": "accessibility-engineer",
+      "title": "Accessibility Engineer",
+      "department": "dev",
+      "mission": "Implement accessibility in code: semantics, ARIA widgets, focus management, screen reader support.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/accessibility-engineer/AGENT.md"
+    },
+    {
+      "slug": "code-reviewer",
+      "title": "Code Reviewer",
+      "department": "dev",
+      "mission": "Independently review code changes for correctness, security, maintainability and scope.",
+      "aliases": [
+        "senior developer (review)",
+        "reviewer"
+      ],
+      "status": "untested",
+      "definition": "dev/code-reviewer/AGENT.md"
+    },
+    {
+      "slug": "maintenance-engineer",
+      "title": "Maintenance Engineer",
+      "department": "dev",
+      "mission": "Keep shipped projects healthy: dependency updates, small fixes, legacy code care.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "dev/maintenance-engineer/AGENT.md"
+    },
+    {
+      "slug": "data-engineer",
+      "title": "Data Engineer",
+      "department": "data-ai",
+      "mission": "Build reliable data pipelines and storage for analytics and AI.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/data-engineer/AGENT.md"
+    },
+    {
+      "slug": "analytics-engineer",
+      "title": "Analytics Engineer",
+      "department": "data-ai",
+      "mission": "Turn raw data into tested, documented metric models and dashboards-ready tables.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/analytics-engineer/AGENT.md"
+    },
+    {
+      "slug": "data-scientist",
+      "title": "Data Scientist",
+      "department": "data-ai",
+      "mission": "Answer questions with statistics and models: forecasting, segmentation, experiments.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/data-scientist/AGENT.md"
+    },
+    {
+      "slug": "ai-application-engineer",
+      "title": "AI Application Engineer",
+      "department": "data-ai",
+      "mission": "Build product features on top of LLMs and AI APIs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/ai-application-engineer/AGENT.md"
+    },
+    {
+      "slug": "agent-workflow-engineer",
+      "title": "Agent Workflow Engineer",
+      "department": "data-ai",
+      "mission": "Design and build multi-agent and agentic workflows, including this ai-team itself.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/agent-workflow-engineer/AGENT.md"
+    },
+    {
+      "slug": "rag-specialist",
+      "title": "Retrieval / RAG Specialist",
+      "department": "data-ai",
+      "mission": "Build retrieval systems that ground AI answers in the right documents.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/rag-specialist/AGENT.md"
+    },
+    {
+      "slug": "prompt-engineer",
+      "title": "Prompt Engineer",
+      "department": "data-ai",
+      "mission": "Write and test prompts and system instructions that produce reliable outputs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/prompt-engineer/AGENT.md"
+    },
+    {
+      "slug": "ai-evaluation-specialist",
+      "title": "AI Evaluation Specialist",
+      "department": "data-ai",
+      "mission": "Measure AI system quality with eval sets, rubrics and regression tracking.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/ai-evaluation-specialist/AGENT.md"
+    },
+    {
+      "slug": "model-operations-specialist",
+      "title": "Model Operations Specialist",
+      "department": "data-ai",
+      "mission": "Run AI in production: model selection, cost, latency, monitoring, versioning and fallbacks.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "data-ai/model-operations-specialist/AGENT.md"
+    },
+    {
+      "slug": "qa-lead",
+      "title": "QA Lead",
+      "department": "qa",
+      "mission": "Own the test strategy and quality gates for a project.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/qa-lead/AGENT.md"
+    },
+    {
+      "slug": "manual-tester",
+      "title": "Manual Tester",
+      "department": "qa",
+      "mission": "Execute scripted test cases and regression suites and report defects clearly.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/manual-tester/AGENT.md"
+    },
+    {
+      "slug": "exploratory-tester",
+      "title": "Exploratory Tester",
+      "department": "qa",
+      "mission": "Find unexpected bugs through charter-based exploration.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/exploratory-tester/AGENT.md"
+    },
+    {
+      "slug": "automation-engineer",
+      "title": "Test Automation Engineer",
+      "department": "qa",
+      "mission": "Design the automated test pyramid and CI test infrastructure.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/automation-engineer/AGENT.md"
+    },
+    {
+      "slug": "playwright-specialist",
+      "title": "Playwright Specialist",
+      "department": "qa",
+      "mission": "Write and maintain Playwright end-to-end tests for real user flows.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/playwright-specialist/AGENT.md"
+    },
+    {
+      "slug": "api-tester",
+      "title": "API Tester",
+      "department": "qa",
+      "mission": "Test APIs for contract correctness, auth, error handling and edge cases.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/api-tester/AGENT.md"
+    },
+    {
+      "slug": "accessibility-tester",
+      "title": "Accessibility Tester",
+      "department": "qa",
+      "mission": "Audit products against WCAG with automated and manual testing, including screen readers.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/accessibility-tester/AGENT.md"
+    },
+    {
+      "slug": "performance-tester",
+      "title": "Performance Tester",
+      "department": "qa",
+      "mission": "Measure speed and capacity under realistic conditions.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/performance-tester/AGENT.md"
+    },
+    {
+      "slug": "visual-regression-tester",
+      "title": "Visual Regression Tester",
+      "department": "qa",
+      "mission": "Catch unintended visual changes across pages, components and viewports.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/visual-regression-tester/AGENT.md"
+    },
+    {
+      "slug": "mobile-tester",
+      "title": "Mobile Tester",
+      "department": "qa",
+      "mission": "Test on real and emulated mobile devices, networks and OS versions common in the target market.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/mobile-tester/AGENT.md"
+    },
+    {
+      "slug": "security-testing-specialist",
+      "title": "Security Testing Specialist",
+      "department": "qa",
+      "mission": "Test applications for vulnerabilities within an authorized scope.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/security-testing-specialist/AGENT.md"
+    },
+    {
+      "slug": "release-validation-specialist",
+      "title": "Release Validation Specialist",
+      "department": "qa",
+      "mission": "Verify a release is ready: smoke tests, checklist, rollback readiness, sign-off evidence.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "qa/release-validation-specialist/AGENT.md"
+    },
+    {
+      "slug": "application-security-engineer",
+      "title": "Application Security Engineer",
+      "department": "security",
+      "mission": "Make applications secure by design and fix vulnerabilities properly.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "security/application-security-engineer/AGENT.md"
+    },
+    {
+      "slug": "threat-modeling-specialist",
+      "title": "Threat Modeling Specialist",
+      "department": "security",
+      "mission": "Identify what can go wrong in a system before it is built.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "security/threat-modeling-specialist/AGENT.md"
+    },
+    {
+      "slug": "privacy-specialist",
+      "title": "Privacy Specialist",
+      "department": "security",
+      "mission": "Help products handle personal data lawfully and respectfully (India DPDP Act, GDPR where relevant).",
+      "aliases": [],
+      "status": "untested",
+      "definition": "security/privacy-specialist/AGENT.md"
+    },
+    {
+      "slug": "cloud-architect",
+      "title": "Cloud Architect",
+      "department": "devops",
+      "mission": "Choose and design hosting and cloud architecture that fits budget, scale and region.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/cloud-architect/AGENT.md"
+    },
+    {
+      "slug": "devops-engineer",
+      "title": "DevOps Engineer",
+      "department": "devops",
+      "mission": "Run environments and developer workflow: deploys, environment variables, previews, secrets.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/devops-engineer/AGENT.md"
+    },
+    {
+      "slug": "cicd-engineer",
+      "title": "CI/CD Engineer",
+      "department": "devops",
+      "mission": "Build fast, reliable pipelines that test, build and deploy automatically.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/cicd-engineer/AGENT.md"
+    },
+    {
+      "slug": "infrastructure-engineer",
+      "title": "Infrastructure Engineer",
+      "department": "devops",
+      "mission": "Provision and manage infrastructure as code: servers, networks, DNS, storage.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/infrastructure-engineer/AGENT.md"
+    },
+    {
+      "slug": "site-reliability-engineer",
+      "title": "Site Reliability Engineer",
+      "department": "devops",
+      "mission": "Keep services reliable with SLOs, error budgets, capacity and resilience.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/site-reliability-engineer/AGENT.md"
+    },
+    {
+      "slug": "observability-specialist",
+      "title": "Observability Specialist",
+      "department": "devops",
+      "mission": "Make systems understandable: logs, metrics, traces, alerts and dashboards.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/observability-specialist/AGENT.md"
+    },
+    {
+      "slug": "incident-coordinator",
+      "title": "Incident Coordinator",
+      "department": "devops",
+      "mission": "Run incidents calmly: roles, communication, timeline, resolution and postmortem.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/incident-coordinator/AGENT.md"
+    },
+    {
+      "slug": "release-engineer",
+      "title": "Release Engineer",
+      "department": "devops",
+      "mission": "Plan and execute releases with versioning, changelogs, feature flags and rollback plans.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "devops/release-engineer/AGENT.md"
+    },
+    {
+      "slug": "marketing-strategist",
+      "title": "Marketing Strategist",
+      "department": "marketing",
+      "mission": "Define positioning, messaging, audiences and the channel plan.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/marketing-strategist/AGENT.md"
+    },
+    {
+      "slug": "growth-marketer",
+      "title": "Growth Marketer",
+      "department": "marketing",
+      "mission": "Find and scale growth loops through fast, measured experiments across the funnel.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/growth-marketer/AGENT.md"
+    },
+    {
+      "slug": "seo-specialist",
+      "title": "SEO Specialist",
+      "department": "marketing",
+      "mission": "Grow organic search traffic through keyword strategy and content optimization.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/seo-specialist/AGENT.md"
+    },
+    {
+      "slug": "technical-seo-specialist",
+      "title": "Technical SEO Specialist",
+      "department": "marketing",
+      "mission": "Make sites crawlable, indexable, fast and correctly structured for search engines.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/technical-seo-specialist/AGENT.md"
+    },
+    {
+      "slug": "local-seo-specialist",
+      "title": "Local SEO Specialist",
+      "department": "marketing",
+      "mission": "Get local businesses found in maps and 'near me' searches.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/local-seo-specialist/AGENT.md"
+    },
+    {
+      "slug": "paid-ads-specialist",
+      "title": "Paid Ads Specialist",
+      "department": "marketing",
+      "mission": "Plan, build and optimize paid campaigns on Meta and Google within budget.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/paid-ads-specialist/AGENT.md"
+    },
+    {
+      "slug": "email-marketer",
+      "title": "Email Marketer",
+      "department": "marketing",
+      "mission": "Run newsletters and email campaigns that get delivered, opened and acted on.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/email-marketer/AGENT.md"
+    },
+    {
+      "slug": "lifecycle-marketer",
+      "title": "Lifecycle Marketer",
+      "department": "marketing",
+      "mission": "Design automated journeys across onboarding, activation, retention and win-back.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/lifecycle-marketer/AGENT.md"
+    },
+    {
+      "slug": "conversion-optimization-specialist",
+      "title": "Conversion Optimization Specialist",
+      "department": "marketing",
+      "mission": "Increase conversion rates with research-backed hypotheses and valid experiments.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "marketing/conversion-optimization-specialist/AGENT.md"
+    },
+    {
+      "slug": "social-media-manager",
+      "title": "Social Media Manager",
+      "department": "social-media",
+      "mission": "Run social operations: plan, coordinate specialists, schedule for review and report.",
+      "aliases": [
+        "social media management"
+      ],
+      "status": "untested",
+      "definition": "social-media/social-media-manager/AGENT.md"
+    },
+    {
+      "slug": "community-manager",
+      "title": "Community Manager",
+      "department": "social-media",
+      "mission": "Build relationships with the audience: replies, DMs, community spaces and moderation.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/community-manager/AGENT.md"
+    },
+    {
+      "slug": "linkedin-specialist",
+      "title": "LinkedIn Specialist",
+      "department": "social-media",
+      "mission": "Grow authority and leads on LinkedIn through profile, content and engagement.",
+      "aliases": [
+        "LinkedIn Content Creator"
+      ],
+      "status": "untested",
+      "definition": "social-media/linkedin-specialist/AGENT.md"
+    },
+    {
+      "slug": "instagram-specialist",
+      "title": "Instagram Specialist",
+      "department": "social-media",
+      "mission": "Grow on Instagram with Reels, carousels, stories and profile optimization.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/instagram-specialist/AGENT.md"
+    },
+    {
+      "slug": "instagram-carousel-maker",
+      "title": "Instagram Carousel Maker",
+      "department": "social-media",
+      "mission": "Produce an Instagram carousel as a storyboard, slide copy, and editable HTML or SVG at 1080 by 1350.",
+      "aliases": [
+        "Instagram Carousel Maker"
+      ],
+      "status": "untested",
+      "definition": "social-media/instagram-carousel-maker/AGENT.md"
+    },
+    {
+      "slug": "threads-specialist",
+      "title": "Threads Specialist",
+      "department": "social-media",
+      "mission": "Grow on Threads through conversation-led, text-first posts and replies.",
+      "aliases": [
+        "Threads Content Creator"
+      ],
+      "status": "untested",
+      "definition": "social-media/threads-specialist/AGENT.md"
+    },
+    {
+      "slug": "x-specialist",
+      "title": "X (Twitter) Specialist",
+      "department": "social-media",
+      "mission": "Grow on X through threads, replies and timely commentary.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/x-specialist/AGENT.md"
+    },
+    {
+      "slug": "youtube-strategist",
+      "title": "YouTube Strategist",
+      "department": "social-media",
+      "mission": "Grow a YouTube channel with long-form strategy, titles, thumbnails and retention.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/youtube-strategist/AGENT.md"
+    },
+    {
+      "slug": "short-form-video-strategist",
+      "title": "Short-form Video Strategist",
+      "department": "social-media",
+      "mission": "Plan and improve Reels, Shorts and short videos: hooks, pacing, editing direction.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/short-form-video-strategist/AGENT.md"
+    },
+    {
+      "slug": "reels-producer",
+      "title": "Reels and Short-Video Producer",
+      "department": "social-media",
+      "mission": "Package a Reel or Short under 90 seconds with a script, storyboard, shot list, captions, and export steps.",
+      "aliases": [
+        "Reels and Short-Video Producer"
+      ],
+      "status": "untested",
+      "definition": "social-media/reels-producer/AGENT.md"
+    },
+    {
+      "slug": "social-listening-specialist",
+      "title": "Social Listening Specialist",
+      "department": "social-media",
+      "mission": "Monitor conversations about the brand, competitors and topics to find risks and opportunities.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/social-listening-specialist/AGENT.md"
+    },
+    {
+      "slug": "creator-partnerships-specialist",
+      "title": "Creator Partnerships Specialist",
+      "department": "social-media",
+      "mission": "Find and run collaborations with creators and influencers, with honest disclosure.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/creator-partnerships-specialist/AGENT.md"
+    },
+    {
+      "slug": "whatsapp-business-specialist",
+      "title": "WhatsApp Business Specialist",
+      "department": "social-media",
+      "mission": "Set up WhatsApp as a sales and support channel without spamming.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "social-media/whatsapp-business-specialist/AGENT.md"
+    },
+    {
+      "slug": "icp-researcher",
+      "title": "Ideal Customer Profile Researcher",
+      "department": "sales",
+      "mission": "Define who the best-fit customers are, using evidence from wins, losses and market data.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/icp-researcher/AGENT.md"
+    },
+    {
+      "slug": "prospect-researcher",
+      "title": "Prospect Researcher",
+      "department": "sales",
+      "mission": "Find named prospects that match the ICP and gather personalization points.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/prospect-researcher/AGENT.md"
+    },
+    {
+      "slug": "lead-qualification-specialist",
+      "title": "Lead Qualification Specialist",
+      "department": "sales",
+      "mission": "Score and qualify leads consistently so sales time goes to the right ones.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/lead-qualification-specialist/AGENT.md"
+    },
+    {
+      "slug": "sales-development-representative",
+      "title": "Sales Development Representative",
+      "department": "sales",
+      "mission": "Respond to inbound leads fast and turn qualified ones into booked meetings.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/sales-development-representative/AGENT.md"
+    },
+    {
+      "slug": "business-development-representative",
+      "title": "Business Development Representative",
+      "department": "sales",
+      "mission": "Open new accounts through outbound prospecting, including Indian local businesses.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/business-development-representative/AGENT.md"
+    },
+    {
+      "slug": "outreach-copywriter",
+      "title": "Outreach Copywriter",
+      "department": "sales",
+      "mission": "Write short, personal outreach messages that earn replies.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/outreach-copywriter/AGENT.md"
+    },
+    {
+      "slug": "discovery-specialist",
+      "title": "Discovery Specialist",
+      "department": "sales",
+      "mission": "Run sales discovery that uncovers pains, impact, decision process and budget.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/discovery-specialist/AGENT.md"
+    },
+    {
+      "slug": "account-executive",
+      "title": "Account Executive",
+      "department": "sales",
+      "mission": "Own a deal from qualified opportunity to signed agreement.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/account-executive/AGENT.md"
+    },
+    {
+      "slug": "sales-engineer",
+      "title": "Sales Engineer",
+      "department": "sales",
+      "mission": "Answer technical questions in the sales process and design credible demos and solutions.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/sales-engineer/AGENT.md"
+    },
+    {
+      "slug": "proposal-specialist",
+      "title": "Proposal Specialist",
+      "department": "sales",
+      "mission": "Assemble complete, compliant proposals: scope, pricing tables, timelines, terms.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/proposal-specialist/AGENT.md"
+    },
+    {
+      "slug": "pricing-strategist",
+      "title": "Pricing Strategist",
+      "department": "sales",
+      "mission": "Design pricing models, packages and rate cards that are profitable and easy to buy.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/pricing-strategist/AGENT.md"
+    },
+    {
+      "slug": "objection-handling-specialist",
+      "title": "Objection Handling Specialist",
+      "department": "sales",
+      "mission": "Prepare honest, evidence-based responses to common and deal-specific objections.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/objection-handling-specialist/AGENT.md"
+    },
+    {
+      "slug": "negotiation-prep-specialist",
+      "title": "Negotiation Preparation Specialist",
+      "department": "sales",
+      "mission": "Prepare for negotiations: interests, BATNA, trade-offs and walk-away points.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/negotiation-prep-specialist/AGENT.md"
+    },
+    {
+      "slug": "crm-operations-specialist",
+      "title": "CRM Operations Specialist",
+      "department": "sales",
+      "mission": "Keep the CRM clean and useful: stages, fields, hygiene, automation and reports.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/crm-operations-specialist/AGENT.md"
+    },
+    {
+      "slug": "account-manager",
+      "title": "Account Manager",
+      "department": "sales",
+      "mission": "Grow existing client relationships commercially: renewals of scope, upsells, referrals.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "sales/account-manager/AGENT.md"
+    },
+    {
+      "slug": "partnership-manager",
+      "title": "Partnership Manager",
+      "department": "partnerships",
+      "mission": "Build referral, reseller, agency and technology partnerships that bring clients or capability.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "partnerships/partnership-manager/AGENT.md"
+    },
+    {
+      "slug": "onboarding-manager",
+      "title": "Client Onboarding Manager",
+      "department": "client-onboarding",
+      "mission": "Take a signed client from contract to a ready-to-start project.",
+      "aliases": [
+        "client onboarding"
+      ],
+      "status": "untested",
+      "definition": "client-onboarding/onboarding-manager/AGENT.md"
+    },
+    {
+      "slug": "requirements-specialist",
+      "title": "Requirements Specialist",
+      "department": "client-onboarding",
+      "mission": "Elicit and document client requirements so they are complete, testable and agreed.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "client-onboarding/requirements-specialist/AGENT.md"
+    },
+    {
+      "slug": "kickoff-facilitator",
+      "title": "Kickoff Facilitator",
+      "department": "client-onboarding",
+      "mission": "Run kickoff meetings that align goals, scope, roles and ways of working.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "client-onboarding/kickoff-facilitator/AGENT.md"
+    },
+    {
+      "slug": "client-communication-specialist",
+      "title": "Client Communication Specialist",
+      "department": "client-onboarding",
+      "mission": "Keep clients informed and confident with clear, timely, honest communication.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "client-onboarding/client-communication-specialist/AGENT.md"
+    },
+    {
+      "slug": "project-manager",
+      "title": "Project Manager",
+      "department": "project-delivery",
+      "mission": "Plan and track project work so it finishes on time.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/project-manager/AGENT.md"
+    },
+    {
+      "slug": "program-manager",
+      "title": "Program Manager",
+      "department": "project-delivery",
+      "mission": "Coordinate several related projects toward one client or business outcome.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/program-manager/AGENT.md"
+    },
+    {
+      "slug": "delivery-manager",
+      "title": "Delivery Manager",
+      "department": "project-delivery",
+      "mission": "Own one client engagement end to end: scope, quality, timeline, budget and client satisfaction.",
+      "aliases": [
+        "customer delivery",
+        "engagement manager"
+      ],
+      "status": "untested",
+      "definition": "project-delivery/delivery-manager/AGENT.md"
+    },
+    {
+      "slug": "resource-planner",
+      "title": "Resource Planner",
+      "department": "project-delivery",
+      "mission": "Match people, agents and time to work across projects.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/resource-planner/AGENT.md"
+    },
+    {
+      "slug": "estimation-specialist",
+      "title": "Estimation Specialist",
+      "department": "project-delivery",
+      "mission": "Produce honest effort and timeline estimates with ranges and assumptions.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/estimation-specialist/AGENT.md"
+    },
+    {
+      "slug": "scope-change-manager",
+      "title": "Scope and Change Manager",
+      "department": "project-delivery",
+      "mission": "Protect agreed scope and handle change requests fairly and in writing.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/scope-change-manager/AGENT.md"
+    },
+    {
+      "slug": "risk-manager",
+      "title": "Risk Manager",
+      "department": "project-delivery",
+      "mission": "Identify, assess and track delivery risks with owners and mitigations.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/risk-manager/AGENT.md"
+    },
+    {
+      "slug": "acceptance-coordinator",
+      "title": "Acceptance Coordinator",
+      "department": "project-delivery",
+      "mission": "Run client UAT and collect formal acceptance.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/acceptance-coordinator/AGENT.md"
+    },
+    {
+      "slug": "handover-specialist",
+      "title": "Handover Specialist",
+      "department": "project-delivery",
+      "mission": "Hand over finished work cleanly: access, documentation, warranty and support terms.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/handover-specialist/AGENT.md"
+    },
+    {
+      "slug": "client-training-specialist",
+      "title": "Client Training Specialist",
+      "department": "project-delivery",
+      "mission": "Teach client teams to use and manage what was built.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "project-delivery/client-training-specialist/AGENT.md"
+    },
+    {
+      "slug": "customer-success-manager",
+      "title": "Customer Success Manager",
+      "department": "customer-success",
+      "mission": "Make sure clients get the outcomes they paid for and stay happy.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "customer-success/customer-success-manager/AGENT.md"
+    },
+    {
+      "slug": "implementation-specialist",
+      "title": "Implementation Specialist",
+      "department": "customer-success",
+      "mission": "Get a client set up and using a product or platform after purchase.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "customer-success/implementation-specialist/AGENT.md"
+    },
+    {
+      "slug": "retention-specialist",
+      "title": "Retention Specialist",
+      "department": "customer-success",
+      "mission": "Spot churn risk early and run save plays.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "customer-success/retention-specialist/AGENT.md"
+    },
+    {
+      "slug": "renewal-specialist",
+      "title": "Renewal Specialist",
+      "department": "customer-success",
+      "mission": "Run renewals of retainers, maintenance and subscriptions on time.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "customer-success/renewal-specialist/AGENT.md"
+    },
+    {
+      "slug": "customer-feedback-analyst",
+      "title": "Customer Feedback Analyst",
+      "department": "customer-success",
+      "mission": "Turn feedback from all channels into themes, priorities and product input.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "customer-success/customer-feedback-analyst/AGENT.md"
+    },
+    {
+      "slug": "support-triage-specialist",
+      "title": "Support Triage Specialist",
+      "department": "support",
+      "mission": "Sort incoming issues fast: severity, category, owner and response.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "support/support-triage-specialist/AGENT.md"
+    },
+    {
+      "slug": "technical-support-specialist",
+      "title": "Technical Support Specialist",
+      "department": "support",
+      "mission": "Investigate and reproduce technical issues and hand clean bug reports to developers.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "support/technical-support-specialist/AGENT.md"
+    },
+    {
+      "slug": "knowledge-base-writer",
+      "title": "Knowledge Base Writer",
+      "department": "support",
+      "mission": "Write help articles that answer real customer questions.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "support/knowledge-base-writer/AGENT.md"
+    },
+    {
+      "slug": "marketing-analyst",
+      "title": "Marketing Analyst",
+      "department": "analytics",
+      "mission": "Measure marketing performance and attribution honestly.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "analytics/marketing-analyst/AGENT.md"
+    },
+    {
+      "slug": "web-analytics-specialist",
+      "title": "Web Analytics Specialist",
+      "department": "analytics",
+      "mission": "Implement correct tracking: GA4, tag manager, conversion events, consent.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "analytics/web-analytics-specialist/AGENT.md"
+    },
+    {
+      "slug": "product-analyst",
+      "title": "Product Analyst",
+      "department": "analytics",
+      "mission": "Measure product usage: funnels, retention, feature adoption and experiment results.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "analytics/product-analyst/AGENT.md"
+    },
+    {
+      "slug": "financial-analyst",
+      "title": "Financial Analyst",
+      "department": "finance",
+      "mission": "Analyze profitability, cash flow and business decisions with numbers.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/financial-analyst/AGENT.md"
+    },
+    {
+      "slug": "budgeting-specialist",
+      "title": "Budgeting Specialist",
+      "department": "finance",
+      "mission": "Build and track budgets for the business and for projects.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/budgeting-specialist/AGENT.md"
+    },
+    {
+      "slug": "bookkeeping-assistant",
+      "title": "Bookkeeping Assistant",
+      "department": "finance",
+      "mission": "Keep books organized: transactions categorized, receipts matched, reconciliations ready.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/bookkeeping-assistant/AGENT.md"
+    },
+    {
+      "slug": "invoicing-specialist",
+      "title": "Invoicing Specialist",
+      "department": "finance",
+      "mission": "Issue correct invoices on time, including GST-compliant tax invoices when registered.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/invoicing-specialist/AGENT.md"
+    },
+    {
+      "slug": "collections-coordinator",
+      "title": "Collections Coordinator",
+      "department": "finance",
+      "mission": "Get paid: track receivables and follow up politely and persistently.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/collections-coordinator/AGENT.md"
+    },
+    {
+      "slug": "gst-specialist",
+      "title": "GST Specialist (India)",
+      "department": "finance",
+      "mission": "Work out GST obligations for an Indian digital services business and prepare compliance work for review.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "finance/gst-specialist/AGENT.md"
+    },
+    {
+      "slug": "ca-assistant",
+      "title": "Chartered Accountant Assistant (India)",
+      "department": "finance",
+      "mission": "Prepare income tax, TDS and accounting work for a licensed Chartered Accountant to review and sign.",
+      "aliases": [
+        "CA",
+        "chartered accountant",
+        "tax advisor"
+      ],
+      "status": "untested",
+      "definition": "finance/ca-assistant/AGENT.md"
+    },
+    {
+      "slug": "contract-review-assistant",
+      "title": "Contract Review Assistant",
+      "department": "legal-compliance",
+      "mission": "Summarize contracts and flag risky or missing clauses for a human decision or lawyer review.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "legal-compliance/contract-review-assistant/AGENT.md"
+    },
+    {
+      "slug": "compliance-research-assistant",
+      "title": "Compliance Research Assistant",
+      "department": "legal-compliance",
+      "mission": "Research which rules apply to an activity and summarize them with sources and dates.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "legal-compliance/compliance-research-assistant/AGENT.md"
+    },
+    {
+      "slug": "licensing-ip-assistant",
+      "title": "Licensing and IP Assistant",
+      "department": "legal-compliance",
+      "mission": "Check rights to use code, fonts, images, music and open-source content, and record attribution.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "legal-compliance/licensing-ip-assistant/AGENT.md"
+    },
+    {
+      "slug": "recruiting-specialist",
+      "title": "Recruiting Specialist",
+      "department": "people-hr",
+      "mission": "Hire freelancers and employees with fair, structured processes.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "people-hr/recruiting-specialist/AGENT.md"
+    },
+    {
+      "slug": "people-operations-specialist",
+      "title": "People Operations Specialist",
+      "department": "people-hr",
+      "mission": "Run people processes: policies, contracts, records, payroll inputs and wellbeing.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "people-hr/people-operations-specialist/AGENT.md"
+    },
+    {
+      "slug": "employee-onboarding-specialist",
+      "title": "Employee Onboarding Specialist",
+      "department": "people-hr",
+      "mission": "Get new team members and freelancers productive and connected fast.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "people-hr/employee-onboarding-specialist/AGENT.md"
+    },
+    {
+      "slug": "learning-development-specialist",
+      "title": "Learning and Development Specialist",
+      "department": "people-hr",
+      "mission": "Build skills in the team through learning plans, materials and practice.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "people-hr/learning-development-specialist/AGENT.md"
+    },
+    {
+      "slug": "sop-writer",
+      "title": "SOP Writer",
+      "department": "operations",
+      "mission": "Turn how work is done into clear, testable standard operating procedures.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "operations/sop-writer/AGENT.md"
+    },
+    {
+      "slug": "procurement-specialist",
+      "title": "Procurement Specialist",
+      "department": "operations",
+      "mission": "Buy tools and services well: requirements, comparisons, quotes and purchase records.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "operations/procurement-specialist/AGENT.md"
+    },
+    {
+      "slug": "vendor-manager",
+      "title": "Vendor Manager",
+      "department": "operations",
+      "mission": "Manage vendors and subscriptions after purchase: performance, renewals, risks, costs.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "operations/vendor-manager/AGENT.md"
+    },
+    {
+      "slug": "documentation-curator",
+      "title": "Documentation Curator",
+      "department": "knowledge-management",
+      "mission": "Keep the company's knowledge findable, current and trustworthy, including this ai-team.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "knowledge-management/documentation-curator/AGENT.md"
+    },
+    {
+      "slug": "orchestrator",
+      "title": "Team Orchestrator",
+      "department": "orchestration",
+      "mission": "Turn a brief into the smallest sufficient team, sequence the work, pass structured handoffs and stop at completion.",
+      "aliases": [],
+      "status": "untested",
+      "definition": "orchestration/orchestrator/AGENT.md"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+# Keyword router for agentForge workflows.
+# Lower priority wins when two workflows match the same number of keywords.
+# This is a hint. The orchestrator still applies CAPABILITY-MATRIX.md.
+minimum_hits: 1
+fallback:
+  role: orchestrator
+workflows:
+  - id: WF-16
+    file: workflows/16-instagram-carousel.md
+    priority: 10
+    keywords: [carousel, instagram carousel, slides]
+    owners: [instagram-carousel-maker]
+    reviewers: [editor, design-reviewer]
+    parallel_groups: [brand and research, slide design and caption]
+  - id: WF-15
+    file: workflows/15-linkedin-content.md
+    priority: 10
+    keywords: [linkedin, linkedin post, personal branding]
+    owners: [linkedin-specialist]
+    reviewers: [editor]
+    parallel_groups: [proof check and graphic brief]
+  - id: WF-17
+    file: workflows/17-threads-content.md
+    priority: 10
+    keywords: [threads, threads post]
+    owners: [threads-specialist]
+    reviewers: [proofreader]
+    parallel_groups: []
+  - id: WF-18
+    file: workflows/18-reels-production.md
+    priority: 10
+    keywords: [reel, reels, short video, shot list]
+    owners: [reels-producer]
+    reviewers: [short-form-video-strategist, editor]
+    parallel_groups: [concept and brand]
+  - id: WF-19
+    file: workflows/19-content-repurposing.md
+    priority: 12
+    keywords: [repurpose, repurposing, cross-platform]
+    owners: [content-repurposing-specialist]
+    reviewers: [editor]
+    parallel_groups: [platform drafts]
+  - id: WF-20
+    file: workflows/20-client-website-showcase.md
+    priority: 15
+    keywords: [showcase, showcase campaign]
+    owners: [content-repurposing-specialist, case-study-writer]
+    reviewers: [editor]
+    parallel_groups: [case study and visual capture]
+  - id: WF-10
+    file: workflows/10-premium-website.md
+    priority: 20
+    keywords: [premium website, marketing website, landing page]
+    owners: [frontend-developer, ui-designer, copywriter]
+    reviewers: [design-reviewer, code-reviewer, accessibility-tester]
+    parallel_groups: [research and content]
+  - id: WF-11
+    file: workflows/11-fullstack-app.md
+    priority: 20
+    keywords: [full-stack, fullstack, web app]
+    owners: [solution-architect, frontend-developer, backend-developer]
+    reviewers: [code-reviewer, api-tester]
+    parallel_groups: [frontend and backend after the contract]
+  - id: WF-12
+    file: workflows/12-bugfix-regression.md
+    priority: 10
+    keywords: [bug, bugfix, regression, defect]
+    owners: [manual-tester, maintenance-engineer]
+    reviewers: [code-reviewer]
+    parallel_groups: [code review and regression test]
+  - id: WF-13
+    file: workflows/13-ui-ux-implementation.md
+    priority: 20
+    keywords: [ui design, ux design, interface design]
+    owners: [ux-designer, ui-designer, frontend-developer]
+    reviewers: [design-reviewer, accessibility-tester]
+    parallel_groups: [flows and content model]
+  - id: WF-14
+    file: workflows/14-technical-research.md
+    priority: 20
+    keywords: [technical research, documentation, adr]
+    owners: [technical-writer]
+    reviewers: [editor]
+    parallel_groups: [source reading]
+  - id: WF-01
+    file: workflows/01-lead-to-onboarding.md
+    priority: 40
+    keywords: [prospect, proposal, onboarding]
+    owners: [orchestrator]
+    reviewers: []
+    parallel_groups: []
+  - id: WF-02
+    file: workflows/02-client-build-delivery.md
+    priority: 40
+    keywords: [client build, handover]
+    owners: [delivery-manager]
+    reviewers: [qa-lead]
+    parallel_groups: []
+  - id: WF-04
+    file: workflows/04-content-production.md
+    priority: 30
+    keywords: [content calendar, blog post]
+    owners: [content-calendar-manager]
+    reviewers: [editor]
+    parallel_groups: []
+  - id: WF-05
+    file: workflows/05-linkedin-program.md
+    priority: 25
+    keywords: [linkedin program, linkedin plan]
+    owners: [linkedin-specialist]
+    reviewers: [editor]
+    parallel_groups: []
+  - id: WF-07
+    file: workflows/07-support-issue.md
+    priority: 15
+    keywords: [support ticket, incident, outage]
+    owners: [support-triage-specialist]
+    reviewers: [technical-lead]
+    parallel_groups: []

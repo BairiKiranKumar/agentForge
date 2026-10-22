@@ -16,10 +16,9 @@ Brightwell Dental Studio is a fictional sample.
 The first screen names families in the town, including children, who want a calm visit.
 Call or WhatsApp sits in view.
 No number, because none was supplied.
-No reviews, because none were measured.
-I would repeat that.
+Worth repeating:
 Name who it is for, show the next step, and skip proof you do not have.
-Message me about a website project.
+Get in touch about a website project.
 
 ## Word count
 

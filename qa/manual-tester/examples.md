@@ -6,7 +6,7 @@ Business names below are fictional unless stated.
 **Request:** "Write and run test cases for the booking form on Glow Studio's (fictional) site. Criteria: name required, phone 10 digits, date not in the past, max 4 guests, booking confirmation opens WhatsApp with prefilled details."
 
 **Key decisions:**
-- Equivalence classes for phone: 10 digits starting 6 to 9 (valid), 9 digits, 11 digits, letters, "+91 98480 12345" with spaces (criteria silent; asked `product-owner`, answer: accept and normalize).
+- Equivalence classes for phone: 10 digits starting 6 to 9 (valid), 9 digits, 11 digits, letters, "+91 99999 00000" with spaces (criteria silent; asked `product-owner`, answer: accept and normalize).
 - Boundary for guests: 0, 1, 4, 5.
 - WhatsApp case checks the prefilled text on Android Chrome and iOS Safari, but does not send the message.
 
@@ -15,7 +15,7 @@ Business names below are fictional unless stated.
 TC-BOOK-04: Guests above maximum is rejected
 Priority: P1 | Criterion: BOOK-3 (max 4 guests)
 Preconditions: Booking page open, no login
-Test data: name "Lakshmi P.", phone 9848012345, date tomorrow, guests 5
+Test data: name "Sample User", phone 9999900000, date tomorrow, guests 5
 Steps:
 1. Enter test data -> Expected: fields accept input
 2. Tap "Book now" -> Expected: error "Up to 4 guests per booking" shown next to guests field; no WhatsApp redirect

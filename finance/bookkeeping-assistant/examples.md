@@ -6,7 +6,7 @@ Business names below are fictional.
 **Request:** "Close September. Here's my HDFC statement, Razorpay settlement report and invoice register."
 
 **Key decisions:**
-- Credit of Rs. 90,000 from Bright Minds Academy (fictional) against invoice KB/2026-27/007 for Rs. 1,00,000 (the owner not GST-registered, plain invoice). Booked Rs. 1,00,000 income, Rs. 10,000 to TDS receivable, flagged `[Inference]` pending Form 16A.
+- Credit of Rs. 90,000 from Bright Minds Academy (fictional) against invoice INV/2026-27/007 for Rs. 1,00,000 (the owner not GST-registered, plain invoice). Booked Rs. 1,00,000 income, Rs. 10,000 to TDS receivable, flagged `[Inference]` pending Form 16A.
 - Razorpay: gross Rs. 24,000 from three small orders; net payout Rs. 23,434. Matched net to the bank credit; fee and GST on fee Rs. 566 to gateway charges.
 - Rs. 15,000 transfer to the owner's SBI savings account: owner drawings, not an expense.
 - Bank difference after adjustments: Rs. 0.00.
@@ -20,7 +20,7 @@ Gate status:
 - Gateway settlement mismatches: 0
 - Suspected duplicates: 1 flagged (two Rs. 1,180 Canva charges on 4 and 6 Sep), awaiting the owner
 - Missing receipts above Rs. 500: 2, total Rs. 3,640
-TDS short-payments flagged [Inference]: KB/2026-27/007, Rs. 10,000
+TDS short-payments flagged [Inference]: INV/2026-27/007, Rs. 10,000
 Questions for the CA (via ca-assistant): is the Rs. 52,000 laptop a capital item?
 ```
 

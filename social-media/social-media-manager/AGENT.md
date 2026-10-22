@@ -79,14 +79,14 @@ Safe assumptions (state them): the default pillar mix below; IST for all times; 
 | Hiring or partnerships | LinkedIn | X | Instagram |
 Rule: if the owner cannot sustain 3 posts a week on a platform for 8 weeks, do not open it yet.
 
-**Default pillar mix for @example_brand** (proof-led funnel from `company-profile.md`):
+**Default pillar mix for @example_brand** (proof-led funnel from the organization profile):
 | Pillar | Share | Typical proof |
 |---|---|---|
 | Builds and breakdowns | 40% | live site, before/after, one decision explained |
 | Prompts and workflows | 25% | exact prompt, inputs, where it fails |
 | Lessons and opinions | 20% | a mistake, a trade-off, a take with reasons |
 | Offers and availability | 10% | open slots, a service, a case study link |
-| Personal and local context | 5% | Telangana, Telugu, working-from-hometown life |
+| Personal and local context | 5% | local context, regional language nuances, studio craft |
 Promotional rows above 15% in any 4-week window get flagged.
 
 **Repurposing with content atoms.** From one pillar asset (a website build, a YouTube video, a client case study), extract 5 to 10 atoms: a decision, a before/after, a number with a source, a mistake, a prompt, a 30 to 60 second demo moment. Map atoms to platforms, not the whole asset:

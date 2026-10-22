@@ -12,13 +12,13 @@ Pass = every task scores at or above its threshold AND no auto-fail condition is
 
 ## Task 1: Milestone invoice, unregistered studio
 **Prompt:** "Design sign-off came through for the clinic site. Make the invoice."
-**Inputs provided:** Registration record: not registered. Contract: Rs. 80,000 total, 25% advance, 35% design sign-off, 40% launch. Register last number KB/2026-27/021. Client: Care Plus Clinic (fictional), Warangal, Telangana. Sign-off email dated today.
-**Expected qualities:** plain invoice for Rs. 28,000; number KB/2026-27/022; no GST anywhere; milestone and agreement referenced; payment block placeholder pointing to the owner's record; register row; sent for approval, not issued.
+**Inputs provided:** Registration record: not registered. Contract: Rs. 80,000 total, 25% advance, 35% design sign-off, 40% launch. Register last number INV/2026-27/021. Client: Care Plus Clinic (fictional), Warangal, Telangana. Sign-off email dated today.
+**Expected qualities:** plain invoice for Rs. 28,000; number INV/2026-27/022; no GST anywhere; milestone and agreement referenced; payment block placeholder pointing to the owner's record; register row; sent for approval, not issued.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|
 | Correct document type, no GST | GST shown | mixed signals | plain invoice, clear no-GST |
-| Amount and number | wrong | one wrong | Rs. 28,000, KB/2026-27/022 |
+| Amount and number | wrong | one wrong | Rs. 28,000, INV/2026-27/022 |
 | Fields complete | many missing | minor gaps | all plain-invoice fields |
 | Register and approval | none | one | both |
 
@@ -26,8 +26,8 @@ Threshold: 7 of 8.
 Auto-fail: shows GST or a GSTIN; claims the invoice was sent.
 
 ## Task 2: Credit note after a fee reduction, registered studio
-**Prompt:** "We agreed to cut Rs. 10,000 off invoice KB/2026-27/030 because the gallery page was dropped. Fix it."
-**Inputs provided:** Registration record: registered. Original tax invoice KB/2026-27/030 dated 12-09-2026, taxable value Rs. 1,00,000, CGST Rs. 9,000, SGST Rs. 9,000, client in Telangana. Scope change approved by `scope-change-manager`.
+**Prompt:** "We agreed to cut Rs. 10,000 off invoice INV/2026-27/030 because the gallery page was dropped. Fix it."
+**Inputs provided:** Registration record: registered. Original tax invoice INV/2026-27/030 dated 12-09-2026, taxable value Rs. 1,00,000, CGST Rs. 9,000, SGST Rs. 9,000, client in Telangana. Scope change approved by `scope-change-manager`.
 **Expected qualities:** credit note (not editing the original); references original number and date; taxable value Rs. 10,000, CGST Rs. 900, SGST Rs. 900; notes the Section 34 declaration time limit with verify note; the owner approval.
 
 | Criterion | 0 | 1 | 2 |

@@ -57,7 +57,7 @@ Exclusions:
 
 ## 3. Required inputs and clarification triggers
 Required inputs:
-- The owner's current offer list (what is sold, not prices) from `knowledge-management/company-profile.md` and any brief.
+- The owner's current offer list (what is sold, not prices) from the organization profile (`docs/configuration.md`) and any brief.
 - Past client and enquiry records: business type, area, how they found the owner, what they bought, whether they paid on time, whether they referred anyone, how many revision rounds. A pasted list or spreadsheet is enough.
 - Lost and declined deals with reasons, if any exist.
 - Geography the owner is willing to serve in person (for example the town and Hyderabad) versus remote-only.
@@ -182,5 +182,5 @@ Chosen: <segment>. Next: <segment>. Why: <2 lines>
 ## 12. Provenance and adaptation notes
 - Provenance: adapted.
 - Sources: phuryn/pm-skills `pm-go-to-market/skills/ideal-customer-profile/SKILL.md` and `pm-go-to-market/skills/beachhead-segment/SKILL.md` (commit 07b34f6, MIT, Copyright (c) 2026 Pawel Huryn): ICP components (demographics, behaviors, JTBD, pains, disqualifiers) and the four beachhead criteria. anthropics/knowledge-work-plugins `small-business/skills/lead-finder/reference/icp_method.md` and `sales/skills/account-tiering/SKILL.md` (commit a266ab8, Apache-2.0): the "derive from paying customers, compare top and bottom quartile, show back for one correction" method and the idea of weighted fit signals.
-- Modified: restructured into the ai-team format; rewritten for owner-led Indian local businesses; replaced revenue-and-tenure ranking with a four-signal score for small client counts; added the observability test, India triggers, sensitive-trait ban, separate B2B profile and five-criteria cap. Removed CRM mechanics, US examples and market-share targets.
-- Limitations: size proxies are uncalibrated until the owner has enough wins; no verified market data for Telangana segments is included; untested.
+- Modified: restructured into the agentForge format; rewritten for local service and product businesses; replaced revenue-and-tenure ranking with a four-signal score for small client counts; added the observability test, compliance triggers, sensitive-trait ban, separate B2B profile and five-criteria cap. Removed CRM mechanics, US-centric examples and market-share targets.
+- Limitations: size proxies are uncalibrated until the team has enough customer data; no verified market data for specific regional segments is included; untested.

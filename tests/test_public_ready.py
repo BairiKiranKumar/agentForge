@@ -241,11 +241,11 @@ class StandardsAndGates(unittest.TestCase):
         for e in res["results"]:
             if e["requirement"] == major["id"]:
                 e["status"] = "exception"
-        res["exceptions"] = [{"requirement": major["id"], "reason": "synthetic", "approved_by": "owner",
+        res["exceptions"] = [{"requirement": major["id"], "reason": "synthetic", "approved_by": "maria.s",
                               "approved_on": "2026-10-20", "expires": "2026-12-01"}]
         out = qg.evaluate(res, TODAY)
         self.assertEqual(out["outcome"], "BLOCKED")  # no release approval yet
-        res["approvals"] = {"release": {"by": "owner", "date": "2026-10-22"}}
+        res["approvals"] = {"release": {"by": "maria.s", "date": "2026-10-22"}}
         out = qg.evaluate(res, TODAY)
         self.assertEqual(out["outcome"], "PASS_WITH_EXCEPTIONS")
         self.assertTrue(out["findings"]["exception"])
@@ -273,7 +273,7 @@ class StandardsAndGates(unittest.TestCase):
         out = qg.evaluate(res, TODAY)
         self.assertEqual(out["outcome"], "BLOCKED")
         self.assertTrue(out["release_approval_required"])
-        res["approvals"] = {"release": {"by": "owner", "date": "2026-10-22"}}
+        res["approvals"] = {"release": {"by": "maria.s", "date": "2026-10-22"}}
         self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "PASS")
         major = self._major_requirement("high_assurance")
         for e in res["results"]:
@@ -287,7 +287,7 @@ class StandardsAndGates(unittest.TestCase):
         self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "BLOCKED")
         res["design_review"] = {"profile": "high_visibility", "verdict": "Ship"}
         self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "BLOCKED")
-        res["design_review"]["human_approval"] = {"by": "owner", "date": "2026-10-22"}
+        res["design_review"]["human_approval"] = {"by": "maria.s", "date": "2026-10-22"}
         self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "PASS")
 
     def test_invalid_input_rejected(self):

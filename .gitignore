@@ -26,3 +26,8 @@ workspace/
 config/local/
 *.local.yaml
 *.local.md
+
+# Never commit backups, bundles or snapshots
+*.bundle
+backup/
+original-snapshot/

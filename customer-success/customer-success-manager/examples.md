@@ -23,7 +23,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Quarterly Business Review (QBR) demonstrating tangible ROI
-**Request:** "Prepare the Q1 business review for Kavitha Sarees e-commerce storefront."
+**Request:** "Prepare the Q1 business review for Kavitha Sarees (fictional) e-commerce storefront."
 
 **Key decisions:**
 - Gathered Google Analytics, Shopify/WooCommerce orders, and PageSpeed data.

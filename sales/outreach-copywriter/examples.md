@@ -30,7 +30,7 @@ Checks: relevance pass | slop test pass | truth check pass | voice: profile v2
 ```
 
 ## Example 2: Telugu-English Instagram DM for a salon
-**Request:** Glow Studio Unisex (fictional), segment play, Instagram DM, hook "three September reviews ask for online slot booking", prospect posts in Telugu-English.
+**Request:** Glow Studio (fictional), segment play, Instagram DM, hook "three September reviews ask for online slot booking", prospect posts in Telugu-English.
 
 **Key decisions:**
 - Roman-script Telugu-English because the salon's own captions use it; the owner approved this mix in an earlier batch.

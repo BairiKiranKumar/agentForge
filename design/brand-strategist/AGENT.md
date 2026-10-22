@@ -57,11 +57,11 @@ Required inputs:
 
 Clarification triggers (ask, do not assume):
 - No customer evidence at all. Ask for 10 reviews or 3 short customer calls before finalising; a provisional platform may be drafted and labelled.
-- The owner wants a claim that cannot be proven ("best in Telangana", "No. 1").
+- The owner wants a claim that cannot be proven ("best in town", "No. 1 in region").
 - Naming for a registered entity, a product sold across states, or anything the client will invest in signage for. Trademark screening and a lawyer's clearance are required before adoption.
 - Multiple owners or partners disagree on the audience. Positioning cannot serve both; escalate.
 
-Safe assumptions (state them): customers compare on trust, convenience and price; word of mouth and Google Maps drive discovery; English plus Telugu or Hindi for local audiences.
+Safe assumptions (state them): customers compare on trust, convenience and price; word of mouth and local search drive discovery; languages and registers aligned with the target audience from the profile.
 
 ## 4. Domain methods and decision criteria
 **Claim map (positioning clarity diagnosis).** Collect the headline claim, primary proof and target customer from each competitor's website, Google Business Profile, Instagram bio and signage. Cluster claims. Any claim made by three or more competitors ("experienced doctors", "affordable", "hygienic", "best quality") is table stakes: it must be true of the client but cannot be the position. The position lives in an under-served gap: a customer group, a need, or a way of working nobody else claims.

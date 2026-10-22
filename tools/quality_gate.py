@@ -13,7 +13,7 @@ blocks release in every profile, planned evidence never counts as a pass, and an
 is reported as an exception, never as compliance.
 
 Exit codes: validate 1 on errors; evaluate 0 for PASS, PASS_WITH_EXCEPTIONS or
-PASS_WITH_RECORDED_FAILURES, 1 for FAIL or BLOCKED, 2 for malformed input.
+PASS_WITH_NOT_APPLICABLE, 3 for PASS_WITH_RECORDED_FAILURES, 1 for FAIL or BLOCKED, 2 for malformed input.
 Use --expect-profile and --expect-types so the declared profile cannot be lowered silently.
 """
 import argparse
@@ -21,6 +21,7 @@ import datetime
 import os
 import re
 import sys
+import unicodedata
 
 import yaml
 
@@ -38,11 +39,24 @@ REQ_FIELDS = ["id", "title", "description", "min_profile", "applies_to", "severi
 _YAML_CACHE = {}
 
 
+class StrictLoader(yaml.SafeLoader):
+    """SafeLoader that rejects duplicate keys, so a later key cannot silently override an earlier one."""
+
+    def construct_mapping(self, node, deep=False):
+        seen = set()
+        for key_node, _ in node.value:
+            key = self.construct_object(key_node, deep=True)
+            if key in seen:
+                raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
+            seen.add(key)
+        return super().construct_mapping(node, deep)
+
+
 def load_yaml(path):
     """Read a YAML file. Results are cached per path and must be treated as read-only."""
     if path not in _YAML_CACHE:
         with open(path, encoding="utf-8") as f:
-            _YAML_CACHE[path] = yaml.safe_load(f)
+            _YAML_CACHE[path] = yaml.load(f, Loader=StrictLoader)
     return _YAML_CACHE[path]
 
 
@@ -239,11 +253,24 @@ def cmd_select(args):
     return 0
 
 
+PLACEHOLDER_IDS = {"x", "-", "--", "none", "null", "tbd", "todo", "n/a", "na", "unknown", "?", "owner", "approver",
+                   "reviewer", "me", "self", "yes", "ok"}
+_INVISIBLE = dict.fromkeys(list(range(0x200B, 0x2010)) + [0x2060, 0xFEFF, 0x00AD], None)
+
+
 def norm_id(value):
-    """Normalize a person or agent identifier for comparison. Only non-empty strings are valid."""
-    if not isinstance(value, str) or not value.strip():
+    """Normalize a person or agent identifier for comparison.
+
+    Unicode compatibility normalization, invisible characters removed, case folded, whitespace collapsed.
+    Placeholders such as 'x', 'tbd' or 'owner' are not identities and return None.
+    """
+    if not isinstance(value, str):
         return None
-    return " ".join(value.split()).casefold()
+    text = unicodedata.normalize("NFKC", value).translate(_INVISIBLE)
+    text = " ".join(text.split()).casefold()
+    if not text or text in PLACEHOLDER_IDS:
+        return None
+    return text
 
 
 def valid_evidence_item(e, today):
@@ -295,9 +322,13 @@ def evaluate(results, today=None, profiles=None, areas_data=None, expect_profile
     types = results.get("product_types")
     if not isinstance(types, list) or not types or any(not isinstance(t, str) or t not in profiles["product_types"] for t in types):
         raise ValueError("product_types missing or unknown")
-    declared_unverified = True
+    expect_types = expect_types or None
+    verified = []
     if expect_profile is not None or expect_types is not None:
-        declared_unverified = False
+        if expect_profile is not None:
+            verified.append("profile")
+        if expect_types is not None:
+            verified.append("product types")
         if expect_profile is not None and profiles["ranks"][pname] < profiles["ranks"][expect_profile]:
             raise ValueError(f"declared profile '{pname}' is lower than the project's required profile '{expect_profile}'")
         if expect_types is not None and not set(expect_types) <= set(types):
@@ -351,7 +382,9 @@ def evaluate(results, today=None, profiles=None, areas_data=None, expect_profile
             if r["severity"] == "critical":
                 block("a critical requirement cannot be marked not_applicable; use the project's product types")
             elif not isinstance(notes, str) or len(notes.strip()) < 15 or norm_id(entry.get("decided_by")) is None:
-                block("not_applicable needs a reason in notes (at least 15 characters) and decided_by")
+                block("not_applicable needs a reason in notes (at least 15 characters) and a real decided_by")
+            elif norm_id(entry.get("decided_by")) == norm_id(entry.get("performed_by")):
+                block("not_applicable must be decided by someone other than the performer")
             else:
                 st["not_applicable"] += 1
                 findings["not_applicable"].append((r["id"], r["severity"], notes.strip()))
@@ -435,6 +468,13 @@ def evaluate(results, today=None, profiles=None, areas_data=None, expect_profile
             elif dprof == "high_visibility" and not _approval_ok(design.get("human_approval"), today):
                 incomplete.append(("DESIGN", "major", "high_visibility design review needs human_approval with by and date"))
     approvals = results.get("approvals") or {}
+    rel = approvals.get("release") if isinstance(approvals, dict) else None
+    if _approval_ok(rel, today):
+        actors = set()
+        for e in by_id.values():
+            actors |= {norm_id(e.get("performed_by")), norm_id(e.get("reviewed_by"))}
+        if norm_id(rel.get("by")) in actors:
+            incomplete.append(("RELEASE", "major", "the release approver also performed or reviewed checks; approval must be independent"))
     needs_release_approval = bool(profile["human_release_approval"] or findings["exception"] or findings["not_applicable"])
     if needs_release_approval and not (isinstance(approvals, dict) and _approval_ok(approvals.get("release"), today)):
         incomplete.append(("RELEASE", "major", "human release approval (by, date) not recorded"))
@@ -442,38 +482,54 @@ def evaluate(results, today=None, profiles=None, areas_data=None, expect_profile
         outcome = "FAIL"
     elif incomplete:
         outcome = "BLOCKED"
-    elif findings["exception"]:
-        outcome = "PASS_WITH_EXCEPTIONS"
     elif findings["fail"]:
         outcome = "PASS_WITH_RECORDED_FAILURES"
+    elif findings["exception"]:
+        outcome = "PASS_WITH_EXCEPTIONS"
+    elif findings["not_applicable"]:
+        outcome = "PASS_WITH_NOT_APPLICABLE"
     else:
         outcome = "PASS"
     notes = ["Outcome is not a conformance or certification claim. Exceptions are not compliance."]
-    if declared_unverified:
-        notes.append("Profile and product types are as declared in the results file and were not checked against the project "
-                     "configuration. Use --expect-profile and --expect-types in CI.")
+    missing_checks = [x for x in ("profile", "product types") if x not in verified]
+    if missing_checks:
+        notes.append("The " + " and ".join(missing_checks) + " declared in the results file were not checked against the "
+                     "project configuration. Use --expect-profile and --expect-types in CI.")
+    all_areas = sorted(a["_area"] for a in areas_data)
+    outside = [a for a in all_areas if a not in profile["areas"]]
+    if outside:
+        notes.append("Areas outside this profile were not evaluated: " + ", ".join(outside) + ".")
     return {"profile": pname, "product_types": types, "outcome": outcome, "reasons": outcome_reasons,
             "applicable_requirements": len(reqs), "gates": gate_status, "findings": findings,
             "incomplete": incomplete, "release_approval_required": needs_release_approval,
-            "design_review_verdict": design_note, "evaluated_on": str(today), "note": " ".join(notes)}
+            "design_review_verdict": design_note, "evaluated_on": str(today), "note": " ".join(notes),
+            "areas_not_evaluated": outside,
+            "qualifiers": {"failures": len(findings["fail"]), "exceptions": len(findings["exception"]),
+                           "not_applicable": len(findings["not_applicable"])}}
 
 
-PASSING = ("PASS", "PASS_WITH_EXCEPTIONS", "PASS_WITH_RECORDED_FAILURES")
+PASSING = ("PASS", "PASS_WITH_EXCEPTIONS", "PASS_WITH_NOT_APPLICABLE")  # exit 0
+# PASS_WITH_RECORDED_FAILURES exits 3 so automation cannot mistake recorded failures for success
 
 
 def cmd_evaluate(args):
     # An override can never move the evaluation date earlier than the real date, so
     # expired exceptions cannot be revived.
     given = as_date(args.today) if args.today else None
+    if args.today and given is None:
+        print(f"ERROR --today is not a valid date: {args.today!r}")
+        return 2
     today = max(datetime.date.today(), given) if given else datetime.date.today()
     types = [t for t in args.expect_types.split(",") if t] if args.expect_types else None
     try:
         results = load_yaml(args.results)
         out = evaluate(results, today, expect_profile=args.expect_profile or None, expect_types=types)
-    except (ValueError, OSError, yaml.YAMLError, KeyError, TypeError, AttributeError) as exc:
+    except (ValueError, OSError, yaml.YAMLError, KeyError, TypeError, AttributeError, RecursionError, UnicodeDecodeError) as exc:
         print(f"ERROR {exc}")
         return 2
+    q = out["qualifiers"]
     print(f"Outcome: {out['outcome']}  (profile {out['profile']}, {out['applicable_requirements']} applicable requirement(s), evaluated on {out['evaluated_on']})")
+    print(f"  recorded failures: {q['failures']}, exceptions: {q['exceptions']}, marked not applicable: {q['not_applicable']}")
     for reason in out["reasons"]:
         print("  reason:", reason)
     for area, st in sorted(out["gates"].items()):
@@ -486,7 +542,9 @@ def cmd_evaluate(args):
     if out["release_approval_required"]:
         print("  human release approval is required for this outcome")
     print(" ", out["note"])
-    return 0 if out["outcome"] in PASSING else 1
+    if out["outcome"] in PASSING:
+        return 0
+    return 3 if out["outcome"] == "PASS_WITH_RECORDED_FAILURES" else 1
 
 
 def main():

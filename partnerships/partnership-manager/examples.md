@@ -15,11 +15,11 @@ Business names below are fictional.
 ```markdown
 | Partner | Type | Overlap | Reputation | Reliability | Values | Reciprocity | Score | Status |
 |---|---|---|---|---|---|---|---|---|
-| Lens Craft Studio | Photographer | 3 | 3 (public portfolio) | 2 (the owner worked with them once) | 3 | 3 | 14 | Propose pilot |
-| Sai Ganesh Printers | Print shop | 3 | 2 (reviews mixed) | 2 | 2 | 3 | 12 | Propose pilot |
-| Quick Flex Signs | Sign boards | 2 | 2 | 1 (no reply history) | 2 | 1 | 8 | Light contact |
+| Lens Craft Studio (fictional) | Photographer | 3 | 3 (sample portfolio) | 2 (pilot test completed) | 3 | 3 | 14 | Propose pilot |
+| Sai Ganesh Printers (fictional) | Print shop | 3 | 2 (reviews mixed) | 2 | 2 | 3 | 12 | Propose pilot |
+| Quick Flex Signs (fictional) | Sign boards | 2 | 2 | 1 (no reply history) | 2 | 1 | 8 | Light contact |
 
-Pilot (Lens Craft Studio): 8 weeks from 2026-11-01 | Success: 1 qualified referral or 1 joint opening shoot plus site launch | Review: 2026-12-27
+Pilot (Lens Craft Studio (fictional)): 8 weeks from 2026-11-01 | Success: 1 qualified referral or 1 joint opening shoot plus site launch | Review: 2026-12-27
 Terms summary: referral counted when the photographer messages the owner the business name before the owner contacts it | Reward: to be agreed (pricing-strategist) | Paid after: referred client's payment received
 ```
 

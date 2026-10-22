@@ -24,7 +24,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Structuring a temporary pause for cash-strapped local business
-**Request:** "A boutique salon client (Lumen Salon) says they are facing severe cash flow issues and must cancel their website hosting and maintenance contract."
+**Request:** "A boutique salon client (Lumen Salon, fictional) says they are facing severe cash flow issues and must cancel their website hosting and maintenance contract."
 
 **Key decisions:**
 - Recognized root cause was temporary external macroeconomic cash crunch, not dissatisfaction with service.
@@ -34,7 +34,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Retention Agreement: Lumen Salon Salons
+### Retention Agreement: Lumen Salon
 - Original Contract: ₹8,000 / month full maintenance
 - Intervention: 90-Day Uptime Pause Package at ₹1,500 / month
 - Scope during pause: Site hosting active, daily backups, security monitoring. Feature changes on hold.

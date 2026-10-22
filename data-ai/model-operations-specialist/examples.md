@@ -31,7 +31,7 @@ telemetry:
 ```
 
 ## Example 2: Interactive streaming optimization for retail WhatsApp bot
-**Request:** "Customers of Royal Silks Hyderabad query stock and store timings over a custom web chat widget. Chat response feels sluggish on mobile phones."
+**Request:** "Customers of Royal Silks (fictional, Hyderabad) query stock and store timings over a custom web chat widget. Chat response feels sluggish on mobile phones."
 
 **Key decisions:**
 - Diagnosed latency bottleneck: server was awaiting full response completion before sending JSON payload.

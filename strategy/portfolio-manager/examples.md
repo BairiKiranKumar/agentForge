@@ -13,7 +13,7 @@ Business names below are fictional unless stated. Values are placeholders.
 **Output (excerpt):**
 | Item | Type | Founder hrs left | Score | Value per founder hr | Recommendation |
 |---|---|---|---|---|---|
-| Kanha Dental site | client | 14 to 18 | 4.3 | 24 | continue |
+| Kanha Dental (fictional) site | client | 14 to 18 | 4.3 | 24 | continue |
 | Bright Steps portal | client | 25 to 30 | 4.1 | 14 | continue |
 | Clinic booking demo (showcase) | showcase | 10 to 12 | 3.8 | 32 | start |
 | AI prompt carousel series | showcase | 10 to 14 | 3.1 | 22 | defer to 2026-12-15 |

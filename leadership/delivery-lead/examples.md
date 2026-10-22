@@ -6,9 +6,9 @@ Business names below are fictional unless stated.
 **Request:** "Health check on all projects for November."
 
 **Key decisions:**
-- Kanha Dental site: on schedule, but milestone 2 invoice is 18 days overdue: Commercial Red, so overall Red even though delivery is fine. Action: `collections-coordinator` reminder draft; the owner decides whether to pause the next milestone.
-- Bright Steps portal: status report missing for 2 weeks: Schedule and Scope Unknown, counted Amber.
-- Mehndi House site: G2 design gate failed twice: Quality Red, health review of brief and staffing with `design-lead`.
+- Kanha Dental (fictional) site: on schedule, but milestone 2 invoice is 18 days overdue: Commercial Red, so overall Red even though delivery is fine. Action: `collections-coordinator` reminder draft; the owner decides whether to pause the next milestone.
+- Bright Steps (fictional) portal: status report missing for 2 weeks: Schedule and Scope Unknown, counted Amber.
+- Mehndi House (fictional) site: G2 design gate failed twice: Quality Red, health review of brief and staffing with `design-lead`.
 
 **Output (excerpt):**
 ```

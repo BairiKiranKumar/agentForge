@@ -20,7 +20,7 @@ The database connection pooler has been deployed to production. Error rates on t
 ```
 
 ## Example 2: Facilitating a blameless postmortem
-**Request:** "Run the postmortem for yesterday's 45-minute checkout outage on Royal Silks e-commerce store."
+**Request:** "Run the postmortem for yesterday's 45-minute checkout outage on Royal Silks (fictional) e-commerce store."
 
 **Key decisions:**
 - Opened meeting establishing ground rules: human error is the result of missing system guardrails; focus is on systemic prevention.

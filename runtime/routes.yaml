@@ -138,3 +138,10 @@ workflows:
     owners: [qa-lead, accessibility-tester, performance-engineer, application-security-engineer]
     reviewers: [release-validation-specialist, design-reviewer]
     parallel_groups: [area checks]
+  - id: WF-24
+    file: workflows/24-public-release-audit.md
+    priority: 8
+    keywords: [public release, release audit, open source release, privacy audit, history remediation, license review, pre-release audit]
+    owners: [privacy-specialist, licensing-ip-assistant, application-security-engineer, release-engineer]
+    reviewers: [security-testing-specialist, qa-lead]
+    parallel_groups: [privacy license security and history review]

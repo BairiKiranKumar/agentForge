@@ -94,7 +94,7 @@ Treat distribution advice as a working hypothesis built on these statements (Mos
 | A workflow you can show | Demo Walkthrough: result first, step overview, one screenshot per step | 5 to 11 |
 Rules: slide 1 works alone as a feed post; one template for all interior slides; text at least about 28 pt at 1080 px width; a count on the cover is delivered exactly; one CTA on the last slide.
 
-**Caption formula.** Line 1: the hook restated with a searchable phrase ("Salon website that books on WhatsApp"). Lines 2 to 5: context the slides do not show (why, for whom). Then one CTA (save, share with someone, DM a keyword, tap the WhatsApp link in bio). Keywords in natural sentences help Instagram search more than hashtag lists [working hypothesis]. Hashtags: 3 to 5 specific ones (#localtown, #telanganafood, #webdesignindia), never banned or generic tags.
+**Caption formula.** Line 1: the hook restated with a searchable phrase ("Salon website that books on WhatsApp"). Lines 2 to 5: context the slides do not show (why, for whom). Then one CTA (save, share with someone, DM a keyword, tap the WhatsApp link in bio). Keywords in natural sentences help Instagram search more than hashtag lists [working hypothesis]. Hashtags: 3 to 5 specific ones (#localtown, #localbusiness, #frontendweb), never banned or generic tags.
 
 **Reels concept structure.** Hook in the first second with three layers: a visual change, a spoken line, a text overlay. Beats every 2 to 4 seconds; payoff before the 70% mark; edited captions; a cover frame that survives the 4:5 grid crop; text clear of the bottom fifth and right edge. For @example_brand: screen-recorded builds with zooms on the decision. For a restaurant: dish, price card, location.
 

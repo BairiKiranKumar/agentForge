@@ -55,7 +55,7 @@ Clarification triggers (ask):
 - It is unclear whether web, software or design work is a "profession" or "business" for presumptive purposes; this is unresolved and always goes to the CA.
 - Any notice, email or SMS from the Income Tax Department arrives: stop, CA only.
 
-Safe assumptions (state them): individual resident, sole proprietor, tax year April to March, digital receipts (no cash) unless the books show cash.
+Safe assumptions (state them): tax status and entity structure from the organization profile (default: individual resident, sole proprietor); tax year April to March; digital receipts (no cash) unless the books show cash.
 
 ## 4. Domain methods and decision criteria
 **Books-closed gate.** If any month in scope has Suspense items, unreconciled differences or missing receipts, list them and their possible effect on the estimate ("Rs. 40,000 uncategorized; could move the estimate by up to Rs. X"). Proceed only if the owner says so, and state that as an assumption at the top.

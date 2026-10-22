@@ -101,10 +101,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "arav-studio-tf-state-ap-south-1"
+    bucket         = "example-org-tf-state"
     key            = "greenfield-school/prod/terraform.tfstate"
     region         = "ap-south-1"
-    dynamodb_table = "arav-studio-tf-locks"
+    dynamodb_table = "example-org-tf-locks"
     encrypt        = true
   }
 }

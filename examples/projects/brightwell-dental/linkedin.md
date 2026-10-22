@@ -32,7 +32,7 @@ Call or WhatsApp stays visible as the next step. The control says Call or WhatsA
 
 No measurement was supplied, so none is claimed.
 
-If you want a website for a clinic or another local business, message the owner about a website project. Tell him who the first screen should name.
+If you want a website for a clinic or another local business, get in touch about a website project. Share who the first screen should name.
 
 ## Proof
 No measurement was supplied, so none is claimed.
@@ -54,7 +54,7 @@ Drafted by the LinkedIn specialist for @example_brand.
 - Clinic palette is not used as the owner's brand.
 
 ## Assumptions
-- The body is in the owner's voice, for him to post later if he chooses.
+- The body is in the brand's voice, to post later if approved.
 - The design facts come from the Brightwell brief: families in the town on the first screen, a visible Call or WhatsApp path with no digits, and no invented reviews.
 - `index.html` was not in this folder when the draft was written, so no extra page details were added.
 

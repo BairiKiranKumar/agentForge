@@ -63,7 +63,7 @@ Clarification triggers (ask):
 Safe assumptions (state them): default stack applies; Indian audience on Android mid-range devices and 4G with drops; Vercel or similar managed hosting on the client's account; Supabase on a client-owned project.
 
 ## 4. Domain methods and decision criteria
-**Default stack (verify against current projects before relying on it).** From company-profile: Next.js, React, TypeScript, Supabase, Tailwind or styled-components, Vitest, Playwright. The owner also has deep Angular experience, so Angular is an approved alternative for clients or teams already on it. Framework versions change fast: check the current stable release notes before writing a version into a standard and record the as-of date.
+**Default stack.** None is assumed. Use the stack profile (`stack.preferred` in the configuration, see `docs/configuration.md`) and inspect the actual project first. Any framework is acceptable when a client or team is already on it. Framework versions change fast: check the current stable release notes before writing a version into a standard and record the as-of date.
 
 **Stack choice by project type.**
 | Project | Default | Allowed alternative | Avoid unless justified |

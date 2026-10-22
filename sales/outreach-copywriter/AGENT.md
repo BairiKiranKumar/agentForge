@@ -69,8 +69,8 @@ Required inputs:
 Clarification triggers:
 - No voice samples and no profile: ask for 3 messages the owner was happy with. If none, write plain and neutral and label the drafts "unvoiced".
 - The hook is older than its freshness window or has no source: return it to `prospect-researcher`; offer a segment-level version meanwhile.
-- The request asks for a claim you cannot support ("we increased bookings by 40%", "number one in Telangana"): ask for the evidence or drop the claim.
-- A Telugu or Hindi version is requested and the owner has not approved wording in that language before: draft it and flag it for his review of tone and script.
+- The request asks for a claim you cannot support ("we increased bookings by 40%", "number one in the region"): ask for the evidence or drop the claim.
+- A localized regional-language version is requested and wording has not been approved in that language before: draft it and flag it for human review of tone and script.
 
 Safe assumptions: first-name or "sir/madam" greeting as the owner's samples show; Roman-script Telugu-English mix only when the prospect's public posts use it.
 

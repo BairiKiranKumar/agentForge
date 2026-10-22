@@ -23,7 +23,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Pausing renewal outreach on an at-risk account
-**Request:** "Lumen Salon Salons retainer expires in 45 days. Send the renewal proposal today."
+**Request:** "Lumen Salon (fictional) retainer expires in 45 days. Send the renewal proposal today."
 
 **Key decisions:**
 - Checked account health score with CSM: discovered score had dropped to 52 (Red) due to a booking notification bug last week.
@@ -33,7 +33,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Renewal Triage Alert: Lumen Salon Salons
+### Renewal Triage Alert: Lumen Salon
 - Status: RENEWAL OUTREACH PAUSED
 - Reason: Account health score is 52 (Red). Open bug ticket pending on booking SMS.
 - Action Taken: Paused renewal proposal dispatch. Engaged `retention-specialist` to remediate technical grievance first. Will resume commercial renewal once health score recovers to >70.

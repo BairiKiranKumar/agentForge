@@ -13,11 +13,11 @@ Business names below are fictional.
 **Output (excerpt):**
 | # | Business | Area | Public channels (type) | Presence | Mobile check notes | Hook(s) with date | Source links | Confidence | Seen on |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Glow Studio Unisex (fictional) | Vinayak Nagar | Maps phone (business), Instagram business | Social only | n/a | 3 reviews in Sep ask for online slot booking; bookings by DM | Maps listing, Instagram | High | 2026-10-20 |
+| 1 | Glow Studio (fictional) | Commercial Area | Maps phone (business), Instagram business | Social only | n/a | 3 reviews in Sep ask for online slot booking; bookings by DM | Maps listing, Instagram | High | 2026-10-20 |
 | 2 | Shine Hair Lounge (fictional) | Greenfield Nagar | Website form, Instagram | Weak site | 360 px: price list is an image, unreadable without zoom; no WhatsApp button; footer says 2021 | Diwali offer post 14 Oct points to the old site | site, Instagram | High | 2026-10-20 |
 
 ```markdown
-## Glow Studio Unisex (fictional), account brief
+## Glow Studio (fictional), account brief
 Fit: unisex, 4 chairs visible, 70+ reviews, active Instagram. Gap: no site.
 Trigger: wedding season posts from 5 Oct (Instagram, seen 2026-10-20)
 Likely priority [Inference]: fewer missed bookings during peak season

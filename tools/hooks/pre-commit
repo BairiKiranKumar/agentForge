@@ -1,0 +1,9 @@
+#!/bin/sh
+# agentForge pre-commit guard. Install with: git config core.hooksPath tools/hooks
+# Blocks private paths and runs the secret and privacy scans.
+set -e
+PY=python3
+command -v "$PY" >/dev/null 2>&1 || PY=python
+"$PY" tools/precommit_check.py
+"$PY" tools/scan_secrets.py
+"$PY" tools/privacy_scan.py

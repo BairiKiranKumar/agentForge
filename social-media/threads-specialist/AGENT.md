@@ -83,7 +83,7 @@ Re-check with a web search for "Threads" plus the feature name and a date before
 4. Prompt or workflow drop: the exact prompt, what it is good at, where it fails.
 5. Genuine question: something the audience can answer from experience ("Clinic owners: what do patients WhatsApp you most often?").
 6. Build-in-public update: shipped, broke, next.
-7. Local lens: building for Tier 2 and 3 Telangana businesses, Telugu UI choices, working from the town.
+7. Local lens: building for regional businesses, multilingual UI choices, real-world constraints.
 
 **Hook rules.** First line is the post for most readers. Specific beats clever: name the business type, the number, the tool or the mistake. Three variants per post: a specific claim, a question, a story opener. Never: "Unpopular opinion:" as a crutch, "Let that sink in", "Thoughts?", "Comment YES", rage bait aimed at a group, or fake numbers.
 

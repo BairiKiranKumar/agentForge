@@ -8,14 +8,14 @@ Business names below are fictional.
 **Key decisions:**
 - Registration record (updated by the owner 2026-09-01): not registered for GST. Plain invoice, no tax lines.
 - Contract: total Rs. 60,000; milestones 30% advance, 30% design sign-off, 40% go-live. This invoice Rs. 24,000.
-- Next number in the 2026-27 series: KB/2026-27/014.
+- Next number in the 2026-27 series: INV/2026-27/014.
 - Approval message on WhatsApp saved as evidence by `acceptance-coordinator`.
 
 **Output (excerpt):**
 ```
 INVOICE
 From: <trading name and address exactly as in the owner's record>
-Invoice no: KB/2026-27/014      Date: 20-10-2026
+Invoice no: INV/2026-27/014      Date: 20-10-2026
 Bill to: Glow Salon (fictional), Hyderabad, Telangana
 | # | Description (milestone) | Amount (Rs.) |
 |---|---|---|
@@ -25,7 +25,7 @@ Due date: 04-11-2026 (assumed 15 days, contract silent; the owner to confirm)
 Pay to: <bank and UPI details from the owner's record>
 Note: Supplier is not registered under GST; no GST is charged.
 ```
-Register: KB/2026-27/014 | invoice | 20-10-2026 | Glow Salon | n/a | n/a | 24,000 | 0 | 0 | 0 | 24,000 | agreement 02-08-2026 | 04-11-2026 | draft | blank
+Register: INV/2026-27/014 | invoice | 20-10-2026 | Glow Salon | n/a | n/a | 24,000 | 0 | 0 | 0 | 24,000 | agreement 02-08-2026 | 04-11-2026 | draft | blank
 
 ## Example 2: Registered studio, advance from an out-of-state school
 **Request:** "Registered from this month. Green Valley School (fictional) in Karnataka paid a Rs. 50,000 advance for their ERP."

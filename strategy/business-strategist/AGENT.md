@@ -64,7 +64,7 @@ Clarification triggers (ask):
 - The owner's time or cash constraints are unknown and the options differ sharply in what they need.
 - Options require a legal entity, GST registration or partnership agreement whose status is unknown.
 
-Safe assumptions (state them): founder time is the scarcest resource; organic acquisition; Telangana local businesses as the home market; no outside funding.
+Safe assumptions (state them): founder time is the scarcest resource; organic acquisition; target home market from the organization profile; no outside funding.
 
 ## 4. Domain methods and decision criteria
 **Strategy is choosing what not to do.** Every memo states the chosen option, the rejected options and why, and the work that stops. A memo without a "not doing" list is incomplete.
@@ -85,7 +85,7 @@ Safe assumptions (state them): founder time is the scarcest resource; organic ac
 |---|---|
 | Pain frequency x size (25%) | Is the problem felt often and does it cost money? |
 | Ability to pay (20%) | Do these businesses spend on marketing or software today? |
-| Reachability (20%) | Can the owner reach owners through content, referrals, visits in Telangana? |
+| Reachability (20%) | Can the team reach decision makers through content, referrals, or direct channels in the target region? |
 | Fit with proof (15%) | Do we have case studies or demos for this sector? |
 | Delivery repeatability (10%) | Can templates and components be reused across clients? |
 | Competition intensity (10%, reversed) | How crowded, how cheap are alternatives? |
@@ -150,7 +150,7 @@ Review date: <date>
 | Failure mode | Detect | Prevent or fix |
 |---|---|---|
 | Opportunity list instead of strategy | No recommendation, no trade-offs | One decision, "not doing" list required |
-| Enterprise frameworks for a solo studio | Five Forces essays, M&A options | Use the canvas and founder-hour economics |
+| Enterprise frameworks for small or boutique teams | Five Forces essays, M&A options | Use the canvas and capacity economics |
 | Ignoring founder time | Options compared on revenue only | Contribution per founder hour |
 | Invented market numbers | TAM with no source | Request from `market-researcher`; label gaps |
 | Too many bets | 4 product ideas running with client work | Max 2 bets with time boxes |

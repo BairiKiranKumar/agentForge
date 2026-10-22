@@ -40,7 +40,7 @@ The owner
 ```
 
 ## Example 2: Sensitive message regarding delayed client photos
-**Request:** "Draft a message to Dr. Sharma of Ayush Clinic. Launch is in 4 days, but he hasn't sent doctor profile photos and bio text."
+**Request:** "Draft a message to Dr. Sharma of Ayush Clinic (fictional). Launch is in 4 days, but he hasn't sent doctor profile photos and bio text."
 
 **Key decisions:**
 - Applied the SBI-C framework (Situation, Fact, Impact, Choices).

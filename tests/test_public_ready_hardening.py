@@ -72,7 +72,7 @@ class EvaluatorHardening(unittest.TestCase):
             self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "BLOCKED", dr)
         res = full_results("lightweight", ["website"])
         res["design_review"] = {"profile": "high_visibility", "verdict": "Ship",
-                                "human_approval": {"by": "owner", "date": "2026-10-22"}}
+                                "human_approval": {"by": "maria.s", "date": "2026-10-22"}}
         self.assertEqual(qg.evaluate(res, TODAY)["outcome"], "PASS")
 
     def test_release_approval_needs_by_and_date(self):
@@ -87,11 +87,11 @@ class EvaluatorHardening(unittest.TestCase):
         for e in res["results"]:
             if e["requirement"] == major["id"]:
                 e["status"] = "exception"
-        res["approvals"] = {"release": {"by": "owner", "date": "2026-10-22"}}
+        res["approvals"] = {"release": {"by": "maria.s", "date": "2026-10-22"}}
         res["exceptions"] = [{"requirement": major["id"], "reason": "x", "approved_by": "Agent-A",
                               "approved_on": "2026-10-20", "expires": "2026-11-20"}]
         self.assertTrue(any("cannot be approved" in f[2] for f in qg.evaluate(res, TODAY)["findings"]["invalid_exception"]))
-        res["exceptions"] = [{"requirement": major["id"], "reason": "x", "approved_by": "owner",
+        res["exceptions"] = [{"requirement": major["id"], "reason": "x", "approved_by": "maria.s",
                               "approved_on": "2030-01-01", "expires": "2030-02-01"}]
         self.assertTrue(any("future" in f[2] for f in qg.evaluate(res, TODAY)["findings"]["invalid_exception"]))
 

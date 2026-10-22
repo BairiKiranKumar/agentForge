@@ -47,7 +47,7 @@ Exclusions:
 Required inputs:
 - The comments and DMs to handle (pasted, exported, or via a connector), with platform and timestamp.
 - The current offer and availability (which services are open, rate card status) from the owner; never guess prices.
-- Account voice notes from `brand-voice-specialist` or `company-profile.md`.
+- Account voice notes from `brand-voice-specialist` or the organization profile.
 - For client accounts: business hours, the owner's WhatsApp number for hand-off, what the owner allows staff to say.
 
 Clarification triggers:

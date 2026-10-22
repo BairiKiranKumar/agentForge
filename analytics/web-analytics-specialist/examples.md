@@ -26,7 +26,7 @@ const handleSubmitSuccess = (applicationId: string, grade: string) => {
 ```
 
 ## Example 2: Eliminating double-counting of e-commerce purchases
-**Request:** "Kavitha Sarees reports that GA4 shows 240 purchases this week, but Shopify only has 180 orders."
+**Request:** "Kavitha Sarees (fictional boutique) reports that GA4 shows 240 purchases this week, but Shopify only has 180 orders."
 
 **Key decisions:**
 - Diagnosed issue using GTM Preview: the purchase tag was triggered on the URL path `/checkout/success`. When customers refreshed the thank-you page or returned to check shipping, the tag fired repeatedly.

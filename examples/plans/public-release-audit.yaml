@@ -1,0 +1,14 @@
+# Representative public release audit plan (WF-24). Dry-run with:
+#   python -m runtime.scheduler plan examples/plans/public-release-audit.yaml
+task_id: public-release-audit-demo
+workflow: workflows/24-public-release-audit.md
+stages:
+  - {id: privacy, owner: privacy-specialist, depends_on: [], outputs: [work/public-release-audit-demo/privacy.md]}
+  - {id: license, owner: licensing-ip-assistant, depends_on: [], outputs: [work/public-release-audit-demo/license.md]}
+  - {id: security, owner: application-security-engineer, depends_on: [], outputs: [work/public-release-audit-demo/security.md]}
+  - {id: history, owner: release-engineer, depends_on: [], outputs: [work/public-release-audit-demo/history.md]}
+  - {id: clean-ci, owner: qa-lead, depends_on: [privacy, license, security, history], outputs: [work/public-release-audit-demo/clean-ci.md]}
+  - {id: docs-honesty, owner: documentation-curator, depends_on: [privacy, license, security, history], outputs: [work/public-release-audit-demo/docs.md]}
+  - {id: independent, owner: security-testing-specialist, depends_on: [clean-ci], outputs: [work/public-release-audit-demo/independent.md]}
+  - {id: integrate, owner: orchestrator, depends_on: [independent, docs-honesty], outputs: [work/public-release-audit-demo/report.md]}
+  - {id: decision-sheet, owner: technical-lead, depends_on: [integrate], outputs: [work/public-release-audit-demo/decision-sheet.md]}

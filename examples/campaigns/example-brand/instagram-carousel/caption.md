@@ -3,13 +3,13 @@
 Brand: example-brand
 
 Caption:
-A premium website is not a darker template. I check four things before I use the word: who the first screen is for, whether the type has a point of view, whether the phone path to contact is obvious, and whether the motion earns the wait. If you want that standard on a business site, message me.
+A premium website is not a darker template. We check four things before using the word: who the first screen is for, whether the typography has a point of view, whether the mobile path to contact is obvious, and whether the motion earns the wait. If you want that standard on a business site, get in touch.
 
 Hashtags: #websitedesign #frontend #buildinpublic #smallbusinesswebsite
 
-Alt text: Seven portrait slides from @example_brand. The cover says a premium website is not a darker template. The next slides cover a slow pretty homepage, naming the audience, type and one accent, a clear phone path to contact, motion that earns the wait, and a closing invitation to message about a website.
+Alt text: Seven portrait slides from @example_brand. The cover says a premium website is not a darker template. The next slides cover a slow pretty homepage, naming the audience, typography and one accent, a clear mobile path to contact, motion that earns the wait, and a closing invitation to get in touch about a website.
 
-CTA: Message the owner about a website project.
+CTA: Get in touch about a website project.
 
 Files on disk:
 - examples/campaigns/example-brand/instagram-carousel/index.html

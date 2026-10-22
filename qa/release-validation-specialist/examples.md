@@ -27,7 +27,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: NO-GO decision due to broken payment webhook
-**Request:** "Client wants to push hotfix v1.0.4 for Royal Silks saree storefront right now."
+**Request:** "Client wants to push hotfix v1.0.4 for Royal Silks (fictional) saree storefront right now."
 
 **Key decisions:**
 - Ran smoke test suite against staging hotfix build.

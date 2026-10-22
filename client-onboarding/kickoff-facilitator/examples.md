@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Facilitating kickoff for boutique fashion brand
-**Request:** "Run the project kickoff for Kavitha Sarees website redesign."
+**Request:** "Run the project kickoff for Kavitha Sarees (fictional) website redesign."
 
 **Key decisions:**
 - Designed a 45-minute agenda focusing on brand aesthetic, photography deadlines, and Diwali launch timeline.

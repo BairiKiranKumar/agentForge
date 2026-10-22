@@ -32,6 +32,8 @@ jobs:
         run: python tools/quality_gate.py validate
       - name: Unit tests
         run: python -m unittest discover -s tests
+      - name: No private paths tracked
+        run: python tools/precommit_check.py --tracked
       - name: Secret scan
         run: python tools/scan_secrets.py
       - name: Privacy scan (generic detectors)

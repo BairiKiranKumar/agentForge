@@ -17,7 +17,7 @@ Proof: ANN-012, 2026-12-22, against: owner WhatsApp 2026-12-20 (price), client b
 | # | Location | Found | Corrected to / query | Type | Severity | Source |
 |---|---|---|---|---|---|---|
 | 1 | Carousel slide 3 | ₹399 | ₹349 | price | critical | owner message |
-| 2 | Banner CTA | wa.me/9848012345 | wa.me/919848012345 | link | critical | client brief |
+| 2 | Banner CTA | wa.me/9999900000 | wa.me/919999900000 | link | critical | client brief |
 | 3 | Banner | Wednesday, 14 January | Thursday, 14 January | date | critical | calendar |
 | 4 | Caption | Sankranthi | Sankranti | name | minor | client menu |
 Status: proof clean (all items corrected)

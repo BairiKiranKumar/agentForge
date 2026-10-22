@@ -52,7 +52,7 @@ Required inputs:
 - The task and who reads the output (customer, staff, the owner).
 - 10 or more real example inputs, including messy ones (typos, mixed Telugu and English, voice-note transcripts).
 - The output contract (schema or template) from `ai-application-engineer`.
-- Voice guidance (`knowledge-management/company-profile.md` or the client's brand voice doc).
+- Voice guidance (the organization profile (`docs/configuration.md`) or the client's brand voice doc).
 - Target model and settings, marked verify current.
 
 Clarification triggers (ask, do not assume):

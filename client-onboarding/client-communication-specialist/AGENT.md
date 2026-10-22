@@ -116,13 +116,13 @@ Thank you for your ongoing partnership. We look forward to our weekly demo on Th
 Warm regards,
 The owner
 ```
-- Difficult Message Draft (Constructive Delay / Overdue Asset Impact):
+- Difficult Message Draft (Constructive Delay / Overdue Asset Impact, fictional example):
 ```markdown
-Subject: Update on Launch Timeline for Ayush Clinic Website
+Subject: Update on Launch Timeline for Ayush Clinic (fictional) Website
 
 Dear Dr. Sharma,
 
-We are writing with a quick update on our launch schedule for the Ayush Clinic portal.
+We are writing with a quick update on our launch schedule for the Ayush Clinic (fictional) portal.
 
 Our team has completed all doctor profiles, service pages, and the appointment booking engine. However, we have not yet received the merchant account keys for the online payment gateway.
 

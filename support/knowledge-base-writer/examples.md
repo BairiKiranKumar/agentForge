@@ -35,7 +35,7 @@ Business names below are fictional unless stated.
 ```markdown
 # Why Did My Selected Appointment Slot Disappear?
 
-When booking popular weekend time slots at Lumen Salon Salons, slots update in real time.
+When booking popular weekend time slots at Lumen Salon (fictional), slots update in real time.
 
 ### Why this happens
 When a customer selects a slot, the system reserves it for 5 minutes to give them time to complete payment. If another customer was completing payment on that exact slot, the slot becomes unavailable.

@@ -20,7 +20,7 @@ Business names below are fictional.
 
 ```
 WhatsApp (to Mr. Rao):
-Hi Rao garu, invoices KB/2026-27/009 and 011 (total Rs. 45,000) are now 17 days past due. Could you share the date you'll clear them? If one payment is hard right now, I can split it into two. Thanks, the owner
+Hi Mr. Rao, invoices INV/2026-27/009 and 011 (total Rs. 45,000) are now 17 days past due. Could you share the date you'll clear them? If one payment is hard right now, I can split it into two. Thanks, the owner
 ```
 
 ## Example 2: Payment plan for a school
@@ -33,9 +33,9 @@ Hi Rao garu, invoices KB/2026-27/009 and 011 (total Rs. 45,000) are now 17 days 
 
 **Output (excerpt):**
 ```
-Email subject: Payment plan for invoice KB/2026-27/018 (Rs. 1,20,000)
+Email subject: Payment plan for invoice INV/2026-27/018 (Rs. 1,20,000)
 Dear Mrs. Fernandes,
-As discussed, here is the plan for invoice KB/2026-27/018:
+As discussed, here is the plan for invoice INV/2026-27/018:
 1. Rs. 36,000 by 27 October 2026
 2. Rs. 42,000 by 15 November 2026
 3. Rs. 42,000 by 15 December 2026

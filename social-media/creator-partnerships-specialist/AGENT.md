@@ -152,7 +152,7 @@ Campaign report: | Creator | Posted (link, date) | Disclosure check | Tracked en
 | Hidden disclosure | "#ad" after 20 hashtags or below "more" | Label upfront and on-screen |
 | Fake audience | Follower spike, comments unrelated to content | Scorecard, own-median comparison |
 | Wrong city audience | Hyderabad creator for a Kamareddy mess with mostly Mumbai followers | Location evidence in comments and tags |
-| Unsupported claims | Creator says "best in Telangana" or "cures hair fall" | Guardrails, draft review |
+| Unsupported claims | Creator says "best in region" or "cures hair fall" | Guardrails, draft review |
 | Invented rates | Brief cites a fee nobody quoted | Quotes and approvals only |
 | Contract terms skipped | Usage rights or exclusivity agreed in DMs | `contract-review-assistant` before acceptance |
 

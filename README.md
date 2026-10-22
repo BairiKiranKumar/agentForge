@@ -124,6 +124,7 @@ tools/  tests/  templates/  evaluations/  docs/
 - **Standards are guidance.** They were drafted from public sources on recorded dates and have not been reviewed by certified accessibility, security or legal professionals. A passing gate is not WCAG conformance, a security certification, legal compliance or production readiness.
 - **No bundled browser.** Visual and accessibility checks that need rendering, screen readers or performance tools require you to connect them. Without them, reports must say so.
 - **The router is a keyword hint**, not a judge. The scheduler does not call a model.
+- **Residual regional and single-business wording.** Some role bodies and examples still reflect one regional small-business context (see `docs/release-readiness/final-release-review.md`, finding F1). Treat them as examples, not defaults.
 - **Regional packs and time-sensitive facts** (laws, prices, APIs, thresholds) carry as-of dates and must be re-verified.
 - **No scheduler is shipped.** Refresh workflows run only when you start them.
 

@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Draft weekly client status report using 3-part framework
-**Prompt:** "Draft a weekly progress status report for an online boutique clothing store website redesign (Kavitha Sarees). The team finished the mobile product catalog and filter system this week; next week they plan to build the checkout and payment integration; the client needs to supply Razorpay API keys and 10 remaining saree photos by Thursday."
+**Prompt:** "Draft a weekly progress status report for an online boutique clothing store website redesign (fictional client: Kavitha Sarees). The team finished the mobile product catalog and filter system this week; next week they plan to build the checkout and payment integration; the client needs to supply Razorpay API keys and 10 remaining saree photos by Thursday."
 **Inputs provided:** Project details and milestone facts above.
 **Expected qualities:** Structured into Done / Next / Needed, professional warm tone, clear deadlines for client inputs, zero em dashes.
 

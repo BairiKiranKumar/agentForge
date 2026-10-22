@@ -93,6 +93,7 @@ Otherwise proceed with explicit, recorded assumptions. Ask at most 3 questions, 
 | Design-first path for any digital experience, with research, direction, rubric review and visual QA | `workflows/21-design-first.md` |
 | Refresh of the design knowledge base, motion library or skill registry | `workflows/22-design-intelligence-refresh.md` |
 | Release or quality gate check against engineering standards | `workflows/23-quality-gates.md` |
+| Pre-release audit before making a repository or content set public | `workflows/24-public-release-audit.md` |
 Partial matches: use only the needed stages. No match: build an ad hoc plan with the same gates. `runtime/router.py` is a keyword hint. A weak match falls back to you.
 
 **Smallest sufficient team (selection algorithm).**

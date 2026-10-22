@@ -40,7 +40,7 @@ Business names below are fictional.
 | Business | Proposal total | Health | Forecast | Last client action | Next action | Risk |
 |---|---|---|---|---|---|---|
 | Green Valley School (fictional) | from proposal v1 | green | best case | 2026-10-25 | concept by 8 Nov | approver not met |
-| Glow Studio Unisex (fictional) | from proposal v2 | red | omitted | 2026-09-28 | reset message (draft below) | wedding season, owner busy |
+| Glow Studio (fictional) | from proposal v2 | red | omitted | 2026-09-28 | reset message (draft below) | wedding season, owner busy |
 
 Draft for the owner: "Hi, I know wedding season is busy. Should we pause the website and pick it up in January, or is something on your side I can help with?"
 

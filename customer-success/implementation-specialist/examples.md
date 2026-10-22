@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Verifying WhatsApp and Razorpay integrations on salon app
-**Request:** "Configure and verify payment gateway and WhatsApp alerts for Lumen Salon Salons before customer launch."
+**Request:** "Configure and verify payment gateway and WhatsApp alerts for Lumen Salon (fictional) before customer launch."
 
 **Key decisions:**
 - Inputted Razorpay live API credentials in secure backend configuration.
@@ -35,7 +35,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Integration Verification Log: Lumen Salon Salons
+### Integration Verification Log: Lumen Salon
 1. Razorpay Webhook:
    - Event: `payment.captured` | Payment ID: `pay_test_998877`
    - Result: Webhook returned HTTP 200; Booking #104 marked Confirmed.

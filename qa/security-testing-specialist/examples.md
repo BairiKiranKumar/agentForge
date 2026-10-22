@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Horizontal access control (IDOR) on salon customer portal
-**Request:** "Perform an authorized security assessment on the customer appointment history endpoint of Lumen Salon Salons web app."
+**Request:** "Perform an authorized security assessment on the customer appointment history endpoint of Lumen Salon (fictional) web app."
 
 **Key decisions:**
 - Verified written authorization charter signed by the owner and Lumen Salon owner.

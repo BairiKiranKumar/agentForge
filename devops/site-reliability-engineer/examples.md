@@ -23,7 +23,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Intercepting cascading failure risk during flash sale
-**Request:** "Review the architecture for Kavitha Sarees festive weekend sale."
+**Request:** "Review the architecture for Kavitha Sarees (fictional boutique) festive weekend sale."
 
 **Key decisions:**
 - Reviewed backend architecture: discovered order creation endpoint was synchronously awaiting SMS confirmation from a third-party gateway.

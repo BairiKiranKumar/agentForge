@@ -459,7 +459,7 @@ Files with findings: 689
 | `integrations/claude-code/agents/support/knowledge-base-writer.md` | ANONYMIZE | client-style-project-names: 2 | Generated file. Regenerated from sanitized role definitions. |
 | `integrations/claude-code/agents/support/support-triage-specialist.md` | ANONYMIZE | owner-first-name (approver): 1, client-style-project-names: 1 | Generated file. Regenerated from sanitized role definitions. |
 | `integrations/claude-code/agents/support/technical-support-specialist.md` | ANONYMIZE | client-style-project-names: 1 | Generated file. Regenerated from sanitized role definitions. |
-| `knowledge-management/company-profile.md` | MOVE_TO_PRIVATE_WORKSPACE | owner-first-name (approver): 9, personal-handle/brand: 2, studio-concept: 1 | Moved to ignored workspace/private. Replaced by templates or fictional example. |
+| the organization profile (`docs/configuration.md`) | MOVE_TO_PRIVATE_WORKSPACE | owner-first-name (approver): 9, personal-handle/brand: 2, studio-concept: 1 | Moved to ignored workspace/private. Replaced by templates or fictional example. |
 | `leadership/chief-of-staff/AGENT.md` | ANONYMIZE | owner-first-name (approver): 32 | Role, workflow or document text: personal name, handle, place or project replaced by neutral or fictional terms. |
 | `leadership/chief-of-staff/checklist.md` | ANONYMIZE | owner-first-name (approver): 1 | Role, workflow or document text: personal name, handle, place or project replaced by neutral or fictional terms. |
 | `leadership/chief-of-staff/evaluation.md` | ANONYMIZE | owner-first-name (approver): 3 | Role, workflow or document text: personal name, handle, place or project replaced by neutral or fictional terms. |

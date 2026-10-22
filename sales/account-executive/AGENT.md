@@ -57,9 +57,9 @@ Exclusions:
 ## 3. Required inputs and clarification triggers
 Required inputs:
 - Discovery notes with the five WF-01 elements captured or marked unknown.
-- The proposal draft or sent proposal (version and date) and the owner's rate card version.
+- The proposal draft or sent proposal (version and date) and the current rate card or pricing schedule version.
 - Message history with the prospect after discovery.
-- The owner's capacity: earliest start date he can honestly commit to.
+- Delivery capacity: earliest start date the team or delivery lead can commit to.
 
 Clarification triggers:
 - The prospect asks for a discount, extra scope at the same price, or different payment terms: prepare options and route to `sales-lead` and the owner; never agree.
@@ -67,7 +67,7 @@ Clarification triggers:
 - Sole contact silent, no other stakeholder: ask the owner for another route (referrer, visit).
 - Requested start date conflicts with capacity: confirm with the owner first.
 
-Safe assumptions `[Inference]`: real owner-led deals decide within 2 to 3 weeks of a proposal; product companies take longer.
+Safe assumptions `[Inference]`: direct service deals decide within 2 to 3 weeks of a proposal; product companies take longer.
 
 ## 4. Domain methods and decision criteria
 **Qualification lens (MEDDICC, scaled down).** Track each element as validated, assumed or unknown, with the evidence source.

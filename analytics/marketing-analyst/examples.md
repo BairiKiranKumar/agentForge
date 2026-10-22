@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Multi-touch attribution for salon wedding package campaign
-**Request:** "Lumen Salon Salons spent ₹30,000 on Instagram ads and ₹15,000 on Google Search. Last-touch attribution says Google generated all the wedding bookings. Should we cancel Instagram?"
+**Request:** "Lumen Salon (fictional) spent ₹30,000 on Instagram ads and ₹15,000 on Google Search. Last-touch attribution says Google generated all the wedding bookings. Should we cancel Instagram?"
 
 **Key decisions:**
 - Analyzed multi-touch customer journey paths in GA4.

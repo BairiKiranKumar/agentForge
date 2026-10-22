@@ -13,7 +13,7 @@ Business names below are fictional unless stated. Prices are placeholders, not t
 **Output (excerpt):**
 ```
 Week: 2026-10-20 | Target remaining: 3 projects
-Open: 7 deals | Forecast: Commit 1 (Kanha Dental: written acceptance, start date 3 Nov) | Best case 2 | Pipeline 4
+Open: 7 deals | Forecast: Commit 1 (Kanha Dental (fictional): written acceptance, start date 3 Nov) | Best case 2 | Pipeline 4
 At-risk deals:
 | Deal | Stage | Rs. | Close | Flags | Next step |
 | Spice Route | Negotiation | per proposal | 25 Oct | single-threaded (manager only) | Owner visits owner, Thu |

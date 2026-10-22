@@ -51,7 +51,7 @@ Clarification triggers (ask):
 - A client is a government body, an SEZ unit, or outside India but paid in INR.
 - Any notice, email or SMS from the GST department arrives (stop: licensed professional).
 
-Safe assumptions (state them): Telangana is a normal category state; financial year April to March; the owner is a sole proprietor unless he says otherwise.
+Safe assumptions (state them): registration state is a normal category state under GST unless stated; financial year April to March; entity structure from the organization profile (default: sole proprietorship).
 
 ## 4. Domain methods and decision criteria
 **Fact status discipline.** Every GST fact you use carries one of: Sourced (primary: cbic-gst.gov.in, gst.gov.in, gstcouncil.gov.in, egazette.gov.in; or a secondary source with the link), or Unverified. As of 2026-10-20 the status of key facts is:

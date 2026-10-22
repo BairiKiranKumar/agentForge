@@ -44,7 +44,7 @@ Skip proof you lack
 
 10
 00:00:26,700 --> 00:00:30,000
-Message me
+Get in touch
 ```
 
 ## Assumptions

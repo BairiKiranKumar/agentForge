@@ -65,6 +65,7 @@ python tools/validate.py
 python tools/build_indexes.py
 python -m unittest discover -s tests
 python tools/scan_secrets.py
+python tools/design_kb.py validate
 ```
 
 ## Layout
@@ -73,7 +74,8 @@ AGENTS.md                 shared rules
 CAPABILITY-MATRIX.md      one owner per activity
 orchestration/            roster, handoffs, parallel rules
 runtime/                  discover, router, scheduler
-workflows/                WF-01 through WF-20
+workflows/                WF-01 through WF-22 (WF-21 design-first, WF-22 design intelligence refresh)
+design-intelligence/     design researchers, knowledge base, skill registry, rubric, guides (see its README.md)
 brands/                   one folder per identity
 registry/agents.json      generated catalog
 <department>/<role>/      AGENT.md, checklist, examples, evaluation

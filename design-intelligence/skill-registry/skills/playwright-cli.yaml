@@ -1,0 +1,33 @@
+id: playwright-cli
+name: Playwright CLI skill (microsoft/playwright-cli)
+source_url: https://github.com/microsoft/playwright-cli
+repo: microsoft/playwright-cli
+maintainer: Microsoft Corporation
+license: Apache-2.0
+registry_version: 1
+status: conditional
+status_reason: Official and well maintained, suited to browser screenshots and responsive checks for qa roles. It requires installing the playwright-cli npm package and grants broad Bash(playwright-cli:*) and npx playwright permissions, so it needs a sandboxed, human-approved setup.
+categories: [browser-visual-testing, responsive]
+capabilities:
+  - Skill teaching agents to drive playwright-cli: navigate, fill forms, screenshot, extract data, test running, mocking, storage state, tracing, video recording (per skill description and Playwright docs)
+  - Reference guides under skills/playwright-cli/references
+limitations:
+  - Not design-aware; no visual baseline diff or design rubric
+  - Package version is alpha-pinned (0.1.22 with a 1.64.0-alpha Playwright), so behaviour may shift
+  - Reference files not read in full
+compatible_agents: [claude-code, cursor]
+install_method: "npm package @playwright/cli, then playwright-cli install --skills"
+dependencies: [node>=18, playwright, browser binaries]
+scripts_present: true
+permissions_requested: ["allowed-tools: Bash(playwright-cli:*) Bash(npx playwright:*) Bash(npx --no-install playwright:*)", file write, network, browser launch]
+risks: [alpha-version dependencies, browsing arbitrary URLs exposes the agent to hostile page content, browser binary download on install]
+pinned_ref: b1a5903c5b633b8c9f843ad7b629c2a78437040c
+last_commit_observed: 2026-10-19
+activity: "GitHub API pushed_at 2026-10-19 (shallow clone, commit count not verified)"
+stars_observed: 14493
+overlaps: [qa/*, design/design-reviewer, anthropic-webapp-testing]
+evidence_of_effectiveness: "none found"
+owner_roles: [qa/*, design/design-reviewer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

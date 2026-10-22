@@ -1,5 +1,13 @@
 # Build status
 
+## v1.2 design intelligence upgrade, 2026-10-22
+
+- `python tools/validate.py`: 185 roles, 0 errors, 0 warnings.
+- `python -m unittest discover -s tests`: 45 tests, OK.
+- `python tools/design_kb.py validate`: 47 knowledge-base entries, 13 registry skills, 0 errors.
+- Added department `design-intelligence` (3 roles), upgraded 4 design roles, workflows 21 and 22. No rendered-browser inspection was run; no role evaluated; no skill approved. See `design-intelligence/REPORT.md` and `UPGRADE-STATUS.md`.
+
+
 ## v1.1 check, 2026-10-22
 
 - `python tools/validate.py`: 182 roles, 0 errors, 0 warnings.

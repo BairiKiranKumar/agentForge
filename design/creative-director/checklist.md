@@ -35,3 +35,12 @@
 - [ ] The client wants to imitate a named competitor's look
 - [ ] The concept relies on AI-generated people shown as real customers or staff
 - [ ] Religious or community imagery is involved without client sign-off
+
+## Design Intelligence upgrade
+- [ ] Tier (S, M or L) recorded with the reason; exploration skipped only for Tier S
+- [ ] Research brief and motion shortlist read; entry ids cited in the routes
+- [ ] Difference test written for every pair of routes
+- [ ] Default replaced on each axis recorded, using the anti-slop signal list
+- [ ] Signature moment prototype reviewed at 375 and 1440 px before full build (high-visibility work)
+- [ ] `direction-approval.md` written with rubric profile and reviewer before major implementation
+- [ ] Rejections of downstream work cite the direction element, the evidence and the change needed

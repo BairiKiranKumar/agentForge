@@ -1,0 +1,201 @@
+# Motion library sources. Retrieved 2026-10-22 by motion-researcher B.
+# No page was rendered. Methods: fetched-html (WebFetch text), official-docs (documentation text via WebFetch), search-snippet.
+sources:
+  - url: https://motionsites.ai/
+    kind: inspiration-gallery / prompt marketplace
+    offers: Marketing labels for 3D, scroll-driven 3D and animated background templates; no implementation detail
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Loaded. Commercial prompt seller; JS dependency unclear. Used for category labels only, not techniques.
+  - url: https://www.awwwards.com/
+    kind: awards / inspiration
+    offers: Navigation to animated sites, scrolling, WebGL, GSAP and 3D collections; Site of the Day
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Loaded. Images were placeholders, so no visual assessment possible. Individual winning sites not opened.
+  - url: https://godly.website/
+    kind: inspiration gallery
+    offers: Redirected (301) to recent.design, a design inspiration gallery
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Redirect to a different domain (recent.design/?ref=godly). Followed once. Text markup present; images from CDN. Whether the redirect is permanent or a rebrand is [Unverified]. No techniques extracted.
+  - url: http://recent.design/?ref=godly
+    kind: inspiration gallery
+    offers: Web, interface, motion galleries and a jobs board
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Loaded; listing only.
+  - url: https://tympanus.net/codrops/
+    kind: tutorial publication
+    offers: Animation and WebGL tutorials
+    retrieved: 2026-10-22
+    method: search-snippet
+    access_notes: Direct fetch of the home page and one tutorial returned HTTP 403. Titles and one-line summaries were obtained only through web search snippets. Tutorial bodies not read.
+  - url: https://tympanus.net/codrops/2025/11/04/creating-3d-scroll-driven-text-animations-with-css-and-gsap/
+    kind: tutorial
+    offers: Scroll-driven text with ScrollTrigger pin and scrub (per search snippet)
+    retrieved: 2026-10-22
+    method: search-snippet
+    access_notes: Fetch returned 403.
+  - url: https://gsap.com/pricing/
+    kind: licence statement
+    offers: States GSAP is 100% free for all users thanks to Webflow, entire library free
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Page gives no licence terms; links to Terms of Use, not read. Commercial use terms [Unverified]. Fetched via summarising model, so wording is paraphrased not verbatim.
+  - url: https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+    kind: official docs
+    offers: start, end, scrub, pin, snap, toggleActions, refresh, markers
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Page calls ScrollSmoother members-only, which conflicts with the pricing page. Treated as possibly outdated.
+  - url: https://gsap.com/docs/v3/Plugins/SplitText/
+    kind: official docs
+    offers: SplitText.create, type, mask, autoSplit, onSplit, revert, aria (docs show v3.15)
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://gsap.com/docs/v3/Plugins/Flip/
+    kind: official docs
+    offers: Flip.getState, Flip.from and options
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://gsap.com/docs/v3/Plugins/ScrollSmoother/
+    kind: official docs
+    offers: Structure, smooth, effects, data-speed, data-lag, mobile notes
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://gsap.com/docs/v3/Plugins/Observer/
+    kind: official docs
+    offers: Observer.create config and callbacks
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/
+    kind: official docs
+    offers: matchMedia with reduced-motion conditions
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+    kind: official docs (MDN)
+    offers: Scroll-driven animations overview
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded; summariser reported no browser support table in the text, and only first 100000 chars were read.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline
+    kind: official docs (MDN)
+    offers: animation-timeline values, Limited availability label
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range
+    kind: official docs (MDN)
+    offers: animation-range syntax, named ranges, not Baseline
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API
+    kind: official docs (MDN)
+    offers: startViewTransition, @view-transition, pseudo-elements
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded; compatibility table not in the text, support levels not verified.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+    kind: official docs (MDN)
+    offers: prefers-reduced-motion values and guidance; Baseline widely available since January 2020
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+    kind: official docs (MDN)
+    offers: basic shapes, animatable
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded; no performance or interpolation detail on page.
+  - url: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas
+    kind: official docs (MDN)
+    offers: Canvas optimisation tips
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior
+    kind: official docs (MDN)
+    offers: Loaded for a one-line check only
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Detail not used.
+  - url: https://web.dev/articles/animations-guide
+    kind: official guidance
+    offers: transform and opacity guidance, will-change
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://web.dev/articles/optimize-cls
+    kind: official guidance
+    offers: animations and CLS
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://web.dev/articles/inp
+    kind: official guidance
+    offers: INP definition and thresholds (200 ms and 500 ms)
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://web.dev/articles/lcp
+    kind: official guidance
+    offers: LCP definition and thresholds (2.5 s and 4.0 s)
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://web.dev/articles/scroll-driven-animations
+    kind: official guidance
+    offers: nothing
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: HTTP 404.
+  - url: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+    kind: standard (WCAG 2.2 Understanding)
+    offers: SC 2.2.2 Level A, five second rule
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html
+    kind: standard (WCAG 2.2 Understanding)
+    offers: SC 2.3.3 Level AAA, parallax, techniques C39 and SCR40
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://github.com/darkroomengineering/lenis
+    kind: library README
+    offers: Lenis usage, options, GSAP integration, reduced-motion default, MIT, version 1.3.27 in examples
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: Loaded.
+  - url: https://motion.dev/docs
+    kind: library docs
+    offers: Index only
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Index page; licence not stated there.
+  - url: https://motion.dev/docs/animate
+    kind: library docs
+    offers: animate() import paths and options; reduced motion not covered on page
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://motion.dev/docs/scroll
+    kind: library docs
+    offers: scroll() and ScrollTimeline usage
+    retrieved: 2026-10-22
+    method: official-docs
+    access_notes: Loaded.
+  - url: https://threejs.org/manual/
+    kind: library docs
+    offers: Navigation only
+    retrieved: 2026-10-22
+    method: fetched-html
+    access_notes: /manual/en/fundamentals.html and /manual/en/creating-a-scene.html returned 404; the manual root returned only header and navigation. Code API in the 3D entry is unverified.

@@ -1,0 +1,34 @@
+id: gsap-skills
+name: GSAP Skills (official)
+source_url: https://github.com/greensock/gsap-skills
+repo: greensock/gsap-skills
+maintainer: GreenSock (official GSAP maintainer)
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: Official, MIT, instruction-only skills with a pinned SHA, which makes it the best motion candidate. Held at conditional only because approval is a human decision and the clone HEAD is six months old by the API push date.
+categories: [motion]
+capabilities:
+  - Eight skills: gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-utils, gsap-react, gsap-performance, gsap-frameworks
+  - Covers matchMedia including prefers-reduced-motion (stated in gsap-core description)
+  - llms.txt index and framework examples (react, vue, nuxt, vanilla)
+limitations:
+  - Library API guidance only; no art direction, no timing taste, no browser checks
+  - Applies only if GSAP is chosen as the motion library
+  - Claim that all plugins are free commercially comes from the repo README and a search summary; confirm on gsap.com before client use [Unverified]
+compatible_agents: [claude-code, cursor, codex, antigravity]
+install_method: "npx skills add https://github.com/greensock/gsap-skills [--agent antigravity]; Claude Code plugin marketplace; copy skill folders"
+dependencies: []
+scripts_present: false
+permissions_requested: [none declared]
+risks: [low; examples/ contain JS and vite configs for demos but are not part of the skills and were not executed]
+pinned_ref: aed9cfd3277740755f6bfc1155c7aa645403b760
+last_commit_observed: 2026-04-21
+activity: "Clone HEAD dated 2026-04-21; GitHub API pushed_at 2026-07-29 (shallow clone, commit count not verified)"
+stars_observed: 16908
+overlaps: [design/motion-designer, dev/frontend-developer, ui-ux-pro-max (17 GSAP presets)]
+evidence_of_effectiveness: "none found"
+owner_roles: [design/motion-designer, dev/frontend-developer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

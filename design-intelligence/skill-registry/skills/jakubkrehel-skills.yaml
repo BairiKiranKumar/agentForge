@@ -1,0 +1,34 @@
+id: jakubkrehel-skills
+name: Interfaces skills (jakubkrehel/skills)
+source_url: https://github.com/jakubkrehel/skills
+repo: jakubkrehel/skills
+maintainer: Jakub Krehel (individual)
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: Well scoped, MIT, with review skills that map directly to design-reviewer. Most skills are instruction-only, but technical-drawing ships JS assets and several skills render throwaway pages, so only the review skills should be adopted.
+categories: [ui-ux, typography-layout, accessibility, design-critique, responsive, component-design]
+capabilities:
+  - better-interface, better-ui, better-typography, better-colors, better-accessibility, better-layout, better-writing
+  - interface-review: reviews a branch, PR or uncommitted change for interface regressions
+  - build-design (from Figma or image), break and state-machine (render all states on a throwaway page), variant, explain-interface, technical-drawing
+limitations:
+  - Fourteen skills; only the review and better-* group fits the current need
+  - Opinionated exact values (radius, shadows) may clash with a client design system
+  - Body text of each skill was not read in full
+compatible_agents: [claude-code]
+install_method: "npx skills add jakubkrehel/skills; Claude Code plugin: /plugin marketplace add jakubkrehel/skills then /plugin install interfaces@interfaces"
+dependencies: []
+scripts_present: true
+permissions_requested: [file write (throwaway pages for break, state-machine, variant), shell not verified]
+risks: [technical-drawing bundles JS viewer assets, break and state-machine create temporary pages in the project, author sponsors and promotes own magazine in README]
+pinned_ref: 4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63
+last_commit_observed: 2026-10-12
+activity: "GitHub API pushed_at 2026-10-13 (shallow clone, commit count not verified)"
+stars_observed: 8147
+overlaps: [design/design-reviewer, design/ui-designer, dev/frontend-developer, vercel-web-interface-guidelines, impeccable]
+evidence_of_effectiveness: "none found"
+owner_roles: [design/design-reviewer, design/ui-designer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

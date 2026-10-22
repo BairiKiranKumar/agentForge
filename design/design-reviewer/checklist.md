@@ -38,3 +38,12 @@
 - [ ] Only a description is available, no artefact
 - [ ] A third review round is requested
 - [ ] Someone asks for Ship with an open blocker and no recorded waiver from Kiran
+
+## Design Intelligence upgrade
+- [ ] Evidence tier stated; description-only input marked not reviewable
+- [ ] Ten rubric criteria scored 0 to 4; every score of 2 or below has a finding
+- [ ] Score computed with `python tools/design_kb.py score`; profile stated
+- [ ] Anti-slop findings cite signal id and evidence and passed the justification test
+- [ ] Render compared with `art-direction.md` and `direction-approval.md`
+- [ ] Widths not seen listed as not reviewed
+- [ ] Human approval requested for high-visibility Ship verdicts

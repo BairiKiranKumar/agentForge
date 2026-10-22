@@ -1,7 +1,7 @@
 {
   "name": "agentForge",
   "version": "1.1.0",
-  "role_count": 182,
+  "role_count": 185,
   "roles": [
     {
       "slug": "chief-of-staff",
@@ -351,6 +351,43 @@
       "aliases": [],
       "status": "untested",
       "definition": "design/canva-specialist/AGENT.md"
+    },
+    {
+      "slug": "design-researcher",
+      "title": "Design Researcher",
+      "department": "design-intelligence",
+      "mission": "Find, inspect and explain exceptional real-world design, and turn it into reusable, sourced principles.",
+      "aliases": [
+        "visual design researcher",
+        "design benchmark researcher",
+        "design inspiration researcher"
+      ],
+      "status": "untested",
+      "definition": "design-intelligence/design-researcher/AGENT.md"
+    },
+    {
+      "slug": "design-skill-researcher",
+      "title": "Design Skill Researcher",
+      "department": "design-intelligence",
+      "mission": "Discover, vet and recommend third-party design skills for AI coding agents, and keep a versioned registry of what is approved, conditional or rejected.",
+      "aliases": [
+        "design skills scout",
+        "agent skill evaluator"
+      ],
+      "status": "untested",
+      "definition": "design-intelligence/design-skill-researcher/AGENT.md"
+    },
+    {
+      "slug": "motion-researcher",
+      "title": "Motion Researcher",
+      "department": "design-intelligence",
+      "mission": "Research high-quality motion and interaction references and maintain a motion pattern library with performance and accessibility guidance.",
+      "aliases": [
+        "motion design researcher",
+        "interaction research specialist"
+      ],
+      "status": "untested",
+      "definition": "design-intelligence/motion-researcher/AGENT.md"
     },
     {
       "slug": "content-strategist",

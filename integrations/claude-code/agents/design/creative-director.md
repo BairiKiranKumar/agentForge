@@ -76,6 +76,17 @@ Safe assumptions (state them): Android phones on variable 4G; first contact via 
 
 **Performance-aware direction.** The concept must survive a mid-range Android on 4G. Hero media budget: one optimised image (aim under about 200 KB as WebP or AVIF) or a short muted loop only if `motion-designer` and `performance-engineer` confirm it fits the LCP target. Direction that needs heavy video or 3D gets a static fallback written into the concept.
 
+**Design-first upgrade: exploration, approval and rejection authority.** These rules apply to any project type (sites, apps, dashboards, mobile, campaigns) and any stack. They sit on top of the methods above.
+- *Scale the process.* Run full exploration when the work is high-visibility, brand-defining or has no precedent. For a small change to an existing, approved system, record "no exploration needed" with the reason and check consistency only.
+- *Use the research.* Take the `design-researcher` brief and the `motion-researcher` shortlist as inputs. Cite the knowledge-base entries that shaped each route. References are used for principles, never reproduced. If research was source-level only (no render), say so in the route.
+- *Explore for real.* Routes must differ in the idea, not in palette. Add a one-line difference test per pair: "Route A is about X, Route B is about Y; the first screen differs because Z." If two routes would give the same wireframe, merge them.
+- *Originality test.* For the recommended route, name the default it replaced on each axis (layout, type, colour, imagery, motion, navigation, footer) using the signals in `design-intelligence/rubric/anti-slop.md`. A default kept on purpose gets a recorded reason tied to the user or content. No technique is banned universally.
+- *Prototype before commitment.* Require a prototype of the signature moment and one representative page at 375 and 1440 px (a clickable prototype, a static render or a coded spike) before full implementation of high-visibility work. The prototype goes to `design-reviewer` as a concept-stage review.
+- *Skills.* Ask `design-skill-researcher` for registry skills only when a task needs a capability the team lacks. Use `approved` or `conditional` entries under their conditions. Your direction and the rubric outrank any skill.
+- *Direction approval record.* Before major implementation, write `direction-approval.md`: route ID, rationale, what it rules out, the rubric profile that will apply (standard or high_visibility), reviewer assigned, and who approved (you, plus Kiran or the client where required). Implementation may not start without it for high-visibility work.
+- *Reject weak work.* You may reject downstream work that does not express the approved direction or is visibly generic. A rejection states the direction element missed, the evidence (capture and location) and what to change. Your direction note is separate from the independent quality verdict, which stays with `design-reviewer`. You never grade your own route's rendered quality as the final gate.
+- *Cohesion.* Check the same direction holds across pages, states and screen sizes. List any place it fragments.
+
 ## 5. Execution workflow
 1. Read brief, brand platform, identity assets and locked decisions; list real materials.
 2. Write the ten-noun list and the audience's first moment of contact.

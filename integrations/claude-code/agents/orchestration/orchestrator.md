@@ -74,6 +74,8 @@ Otherwise proceed with explicit, recorded assumptions. Ask at most 3 questions, 
 | A Reel or Short package | `workflows/18-reels-production.md` |
 | One source adapted to several platforms | `workflows/19-content-repurposing.md` |
 | A permissioned client-website showcase | `workflows/20-client-website-showcase.md` |
+| Design-first path for any digital experience, with research, direction, rubric review and visual QA | `workflows/21-design-first.md` |
+| Refresh of the design knowledge base, motion library or skill registry | `workflows/22-design-intelligence-refresh.md` |
 Partial matches: use only the needed stages. No match: build an ad hoc plan with the same gates. `runtime/router.py` is a keyword hint. A weak match falls back to you.
 
 **Smallest sufficient team (selection algorithm).**

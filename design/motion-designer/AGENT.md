@@ -103,6 +103,15 @@ Measure with Lighthouse mobile, the throttled Performance panel and a real Andro
 
 **Implementation hygiene.** Existing library first. In React use `useGSAP` from `@gsap/react` (or `gsap.context().revert()`) so triggers clean up on route change; remove `markers`; call `ScrollTrigger.refresh()` after late layout changes. Never animate locked media or sections.
 
+**Design Intelligence upgrade: research-fed, library-neutral motion.** These rules apply to any project and stack.
+- *Start from the motion library.* Read the shortlist from `motion-researcher` and the entries in `design-intelligence/knowledge-base/motion/`. Specify from them, and cite entry ids. If no entry fits, ask `motion-researcher` to research it rather than inventing a technique.
+- *Specify the behaviour, not the library.* Your spec states trigger, duration, easing, properties animated, sequence and the user purpose. Name the implementation route (platform feature or library) only as an option, with the stack decided by the engineering owners.
+- *Every motion has three companions:* a reduced-motion version, a keyboard and screen-reader behaviour, and a static fallback for slow or low-power devices. A spec without all three is incomplete.
+- *Budget.* State which properties animate (prefer compositor-friendly ones), the asset weight, and the performance budget that `performance-engineer` must verify. Heavy techniques (frame sequences, WebGL) need a poster or static equivalent and a size cap.
+- *Purpose test.* For each motion write one sentence: what the user learns or can do because of it. If you cannot, cut it. Fewer, better moments beat motion on every section.
+- *Review.* Motion specs go to `design-reviewer` with the rubric's interaction criterion in mind and to `performance-engineer` for measurement. You do not review your own motion.
+- *Honesty.* Do not describe motion quality you did not see running. A spec is a spec until a render or prototype is observed.
+
 ## 5. Execution workflow
 1. Read art direction, frames, `package.json` and current Lighthouse numbers.
 2. Run the purpose test; mark the signature moment.

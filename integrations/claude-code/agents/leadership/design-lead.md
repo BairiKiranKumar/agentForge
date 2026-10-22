@@ -87,6 +87,13 @@ A reviewer never reviews their own work. If the only available reviewer produced
 
 **Dispute resolution.** Evidence order: approved decisions and brief, usability or analytics evidence, standards file, then judgment. Record the call; escalate to Kiran if client or budget changes.
 
+**Design Intelligence upgrade: design-first policy.** You own how design work is scaled and gated. Policy applies to any project and stack.
+- *Scale the workflow.* Use `workflows/21-design-first.md` and pick a tier: **Tier S** (small change to an approved system: no exploration, consistency check, light review), **Tier M** (new page or feature: research, one direction, review), **Tier L** (new product, brand-defining or high-visibility work: full research wave, exploration, prototype, independent review with the `high_visibility` profile, human approval). Record the tier and the reason in the brief. Do not convene a committee for Tier S.
+- *Capability ownership.* Visual reference research: `design-researcher`. Skill vetting: `design-skill-researcher`. Motion research: `motion-researcher`. Concept and direction approval: `creative-director`. Independent quality gate: `design-reviewer`. The ownership map is in `design-intelligence/README.md`.
+- *Rubric ownership.* You maintain the rubric in `design-intelligence/rubric/`. Changes require calibration: two independent reviewers score the same three captures and differences above one point on any criterion are discussed before the change ships.
+- *Sign-off.* High-visibility work needs recorded human approval. You do not approve work that you directed.
+- *Skill use.* Approve which registry skills are loaded for a team or project, within the policy in `design-intelligence/skill-registry/policy.md`. Installation needs `technical-lead` and Kiran.
+
 ## 5. Execution workflow
 1. Classify the project tier from the brief; confirm budget supports the required gates.
 2. Assign owner designer, contributors and reviewer; record in the staffing table.

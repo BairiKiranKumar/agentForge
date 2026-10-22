@@ -1,0 +1,7 @@
+# Direction note: Tallyfield hero
+
+**Idea.** The product's one claim is "every answer shows its working", so the page behaves like a ledger: paper background, ink rules, a serif headline, monospace for anything that is data, and a hand-drawn tally mark as the logo. The hero artefact is the proof: a plain-words question, the SQL behind it and a small chart, all labelled placeholder. Follows the brief's three directions: a checkable claim plus one real-looking artefact; one primary "Request a demo" with a timed lighter option (sample data, about 2 min) repeated at page end; a risk line beside the button and proof slots beneath, left as labelled placeholders.
+
+**Defaults replaced.** Indigo/purple gradient and glass panels: flat paper, one green, one ochre used only for data and focus. Rounded shadowed cards: square-edged artefact with a hard offset shadow, and a numbered list instead of a three-up card row. Single sans family: serif plus mono plus system sans on a fixed scale and 4/8/16/24/40/64/96 spacing. Entrance fades: only the bars grow once, off under prefers-reduced-motion. Stock imagery: none.
+
+**Could not verify.** Real-device and screen-reader behaviour; contrast was calculated by hand, not by tool. Headless capture cannot render below about 500px, so 375px was checked only by measuring no horizontal overflow in a 375px frame. Georgia/system fonts vary by OS. The 2-minute figure, data-handling line and proof slots are invented placeholders.

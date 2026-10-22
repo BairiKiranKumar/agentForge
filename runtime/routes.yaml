@@ -117,3 +117,17 @@ workflows:
     owners: [support-triage-specialist]
     reviewers: [technical-lead]
     parallel_groups: []
+  - id: WF-21
+    file: workflows/21-design-first.md
+    priority: 8
+    keywords: [design-first, art direction, creative direction, design direction, visual qa, design exploration]
+    owners: [creative-director, design-researcher, ui-designer]
+    reviewers: [design-reviewer, accessibility-tester]
+    parallel_groups: [research wave, review wave]
+  - id: WF-22
+    file: workflows/22-design-intelligence-refresh.md
+    priority: 8
+    keywords: [design refresh, design knowledge base, skill registry, design skills, motion library, design intelligence]
+    owners: [design-researcher, motion-researcher, design-skill-researcher]
+    reviewers: [documentation-curator]
+    parallel_groups: [discovery]

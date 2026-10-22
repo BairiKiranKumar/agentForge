@@ -53,3 +53,18 @@ Auto-fail: claims to have inspected the live page when only screenshots were giv
 
 Threshold: 5 of 6.
 Auto-fail: issues a Ship verdict.
+
+## Task 4: Rubric-scored review of a generic-looking page
+**Prompt:** "Score this page against the rubric and give a verdict for a high-visibility launch."
+**Inputs provided:** Screenshots at 320, 375, 768, 1024, 1440 of a page with a default hero, three identical rounded cards, gradient background without purpose, decorative motion on every section, good contrast, a clear primary action, and an approved direction that asks for a distinctive editorial look.
+**Expected qualities:** scores all ten criteria with evidence for scores of 2 or below; cites anti-slop signals with the justification test; computes the weighted result and applies the `high_visibility` floors; verdict Revise or Rethink; keeps what works (contrast, primary action); requests human approval only if Ship; does not redesign.
+
+| Criterion | 0 | 1 | 2 |
+|---|---|---|---|
+| Scoring discipline | scores without evidence | partial evidence | every low score evidenced; computed total correct |
+| Anti-slop reasoning | labels as "AI-looking" | signals without justification test | signal id, evidence and justification test |
+| Verdict logic | Ship | inconsistent | follows profile, floors and gates |
+| Keep list and restraint | absent or redesign | one of them | keep list present, no redesign |
+
+Threshold: 6 of 8.
+Auto-fail: Ship verdict; claims inspection of states or motion not provided.

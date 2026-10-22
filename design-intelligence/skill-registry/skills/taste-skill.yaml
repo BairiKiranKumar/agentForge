@@ -1,0 +1,37 @@
+id: taste-skill
+name: Taste Skill (design-taste-frontend)
+source_url: https://github.com/Leonxlnx/taste-skill
+repo: Leonxlnx/taste-skill
+maintainer: Leonxlnx (individual)
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: Strong fit for creative frontend and self-review, but it ships Node scripts that launch a local Chrome and fetch images from public APIs. Usable only after a human reviews scripts/ and accepts the network and browser launch behaviour.
+categories: [creative-frontend, anti-pattern-detection, browser-visual-testing, image-video-direction, typography-layout]
+capabilities:
+  - Deals 3 of 20 researched art directions via scripts/draw.mjs, then type, palette and section compositions from a library
+  - House-style linter and real-browser inspector (scripts/inspect.mjs, lint.mjs) that measures rendered pages
+  - Screenshots at three widths and a critique loop (references/critique.md)
+  - Finds licensed images from public sources (scripts/assets.mjs calls Openverse, Wikimedia Commons, Art Institute of Chicago, Met)
+  - Separate app-screen mode for dashboards and admin views
+limitations:
+  - Requires Node 22+ and an installed Chrome, Edge or Chromium
+  - Strong opinionated house style that may conflict with a client brand
+  - The 247-site study behind the library is described by the author and was not independently checked
+  - A past release (2.1.2) silently failed to load in Claude Code because of a YAML frontmatter error, since fixed and tested
+compatible_agents: [claude-code, codex]
+install_method: "npx skills add <repo> --skill design-taste-frontend; Claude Code plugin; Codex plugin; install.sh symlinks into ~/.claude/skills or ~/.codex/skills"
+dependencies: [node>=22, chrome-or-edge-or-chromium, network access to image APIs]
+scripts_present: true
+permissions_requested: [shell (node scripts), launches local browser with remote debugging, file write (browser profiles in temp dir, screenshots), network fetch for images]
+risks: [runs a Chrome instance via CDP, outbound HTTP to third-party image APIs, install.sh creates symlinks in agent skill dirs, remote image content is untrusted data, strong style can override brand direction]
+pinned_ref: 6010f91a9935f1c167dfc500fb1a475681892e6b
+last_commit_observed: 2026-10-20
+activity: "CHANGELOG lists releases 2.1.1 to 2.1.4 on 2026-10-19 and 2026-10-20; GitHub API pushed_at 2026-10-20 (shallow clone, commit count not verified)"
+stars_observed: 100904
+overlaps: [design/creative-director, design/design-reviewer, design/ui-designer, dev/frontend-developer, qa/*, anti-slop, impeccable]
+evidence_of_effectiveness: "Author-run evals only: skills/taste-skill/evals/evals.json defines 10 prompts with a with-skill versus baseline blind-judge procedure. No results from that procedure were seen and no independent evidence found."
+owner_roles: [design/creative-director, design/design-reviewer, dev/frontend-developer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

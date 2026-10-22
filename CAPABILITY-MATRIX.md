@@ -63,6 +63,11 @@ Rule: any activity that sends, publishes, spends, deploys, signs or tests live s
 | Conversion-focused page layouts | `conversion-designer` | client | `conversion-optimization-specialist` | `copywriter` | 02 |
 | Design review before build or ship | `design-reviewer` | `design-lead` | | `accessibility-designer` | 02 |
 | Canva production | `canva-specialist` | requester | `design-reviewer` (high visibility) | `brand-designer` | 04 |
+| Visual reference research and design knowledge base | `design-researcher` | `design-lead` | `creative-director` | `ux-researcher` | 21, 22 |
+| Design skill discovery, vetting and registry | `design-skill-researcher` | Kiran (for approved status or install) | `technical-lead` | `licensing-ip-assistant` | 21, 22 |
+| Motion reference research and pattern library | `motion-researcher` | `design-lead` | `motion-designer` | `performance-engineer`, `accessibility-designer` | 21, 22 |
+| Design direction approval before major implementation | `creative-director` | Kiran or client (high-visibility) | `design-reviewer` | `design-researcher` | 21 |
+| Rubric-scored visual QA of rendered work | `design-reviewer` | `design-lead` | `accessibility-tester` | `performance-engineer` | 21 |
 
 ## Content
 | Activity | Owner (R) | Approver (A) | Reviewer | Consulted | WF |

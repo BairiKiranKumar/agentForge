@@ -11,6 +11,7 @@ departments:
   - product
   - research
   - design
+  - design-intelligence
   - content
   - dev
   - data-ai
@@ -273,6 +274,28 @@ roles:
     owns: "Canva builds, brand-template usage, resizing and exports, Canva build specs"
     excludes: "brand identity (brand-designer); social strategy (social-media-manager)"
     flags: [user_requested]
+  # ---------------- design-intelligence ----------------
+  - slug: design-researcher
+    title: Design Researcher
+    dept: design-intelligence
+    mission: "Find, inspect and explain exceptional real-world design, and turn it into reusable, sourced principles."
+    owns: "design reference research, visual benchmarking, browser-based design analysis, the design reference knowledge base"
+    excludes: "business competitor analysis (competitor-researcher); user research with participants (ux-researcher); motion pattern library (motion-researcher); choosing the creative route (creative-director)"
+    aliases: [visual design researcher, design benchmark researcher, design inspiration researcher]
+  - slug: design-skill-researcher
+    title: Design Skill Researcher
+    dept: design-intelligence
+    mission: "Discover, vet and recommend third-party design skills for AI coding agents, and keep a versioned registry of what is approved, conditional or rejected."
+    owns: "skill discovery, skill security and licence evaluation, the skill registry, skill-to-role mapping, skill effectiveness tracking"
+    excludes: "installing or running skills in production (technical-lead decides, frontend-developer applies); writing role definitions (documentation-curator); design judgment on output (design-reviewer)"
+    aliases: [design skills scout, agent skill evaluator]
+  - slug: motion-researcher
+    title: Motion Researcher
+    dept: design-intelligence
+    mission: "Research high-quality motion and interaction references and maintain a motion pattern library with performance and accessibility guidance."
+    owns: "motion reference research, the motion pattern library, technique-to-context recommendations, motion feasibility notes"
+    excludes: "motion specs for a specific project (motion-designer); implementation (frontend-developer); performance measurement (performance-engineer); UI state behavior (interaction-designer)"
+    aliases: [motion design researcher, interaction research specialist]
 
   # ---------------- content ----------------
   - slug: content-strategist

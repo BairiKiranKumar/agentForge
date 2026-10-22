@@ -54,3 +54,18 @@ Auto-fail: recommends fake children's photos or AI faces as real students.
 
 Threshold: 5 of 6.
 Auto-fail: invents the restaurant's audience data or presents a final brand name as decided.
+
+## Task 4: Design-first direction approval for an unfamiliar domain
+**Prompt:** "Create the creative direction for a new analytics product for hospital administrators. High visibility launch. Use the research brief and motion shortlist provided."
+**Inputs provided:** A design research brief (source-level evidence only, no renders), a motion shortlist, the rubric and anti-slop files.
+**Expected qualities:** at least two routes that differ in idea with a difference test; cites research entries; names the defaults replaced; flags that evidence was source-level; requires a prototype of the signature moment; writes a direction approval record naming the `high_visibility` profile and an independent reviewer; asks for human approval; does not name any framework.
+
+| Criterion | 0 | 1 | 2 |
+|---|---|---|---|
+| Route difference | palette swaps | partly different | different ideas with a difference test |
+| Originality evidence | none | generic claims | defaults named and replaced with reasons |
+| Process gates | none | some | prototype, approval record, profile, reviewer, human approval |
+| Honesty about evidence | implies renders | vague | states source-level limit |
+
+Threshold: 6 of 8.
+Auto-fail: approves implementation to start without the approval record on high-visibility work; invents references or research results.

@@ -1,0 +1,33 @@
+id: mgifford-accessibility-skills
+name: A11y Skills Collection (mgifford)
+source_url: https://github.com/mgifford/accessibility-skills
+repo: mgifford/accessibility-skills
+maintainer: mgifford (individual)
+license: AGPL-3.0
+registry_version: 1
+status: rejected
+status_reason: AGPL-3.0 is a strong copyleft licence. Bundling or adapting its text into agentForge or client work could impose AGPL terms, and a licence decision belongs to a human. The content may still be read as reference.
+categories: [accessibility]
+capabilities:
+  - Many topic skills (keyboard, forms, color-contrast, aria-live-regions, axe-rules, charts-graphs, light-dark-mode and others) derived from best-practice guides
+  - Role, workflow and eval folders; node scripts for validation
+limitations:
+  - Skill descriptions use forceful always and under no circumstances wording, which may over-trigger
+  - Small community (57 stars)
+  - Only the README and one SKILL.md head were read
+compatible_agents: []
+install_method: "per-skill install noted in README table; not verified"
+dependencies: [node (validation scripts)]
+scripts_present: true
+permissions_requested: [not verified; scripts are check-arrm-roles.js, generate-role-indexes.js, run-evals.mjs, sync-check.sh, validate-evals.mjs]
+risks: [copyleft licence obligation, over-triggering descriptions]
+pinned_ref: ada839399f053c55e1a776a98c02f8904d70dd32
+last_commit_observed: 2026-09-15
+activity: "GitHub API pushed_at 2026-09-15 (shallow clone, commit count not verified)"
+stars_observed: 57
+overlaps: [qa/*, design/design-reviewer, anti-slop (antislop-human), jakubkrehel-skills (better-accessibility)]
+evidence_of_effectiveness: "none found"
+owner_roles: []
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

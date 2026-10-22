@@ -1,0 +1,58 @@
+# Representative design-first plan (WF-21, Tier L). Dry-run with:
+#   python -m runtime.scheduler plan examples/plans/design-first.yaml
+# Research stages run together. Review and QA stages run together. Technology is decided by technical-lead.
+task_id: design-first-demo
+workflow: workflows/21-design-first.md
+stages:
+  - id: requirements
+    owner: requirements-specialist
+    depends_on: []
+    outputs: [work/design-first-demo/requirements.md]
+  - id: research
+    owner: design-researcher
+    depends_on: [requirements]
+    outputs: [work/design-first-demo/design-research-brief.md]
+  - id: motion-research
+    owner: motion-researcher
+    depends_on: [requirements]
+    outputs: [work/design-first-demo/motion-recommendation.md]
+  - id: skill-check
+    owner: design-skill-researcher
+    depends_on: [requirements]
+    outputs: [work/design-first-demo/skill-recommendation.md]
+  - id: exploration
+    owner: creative-director
+    depends_on: [research, motion-research]
+    outputs: [work/design-first-demo/concept-routes.md]
+  - id: direction
+    owner: creative-director
+    depends_on: [exploration, skill-check]
+    outputs: [work/design-first-demo/art-direction.md, work/design-first-demo/direction-approval.md]
+  - id: prototype
+    owner: ui-designer
+    depends_on: [direction]
+    outputs: [work/design-first-demo/prototype.md]
+  - id: design-review
+    owner: design-reviewer
+    depends_on: [prototype]
+    outputs: [work/design-first-demo/design-review-r1.md]
+  - id: implementation
+    owner: frontend-developer
+    depends_on: [design-review]
+    outputs: [work/design-first-demo/build.md]
+  - id: visual-qa
+    owner: design-reviewer
+    depends_on: [implementation]
+    outputs: [work/design-first-demo/visual-qa.md]
+  - id: accessibility-qa
+    owner: accessibility-tester
+    depends_on: [implementation]
+    outputs: [work/design-first-demo/accessibility-qa.md]
+  - id: performance-qa
+    owner: performance-engineer
+    depends_on: [implementation]
+    outputs: [work/design-first-demo/performance-qa.md]
+  - id: deliver
+    owner: orchestrator
+    depends_on: [visual-qa, accessibility-qa, performance-qa]
+    outputs: [work/design-first-demo/report.md]

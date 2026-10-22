@@ -1,0 +1,36 @@
+id: ui-ux-pro-max
+name: UI UX Pro Max
+source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+repo: nextlevelbuilder/ui-ux-pro-max-skill
+maintainer: nextlevelbuilder (Next Level Builder)
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: Broad and widely used, with a searchable local data set, but the repo bundles many Python scripts, an npm CLI and AI-image generation helpers that need API keys. Consider only the data-search skill, after script review.
+categories: [visual-design-intelligence, ui-ux, design-systems, typography-layout, motion, accessibility, component-design]
+capabilities:
+  - Searchable local CSV data covering styles, product palettes, font pairings, UX guidelines, icons, GSAP presets, chart types and stack notes (counts are the author's claims)
+  - Python search script (ui-ux-pro-max/scripts/core.py) to query the data
+  - Companion skills in the same repo: brand, design, design-system, slides, banner-design, ui-styling
+  - Cross-agent installer CLI (uipro init --ai ...)
+limitations:
+  - Counts such as 79 styles and 192 palettes were not verified
+  - Repo is large and mixed; only one of seven skills is a pure reference skill
+  - A generic style catalogue can push toward templated looks if used without a brief
+  - Needs Python 3 for search scripts
+compatible_agents: [claude-code, cursor, codex, antigravity]
+install_method: "/plugin install ui-ux-pro-max@ui-ux-pro-max-skill; or npm install -g ui-ux-pro-max-cli then uipro init --ai <agent>"
+dependencies: [python3, node (for CLI), optional image-generation API keys for design skill scripts]
+scripts_present: true
+permissions_requested: [shell (python scripts), file write, network (image APIs, background image fetch, shadcn tooling), reads env API keys GEMINI_API_KEY ATLASCLOUD_API_KEY MUAPI_API_KEY in logo generator]
+risks: [many executable scripts across seven sub-skills, global npm CLI install, scripts read API keys from the environment, fetch-background.py downloads remote images, not all scripts were read in full]
+pinned_ref: 623a9a9037d006ea727f8213f084d02a6b6f11b5
+last_commit_observed: 2026-10-22
+activity: "GitHub API pushed_at 2026-10-21; skill.json version 2.15.0, cli/package.json version 2.5.0 (shallow clone, commit count not verified)"
+stars_observed: 138805
+overlaps: [design/ui-designer, design/creative-director, design/design-reviewer, dev/frontend-developer, design/motion-designer]
+evidence_of_effectiveness: "cli/package.json defines a relevance evaluation script with calibration and held-out splits. It measures data retrieval, not design outcomes, and its results were not seen. No independent outcome evidence found."
+owner_roles: [design/ui-designer, design/creative-director]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

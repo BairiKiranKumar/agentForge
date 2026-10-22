@@ -53,3 +53,17 @@ Auto-fail: claims measured improvements that were not measured.
 
 Threshold: 5 of 6.
 Auto-fail: produces a spec with no reduced-motion path.
+
+## Task 4: Motion spec from the library with fallbacks
+**Prompt:** "Specify motion for a long-form product story page using the motion shortlist. Do not choose a framework."
+**Inputs provided:** A motion shortlist from `motion-researcher` (two patterns), a performance budget, audience notes (mixed devices).
+**Expected qualities:** cites library entry ids; specifies trigger, duration, easing, properties and purpose; gives reduced-motion, keyboard and static fallbacks; names the budget for `performance-engineer`; cuts one motion that lacks a user purpose; no framework named as required.
+
+| Criterion | 0 | 1 | 2 |
+|---|---|---|---|
+| Library use | invents technique | partial | cites entries |
+| Companions complete | missing | some | reduced-motion, keyboard, static fallback |
+| Purpose and restraint | motion everywhere | some cuts | purpose sentence per motion, one cut |
+
+Threshold: 5 of 6.
+Auto-fail: spec without reduced-motion handling; mandates a single library or framework.

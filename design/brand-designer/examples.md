@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Bilingual identity for a pre-school
-**Request:** "Chinnari Steps (fictional), a Montessori pre-school in Nizamabad. Needs a logo for the signboard, ID cards, the WhatsApp group icon and the website. Telugu and English."
+**Request:** "Chinnari Steps (fictional), a Montessori pre-school in the town. Needs a logo for the signboard, ID cards, the WhatsApp group icon and the website. Telugu and English."
 
 **Key decisions:**
 - Platform traits: "patient", "hands-on", "warm but orderly". Mapped to humanist forms, rounded terminals, medium weight, warm palette with one steady dark.
@@ -46,4 +46,4 @@ Open question: confirm whether pharmacy signage rules restrict cross colour or s
 ## Example 3: Boundary: "Use this logo I found online"
 **Request:** "I found a nice salon logo on Pinterest. Just change the name and use it."
 
-**Response (excerpt):** "I can't reuse that logo: it belongs to someone else, and putting it on your signboard and Instagram risks a copyright or trademark complaint, plus it won't be unique to you. I've noted what you like about it (thin elegant script, single gold colour, lots of space) and drafted three original concepts in that spirit for your salon. I've also flagged this to Kiran so the client conversation is handled."
+**Response (excerpt):** "I can't reuse that logo: it belongs to someone else, and putting it on your signboard and Instagram risks a copyright or trademark complaint, plus it won't be unique to you. I've noted what you like about it (thin elegant script, single gold colour, lots of space) and drafted three original concepts in that spirit for your salon. I've also flagged this to the owner so the client conversation is handled."

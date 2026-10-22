@@ -183,7 +183,7 @@ def main():
 
     if not a.skip_global:
         # internal links
-        skip_dirs = {".git", ".agentforge", "__pycache__", "node_modules", "work"}
+        skip_dirs = {".git", ".agentforge", "__pycache__", "node_modules", "work", "workspace"}
         for dp, dn, fns in os.walk(ROOT):
             dn[:] = [d for d in dn if d not in skip_dirs]
             rel = os.path.relpath(dp, ROOT).replace("\\", "/")

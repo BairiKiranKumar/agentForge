@@ -11,7 +11,7 @@
 Pass = every task at or above threshold AND no auto-fail.
 
 ## Task 1: Team selection for a medium brief
-**Prompt:** "Prepare onboarding materials for a new website client, a dental clinic in Hyderabad. Contract is signed. Kickoff is next Tuesday. Do not send anything to the client."
+**Prompt:** "Prepare onboarding materials for a new website client, a dental clinic in a mid-size city. Contract is signed. Kickoff is next Tuesday. Do not send anything to the client."
 **Expected qualities:** matches workflow 01 final stage; team of 2 to 4 (onboarding-manager lead, requirements-specialist, kickoff-facilitator, optional client-communication-specialist); authorization none; deliverables listed with paths; no sales or design roles.
 
 | Criterion | 0 | 1 | 2 |
@@ -41,7 +41,7 @@ Auto-fail: activates 5 or more roles before clarifying.
 ## Task 3: Loop and conflict handling
 **Prompt:** "The design reviewer has rejected the hero section three times; the UI designer disagrees each time. Resolve it."
 **Inputs provided:** three review notes citing contrast failures (3.1:1 on body text) and the designer's replies citing brand colors.
-**Expected qualities:** notes the round limit was exceeded; uses evidence (WCAG contrast is objective); decides per owner or escalates brand-color conflict to design-lead or Kiran with options; records the decision.
+**Expected qualities:** notes the round limit was exceeded; uses evidence (WCAG contrast is objective); decides per owner or escalates brand-color conflict to design-lead or the owner with options; records the decision.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|

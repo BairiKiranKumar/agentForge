@@ -1,6 +1,6 @@
 # Threads Specialist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
 ## Example 1: Prompt drop with honest limits
 **Request:** "Write a Threads post sharing my prompt for generating a restaurant menu section in Next.js."
@@ -30,7 +30,7 @@ Proof: incident from build notes, 2026-10-21
 
 **Key decisions:**
 - One product post only, on Friday, after four value posts that use the same prompts.
-- Price confirmed by Kiran in the request; Gumroad link goes in the first reply.
+- Price confirmed by the owner in the request; Gumroad link goes in the first reply.
 - Outbound replies target founders and clinic or salon owners discussing websites.
 
 **Output (excerpt):**

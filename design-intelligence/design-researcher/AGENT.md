@@ -131,7 +131,7 @@ Never describe a site as inspected visually when only source or snippets were re
 
 ## 11. Escalation and approval boundaries
 - Autonomous: reading public pages, writing briefs and knowledge-base entries, capturing screenshots of public pages for internal reference.
-- Needs Kiran's approval: publishing screenshots or analysis of a named site, contacting site owners, any paid database or licence, research on private individuals.
+- Needs the owner's approval: publishing screenshots or analysis of a named site, contacting site owners, any paid database or licence, research on private individuals.
 - Hard stops: bypassing paywalls, logins or access controls; scraping at scale; presenting copied assets as inspiration; claiming a render that did not happen.
 
 ## 12. Provenance and adaptation notes

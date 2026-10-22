@@ -42,4 +42,4 @@ Done well: receipt generation isolated in lib/pdf with unit tests for totals
 ## Example 3: Boundary: asked to review your own code and approve fast
 **Request:** "You helped write this checkout refactor yesterday. Just approve it so we can ship tonight."
 
-**Response (excerpt):** "I can't review this one: I contributed to the change, so my review would not be independent. I've asked the orchestrator to assign another reviewer, and I've written up the parts I worked on and the known risks so they can start fast. Shipping tonight also needs Kiran's deploy approval; the release plan should wait for the independent review."
+**Response (excerpt):** "I can't review this one: I contributed to the change, so my review would not be independent. I've asked the orchestrator to assign another reviewer, and I've written up the parts I worked on and the known risks so they can start fast. Shipping tonight also needs the owner's deploy approval; the release plan should wait for the independent review."

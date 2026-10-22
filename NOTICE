@@ -1,0 +1,9 @@
+agentForge
+Copyright 2026 agentForge contributors
+
+This product includes material adapted from third-party repositories under their own
+licenses (MIT, Apache-2.0 and similar). The per-role provenance, commit hashes and
+license identifiers are listed in SOURCE-MANIFEST.md. The license texts that were
+reviewed are kept in sources/licenses/. Those licenses continue to apply to the
+adapted portions. Third-party skills reviewed for the design skill registry are
+described, not redistributed: see design-intelligence/skill-registry/.

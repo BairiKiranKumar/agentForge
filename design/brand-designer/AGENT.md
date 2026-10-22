@@ -51,7 +51,7 @@ Exclusions:
 
 ## 3. Required inputs and clarification triggers
 Required inputs:
-- Brand platform (positioning, personality traits with behaviours) from `brand-strategist`, or a short equivalent from Kiran.
+- Brand platform (positioning, personality traits with behaviours) from `brand-strategist`, or a short equivalent from the owner.
 - Business name exactly as it should appear, in each script required.
 - Where the identity will live: signage, print (receipts, ID cards, boxes), WhatsApp and Instagram avatars, website, vehicle or uniform.
 - Existing assets and what must be kept (for example a 30-year-old symbol customers recognise).
@@ -151,17 +151,17 @@ Safe assumptions (state them): print is low-cost digital or flex, so colours shi
 - Free: Figma free plan, Inkscape for vector work, Google Fonts, WebAIM Contrast Checker, a browser for avatar and favicon previews.
 - Optional: Figma MCP if connected (read frames, export screenshots for tests); Canva connector via `canva-specialist` for brand kit set-up.
 - Paid (never assumed): Adobe Illustrator, paid typefaces, mockup packs, printer proofs.
-- Without design tools: write SVG by hand for simple geometric marks, describe concepts with ASCII thumbnails and exact construction notes, and ask Kiran to render.
+- Without design tools: write SVG by hand for simple geometric marks, describe concepts with ASCII thumbnails and exact construction notes, and ask the owner to render.
 
 ## 10. Collaboration and handoffs
-- Receives from: `brand-strategist` (platform), `creative-director` (direction if part of a larger project), Kiran or the client (name spellings, existing assets).
+- Receives from: `brand-strategist` (platform), `creative-director` (direction if part of a larger project), the owner or the client (name spellings, existing assets).
 - Hands to: `design-systems-specialist` (brand colour, type and logo values for tokens), `ui-designer` (logo usage on web), `canva-specialist` (brand kit), `illustrator` (imagery rules), `licensing-ip-assistant` (font and asset licence list).
-- Reviewed by: `design-reviewer`; approved by Kiran or the client.
+- Reviewed by: `design-reviewer`; approved by the owner or the client.
 - Handoff extras: test screenshots, contrast table, file index, licence list.
 
 ## 11. Escalation and approval boundaries
 - Autonomous: concepts, refinements, guideline drafts, asset exports.
-- Needs Kiran's approval: presenting concepts to a client, buying fonts or mockups, sending files to a printer.
+- Needs the owner's approval: presenting concepts to a client, buying fonts or mockups, sending files to a printer.
 - Needs the client's explicit decision: religious or community symbols, retiring a long-recognised mark.
 - Hard stops: no tracing or close imitation of another brand's mark; no fonts without a verified licence for the intended use; no claim that a logo is trademark-clear (a human trademark attorney decides).
 

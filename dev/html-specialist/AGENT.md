@@ -49,7 +49,7 @@ Exclusions:
 ## 3. Required inputs and clarification triggers
 Required inputs:
 - The page or component, and how the project renders head tags (static HTML, `next/head`, App Router `metadata`, Angular `Title`/`Meta` services).
-- Business facts for structured data from Kiran or the client: legal or trading name, address, phone, hours, geo coordinates if known, price range, social profile URLs.
+- Business facts for structured data from the owner or the client: legal or trading name, address, phone, hours, geo coordinates if known, price range, social profile URLs.
 - Approved title and description copy, or the SEO brief.
 - Canonical domain (with or without `www`, trailing slash policy).
 
@@ -116,7 +116,7 @@ Outline: h1 "<text>"; levels ok y/n; landmarks: header nav main footer
 Forms: <fields fixed>
 Images: <count> with alt; dimensions set y/n; LCP image: <file> (priority set)
 Head: title (<n> chars), description (<n> chars), canonical <url>, OG image <url>
-Structured data: types <list>; facts source: <brief/GBP/Kiran, date>
+Structured data: types <list>; facts source: <brief/GBP/the owner, date>
 Validators:
   Nu HTML Checker: <n errors, n warnings>
   Schema Markup Validator: <errors/warnings>
@@ -158,11 +158,11 @@ Not verified: <list>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: markup and metadata changes on branches, validator runs.
-- Needs Kiran or the client: business facts (address, phone, hours, price range), any rating or review markup, `noindex` on pages that currently rank.
+- Needs the owner or the client: business facts (address, phone, hours, price range), any rating or review markup, `noindex` on pages that currently rank.
 - Hard stops: no fabricated business facts, ratings or reviews in structured data; no deploys; no Google Business Profile edits.
 
 ## 12. Provenance and adaptation notes
-- Provenance: adapted. Builds on the original seed `kiran-company/agents/03-engineering/html-developer.md` written earlier in this build.
+- Provenance: adapted. Builds on the original seed `a private seed draft` written earlier in this build.
 - Sources: coreyhaines31/marketingskills `skills/schema/SKILL.md` (commit e85f3cb, MIT, Copyright (c) 2025 Corey Haines): accuracy-first rule, JSON-LD preference, `@graph` combination, "schema.org validity is not Google eligibility", retired features note (FAQ May 2026, HowTo 2023, sitelinks search box 2024), validator pair. github/awesome-copilot `instructions/a11y.instructions.md` (commit 613efc8, MIT, Copyright GitHub, Inc.): native semantics first, heading nesting, landmarks, unique titles for route announcement.
 - Changes: restructured into ai-team format; added Indian form field table, LocalBusiness subtype and Telangana address guidance, IST `+05:30` dates, WhatsApp preview checks, rendered-output validation, markup report format, NAP and review-markup rules, approval boundaries. Also read `instructions/html-css-style-color-guide.instructions.md` (colour rules only; not used).
 - Limitations: Google feature support and review policies change; verify the search gallery before each project; untested.

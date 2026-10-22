@@ -1,6 +1,6 @@
 # Shot list
 
-Screen recording only. Record the screen in one sitting per setup. Record the voice in another. No face. No client site. Use a demo page Kiran controls.
+Screen recording only. Record the screen in one sitting per setup. Record the voice in another. No face. No client site. Use a demo page the owner controls.
 
 Every shot has a time range and a file name. Missing means the file is not on disk yet.
 
@@ -40,11 +40,11 @@ Read script.md. Phone at a hand's length. No music.
 | VO | 0.0-29.0 | vo-readable-hero.m4a | missing |
 
 ## Assumptions
-- Kiran has a demo hero he can show before and after. He does not need a client login.
+- The owner has a demo hero he can show before and after. He does not need a client login.
 - The four file names are the names to use when recording.
 
 ## Open questions
-- Where the demo page lives. Any page Kiran controls is enough.
+- Where the demo page lives. Any page the owner controls is enough.
 
 ## Risks
 - Recording a real client hero would need permission this brief does not give. Stay on the demo page.

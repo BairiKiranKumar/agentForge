@@ -496,7 +496,7 @@
       "slug": "localization-specialist",
       "title": "Localization Specialist",
       "department": "content",
-      "mission": "Adapt content for Indian languages and regional audiences (Telugu, Hindi, Indian English).",
+      "mission": "Adapt content for other languages and regional audiences, using regional packs for language and market specifics.",
       "aliases": [],
       "status": "untested",
       "definition": "content/localization-specialist/AGENT.md"
@@ -645,7 +645,7 @@
       "slug": "ecommerce-specialist",
       "title": "E-commerce Specialist (Shopify)",
       "department": "dev",
-      "mission": "Build and optimize online stores on Shopify or headless commerce, including Indian payment setups.",
+      "mission": "Build and optimize online stores on Shopify or headless commerce, including regional payment setups (see regional packs).",
       "aliases": [],
       "status": "untested",
       "definition": "dev/ecommerce-specialist/AGENT.md"
@@ -909,7 +909,7 @@
       "slug": "privacy-specialist",
       "title": "Privacy Specialist",
       "department": "security",
-      "mission": "Help products handle personal data lawfully and respectfully (India DPDP Act, GDPR where relevant).",
+      "mission": "Help products handle personal data lawfully and respectfully (for example GDPR, CCPA/CPRA, India DPDP Act; see regional packs).",
       "aliases": [],
       "status": "untested",
       "definition": "security/privacy-specialist/AGENT.md"
@@ -1234,7 +1234,7 @@
       "slug": "business-development-representative",
       "title": "Business Development Representative",
       "department": "sales",
-      "mission": "Open new accounts through outbound prospecting, including Indian local businesses.",
+      "mission": "Open new accounts through outbound prospecting, including local businesses.",
       "aliases": [],
       "status": "untested",
       "definition": "sales/business-development-representative/AGENT.md"

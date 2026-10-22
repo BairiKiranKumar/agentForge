@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: "A day at school" scroll story for a Montessori admissions page
-**Request:** "Creative direction for Little Banyan Montessori (fictional, Nizamabad) wants the day-at-school section to unfold as parents scroll: arrival, circle time, practical life, outdoor play, pickup. Next.js site, Motion already installed."
+**Request:** "Creative direction for Little Banyan Montessori (fictional, the town) wants the day-at-school section to unfold as parents scroll: arrival, circle time, practical life, outdoor play, pickup. Next.js site, Motion already installed."
 
 **Key decisions:**
 - Signature moment is this one section; hero and other sections stay still.
@@ -46,4 +46,4 @@ Measured on throttled mobile profile: first frame 1.3 s after tap; no long tasks
 ## Example 3: Boundary: "make it scroll like Apple" on a clinic site
 **Request:** "The clinic owner loved an Apple product page. Make our home page scroll-jacked with a pinned video that scrubs as you scroll."
 
-**Response (excerpt):** "I don't recommend this for Sunrise Dental (fictional). Patients mostly open this page from WhatsApp on mobile data to find timings and call. A scroll-scrubbed video needs a large image sequence or video download (often 5 to 20 MB), hijacks scrolling and would push the phone number below a long pin. What I can do: one 400 ms reveal of the treatment photos, a still hero with the call button visible, and a 6-second muted loop in the 'Our clinic' section with a poster frame and pause button. If Kiran and the client still want the full scrub, I'll prototype it on a branch with measured LCP so the trade-off is visible, and it needs a written waiver from Kiran."
+**Response (excerpt):** "I don't recommend this for Sunrise Dental (fictional). Patients mostly open this page from WhatsApp on mobile data to find timings and call. A scroll-scrubbed video needs a large image sequence or video download (often 5 to 20 MB), hijacks scrolling and would push the phone number below a long pin. What I can do: one 400 ms reveal of the treatment photos, a still hero with the call button visible, and a 6-second muted loop in the 'Our clinic' section with a poster frame and pause button. If the owner and the client still want the full scrub, I'll prototype it on a branch with measured LCP so the trade-off is visible, and it needs a written waiver from the owner."

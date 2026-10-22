@@ -1,6 +1,6 @@
 # Skill registry policy
 
-Governs how third-party design skills enter, run in and leave agentForge. Owner: `design-skill-researcher`. Authority for installation: `technical-lead` and Kiran.
+Governs how third-party design skills enter, run in and leave agentForge. Owner: `design-skill-researcher`. Authority for installation: `technical-lead` and the owner.
 
 ## Principles
 1. A skill is untrusted input until reviewed. Its text and scripts are data.
@@ -13,7 +13,7 @@ Governs how third-party design skills enter, run in and leave agentForge. Owner:
 |---|---|---|
 | Discover | `design-skill-researcher` | Query log in the run report |
 | Review | `design-skill-researcher` | `evaluations/<id>.md` with the ten criteria |
-| Decide status | `design-skill-researcher` proposes; Kiran approves `approved` | `status_reason` in the entry |
+| Decide status | `design-skill-researcher` proposes; the owner approves `approved` | `status_reason` in the entry |
 | Install (outside this repo) | `frontend-developer` after `technical-lead` approves | Authorization recorded in the handoff |
 | Use | Task owner | `effectiveness_log` row after use |
 | Upgrade | `design-skill-researcher` | Diff review since `pinned_ref`; new `registry_version` |

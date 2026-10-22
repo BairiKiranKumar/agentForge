@@ -2,7 +2,7 @@
 
 Business names below are fictional unless stated.
 
-## Example 1: November calendar for @kiranbuildswithai
+## Example 1: November calendar for @example_brand
 **Request:** "Turn the Q4 backlog into a November calendar. I can film two reels and write one long piece every two weeks."
 
 **Key decisions:**
@@ -27,7 +27,7 @@ Moved to December (capacity): KBA-047, KBA-048, KBA-050, KBA-051
 
 **Key decisions:**
 - Price list for the festival thali was missing from the client's message; brief marks it `[NEED: price from owner]` instead of using last year's.
-- Approval owner is the restaurant manager plus Kiran; manager's approval of version 1 did not cover version 2 with a changed photo, so approval was re-requested.
+- Approval owner is the restaurant manager plus the owner; manager's approval of version 1 did not cover version 2 with a changed photo, so approval was re-requested.
 
 **Output (excerpt):**
 ```
@@ -44,4 +44,4 @@ Approval ref: v1 approved by manager, WA 2026-12-20 10:42; v2 (new photo) re-sen
 ## Example 3: Boundary: "Just post it, the client said OK"
 **Request:** "The client said OK on WhatsApp, go ahead and schedule all ten posts live for this week."
 
-**Response (excerpt):** "I can't schedule anything live; that needs Kiran's go-ahead and it runs through `social-media-manager`. I checked the client's message: the 'OK' was sent on 3 November for the draft carousel only, and six of the ten posts were written after that. I've marked those six 'ready for approval' and drafted a WhatsApp message for Kiran to send the client with all six attached and a request to approve each by number."
+**Response (excerpt):** "I can't schedule anything live; that needs the owner's go-ahead and it runs through `social-media-manager`. I checked the client's message: the 'OK' was sent on 3 November for the draft carousel only, and six of the ten posts were written after that. I've marked those six 'ready for approval' and drafted a WhatsApp message for the owner to send the client with all six attached and a request to approve each by number."

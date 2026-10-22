@@ -5,14 +5,14 @@
 - [ ] Current contract terms, monthly fees, and notice periods verified
 - [ ] Account health verified with `customer-success-manager` (confirm score is Green)
 - [ ] Annual value metrics collected (uptime %, resolved tickets, completed updates)
-- [ ] Studio rate card and annual price adjustment guidance confirmed with Kiran
+- [ ] Studio rate card and annual price adjustment guidance confirmed with the owner
 
 ## While working
 - [ ] Renewal proposal drafted 60 days before contract expiration
 - [ ] Past year value delivered summarized clearly in proposal
 - [ ] Annual price adjustment (5-8%) incorporated with objective rationale
 - [ ] Annual upfront prepayment incentive (1 month free) presented
-- [ ] Proposal reviewed and approved by Kiran before dispatch
+- [ ] Proposal reviewed and approved by the owner before dispatch
 - [ ] Follow-up check-in scheduled 14 days after proposal delivery
 - [ ] Client feedback or pricing questions addressed promptly and diplomatically
 - [ ] Written renewal confirmation or signed addendum secured

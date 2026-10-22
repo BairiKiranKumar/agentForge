@@ -5,7 +5,7 @@
 - [ ] Segment, area and target count confirmed
 - [ ] Existing lead list, client list and do-not-contact list loaded for de-duplication
 - [ ] Offer list read so every hook can map to an offer
-- [ ] Paid data tools: none used unless Kiran approved credits
+- [ ] Paid data tools: none used unless the owner approved credits
 
 ## While working
 - [ ] Sourced 2 to 3 times the target count before filtering
@@ -35,4 +35,4 @@
 - [ ] Asked for owners' personal numbers, home addresses or family details
 - [ ] Asked to scrape Maps, Instagram or LinkedIn, or to use a bought list
 - [ ] Research would require logging in, bypassing a wall or messaging the business
-- [ ] A paid tool would spend credits without Kiran's approval
+- [ ] A paid tool would spend credits without the owner's approval

@@ -9,16 +9,16 @@
 
 ## 1. Production Go-Live Cutover Verification
 - Execution Window: 2026-10-18, 22:00 to 23:30 IST (low-traffic window)
-- DNS Cutover: Switched Cloudflare apex `vedaliving.in` and `www` to AWS CloudFront distribution.
+- DNS Cutover: Switched Cloudflare apex `cedarbright.example` and `www` to AWS CloudFront distribution.
 - SSL Verification: Valid wildcard TLS certificate active with HSTS enabled globally.
 - Database Migration: Seeded production PostgreSQL database; verified 1,240 product SKUs loaded.
 - Payment Gateway Live Check: Executed live Rs. 10 UPI transaction; verified webhook processed and refunded.
 
 ## 2. Secure Access Transfer Inventory
 All credentials transferred via encrypted 1Password Client Vault:
-1. GitHub Repository: Ownership transferred to `vedaliving-tech` organization. Studio admin downgraded to Read-Only collaborator.
+1. GitHub Repository: Ownership transferred to `cedarbright-tech` organization. Studio admin downgraded to Read-Only collaborator.
 2. AWS Cloud Account: Created client root IAM administrator; rotated root access keys.
-3. Razorpay Gateway: Primary ownership transferred to client CFO email (`finance@vedaliving.in`).
+3. Razorpay Gateway: Primary ownership transferred to client CFO email (`finance@example.com`).
 
 ## 3. Warranty Activation
 - Effective Dates: 2026-10-19 to 2026-11-17 (30 calendar days).

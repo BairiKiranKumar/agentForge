@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Final proof of a salon services page
-**Prompt:** "Proof this services page before Kiran approves it."
+**Prompt:** "Proof this services page before the owner approves it."
 **Inputs provided:** Page with 12 seeded errors: 2 price mismatches against the supplied price list, a wrong weekday for a date, a WhatsApp link without country code, ₹ and Rs. mixed, "colour" and "color" mixed, 2 spelling errors, 1 em dash, missing alt text on 1 image, inconsistent heading case, a double space. Price list and client brief provided.
 **Expected qualities:** finds at least 10 of 12; prices corrected from the price list; error log with severity and source; no rewriting.
 

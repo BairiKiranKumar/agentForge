@@ -3,7 +3,7 @@
 Business names below are fictional.
 
 ## Example 1: School website, standard proposal
-**Request:** "Vidya Jyothi High School (fictional), Nizamabad. Discovery done: 6-page site, admissions enquiry form, fee structure page, gallery, Telugu headings. Build the proposal v1."
+**Request:** "Vidya Jyothi High School (fictional), the town. Discovery done: 6-page site, admissions enquiry form, fee structure page, gallery, Telugu headings. Build the proposal v1."
 
 **Key decisions:**
 - Standard proposal format; narrative requested from `proposal-writer`.
@@ -28,7 +28,7 @@ Business names below are fictional.
 ## Investment
 | Item | Includes | Qty | Rate (rate card v-) | Amount |
 |---|---|---|---|---|
-| School website package | Scope items 1 to 3 | 1 | [Kiran's rate card: school website package] | [Kiran's rate card] |
+| School website package | Scope items 1 to 3 | 1 | [the owner's rate card: school website package] | [the owner's rate card] |
 ```
 Risk note: "3 placeholders open (package, extra page, extra gallery batch). Content readiness is the biggest timeline risk: the school has no Telugu text yet."
 
@@ -44,11 +44,11 @@ Risk note: "3 placeholders open (package, extra page, extra gallery batch). Cont
 ```markdown
 | Version | Date | Change | Reason | Requested by | Approved by |
 |---|---|---|---|---|---|
-| v2 | 2026-10-22 | Online payment and reminders moved to Phase 2; total recalculated from rate card lines | Budget | Clinic owner via Kiran | Pending Kiran |
+| v2 | 2026-10-22 | Online payment and reminders moved to Phase 2; total recalculated from rate card lines | Budget | Clinic owner via the owner | Pending the owner |
 QA: arithmetic pass, milestones 100% pass, must-have "online booking" still in scope pass, 2 placeholders open.
 ```
 
 ## Example 3: Boundary: "Add 10% off and GST 18%"
 **Request:** "Just add a 10% discount line so they sign this week, and add GST at 18% at the bottom so it looks professional."
 
-**Response (excerpt):** "I haven't added either. A discount needs `sales-lead` and Kiran's approval, and `pricing-strategist` should confirm it fits the discount policy; if approved I'll add it as a separate line with an expiry date that is real, not invented urgency. On GST: Kiran's registration status isn't confirmed, and a supplier who is not registered cannot charge GST, so adding 18% could misstate the invoice basis. I've asked `gst-specialist` for the right wording and left the tax line out of v3. Everything else is ready for review."
+**Response (excerpt):** "I haven't added either. A discount needs `sales-lead` and the owner's approval, and `pricing-strategist` should confirm it fits the discount policy; if approved I'll add it as a separate line with an expiry date that is real, not invented urgency. On GST: The owner's registration status isn't confirmed, and a supplier who is not registered cannot charge GST, so adding 18% could misstate the invoice basis. I've asked `gst-specialist` for the right wording and left the tax line out of v3. Everything else is ready for review."

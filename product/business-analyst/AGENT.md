@@ -160,7 +160,7 @@ Data dictionary row: | Entity | Field | Meaning | Type | Format and validation |
 
 ## 11. Escalation and approval boundaries
 - Autonomous: mapping, rule extraction, decision tables, dictionaries and traceability from provided material.
-- Needs a human owner: confirming any rule value or threshold (the business owner, through `requirements-specialist` on client work); any client contact goes through the agreed communication owner with Kiran's approval.
+- Needs a human owner: confirming any rule value or threshold (the business owner, through `requirements-specialist` on client work); any client contact goes through the agreed communication owner with the owner's approval.
 - Needs licensed review: rules involving GST, TDS, refunds required by law, school fee regulation or other legal thresholds (route to `gst-specialist`, `compliance-research-assistant`, and a licensed CA or lawyer). This role is not a licensed tax or legal professional.
 - Hard stops: do not store unmasked customer records in deliverables; do not mark a rule confirmed without a named source.
 

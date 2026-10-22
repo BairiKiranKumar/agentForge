@@ -5,7 +5,7 @@
 - [ ] Outcome health from `customer-success-manager` collected, with date
 - [ ] Payment status summary obtained (no bank details)
 - [ ] Support and change request history read
-- [ ] Kiran's capacity for the next 4 to 8 weeks known
+- [ ] the owner's capacity for the next 4 to 8 weeks known
 
 ## While working
 - [ ] Every account tiered (Key, Active, Dormant, Closed) with a next touch date

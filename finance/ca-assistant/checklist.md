@@ -3,8 +3,8 @@
 ## Before starting
 - [ ] Period, purpose and applicable Act (1961 or 2025) recorded
 - [ ] Closed books received from `bookkeeping-assistant`
-- [ ] Form 26AS / AIS downloads received from Kiran (no credentials requested)
-- [ ] Kiran's other income sources as stated by him recorded
+- [ ] Form 26AS / AIS downloads received from the owner (no credentials requested)
+- [ ] the owner's other income sources as stated by him recorded
 - [ ] Prior year computation from the CA located, if any
 
 ## While working

@@ -42,13 +42,13 @@ status remains untested because tasks 2 and 3 were not run
 
 ## 3. Instagram carousel maker, Task 1
 
-Evidence: `examples/campaigns/kiranbuildswithai/instagram-carousel/index.html` and `caption.md`. Rubric: `social-media/instagram-carousel-maker/evaluation.md`, Task 1. Threshold: 6 of 8. This score is not a full pass of the role.
+Evidence: `examples/campaigns/example-brand/instagram-carousel/index.html` and `caption.md`. Rubric: `social-media/instagram-carousel-maker/evaluation.md`, Task 1. Threshold: 6 of 8. This score is not a full pass of the role.
 
 | Criterion | Score | Why |
 |---|---|---|
 | One claim | 1 | The file is one premium-check sequence, and the phone shows up on the fold line, the type slide, and the contact slide. Slide 3 is who the first screen is for. Slide 6 is whether motion earns the wait. Those slides do not serve the single method in the brief: check the site on a phone before calling it premium. |
 | Artifact | 2 | Seven `section.slide` blocks at 1080 by 1350. The cover has inline SVG. |
-| Brand fidelity | 2 | Ink `#14120e`, paper `#f4f0e6`, accent `#c45c26`, and handle `@kiranbuildswithai` match `brands/kiranbuildswithai/brand.yaml`. |
+| Brand fidelity | 2 | Ink `#14120e`, paper `#f4f0e6`, accent `#c45c26`, and handle `@example_brand` match `brands/example-brand/brand.yaml`. |
 | Honesty | 2 | `caption.md` states "PNG export was not run." and "PDF export was not run." The folder has those two text files only. |
 
 Total: 7 of 8.

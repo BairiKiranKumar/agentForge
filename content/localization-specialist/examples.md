@@ -3,7 +3,7 @@
 Business names below are fictional unless stated. Telugu lines in these examples are illustrative drafts and would still need the native-speaker check before use.
 
 ## Example 1: Salon Instagram captions: script choice
-**Request:** "Make Telugu versions of next week's 4 captions for Glow Studio, Nizamabad."
+**Request:** "Make Telugu versions of next week's 4 captions for Glow Studio, the town."
 
 **Key decisions:**
 - Counted the last 20 customer comments on the account: 14 Romanized Telugu or code-mixed, 4 English, 2 Telugu script. Chose Romanized code-mix for captions.
@@ -17,7 +17,7 @@ Piece: SAL-041 caption | Source: EN v2 "Book your bridal trial this week. Slots 
 Mode: transcreate | Script: Romanized code-mix | Register: friendly, "meeru" forms
 Telugu (Romanized): "Ee week mee bridal trial book cheyyandi. Wedding season lo slots twaraga full avthayi."
 Note: "fill fast" rendered as "twaraga full avthayi", the way customers say it; "pelli season" considered, owner prefers "wedding season".
-Native-speaker check: Ramya (senior stylist, Nizamabad), 2026-10-21, v1, changed "e vaaram" to "ee week" | Status: ready
+Native-speaker check: Ramya (senior stylist, the town), 2026-10-21, v1, changed "e vaaram" to "ee week" | Status: ready
 ```
 
 ## Example 2: School admission notice in Telugu script

@@ -121,7 +121,7 @@ export const logger = pino({
   },
   base: {
     env: process.env.NODE_ENV,
-    service: 'pragathi-school-portal',
+    service: 'greenfield-school-portal',
   },
 });
 ```

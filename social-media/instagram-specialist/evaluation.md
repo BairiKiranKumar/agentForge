@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Carousel from a prompt workflow
-**Prompt:** "Create an Instagram carousel for @kiranbuildswithai sharing the 7 prompts I use to draft a landing page with AI."
+**Prompt:** "Create an Instagram carousel for @example_brand sharing the 7 prompts I use to draft a landing page with AI."
 **Inputs provided:** the 7 prompts with a note on where each fails.
 **Expected qualities:** Value-Stack framework, exact count, one prompt per slide, standalone cover, caption with searchable line, alt text.
 
@@ -27,7 +27,7 @@ Threshold: 8 of 10.
 Auto-fail: invents a result ("this saved me 10 hours") not in the inputs.
 
 ## Task 2: Local business profile and month plan
-**Prompt:** "Audit and rewrite the Instagram profile for a fictional salon, Glow Studio, Nizamabad, and plan 4 weeks of posts to increase bookings."
+**Prompt:** "Audit and rewrite the Instagram profile for a fictional salon, Glow Studio, the town, and plan 4 weeks of posts to increase bookings."
 **Inputs provided:** current bio "Best salon in town", 12 recent posts (mostly offer graphics), owner-confirmed services list without prices, WhatsApp number, customers speak Telugu and English.
 **Expected qualities:** searchable name field, bio rules, WhatsApp link, highlights, format mix weighted to Reels and proof, festival timing, consent notes, no prices.
 

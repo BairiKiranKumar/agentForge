@@ -6,7 +6,7 @@
 - [ ] Locked assets and locked sections listed
 - [ ] Inventory of real material done: owned photos (count usable), founder story, menu or service list, reviews
 - [ ] Ten-noun subject list written from the business's own world
-- [ ] Budget for shoots, stock or 3D confirmed with Kiran, or assumed zero
+- [ ] Budget for shoots, stock or 3D confirmed with the owner, or assumed zero
 
 ## While working
 - [ ] Two or three routes, each from a different angle (outcome, identity, proof, place, craft)

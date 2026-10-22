@@ -1,0 +1,43 @@
+# Copy to workspace/organization.yaml (ignored by Git) and edit. Fictional values.
+schema: 1
+organization:
+  name: Example Organization
+  type: agency                    # independent | agency | startup | product-team | enterprise-team
+  owner:
+    title: Founder                # who approves consequential actions
+locale:
+  language: en
+  region: GB
+  currency: GBP
+  timezone: Europe/London
+regional_packs: []                # for example [india]; see regional-packs/
+voice:
+  tone: [warm, direct, technically credible]
+  banned_phrases: ["synergy", "game-changer"]
+  em_dash_policy: avoid-in-public-copy
+quality:
+  default_profile: standard
+  design_profile: standard
+agents:
+  environment: claude-code
+ai:
+  provider: any
+  notes: "Which model providers your organization permits."
+deployment:
+  platform: any
+  production_deploys_allowed: false
+tools:
+  paid_tools_allowed: false
+  allowed: []
+# You may tighten the safety floor, never weaken it:
+protected:
+  authorization:
+    require_human_for:
+      - external-communication
+      - publishing
+      - spending
+      - production-changes
+      - legal-tax-contract
+      - security-testing
+      - sharing-personal-data
+      - hiring-decisions

@@ -49,7 +49,7 @@ Exclusions:
 
 ## 3. Required inputs and clarification triggers
 Required inputs:
-- The task and who reads the output (customer, staff, Kiran).
+- The task and who reads the output (customer, staff, the owner).
 - 10 or more real example inputs, including messy ones (typos, mixed Telugu and English, voice-note transcripts).
 - The output contract (schema or template) from `ai-application-engineer`.
 - Voice guidance (`knowledge-management/company-profile.md` or the client's brand voice doc).
@@ -188,7 +188,7 @@ Answer customer questions about the restaurant using only the facts in <menu> an
 
 ## 11. Escalation and approval boundaries
 - Autonomous: drafting and testing prompts on test keys with synthetic or anonymized data.
-- Needs approval: using real client or customer data in tests (Kiran, with data minimized); prompts that make health, legal or financial statements (owner plus Kiran); prompts for public-facing bots before launch.
+- Needs approval: using real client or customer data in tests (the owner, with data minimized); prompts that make health, legal or financial statements (owner plus the owner); prompts for public-facing bots before launch.
 - Hard stops: prompts that impersonate a real staff member or claim to be human, generate fake reviews or testimonials, or hide paid partnerships; shipping a prompt whose adversarial cases fail.
 
 ## 12. Provenance and adaptation notes

@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Restaurant Sankranti campaign (site banner, carousel, WhatsApp status)
-**Request:** "Final proof on the Sankranti thali set before Kiran approves." (fictional Annapurna Family Restaurant)
+**Request:** "Final proof on the Sankranti thali set before the owner approves." (fictional Annapurna Family Restaurant)
 
 **Key decisions:**
 - Price checked against the owner's message: ₹349 on banner, ₹399 in carousel slide 3. Owner's message says ₹349; carousel corrected and the mismatch reported as critical.
@@ -26,7 +26,7 @@ Reported to content-calendar-manager: price error may exist in the Telugu versio
 ```
 
 ## Example 2: Threads post (short-post route)
-**Request:** "Check this Threads post before I post it." (Kiran, @kiranbuildswithai)
+**Request:** "Check this Threads post before I post it." (the owner, @example_brand)
 
 **Key decisions:**
 - WF-04 smallest team: `threads-specialist` drafts, proofreader checks; no editor stage.

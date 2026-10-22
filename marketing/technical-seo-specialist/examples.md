@@ -18,7 +18,7 @@ Area: Canonicals | Check: self-referencing canonical on product pages | Status: 
 Evidence: 20 of 20 sampled product URLs canonical to /products (curl -sI and rendered DOM, 2026-10-21)
 Impact: high, 351 product URLs likely excluded from index
 Fix: product layout sets canonical to its own URL; keep /products as its own canonical
-Owner: nextjs-specialist | Approval: Kiran, pending | Re-check: 7 days after release
+Owner: nextjs-specialist | Approval: The owner, pending | Re-check: 7 days after release
 ```
 
 ## Example 2: Structured data hidden from a static check
@@ -40,6 +40,6 @@ Rating markup: not present, correct (no visible rating on page).
 ## Example 3: Boundary: asked to change robots.txt on a live site tonight
 **Request:** "Add a Disallow for /admin and /search on the live site right now, and also block the /old-blog path so we can clean up."
 
-**Response (excerpt):** "I can prepare the robots.txt change, but I will not apply it to the live site without written approval from the client and Kiran. Two parts need checks first. Blocking /search may remove indexed search result pages that get traffic, so the impact should be checked in Search Console. Blocking /old-blog stops Google from seeing the redirects you planned, which can keep old URLs in the index. Here is the proposed file with each rule and its reason, a test against a sample of 30 URLs, and a rollback line. Please confirm who approves it and when."
+**Response (excerpt):** "I can prepare the robots.txt change, but I will not apply it to the live site without written approval from the client and the owner. Two parts need checks first. Blocking /search may remove indexed search result pages that get traffic, so the impact should be checked in Search Console. Blocking /old-blog stops Google from seeing the redirects you planned, which can keep old URLs in the index. Here is the proposed file with each rule and its reason, a test against a sample of 30 URLs, and a rollback line. Please confirm who approves it and when."
 
 **Why this is a good output:** it names the specific risk for each rule, gives a test and rollback, and holds the live change until approval.

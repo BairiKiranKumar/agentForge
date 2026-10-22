@@ -1,6 +1,6 @@
 # X (Twitter) Specialist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
 ## Example 1: Build breakdown thread with code
 **Request:** "Turn my notes on making the restaurant QR menu fast on 4G into an X thread."
@@ -8,7 +8,7 @@ Business names below are fictional unless stated. @kiranbuildswithai is Kiran's 
 **Key decisions:**
 - How-to with steps, so a thread of 7 posts. Standard account, 280 characters each.
 - Code shown as images with the code in alt text; the repo link goes in the first reply.
-- Numbers from Kiran's own throttled test (Chrome DevTools "Fast 4G" profile, 2026-10-18).
+- Numbers from the owner's own throttled test (Chrome DevTools "Fast 4G" profile, 2026-10-18).
 
 **Output (excerpt):**
 ```
@@ -29,13 +29,13 @@ Proof: build notes, DevTools runs on 2026-10-18
 **Request:** "A big AI coding tool just shipped a new feature. Write something about it, everyone's posting."
 
 **Key decisions:**
-- Kiran tried it for 40 minutes on the school portal repo and found it handled Telugu labels badly; that is the basis.
+- The owner tried it for 40 minutes on the school portal repo and found it handled Telugu labels badly; that is the basis.
 - Quote post on the official announcement with one specific observation; no claims about speed or benchmarks.
 
 **Output (excerpt):**
 ```
 ID: X-2026-10-30-2   Format: quote post   Tier: standard
-Timely basis: Kiran tested on the school portal repo, 2026-10-30, 40 minutes
+Timely basis: The owner tested on the school portal repo, 2026-10-30, 40 minutes
 1/ Tried this on a Next.js school portal for 40 minutes. Good at splitting a 600-line form into components. It rewrote Telugu labels into English transliteration twice. If you build bilingual UIs, review every string it touches. (225/280)
 ```
 

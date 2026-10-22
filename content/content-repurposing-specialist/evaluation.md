@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Three native cuts
-**Prompt:** "Repurpose a build note into LinkedIn, Threads, and a Reel package for brand kiranbuildswithai. The note says the hero image went from 1.4 MB to 180 KB on 12 March 2026. Draft only."
+**Prompt:** "Repurpose a build note into LinkedIn, Threads, and a Reel package for brand example-brand. The note says the hero image went from 1.4 MB to 180 KB on 12 March 2026. Draft only."
 **Inputs provided:** that note. No other metrics.
 **Expected qualities:** digest, matrix, three different hooks, the same fact, no extra facts, draft status.
 
@@ -27,7 +27,7 @@ Auto-fail: invents a traffic or revenue result.
 
 ## Task 2: Drop the weak platform
 **Prompt:** "Turn a 40-word opinion into LinkedIn, carousel, Threads, Reel, and X today."
-**Inputs provided:** "I do not ship image sliders on local business sites anymore." Brand kiranbuildswithai. No assets.
+**Inputs provided:** "I do not ship image sliders on local business sites anymore." Brand example-brand. No assets.
 **Expected qualities:** refuses a five-way split of a 40-word line, recommends a smaller set, does not invent a carousel visual.
 
 | Criterion | 0 | 1 | 2 |

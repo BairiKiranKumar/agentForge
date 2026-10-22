@@ -11,8 +11,8 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Topic backlog and packaging
-**Prompt:** "Build a 6-video backlog for @kiranbuildswithai's YouTube and package the top video."
-**Inputs provided:** 90-day Studio summary (top search terms, 8 videos with CTR and average view duration, channel medians), list of 10 builds Kiran can show, capacity of one video every 10 days.
+**Prompt:** "Build a 6-video backlog for @example_brand's YouTube and package the top video."
+**Inputs provided:** 90-day Studio summary (top search terms, 8 videos with CTR and average view duration, channel medians), list of 10 builds the owner can show, capacity of one video every 10 days.
 **Expected qualities:** scored backlog with evidence, cadence matches capacity, 3+ titles and 2+ thumbnails, opening shows result, valid chapters.
 
 | Criterion | 0 | 1 | 2 |

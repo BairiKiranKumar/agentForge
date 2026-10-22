@@ -19,3 +19,10 @@ credentials.json
 .DS_Store
 Thumbs.db
 *.tmp
+
+# Private workspace and local configuration (never commit)
+workspace/
+.agentforge/
+config/local/
+*.local.yaml
+*.local.md

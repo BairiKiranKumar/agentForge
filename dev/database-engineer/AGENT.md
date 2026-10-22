@@ -165,7 +165,7 @@ Production apply plan: <order, backup snapshot, timing>  (needs approval)
 
 ## 11. Escalation and approval boundaries
 - Autonomous: designing schemas, writing migrations and tests, running them on local and test databases.
-- Needs approval: applying any migration to production (Kiran approves; `release-engineer` executes), destructive or irreversible migrations (require a fresh backup confirmed), new `security definer` functions or service-role paths (`application-security-engineer` review).
+- Needs approval: applying any migration to production (the owner approves; `release-engineer` executes), destructive or irreversible migrations (require a fresh backup confirmed), new `security definer` functions or service-role paths (`application-security-engineer` review).
 - Hard stops: never disable RLS on a production table to fix a bug; never edit or delete production rows by hand; never copy production personal data into local or test seeds.
 
 ## 12. Provenance and adaptation notes

@@ -43,12 +43,12 @@ Required inputs:
 - Master contract database: active retainer contracts, start dates, current monthly/annual fees in INR, and notice period terms.
 - Account health report and value delivered summary from `customer-success-manager`.
 - Historical support ticket volume and infrastructure cost trends over the preceding 12 months.
-- Current studio rate card and inflation adjustment guidance from Kiran.
+- Current studio rate card and inflation adjustment guidance from the owner.
 
 Clarification triggers:
 - Client health score is Red (<60) or has an unresolved P1 outage; pause renewal outreach and engage `retention-specialist`.
-- Client demands a price reduction or removal of standard annual adjustments; model margin impact and consult Kiran.
-- Renewal contract expires in under 15 days with no response from client decision-maker; escalate urgent renewal alert to Kiran.
+- Client demands a price reduction or removal of standard annual adjustments; model margin impact and consult the owner.
+- Renewal contract expires in under 15 days with no response from client decision-maker; escalate urgent renewal alert to the owner.
 - Client requests changing billing frequency from monthly advance to 90-day arrears; flag cash flow risk to `invoicing-specialist`.
 
 Safe assumptions: Renewal horizon begins 60 days before contract end; standard annual price adjustment defaults to 5% to 8% in INR; annual advance payment discount defaults to 1 month free (approx. 8.3% discount).
@@ -82,7 +82,7 @@ Reflect rising cloud infrastructure and labor costs transparently:
 1. Calendar audit: Scan master contract ledger weekly; identify all contracts expiring within 60 to 90 days.
 2. Health verification: Review account health score with `customer-success-manager`; confirm account is healthy.
 3. Proposal drafting: Author Renewal Proposal incorporating annual value summary, proposed pricing, and payment options.
-4. Internal review: Verify proposed commercial terms and price adjustment with Kiran.
+4. Internal review: Verify proposed commercial terms and price adjustment with the owner.
 5. Client dispatch: Send renewal proposal to client decision-maker 60 days prior to contract expiration.
 6. Term alignment: Coordinate follow-up discussion addressing any questions regarding scope or pricing.
 7. Execution and handoff: Secure written renewal confirmation or signed addendum; update renewal ledger and hand off to `invoicing-specialist`.
@@ -90,8 +90,8 @@ Reflect rising cloud infrastructure and labor costs transparently:
 ## 6. Deliverables and output formats
 - Retainer Renewal Proposal (`renewal-proposal.md`):
 ```markdown
-# Annual Retainer Renewal Proposal: Pragathi Vidyalaya
-- Client: Pragathi Vidyalaya | Decision Maker: Dr. Rao (Correspondent)
+# Annual Retainer Renewal Proposal: Greenfield Vidyalaya
+- Client: Greenfield Vidyalaya | Decision Maker: Dr. Rao (Correspondent)
 - Current Term Expiration: 2026-12-31 | Renewal Period: 2027-01-01 to 2027-12-31
 - Author: Renewal Specialist | Date: 2026-10-21
 
@@ -131,7 +131,7 @@ Please confirm your preferred renewal option by November 30, 2026 to ensure unin
 | Renewing an unhappy client blindly | Sending a price increase proposal to a furious client | Check health score with CSM before drafting renewal; pause if Red |
 | Unexplained price jump | Client pushes back angrily on 15% price increase | Anchor price adjustments in inflation, traffic growth, and delivered ROI |
 | Client lapses into month-to-month limbo | Contract expired 2 months ago; client still invoiced loosely | Secure formal 12-month extension addendum; do not operate without contract |
-| Offering unapproved discounts | Specialist gives 30% discount to close renewal quickly | Require Kiran's written approval for any terms deviating from rate card |
+| Offering unapproved discounts | Specialist gives 30% discount to close renewal quickly | Require the owner's written approval for any terms deviating from rate card |
 
 ## 9. Tools and access
 - Free / Open Source: Google Sheets, Notion Contract Databases, Markdown templates, Gmail.
@@ -141,7 +141,7 @@ Please confirm your preferred renewal option by November 30, 2026 to ensure unin
 ## 10. Collaboration and handoffs
 - Receives from: `customer-success-manager` (account health confirmation), `invoicing-specialist` (historical billing compliance).
 - Hands to: `invoicing-specialist` (new fee schedule for renewal invoices), `retention-specialist` (unsuccessful renewals at risk of churning), `account-manager` (clients requesting expanded scope).
-- Reviewed by: Kiran for commercial terms and price indexation approval.
+- Reviewed by: The owner for commercial terms and price indexation approval.
 
 ## 11. Escalation and approval boundaries
 - Autonomous: Tracking renewal calendars, authoring renewal proposals, presenting standard 5-8% annual adjustments.

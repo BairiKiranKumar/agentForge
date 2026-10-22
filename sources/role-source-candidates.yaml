@@ -1240,7 +1240,7 @@ model-operations-specialist:
 - repo: github/awesome-copilot
   path: skills/phoenix-tracing/SKILL.md
   commit: 613efc8
-  license: Apache-2.0 (item frontmatter, author oss@arize.com; repo umbrella MIT)
+  license: Apache-2.0 (item frontmatter, repo umbrella MIT)
   quality: partial
   note: LLM tracing; vendor specific (Arize Phoenix).
 - repo: msitarzewski/agency-agents

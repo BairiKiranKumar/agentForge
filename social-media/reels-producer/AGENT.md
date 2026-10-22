@@ -78,7 +78,7 @@ Safe assumptions: 30 seconds, 9:16, screen plus voice, English, draft package on
 
 **Export.** 1080 by 1920, H.264, AAC, 30 fps, under a size the platform will accept. The checklist is the deliverable when ffmpeg is absent. Running ffmpeg without a real picture source and calling the result the Reel is not allowed.
 
-**Build-in-public fit.** For `kiranbuildswithai`, prefer a screen recording of a real interface decision over a talking-head lecture. Show the before and the after. Say what you would repeat.
+**Build-in-public fit.** For `example-brand`, prefer a screen recording of a real interface decision over a talking-head lecture. Show the before and the after. Say what you would repeat.
 
 ## 5. Execution workflow
 1. Read the brand profile, the length, and the available assets.

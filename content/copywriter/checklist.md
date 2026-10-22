@@ -29,7 +29,7 @@
 - [ ] Leave-it-alone test applied; unjustified changes reverted
 - [ ] At least 2 headline and 2 CTA alternatives with reasons
 - [ ] Meta title and description drafts within length
-- [ ] `[NEED]` list sent to Kiran or the client
+- [ ] `[NEED]` list sent to the owner or the client
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

@@ -22,7 +22,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Analyzing CSAT survey data for school portal
-**Request:** "Analyze post-launch parent survey data for Pragathi School Portal."
+**Request:** "Analyze post-launch parent survey data for Greenfield School Portal."
 
 **Key decisions:**
 - Ingested 210 parent survey responses.
@@ -33,7 +33,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Pragathi School Portal: Parent Feedback Summary (N = 210)
+### Greenfield School Portal: Parent Feedback Summary (N = 210)
 - Overall CSAT: 91.4% (Target: >= 85%)
 - Top Praise: WhatsApp alerts received 62 positive mentions ("Very convenient to get WhatsApp confirmation immediately").
 - Top Friction: Noticeboard PDF circulars took >10 seconds to load on mobile connections (18 mentions).

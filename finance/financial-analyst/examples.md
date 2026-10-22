@@ -7,7 +7,7 @@ Business names below are fictional.
 
 **Key decisions:**
 - Invoice register shows Rs. 1,80,000 taxable value plus Rs. 32,400 GST; GST excluded from revenue.
-- Time log has 112 build hours; WhatsApp support and revision calls were not logged. Asked Kiran; he estimated 18 hours, labelled `[Inference]`.
+- Time log has 112 build hours; WhatsApp support and revision calls were not logged. Asked the owner; he estimated 18 hours, labelled `[Inference]`.
 - Direct costs: Rs. 4,200 stock photos, Rs. 2,950 Supabase upgrade for two months (not re-billed).
 - School deducted 10% TDS on the fee; treated as a credit for `ca-assistant`, not a cost.
 
@@ -24,14 +24,14 @@ Answer: effective rate Rs. 1,330/hour, 89% of your Rs. 1,500 target (Watch band)
 | Effective rate | Rs. 1,330 |
 Cash note: bank received Rs. 1,94,400 (fee + GST - TDS of Rs. 18,000). The Rs. 18,000 TDS should show in Form 26AS; confirm with ca-assistant.
 Driver: 3 extra revision rounds on the fee page (about 14 hours). Sent to scope-change-manager.
-Assumptions: 18 support hours [Inference] from Kiran's estimate.
+Assumptions: 18 support hours [Inference] from the owner's estimate.
 ```
 
 ## Example 2: Can I cover November and December?
 **Request:** "Two clients are slow payers. Will I be short before the 15 December advance tax date?"
 
 **Key decisions:**
-- Opening balance Rs. 1,12,000 as of 2026-10-20 from Kiran's bank statement export.
+- Opening balance Rs. 1,12,000 as of 2026-10-20 from the owner's bank statement export.
 - Glow Salon (fictional) pays on average 21 days late (5 payments, stddev 9 days); its Rs. 60,000 milestone moves from week 4 to week 7.
 - Advance tax amount was not known; asked `ca-assistant` rather than guessing. Shown as a placeholder row "pending ca-assistant".
 

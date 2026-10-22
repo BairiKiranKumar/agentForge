@@ -3,12 +3,12 @@
 Business names below are fictional.
 
 ## Example 1: First ICP from seven past clients
-**Request:** "Write our ICP for local business websites. Here are my seven past clients." Kiran pasted a table: 3 schools, 2 salons, 1 restaurant, 1 boutique, with area, source, payment notes and revision counts.
+**Request:** "Write our ICP for local business websites. Here are my seven past clients." the owner pasted a table: 3 schools, 2 salons, 1 restaurant, 1 boutique, with area, source, payment notes and revision counts.
 
 **Key decisions:**
 - n = 7, so the profile is labelled judgment-based. The four-signal ranking still runs to show direction.
 - The top three (two schools and one salon) all came by referral, paid milestones on time and had 2 revision rounds or fewer. The restaurant (aggregator-heavy, asked for 6 revisions) and the boutique (paid 40 days late) were the bottom group.
-- Schools become the beachhead: highest pain (admissions season April to June), two portfolio pieces, dense referral network among school owners in Nizamabad.
+- Schools become the beachhead: highest pain (admissions season April to June), two portfolio pieces, dense referral network among school owners in the town.
 - "60 or more Google reviews" is kept as a starting size proxy but marked `[Inference]`.
 
 **Output (excerpt):**
@@ -16,7 +16,7 @@ Business names below are fictional.
 # ICP v1 (2026-10-20), approved by: pending
 Evidence base: 7 paying clients, 0 recorded losses. Judgment-based, n = 7
 
-## Profile A: Private K-12 schools, Nizamabad and Hyderabad
+## Profile A: Private K-12 schools, the town and Hyderabad
 Statement: Private CBSE or state-board schools with an active admissions push and no working website on mobile.
 | Criterion | Pass if | Check on | Confidence |
 |---|---|---|---|
@@ -24,10 +24,10 @@ Statement: Private CBSE or state-board schools with an active admissions push an
 | Activity | Instagram or Facebook post in last 30 days | Public profile | High |
 | Digital gap | No site, or site fails on a mid-range Android phone | Exact-name search, phone check | High |
 | Size proxy | 60+ Google reviews or 2+ branches | Google Business Profile | Low [Inference] |
-| Geography | Within Nizamabad or Hyderabad | Address | High |
+| Geography | Within the town or Hyderabad | Address | High |
 Triggers: admissions campaign | Jan to Jun | "Admissions open" posts and banners
 Hard disqualifiers: no activity in 12 months; reachable only via a personal number; group school whose site is run by head office
-Proof Kiran can show: two school sites (Example School A, Example School B)
+Proof the owner can show: two school sites (Example School A, Example School B)
 ```
 
 ## Example 2: Separating a B2B product profile

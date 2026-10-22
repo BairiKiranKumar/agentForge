@@ -95,7 +95,7 @@ Ensure Android hardware or gesture back button triggers logical navigational rol
 ## 6. Deliverables and output formats
 - Mobile Test Execution Log (`mobile-test-report.md`):
 ```markdown
-# Mobile Test Report: Pragathi Portal Admission Flow
+# Mobile Test Report: Greenfield Portal Admission Flow
 - Tested Devices: Samsung Galaxy M34 (Android 14), iPhone 13 (iOS 17.4), Emulated Redmi Note 12
 - Network Profiles: Congested 4G, Total Offline
 - Test Date: 2026-10-21 | Commit: `b4c5d6e`

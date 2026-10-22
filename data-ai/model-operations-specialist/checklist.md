@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Required latency SLA and TTFT targets documented
-- [ ] Monthly and daily token budget ceilings verified with Kiran
+- [ ] Monthly and daily token budget ceilings verified with the owner
 - [ ] Primary and backup model providers confirmed
 - [ ] API keys provisioned and tested in non-production environment
 - [ ] PII review completed for prompt inputs against DPDP Act 2023 rules

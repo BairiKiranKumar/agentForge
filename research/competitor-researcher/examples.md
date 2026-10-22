@@ -3,12 +3,12 @@
 Competitor names below are fictional. Prices shown are placeholders for format, not real observations.
 
 ## Example 1: Teardown before quoting a salon website
-**Request:** "Glow Studio (fictional client) asked why they should pay us when a local freelancer offers a site for less. Tear down the alternatives before Kiran sends the quote."
+**Request:** "Glow Studio (fictional client) asked why they should pay us when a local freelancer offers a site for less. Tear down the alternatives before the owner sends the quote."
 
 **Key decisions:**
 - Set: two Hyderabad web agencies (direct), one Instagram freelancer (direct, low price), a booking marketplace listing (indirect), and do-nothing (Instagram plus WhatsApp booking).
 - The freelancer's price came from an Instagram post: Tier C, recorded with date, no hidden inclusions assumed.
-- Implications framed as questions for Kiran and `pricing-strategist`, not as our price.
+- Implications framed as questions for the owner and `pricing-strategist`, not as our price.
 
 **Output (excerpt):**
 | Dimension | Agency A (fictional) | Freelancer B (fictional) | Booking marketplace | Do nothing |
@@ -19,7 +19,7 @@ Competitor names below are fictional. Prices shown are placeholders for format, 
 | Telugu | Not observed | Not observed | Not observed | Owner replies in Telugu |
 | Complaint themes | 4 of 22 reviews: slow changes after launch | Not enough reviews (2) | 6 of 25: customers booked slots that were already taken | n/a |
 
-Implications: [Inference, medium] A booking flow tied to the owner's real availability is not observed in the local alternatives checked. Question for Kiran: is a live slot view in scope for this quote?
+Implications: [Inference, medium] A booking flow tied to the owner's real availability is not observed in the local alternatives checked. Question for the owner: is a live slot view in scope for this quote?
 
 ## Example 2: Review mining for school management apps
 **Request:** "What do schools complain about in the school apps they use now?"
@@ -38,4 +38,4 @@ Implications: [Inference, medium] A booking flow tied to the owner's real availa
 ## Example 3: Pushback: "Sign up as a restaurant and get their pricing"
 **Request:** "Their pricing is hidden. Make a fake restaurant account and book a demo so we find out."
 
-**Response (excerpt):** "I won't create a fake account or pose as a restaurant owner; it misrepresents who we are and could breach their terms. What I can do: record pricing as 'not public, as of 2026-10-20'; check reviews, app store listings and public posts where restaurants mention what they pay (Tier C, dated); and add a question to the `customer-interview-specialist` guide so owners who use that product can tell us what they pay. If you want to ask them directly as Kiran, that's your call; I can draft an honest enquiry for your approval."
+**Response (excerpt):** "I won't create a fake account or pose as a restaurant owner; it misrepresents who we are and could breach their terms. What I can do: record pricing as 'not public, as of 2026-10-20'; check reviews, app store listings and public posts where restaurants mention what they pay (Tier C, dated); and add a question to the `customer-interview-specialist` guide so owners who use that product can tell us what they pay. If you want to ask them directly as the owner, that's your call; I can draft an honest enquiry for your approval."

@@ -1,0 +1,78 @@
+# Quality gate profiles. Read by tools/quality_gate.py. Version 1.
+# A gate is derived from the engineering standards: a requirement applies when its
+# min_profile is at or below the profile and its applies_to matches the product types.
+# There is no averaged score. Critical failures block in every profile.
+schema: 1
+version: 1.0.0
+product_types: [website, web-app, mobile-web, api, ai-app, library, internal-tool]
+ranks: {lightweight: 1, standard: 2, high_assurance: 3}
+statuses: [pass, fail, blocked, not_applicable, exception]
+evidence_types: [automated, measured, manual, reviewed, planned]
+# planned evidence never counts as a pass.
+evidence_classes:
+  machine: [automated, measured]
+  human: [manual, reviewed]
+
+profiles:
+  lightweight:
+    description: Small changes and prototypes. Essential correctness, safety and relevant accessibility.
+    areas: [accessibility, security, responsive, testing]
+    independent_review: []              # areas that need a different person or agent to verify
+    blocking_severities: [critical]
+    major_policy: record                # record | fix_or_exception | block
+    human_release_approval: false
+    exceptions:
+      allowed_severities: [major, minor]
+      max_days: 30
+  standard:
+    description: Production applications and websites.
+    areas: [accessibility, performance, security, ai-security, responsive, ux, seo, testing, privacy]
+    independent_review: [accessibility, security, performance, privacy]
+    blocking_severities: [critical]
+    major_policy: fix_or_exception
+    human_release_approval: false       # becomes true when any exception is used
+    exceptions:
+      allowed_severities: [major, minor]
+      max_days: 90
+  high_assurance:
+    description: Sensitive, regulated, complex, high-traffic or business-critical systems.
+    areas: [accessibility, performance, security, ai-security, responsive, ux, seo, testing, privacy]
+    independent_review: [accessibility, performance, security, ai-security, responsive, ux, seo, testing, privacy]
+    blocking_severities: [critical, major]
+    major_policy: block
+    human_release_approval: true
+    exceptions:
+      allowed_severities: [minor]
+      max_days: 30
+
+# Gates: one per area. Standards are the requirements in that area's requirements.yaml.
+# "status" of a gate is computed: pass, fail (a requirement failed), blocked (evidence missing,
+# planned-only, review missing, or an exception is not allowed).
+gates:
+  - {id: GATE-A11Y, area: accessibility, responsible: accessibility-engineer, reviewer: accessibility-tester,
+     acceptance: "Every applicable requirement passes. No open critical or (high_assurance) major defect. WCAG 2.2 AA conformance is never claimed from automated results alone.",
+     evidence: "Automated results and manual checks recorded separately; keyboard and screen reader checks as the profile requires."}
+  - {id: GATE-PERF, area: performance, responsible: performance-engineer, reviewer: performance-tester,
+     acceptance: "Each applicable requirement passes with measured evidence (tool, device profile, build, date). Field and synthetic data are not mixed.",
+     evidence: "Measurement records. No performance claim without them."}
+  - {id: GATE-SEC, area: security, responsible: application-security-engineer, reviewer: security-testing-specialist,
+     acceptance: "Applicable requirements pass; no open critical finding; destructive tests only with written authorization.",
+     evidence: "Scan output, test logs, review notes, threat model where required."}
+  - {id: GATE-AISEC, area: ai-security, responsible: ai-application-engineer, reviewer: ai-evaluation-specialist,
+     acceptance: "Applicable requirements pass for projects that use an LLM or agent at runtime.",
+     evidence: "Adversarial test results, tool-permission review, human approval design."}
+  - {id: GATE-RESP, area: responsive, responsible: frontend-developer, reviewer: qa-lead,
+     acceptance: "Applicable requirements pass at the checked viewports; high-visibility interfaces include rendered-browser evidence.",
+     evidence: "Captures with viewport and tool named; overflow checks."}
+  - {id: GATE-UX, area: ux, responsible: ux-designer, reviewer: design-reviewer,
+     acceptance: "Applicable requirements pass; states and flows reviewed on rendered output.",
+     evidence: "Flow and state review notes, usability findings."}
+  - {id: GATE-SEO, area: seo, responsible: seo-specialist, reviewer: technical-seo-specialist,
+     acceptance: "Applicable requirements pass for public websites. No ranking or traffic is promised.",
+     evidence: "Crawl output, markup validation, Search Console verification status."}
+  - {id: GATE-TEST, area: testing, responsible: qa-lead, reviewer: release-validation-specialist,
+     acceptance: "Executed checks are separated from planned checks; release gates and rollback are in place as the profile requires.",
+     evidence: "Test run logs with command, environment, date, result."}
+  - {id: GATE-PRIV, area: privacy, responsible: privacy-specialist, reviewer: compliance-research-assistant,
+     acceptance: "Applicable requirements pass. A checklist result is never described as legal compliance.",
+     evidence: "Data inventory, retention and deletion records, review notes."}

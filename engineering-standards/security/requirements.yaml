@@ -1,0 +1,611 @@
+schema: 1
+area: security
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: asvs
+  name: OWASP Application Security Verification Standard 5.0.0
+  url: https://github.com/OWASP/ASVS
+  retrieved: *id001
+  note: GitHub README states latest stable is 5.0.0 (May 2025); OWASP project page lists 5.0.0 as stable.
+    Chapter names V1 to V17 taken from file names in the v5.0.0 tag, directory 5.0/en. Chapter text and
+    individual requirement ids were NOT read; mapping is chapter-level only.
+- id: asvs-site
+  name: OWASP ASVS project page
+  url: https://owasp.org/www-project-application-security-verification-standard/
+  retrieved: *id001
+  note: Confirms 5.0.0 shown as latest stable. No release date or chapter list on the page.
+- id: top10
+  name: OWASP Top 10:2025
+  url: https://top10.owasp.org/2025/
+  retrieved: *id001
+  note: Ten category names A01 to A10 of the 2025 edition, used as awareness mapping.
+- id: cs-csp
+  name: 'OWASP Cheat Sheet: Content Security Policy'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+  retrieved: *id001
+  note: Strict CSP with nonces or hashes, report-only piloting, frame-ancestors, avoid unsafe-inline.
+- id: cs-csrf
+  name: 'OWASP Cheat Sheet: CSRF Prevention'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+  retrieved: *id001
+  note: Framework protection first, tokens, Fetch Metadata, Origin checks, SameSite as defence in depth.
+- id: cs-upload
+  name: 'OWASP Cheat Sheet: File Upload'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+  retrieved: *id001
+  note: Extension allowlist, do not trust Content-Type, rename, scan, isolate storage, size limits.
+- id: cs-session
+  name: 'OWASP Cheat Sheet: Session Management'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+  retrieved: *id001
+  note: Session id entropy, cookie attributes, regeneration, timeouts, server-side logout.
+- id: cs-secrets
+  name: 'OWASP Cheat Sheet: Secrets Management'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+  retrieved: *id001
+  note: Central management, rotation, least privilege, CI/CD handling, scanning, incident steps.
+- id: cs-logging
+  name: 'OWASP Cheat Sheet: Logging'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+  retrieved: *id001
+  note: Events to log, context, log injection, what not to log, protection and retention.
+- id: cs-rest
+  name: 'OWASP Cheat Sheet: REST Security'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+  retrieved: *id001
+  note: HTTPS, per-endpoint authorization, JWT validation, method and content-type allowlists, generic
+    errors, CORS.
+- id: mdn-csp
+  name: 'MDN: Content Security Policy'
+  url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP
+  retrieved: *id001
+  note: Header delivery, nonces and hashes, frame-ancestors, Trusted Types, report-only.
+- id: mdn-cookies
+  name: 'MDN: Cookies security implementation guide'
+  url: https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies
+  retrieved: *id001
+  note: Secure, HttpOnly, SameSite, __Host- prefix, Max-Age, narrow Domain and Path.
+- id: mdn-hsts
+  name: 'MDN: Strict-Transport-Security'
+  url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security
+  retrieved: *id001
+  note: HSTS directives, preload requirements, first-visit gap. Defined in RFC 6797 per MDN.
+- id: slsa
+  name: SLSA specification v1.0 levels (page marked retired; v1.2 is current)
+  url: https://slsa.dev/spec/v1.0/levels
+  retrieved: *id001
+  note: Build track levels L0 to L3 (provenance, hosted build, hardened builds). Only the retired v1.0
+    page was read; v1.2 details were not.
+- id: scorecard
+  name: OpenSSF Scorecard
+  url: https://github.com/ossf/scorecard
+  retrieved: *id001
+  note: Automated security-practice checks scored 0 to 10; Apache-2.0.
+- id: osv
+  name: OSV-Scanner
+  url: https://github.com/google/osv-scanner
+  retrieved: *id001
+  note: Dependency vulnerability scanner using OSV data; Apache-2.0.
+- id: gitleaks
+  name: Gitleaks
+  url: https://github.com/gitleaks/gitleaks
+  retrieved: *id001
+  note: Secret scanner for repos and files; MIT; repository notes it is feature complete with security
+    patches only.
+- id: semgrep
+  name: Semgrep
+  url: https://github.com/semgrep/semgrep
+  retrieved: *id001
+  note: Static analysis; repository LGPL-2.1; Community Edition analyses within single function or file;
+    licence of registry rules not stated on the page.
+- id: zap
+  name: OWASP ZAP (Zed Attack Proxy)
+  url: https://github.com/zaproxy/zaproxy
+  retrieved: *id001
+  note: Free open source web app scanner; Apache-2.0; page contains no authorisation warning, so the authorisation
+    rule here is this standard's own.
+requirements:
+- id: SEC-001
+  title: Authenticate users with a vetted mechanism
+  description: Authentication uses a maintained library, framework feature or identity provider, never
+    a home-made scheme, and enforces login throttling and uniform failure messages.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  severity: critical
+  check: both
+  evidence: Design note naming the mechanism; login test log; reviewer notes
+  owner: backend-developer
+  reviewer: application-security-engineer
+  reference: asvs V6
+- id: SEC-002
+  title: Store credentials with a slow, salted password hash
+  description: Passwords are never stored or logged in reusable form; the chosen hash and parameters are
+    documented and reviewed against current guidance.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  severity: critical
+  check: both
+  evidence: Code review note and test that stored values are hashes; parameters documented
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: asvs V11
+- id: SEC-003
+  title: Require stronger authentication for privileged access
+  description: Administrative and high-risk actions require a second factor or equivalent step-up, and
+    recovery flows cannot bypass it.
+  min_profile: standard
+  applies_to:
+  - web-app
+  - api
+  - internal-tool
+  severity: major
+  check: both
+  evidence: Test log of admin login and recovery paths; configuration screenshot
+  owner: backend-developer
+  reviewer: application-security-engineer
+  reference: asvs V6
+- id: SEC-004
+  title: Secure account recovery and credential changes
+  description: Reset and change flows use single-use, expiring tokens, do not reveal whether an account
+    exists, and notify the user.
+  min_profile: standard
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  severity: major
+  check: manual
+  evidence: Walkthrough test record of reset, change and notification behaviour
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: asvs V6
+- id: SEC-005
+  title: Enforce authorization on the server for every request
+  description: Every request for protected data or actions is checked server-side against the caller identity
+    and resource; hiding UI elements is not access control. Default is deny.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  severity: critical
+  check: both
+  evidence: Authorization matrix; code review of enforcement point; test results
+  owner: backend-developer
+  reviewer: application-security-engineer
+  reference: asvs V8
+- id: SEC-006
+  title: Test access control for horizontal and vertical escalation
+  description: A written test set covers accessing other users' objects, calling higher-privilege functions
+    and skipping workflow steps, run for each role.
+  min_profile: standard
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  severity: critical
+  check: both
+  evidence: Role-by-endpoint test matrix with results, build id and date
+  owner: security-testing-specialist
+  reviewer: qa-lead
+  reference: asvs V8
+- id: SEC-007
+  title: Apply least privilege to roles and service accounts
+  description: Roles and machine identities hold only the permissions their function needs, with periodic
+    review.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Role inventory with permissions and last review date
+  owner: cloud-architect
+  reviewer: application-security-engineer
+  reference: asvs V8
+- id: SEC-008
+  title: Set secure session cookie attributes
+  description: Session cookies are Secure, HttpOnly, carry an explicit SameSite value, use a prefix such
+    as __Host- where feasible, and have minimal Domain and Path scope.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - internal-tool
+  severity: major
+  check: automated
+  evidence: Response header capture from a test environment
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: mdn-cookies
+- id: SEC-009
+  title: Manage the session lifecycle
+  description: Session ids are generated with a secure random source, regenerated after login and privilege
+    change, expire on idle and absolute timeouts, and are invalidated server-side on logout.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - internal-tool
+  severity: major
+  check: both
+  evidence: 'Test log: fixation attempt, timeout, logout replay; configuration values'
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: cs-session
+- id: SEC-010
+  title: Validate all input on the server against an allowlist
+  description: Type, length, range and format are checked server-side for every input source, including
+    headers and file metadata; client checks are convenience only.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Validation schema or code review plus negative test cases
+  owner: backend-developer
+  reviewer: code-reviewer
+  reference: asvs V2
+- id: SEC-011
+  title: Encode output for its context
+  description: Data placed in HTML, attributes, URLs, scripts, CSS, SQL or logs is encoded or escaped
+    for that context by a trusted mechanism.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: both
+  evidence: Code review and test with context-breaking payloads
+  owner: frontend-developer
+  reviewer: application-security-engineer
+  reference: asvs V1
+- id: SEC-012
+  title: Prevent injection with safe APIs
+  description: Queries and commands use parameterisation or safe builders; string-built commands are not
+    used with untrusted data; shell, template and path injection are covered.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: both
+  evidence: Static analysis report plus targeted injection tests in a test environment
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: asvs V1
+- id: SEC-013
+  title: Prevent cross-site scripting
+  description: Frameworks auto-escape by default, raw HTML insertion is avoided or sanitised by a maintained
+    sanitiser, and dangerous sinks are reviewed.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - internal-tool
+  severity: critical
+  check: both
+  evidence: Sink inventory, review notes, scanner results and manual tests
+  owner: frontend-developer
+  reviewer: application-security-engineer
+  reference: asvs V3
+- id: SEC-014
+  title: Protect state-changing requests against CSRF
+  description: Cookie-authenticated state-changing requests use framework tokens or equivalent checks,
+    never change state on GET, and are backed by Origin or Fetch Metadata validation.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - internal-tool
+  severity: major
+  check: both
+  evidence: Cross-site request test results in a test environment
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: cs-csrf
+- id: SEC-015
+  title: Handle file uploads safely
+  description: Uploads use an extension allowlist, server-generated names, size limits, content checks
+    that do not trust the declared type, storage outside executable paths, and scanning where risk warrants.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  severity: major
+  check: both
+  evidence: Upload test cases (oversize, wrong type, double extension, path tricks) with results
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: cs-upload
+- id: SEC-016
+  title: Restrict API methods, content types and sizes
+  description: APIs accept only expected methods and media types, limit body size, validate against a
+    schema and return accurate status codes.
+  min_profile: standard
+  applies_to:
+  - api
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Contract tests and negative tests with results
+  owner: api-specialist
+  reviewer: security-testing-specialist
+  reference: cs-rest
+- id: SEC-017
+  title: Validate tokens fully
+  description: Self-contained tokens have signature and algorithm fixed by the server, and issuer, audience
+    and expiry checked; revocation approach documented.
+  min_profile: standard
+  applies_to:
+  - api
+  - web-app
+  - mobile-web
+  severity: critical
+  check: both
+  evidence: Negative token tests (tampered, expired, wrong audience, none algorithm)
+  owner: api-specialist
+  reviewer: application-security-engineer
+  reference: cs-rest
+- id: SEC-018
+  title: Implement OAuth and OIDC flows by the book where used
+  description: Where delegated login or authorization is used, a maintained library, exact redirect matching,
+    state and PKCE-style protections, and minimal scopes are used.
+  min_profile: standard
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  severity: major
+  check: both
+  evidence: Flow review checklist and redirect-manipulation tests
+  owner: api-specialist
+  reviewer: security-testing-specialist
+  reference: asvs V10
+- id: SEC-019
+  title: Send secure HTTP response headers
+  description: 'Responses carry headers suited to the product: HSTS, nosniff, framing control, referrer
+    and permissions policies, and no-store on sensitive responses.'
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - api
+  severity: major
+  check: automated
+  evidence: Header capture from the deployed test environment and scan output
+  owner: devops-engineer
+  reviewer: security-testing-specialist
+  reference: mdn-hsts
+- id: SEC-020
+  title: Deploy a Content Security Policy
+  description: Browser-facing apps ship a CSP that avoids unsafe-inline and unsafe-eval where feasible,
+    preferably nonce or hash based, piloted in report-only mode first with violations reviewed.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - internal-tool
+  severity: major
+  check: both
+  evidence: Policy text, report-only violation review, enforced header capture
+  owner: frontend-developer
+  reviewer: application-security-engineer
+  reference: cs-csp
+- id: SEC-021
+  title: Use encrypted transport everywhere
+  description: All traffic uses TLS with maintained protocol versions and valid certificates, HTTP is
+    redirected, and internal service links are protected as the threat model requires.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: automated
+  evidence: TLS scan output and redirect test from a test environment
+  owner: devops-engineer
+  reviewer: security-testing-specialist
+  reference: asvs V12
+- id: SEC-022
+  title: Configure CORS narrowly
+  description: Cross-origin access is disabled unless needed and limited to explicit trusted origins,
+    with credentials only where required.
+  min_profile: standard
+  applies_to:
+  - api
+  - web-app
+  severity: major
+  check: both
+  evidence: CORS test with untrusted origin; configuration review
+  owner: api-specialist
+  reviewer: security-testing-specialist
+  reference: cs-csrf
+- id: SEC-023
+  title: Keep secrets out of code and build artifacts
+  description: Secrets live in a managed store, are injected at runtime, are separated by environment,
+    scoped narrowly and rotated on a schedule and on exposure.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: both
+  evidence: Secret inventory with owners and rotation dates; repo scan output
+  owner: devops-engineer
+  reviewer: application-security-engineer
+  reference: cs-secrets
+- id: SEC-024
+  title: Scan for committed secrets in pre-commit and CI
+  description: Repositories and history are scanned for secrets; findings are triaged and any real secret
+    is revoked, not just deleted.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: automated
+  evidence: Scanner output in CI and triage log
+  owner: cicd-engineer
+  reviewer: application-security-engineer
+  reference: cs-secrets
+- id: SEC-025
+  title: Track and remediate vulnerable dependencies
+  description: Direct and transitive dependencies are scanned against vulnerability databases on each
+    change and on a schedule; remediation timelines by severity are set by the project.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: automated
+  evidence: Dependency scan reports and remediation tracker
+  owner: release-engineer
+  reviewer: application-security-engineer
+  reference: osv
+- id: SEC-026
+  title: Limit request rates and resource use
+  description: Authentication, expensive and enumeration-prone endpoints have rate limits, quotas and
+    timeouts, returning an appropriate throttling status.
+  min_profile: standard
+  applies_to:
+  - web-app
+  - api
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Load or burst test results; configuration of limits
+  owner: backend-developer
+  reviewer: security-testing-specialist
+  reference: cs-rest
+- id: SEC-027
+  title: Fail safely with generic errors
+  description: Errors shown to clients omit stack traces, queries and internal paths; failures in security
+    checks deny access rather than allow it.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Error-path tests with captured responses
+  owner: backend-developer
+  reviewer: code-reviewer
+  reference: asvs V16
+- id: SEC-028
+  title: Log security events without sensitive content
+  description: Authentication, access control failures, validation failures and admin actions are logged
+    with who, when, where and what; credentials, tokens, session ids and unnecessary personal data are
+    never logged; log output is neutralised against injection.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Sample logs, log schema, and test showing secrets are excluded
+  owner: observability-specialist
+  reviewer: application-security-engineer
+  reference: cs-logging
+- id: SEC-029
+  title: Protect and monitor logs
+  description: Logs are access-restricted, tamper-evident where required, retained per policy, and alerts
+    exist for serious security events and for logging failure.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Access policy, retention setting, alert rule list
+  owner: site-reliability-engineer
+  reviewer: observability-specialist
+  reference: cs-logging
+- id: SEC-030
+  title: Classify and protect stored data
+  description: Data is classified, sensitive data is encrypted at rest with managed keys, and unnecessary
+    sensitive data is not stored or cached.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Data classification table and storage encryption settings
+  owner: database-engineer
+  reviewer: application-security-engineer
+  reference: asvs V14
+- id: SEC-031
+  title: Secure the CI/CD pipeline
+  description: Pipeline permissions are least-privilege, branches are protected, reviews are required,
+    pipeline secrets are short-lived and scoped, and runners are trusted or isolated.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Pipeline configuration review and access list
+  owner: cicd-engineer
+  reviewer: application-security-engineer
+  reference: cs-secrets
+- id: SEC-032
+  title: Harden the software supply chain
+  description: Dependencies are pinned and sourced from trusted registries, builds are reproducible or
+    have provenance, and project practices are assessed with a recognised framework such as SLSA or OpenSSF
+    Scorecard.
+  min_profile: high_assurance
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Lockfiles, provenance or attestation records, assessment output with date
+  owner: release-engineer
+  reviewer: devops-engineer
+  reference: slsa
+- id: SEC-033
+  title: Harden configuration and remove defaults
+  description: Default accounts, debug modes, sample content and unused services are removed, and environment
+    configuration is reviewed against a baseline.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Configuration baseline review and scan output
+  owner: cloud-architect
+  reviewer: security-testing-specialist
+  reference: asvs V13
+- id: SEC-034
+  title: Threat-model features that handle sensitive data or trust boundaries
+  description: New features that cross trust boundaries or touch sensitive data get a documented threat
+    model with mitigations tracked to requirements.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Threat model document and mitigation tracker
+  owner: threat-modeling-specialist
+  reviewer: technical-lead
+  reference: asvs V15
+- id: SEC-035
+  title: Obtain written authorization before intrusive security testing
+  description: No destructive, intrusive or load-generating security test runs against a real environment
+    without written authorization from the system owner stating scope and window; tests run in a test
+    environment by default.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: manual
+  evidence: Signed or recorded authorization referencing scope and dates before any such test
+  owner: security-testing-specialist
+  reviewer: compliance-research-assistant
+  reference: zap

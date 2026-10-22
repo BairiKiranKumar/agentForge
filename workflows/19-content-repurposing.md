@@ -34,4 +34,4 @@ Publishing any row needs the brand owner. Client permission limits apply to ever
 The index lists real files, the editor has reviewed the words, and nothing is live.
 
 ## Example invocation
-"Run WF-19 on a homepage build note for kiranbuildswithai. LinkedIn and Threads only."
+"Run WF-19 on a homepage build note for example-brand. LinkedIn and Threads only."

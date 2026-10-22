@@ -6,7 +6,7 @@ Business names below are fictional unless stated. Values are placeholders.
 **Request:** "I have too much going on. Tell me what to keep for November and December."
 
 **Key decisions:**
-- Capacity: 10 hours a week from Kiran, so about 8 planned at 80%: roughly 70 founder hours over 9 weeks. Committed client demand (high end of ranges) is 48 hours.
+- Capacity: 10 hours a week from the owner, so about 8 planned at 80%: roughly 70 founder hours over 9 weeks. Committed client demand (high end of ranges) is 48 hours.
 - Remaining 22 hours cannot fit the restaurant QR app build (40 to 60 hours) plus two showcase builds (12 hours each).
 - QR app score 2.9 (low strategic fit with the current clinic beachhead); defer to the April review. Keep one showcase that targets clinics.
 
@@ -22,7 +22,7 @@ Business names below are fictional unless stated. Values are placeholders.
 ```
 WIP after decisions: client 2/3, product 0/1, showcase 1/2
 Gap: Nov-Dec demand 60 founder hrs vs 70 available (80%) -> fits
-Decision by: Kiran (pending)
+Decision by: The owner (pending)
 ```
 
 ## Example 2: New paid opportunity mid-quarter
@@ -31,14 +31,14 @@ Decision by: Kiran (pending)
 **Key decisions:**
 - Scored 4.4 (fits the clinic beachhead, adds proof). Needs 20 to 25 founder hours.
 - Capacity shows 10 free hours. To fit: defer the clinic booking demo (it overlaps with this real project as proof) and move one client review slot.
-- Recommend accepting, with the demo deferred; flag to `delivery-lead` that Kiran's review hours will be tight in week 3.
+- Recommend accepting, with the demo deferred; flag to `delivery-lead` that the owner's review hours will be tight in week 3.
 
 **Output (excerpt):**
 ```
 New: Physio clinic site | score 4.4 | 20 to 25 founder hrs
 Displaces: Clinic booking demo (defer to 2027-01-10; this project produces stronger proof)
 Risk: week of 2026-11-17 review slots at 95%; delivery-lead informed
-Decision by: Kiran (pending)
+Decision by: The owner (pending)
 ```
 
 ## Example 3: Pushback: "keep it, we've already done most of it"

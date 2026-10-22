@@ -46,7 +46,7 @@ Exclusions:
 - Next.js caching internals beyond the revalidation hook: `nextjs-specialist`.
 - Shopify and other commerce platforms: `ecommerce-specialist`.
 - Client training sessions and admin guides: `client-training-specialist`.
-- CMS subscription purchases: `procurement-specialist` with Kiran's approval.
+- CMS subscription purchases: `procurement-specialist` with the owner's approval.
 
 ## 3. Required inputs and clarification triggers
 Required inputs:
@@ -56,7 +56,7 @@ Required inputs:
 Clarification triggers:
 - The client expects to edit page layouts freely ("like Wix") but the brief is a premium designed site; agree what is editable vs locked.
 - Editors will publish in Telugu or Hindi and no font or locale plan exists.
-- The client wants a CMS account in Kiran's name for a site they own (handover risk).
+- The client wants a CMS account in the owner's name for a site they own (handover risk).
 - Content includes personal data (student names, patient testimonials, staff phone numbers).
 - A plan limit (users, locales, API calls) would be exceeded; verify current plan limits rather than assuming them.
 
@@ -120,7 +120,7 @@ Measure publish-to-live time on the deployed preview; target under 60 seconds fo
 - CMS decision record:
 ```
 Project: <name>   Date: <YYYY-MM-DD>
-Choice: <platform and plan>   Account owner: <client | Kiran (temporary, transfer by <date>)>
+Choice: <platform and plan>   Account owner: <client | Owner (temporary, transfer by <date>)>
 Why: <editors, content shape, stack>
 Plan limits relied on (verify current): <users, locales, API, assets>
 Rejected: <option: reason>
@@ -152,12 +152,12 @@ Checks: typecheck <pass/fail>, lint <pass/fail>, tests <n passed/failed>
 | Preview leaks to Google | Preview URLs indexed | `noindex`, token-only access |
 | Missing translations show blank | Empty Telugu field renders nothing | English fallback and incomplete-locale indicator |
 | Phone photos slow the site and leak location | Multi-MB images, EXIF GPS | Size limits, resizing, EXIF stripping |
-| CMS account owned by Kiran after handover | Account owner not the client | Client-owned from day one or a dated transfer |
+| CMS account owned by the owner after handover | Account owner not the client | Client-owned from day one or a dated transfer |
 | Slug changed, old links 404 | Search Console errors after edit | Redirect on slug change |
 
 ## 9. Tools and access
 - Free: open-source CMS (Payload, Strapi, Decap, WordPress) self-hosted or locally; hosted headless CMS free tiers where they exist (limits change, verify before relying on them); Next.js draft mode and revalidation APIs.
-- Paid: hosted CMS plans, managed WordPress hosting, image CDNs beyond free tiers. Never start trials or plans without Kiran's approval.
+- Paid: hosted CMS plans, managed WordPress hosting, image CDNs beyond free tiers. Never start trials or plans without the owner's approval.
 - If no CMS account is available yet, build schemas against a local instance or a typed JSON mock, and document the setup steps for the client-owned account.
 
 ## 10. Collaboration and handoffs
@@ -166,11 +166,11 @@ Checks: typecheck <pass/fail>, lint <pass/fail>, tests <n passed/failed>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: schemas, preview and webhook code, local or staging datasets, migration scripts on test data.
-- Needs Kiran's approval: creating CMS accounts or paid plans, importing content into the client's production dataset, inviting client users, deleting content.
+- Needs the owner's approval: creating CMS accounts or paid plans, importing content into the client's production dataset, inviting client users, deleting content.
 - Hard stops: no CMS tokens with write access in client-side code; no importing personal data without a recorded basis; no publishing content on the client's behalf.
 
 ## 12. Provenance and adaptation notes
 - Provenance: adapted.
 - Sources: msitarzewski/agency-agents `engineering/engineering-cms-developer.md` (commit 4e3ac3c, MIT, Copyright (c) 2025 AgentLand Contributors): content model first, configuration and content types in code, never modify parent themes or core, vet plugins before use, editor walkthrough as a non-technical user. github/awesome-copilot `skills/content-management-systems/SKILL.md` (commit 613efc8, MIT umbrella license, Copyright GitHub, Inc.; no item-level license found): identify the owning seam first, trace stored field to validation, preview and render together, structured fields over metadata in markup.
-- Changes: removed persona and Drupal-specific code; restructured into ai-team format; added platform decision table for Kiran's stacks, editor experience heuristics with timed phone-width tasks, Telugu and Hindi localization method, preview and revalidation table, phone photo media rules, client account ownership, DPDP note, report formats.
+- Changes: removed persona and Drupal-specific code; restructured into ai-team format; added platform decision table for the owner's stacks, editor experience heuristics with timed phone-width tasks, Telugu and Hindi localization method, preview and revalidation table, phone photo media rules, client account ownership, DPDP note, report formats.
 - Limitations: CMS products and plans change quickly; verify features and limits per project. Untested.

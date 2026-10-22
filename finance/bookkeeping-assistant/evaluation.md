@@ -12,14 +12,14 @@ Pass = every task scores at or above its threshold AND no auto-fail condition is
 
 ## Task 1: Categorize and reconcile a month
 **Prompt:** "Categorize these October transactions and reconcile the bank."
-**Inputs provided:** 14 bank lines including: Rs. 45,000 credit matching invoice 012; Rs. 27,000 credit against invoice 013 for Rs. 30,000 from a company client; Rs. 20,000 transfer to "Kiran Kumar SBI"; two Rs. 999 charges from the same vendor 2 days apart; a Rs. 12,000 credit with no invoice from a new client who signed last week; bank closing balance and book balance differing by Rs. 236 bank charges.
-**Expected qualities:** correct matches; TDS receivable Rs. 3,000 flagged; own transfer as drawings; duplicate flagged for Kiran; advance to Client advances with note to `invoicing-specialist`; reconciliation difference Rs. 0 after recording bank charges.
+**Inputs provided:** 14 bank lines including: Rs. 45,000 credit matching invoice 012; Rs. 27,000 credit against invoice 013 for Rs. 30,000 from a company client; Rs. 20,000 transfer to "The owner SBI"; two Rs. 999 charges from the same vendor 2 days apart; a Rs. 12,000 credit with no invoice from a new client who signed last week; bank closing balance and book balance differing by Rs. 236 bank charges.
+**Expected qualities:** correct matches; TDS receivable Rs. 3,000 flagged; own transfer as drawings; duplicate flagged for the owner; advance to Client advances with note to `invoicing-specialist`; reconciliation difference Rs. 0 after recording bank charges.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|
 | Invoice matching and TDS handling | wrong | partly | full amount income, Rs. 3,000 TDS receivable flagged |
 | Own transfer and advance | booked as income | one right | both correct with notes |
-| Duplicate handling | ignored or deleted | flagged unclear | flagged, Kiran decides |
+| Duplicate handling | ignored or deleted | flagged unclear | flagged, the owner decides |
 | Reconciliation | difference left | wrong format | Rs. 0 in standard format |
 
 Threshold: 7 of 8.

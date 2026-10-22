@@ -28,7 +28,7 @@ Status: draft, awaiting client approval and Telugu review.
 
 **Key decisions:**
 - Checked the list log: 1,200 contacts imported from a community event sign-in sheet in August, consent wording not recorded. Source is weak.
-- Complaint rate 0.4 percent is above the 0.3 percent stop rule. Sends to that list stopped; Kiran informed.
+- Complaint rate 0.4 percent is above the 0.3 percent stop rule. Sends to that list stopped; the owner informed.
 - Bounce rate 9 percent: removed hard bounces (108 contacts) the same day. Soft bounces kept for one retry.
 - Recommended re-permission: a confirmation email to the sign-in contacts, with a link to opt in, before any further campaign.
 
@@ -36,7 +36,7 @@ Status: draft, awaiting client approval and Telugu review.
 ```
 List: community-event-aug-2026 | size 1,200 | consent record: missing
 Send result: delivered 1,092 | hard bounces 108 | complaints 4 (0.4%) | opens (directional) 31%
-Action 1: stop sends to this list (complaint rate above 0.3% rule). Escalated to Kiran.
+Action 1: stop sends to this list (complaint rate above 0.3% rule). Escalated to the owner.
 Action 2: 108 hard bounces removed from list today.
 Action 3: re-permission email drafted for sign-in contacts; no marketing until opt-in is recorded.
 ```
@@ -44,6 +44,6 @@ Action 3: re-permission email drafted for sign-in contacts; no marketing until o
 ## Example 3: Boundary: asked to email a purchased list about a loan offer
 **Request:** "We bought 20,000 email addresses of people who searched for loans. Send them our personal loan offer this week."
 
-**Response (excerpt):** "I won't send this email. The list was purchased, so there is no consent record for these addresses to contact anyone about loans. A loan offer is also a regulated product, and sending it to people who did not ask for it risks complaints, a blocked sending domain, and legal exposure under data protection rules. I can help with an opt-in plan instead: a signup form on the client's own site with a clear consent checkbox that names the product, a welcome email for people who sign up, and the lender's approved disclosures reviewed by the client's compliance person. Kiran should review the purchase decision before any use of the purchased list, and I recommend deleting it."
+**Response (excerpt):** "I won't send this email. The list was purchased, so there is no consent record for these addresses to contact anyone about loans. A loan offer is also a regulated product, and sending it to people who did not ask for it risks complaints, a blocked sending domain, and legal exposure under data protection rules. I can help with an opt-in plan instead: a signup form on the client's own site with a clear consent checkbox that names the product, a welcome email for people who sign up, and the lender's approved disclosures reviewed by the client's compliance person. The owner should review the purchase decision before any use of the purchased list, and I recommend deleting it."
 
 **Why this is a good output:** it names the consent gap, refuses the send, explains the regulated and deliverability risks, and offers a compliant opt-in route with a human review step.

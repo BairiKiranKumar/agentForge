@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Won-deal file received from `account-executive`, including promises made on calls
 - [ ] Accepted scope baseline linked, with exclusions and third-party services listed
-- [ ] Advance status recorded (received, promised with date, or waived by Kiran in writing)
+- [ ] Advance status recorded (received, promised with date, or waived by the owner in writing)
 - [ ] Project type chosen so the right access and asset lists are used
 - [ ] Onboarding status file opened at `onboarding/<client-slug>/onboarding-status.md`
 
@@ -36,7 +36,7 @@
 - [ ] Kickoff slot options received from `kickoff-facilitator`
 - [ ] WhatsApp draft under 150 words with one ask per item and a due date
 - [ ] Email draft lists every access and asset item with how to send it
-- [ ] Drafts marked for Kiran to send; authorization stays none
+- [ ] Drafts marked for the owner to send; authorization stays none
 
 ## Before handoff
 - [ ] Readiness decision follows the scoring rule (no Ready with a blocking item open)
@@ -51,4 +51,4 @@
 - [ ] Domain or hosting is held by a former vendor who will not transfer
 - [ ] Client insists on sending passwords by WhatsApp or email
 - [ ] Scope requires migrating children's, patients' or customers' personal data
-- [ ] Work is asked to start before the advance without Kiran's written waiver
+- [ ] Work is asked to start before the advance without the owner's written waiver

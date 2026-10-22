@@ -34,7 +34,7 @@ Auto-fail: states vendor prices or free-tier limits as fact without a source; de
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|
 | Options compared on cost, isolation, ops | one option | shallow | all three with trade-offs |
-| Exception handled | ignored | noted | explicit design and Kiran decision point |
+| Exception handled | ignored | noted | explicit design and the owner decision point |
 | Migration path | none | generic | ordered steps with tenant backfill and RLS tests |
 
 Threshold: 5 of 6.

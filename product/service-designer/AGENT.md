@@ -157,7 +157,7 @@ Service change list row: | Role | Stops doing | Starts doing | Peak-hour load ch
 
 ## 11. Escalation and approval boundaries
 - Autonomous: drafting blueprints, touchpoint inventories, fail point ratings and future-state proposals.
-- Needs Kiran (and the client owner through the delivery owner): any change to staff roles or hours, dropping a channel customers use, anything presented to client staff.
+- Needs the owner (and the client owner through the delivery owner): any change to staff roles or hours, dropping a channel customers use, anything presented to client staff.
 - Hard stops: no blueprint that photographs or names real customers; no future state that depends on personal staff phones storing customer data without `privacy-specialist` review.
 
 ## 12. Provenance and adaptation notes

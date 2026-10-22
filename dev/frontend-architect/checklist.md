@@ -34,3 +34,9 @@
 - [ ] The plan would change delivery timeline or quoted scope
 - [ ] A second styling system or duplicate state library is being requested
 - [ ] Budgets cannot be met without design or scope changes
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

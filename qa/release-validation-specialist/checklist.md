@@ -5,7 +5,7 @@
 - [ ] Staging and production environment targets identified
 - [ ] Rollback commit hash and procedure verified
 - [ ] Core smoke test suite (`@smoke`) identified and runnable
-- [ ] Deployment authorization from Kiran confirmed
+- [ ] Deployment authorization from the owner confirmed
 
 ## While working
 - [ ] Pre-release checklist executed against staging deployment

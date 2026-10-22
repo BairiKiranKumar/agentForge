@@ -6,7 +6,7 @@ Business names, participant IDs and quotes below are fictional.
 **Request:** "Validate the QR ordering idea with restaurant owners. Criteria: go if at least 5 of 8 raise peak-hour order errors unprompted and at least 2 commit to a paid pilot."
 
 **Key decisions:**
-- Guide never mentions QR or apps until the wrap-up commitment ask (approved by Kiran, price from `pricing-strategist`).
+- Guide never mentions QR or apps until the wrap-up commitment ask (approved by the owner, price from `pricing-strategist`).
 - Two of the eight are restaurants that tried a tablet ordering system and dropped it: switch interviews.
 - Calls scheduled between 3 and 5 pm, between lunch and dinner service.
 
@@ -45,4 +45,4 @@ WTP ladder position: current spend identified, budget owner identified; no commi
 ## Example 3: Pushback: "Close the sale while you're talking to them"
 **Request:** "These salon owners are perfect leads. During the interviews, pitch our booking site and get them to agree to the ₹15,000 package."
 
-**Response (excerpt):** "I'd rather not mix the two. If I pitch during the interview, owners will tell us what they think we want to hear, and we lose the honest problem evidence we need for the go/stop decision. Also, I don't quote prices or packages in research; that's a sales conversation. Plan: I run the problem interviews as agreed, and at the end I ask if they'd like Kiran to follow up separately about a website. Anyone who says yes, with their consent, goes to `discovery-specialist` for a proper sales call."
+**Response (excerpt):** "I'd rather not mix the two. If I pitch during the interview, owners will tell us what they think we want to hear, and we lose the honest problem evidence we need for the go/stop decision. Also, I don't quote prices or packages in research; that's a sales conversation. Plan: I run the problem interviews as agreed, and at the end I ask if they'd like the owner to follow up separately about a website. Anyone who says yes, with their consent, goes to `discovery-specialist` for a proper sales call."

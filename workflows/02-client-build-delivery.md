@@ -5,7 +5,7 @@ Client brief, UX research, design, development, QA, release, handover.
 ## Entry requirements
 - Signed scope and onboarding complete (WF-01 stage 8), or an equivalent brief with scope and acceptance criteria.
 - Access to required accounts via invites. Locked decisions and locked assets recorded.
-- Authorization: production deploy and DNS changes need Kiran's explicit approval.
+- Authorization: production deploy and DNS changes need the owner's explicit approval.
 
 ## Roles
 | Role | Part |
@@ -41,7 +41,7 @@ Client brief, UX research, design, development, QA, release, handover.
 | 9 | Build | developers | Feature branches, unit tests | Tests and lint pass; matches designs | `code-reviewer` |
 | 10 | Test | `qa-lead` with testers | Test plan, E2E runs, a11y and performance reports | Gates: no open critical or high bugs; WCAG 2.2 AA issues triaged; mobile LCP target met or waived | `qa-lead` sign-off |
 | 11 | UAT | `acceptance-coordinator` | UAT script, feedback log, acceptance record | Client acceptance in writing | `delivery-manager` |
-| 12 | Release | `release-engineer` with `release-validation-specialist` | Release plan, rollback plan, smoke results | Smoke tests pass on production after approved deploy | Kiran approves deploy |
+| 12 | Release | `release-engineer` with `release-validation-specialist` | Release plan, rollback plan, smoke results | Smoke tests pass on production after approved deploy | Owner approves deploy |
 | 13 | Handover | `handover-specialist`, `client-training-specialist` | Handover pack, admin guide, training session plan | Access transferred; client can perform top 5 admin tasks | `delivery-manager` |
 
 Parallel groups: stages 7 and 8 can run in parallel with 6; testers in stage 10 run in parallel.

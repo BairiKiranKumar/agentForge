@@ -102,7 +102,7 @@ window.dataLayer.push({
 ## 6. Deliverables and output formats
 - Technical Measurement Plan (`measurement-plan.md`):
 ```markdown
-# Web Analytics Measurement Plan: Pragathi School Portal
+# Web Analytics Measurement Plan: Greenfield School Portal
 - Property: GA4 (`G-XXXXXXXXXX`) | GTM Container: `GTM-YYYYYYY`
 - Author: Web Analytics Specialist | Date: 2026-10-21
 

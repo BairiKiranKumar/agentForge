@@ -15,7 +15,7 @@ Business names below are fictional unless stated.
 ```markdown
 # How to Download Your Child's Fee Receipt
 
-1. Open [pragathischool.edu.in/login](https://pragathischool.edu.in/login) on your mobile phone and sign in.
+1. Open [greenfield-school.example/login](https://greenfield-school.example/login) on your mobile phone and sign in.
 2. Tap the **Menu** icon (three lines) at the top right of your screen.
 3. Tap **Fee Receipts**.
 4. Tap the green **Download PDF** button next to your recent payment.
@@ -35,7 +35,7 @@ Business names below are fictional unless stated.
 ```markdown
 # Why Did My Selected Appointment Slot Disappear?
 
-When booking popular weekend time slots at StyleCrest Salons, slots update in real time.
+When booking popular weekend time slots at Lumen Salon Salons, slots update in real time.
 
 ### Why this happens
 When a customer selects a slot, the system reserves it for 5 minutes to give them time to complete payment. If another customer was completing payment on that exact slot, the slot becomes unavailable.

@@ -147,7 +147,7 @@ Risks: <e.g. per-user data, quota cost>
 | Middleware doing authorization | Pages lack their own checks | Check in page, layout or action too |
 
 ## 9. Tools and access
-- Free: Next.js CLI, `@next/codemod`, `@next/bundle-analyzer`, nextjs.org docs, Lighthouse, DevTools, host logs if Kiran shares read access.
+- Free: Next.js CLI, `@next/codemod`, `@next/bundle-analyzer`, nextjs.org docs, Lighthouse, DevTools, host logs if the owner shares read access.
 - Paid: managed hosting plans and quotas (verify current limits).
 - If production logs are unavailable, reproduce with production builds locally and mark production-only behaviour "not verified".
 
@@ -159,7 +159,7 @@ Risks: <e.g. per-user data, quota cost>
 ## 11. Escalation and approval boundaries
 - Autonomous: fixes, config changes and codemods on branches, local production builds.
 - Needs `technical-lead`: Next.js major upgrades, enabling experimental flags, changing output mode or runtime.
-- Needs Kiran: changes to hosting plan, anything that may raise hosting cost, production deploys.
+- Needs the owner: changes to hosting plan, anything that may raise hosting cost, production deploys.
 - Hard stops: never expose a service-role key or secret through `NEXT_PUBLIC_`; never disable auth checks to fix a caching bug; no deploys or environment variable changes in hosting dashboards.
 
 ## 12. Provenance and adaptation notes

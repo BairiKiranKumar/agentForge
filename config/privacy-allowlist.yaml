@@ -1,0 +1,23 @@
+# Allowlist for tools/privacy_scan.py. Generic and public. Never add real personal data here.
+emails:
+  - noreply@anthropic.com
+email_domains:
+  - example.com
+  - example.org
+  - example.net
+  - example.invalid
+  - users.noreply.github.com
+# Whole files whose findings are accepted. Keep this list short and justified in
+# docs/release-readiness/privacy-audit.md.
+paths:
+  - agentforge.lock        # canonical upstream repository coordinates (public project metadata)
+  - docs/INSTALL.md        # same
+  - runtime/discover.py    # default upstream repository, overridable
+  - tests/test_discover.py # fixture using the upstream repository name
+  - tools/privacy_scan.py  # contains detector patterns, not data
+  - tests/test_public_ready.py  # synthetic strings that exercise the detectors
+# Values that are obviously synthetic (documentation examples, placeholders).
+patterns:
+  - '12345|00000|98765|43210|XXX'
+  - '^123456789012$|:123456789012:'
+  - '^10\.0\.'

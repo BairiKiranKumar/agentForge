@@ -90,7 +90,7 @@ Status: every agent is `untested` until it passes its evaluation (see `evaluatio
 | **Scriptwriter** (`scriptwriter`) | Write scripts for reels, shorts, explainers, walkthroughs and ads. |  | adapted | untested | [content/scriptwriter/AGENT.md](content/scriptwriter/AGENT.md) |
 | **Case Study Writer** (`case-study-writer`) | Turn delivered projects into credible, permissioned case studies. |  | adapted | untested | [content/case-study-writer/AGENT.md](content/case-study-writer/AGENT.md) |
 | **Proposal Writer** (`proposal-writer`) | Write the narrative sections of proposals: understanding, approach, why us. |  | adapted | untested | [content/proposal-writer/AGENT.md](content/proposal-writer/AGENT.md) |
-| **Localization Specialist** (`localization-specialist`) | Adapt content for Indian languages and regional audiences (Telugu, Hindi, Indian English). |  | original | untested | [content/localization-specialist/AGENT.md](content/localization-specialist/AGENT.md) |
+| **Localization Specialist** (`localization-specialist`) | Adapt content for other languages and regional audiences, using regional packs for language and market specifics. |  | original | untested | [content/localization-specialist/AGENT.md](content/localization-specialist/AGENT.md) |
 | **Content Repurposing Specialist** (`content-repurposing-specialist`) | Turn one approved source into platform-native packages without pasting the same post everywhere. | Content Repurposing Specialist | original | untested | [content/content-repurposing-specialist/AGENT.md](content/content-repurposing-specialist/AGENT.md) |
 
 ## dev (19)
@@ -110,7 +110,7 @@ Status: every agent is `untested` until it passes its evaluation (see `evaluatio
 | **Database Engineer** (`database-engineer`) | Design schemas, migrations, indexes and row-level security that keep data correct and fast. |  | adapted | untested | [dev/database-engineer/AGENT.md](dev/database-engineer/AGENT.md) |
 | **Mobile Developer** (`mobile-developer`) | Build mobile apps (React Native, Flutter or native) and PWAs. |  | adapted | untested | [dev/mobile-developer/AGENT.md](dev/mobile-developer/AGENT.md) |
 | **CMS Specialist** (`cms-specialist`) | Implement content management: headless or traditional CMS, content models in code, editor experience. |  | adapted | untested | [dev/cms-specialist/AGENT.md](dev/cms-specialist/AGENT.md) |
-| **E-commerce Specialist (Shopify)** (`ecommerce-specialist`) | Build and optimize online stores on Shopify or headless commerce, including Indian payment setups. |  | adapted | untested | [dev/ecommerce-specialist/AGENT.md](dev/ecommerce-specialist/AGENT.md) |
+| **E-commerce Specialist (Shopify)** (`ecommerce-specialist`) | Build and optimize online stores on Shopify or headless commerce, including regional payment setups (see regional packs). |  | adapted | untested | [dev/ecommerce-specialist/AGENT.md](dev/ecommerce-specialist/AGENT.md) |
 | **Integration Engineer** (`integration-engineer`) | Connect systems: payment gateways, WhatsApp, email, CRMs, webhooks and third-party APIs. |  | adapted | untested | [dev/integration-engineer/AGENT.md](dev/integration-engineer/AGENT.md) |
 | **Performance Engineer** (`performance-engineer`) | Find and fix performance bottlenecks in frontend and backend. |  | adapted | untested | [dev/performance-engineer/AGENT.md](dev/performance-engineer/AGENT.md) |
 | **Accessibility Engineer** (`accessibility-engineer`) | Implement accessibility in code: semantics, ARIA widgets, focus management, screen reader support. |  | adapted | untested | [dev/accessibility-engineer/AGENT.md](dev/accessibility-engineer/AGENT.md) |
@@ -154,7 +154,7 @@ Status: every agent is `untested` until it passes its evaluation (see `evaluatio
 |---|---|---|---|---|---|
 | **Application Security Engineer** (`application-security-engineer`) | Make applications secure by design and fix vulnerabilities properly. |  | adapted | untested | [security/application-security-engineer/AGENT.md](security/application-security-engineer/AGENT.md) |
 | **Threat Modeling Specialist** (`threat-modeling-specialist`) | Identify what can go wrong in a system before it is built. |  | adapted | untested | [security/threat-modeling-specialist/AGENT.md](security/threat-modeling-specialist/AGENT.md) |
-| **Privacy Specialist** (`privacy-specialist`) | Help products handle personal data lawfully and respectfully (India DPDP Act, GDPR where relevant). |  | adapted | untested | [security/privacy-specialist/AGENT.md](security/privacy-specialist/AGENT.md) |
+| **Privacy Specialist** (`privacy-specialist`) | Help products handle personal data lawfully and respectfully (for example GDPR, CCPA/CPRA, India DPDP Act; see regional packs). |  | adapted | untested | [security/privacy-specialist/AGENT.md](security/privacy-specialist/AGENT.md) |
 
 ## devops (8)
 
@@ -209,7 +209,7 @@ Status: every agent is `untested` until it passes its evaluation (see `evaluatio
 | **Prospect Researcher** (`prospect-researcher`) | Find named prospects that match the ICP and gather personalization points. |  | adapted | untested | [sales/prospect-researcher/AGENT.md](sales/prospect-researcher/AGENT.md) |
 | **Lead Qualification Specialist** (`lead-qualification-specialist`) | Score and qualify leads consistently so sales time goes to the right ones. |  | adapted | untested | [sales/lead-qualification-specialist/AGENT.md](sales/lead-qualification-specialist/AGENT.md) |
 | **Sales Development Representative** (`sales-development-representative`) | Respond to inbound leads fast and turn qualified ones into booked meetings. |  | adapted | untested | [sales/sales-development-representative/AGENT.md](sales/sales-development-representative/AGENT.md) |
-| **Business Development Representative** (`business-development-representative`) | Open new accounts through outbound prospecting, including Indian local businesses. |  | adapted | untested | [sales/business-development-representative/AGENT.md](sales/business-development-representative/AGENT.md) |
+| **Business Development Representative** (`business-development-representative`) | Open new accounts through outbound prospecting, including local businesses. |  | adapted | untested | [sales/business-development-representative/AGENT.md](sales/business-development-representative/AGENT.md) |
 | **Outreach Copywriter** (`outreach-copywriter`) | Write short, personal outreach messages that earn replies. |  | adapted | untested | [sales/outreach-copywriter/AGENT.md](sales/outreach-copywriter/AGENT.md) |
 | **Discovery Specialist** (`discovery-specialist`) | Run sales discovery that uncovers pains, impact, decision process and budget. |  | adapted | untested | [sales/discovery-specialist/AGENT.md](sales/discovery-specialist/AGENT.md) |
 | **Account Executive** (`account-executive`) | Own a deal from qualified opportunity to signed agreement. |  | adapted | untested | [sales/account-executive/AGENT.md](sales/account-executive/AGENT.md) |

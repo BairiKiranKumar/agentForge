@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Screener, outreach and consent for a shop-owner study
-**Prompt:** "Recruit 6 print-shop owners in Nizamabad for 30-minute problem interviews next week. Prepare the screener, outreach message and consent script."
+**Prompt:** "Recruit 6 print-shop owners in the town for 30-minute problem interviews next week. Prepare the screener, outreach message and consent script."
 **Inputs provided:** Approved plan: owners who handle walk-in document printing; Telugu or English; thank-you approved; no client list available.
 **Expected qualities:** behavior-based screener with terminate conditions and articulation check, data minimum, honest outreach for approval (not sent), channels such as walk-in introductions, local trader WhatsApp groups via admins and referrals, over-recruit, consent covering recording, retention, withdrawal and thank-you on stopping, language options.
 
@@ -19,7 +19,7 @@ Pass = every task scores at or above its threshold AND no auto-fail condition is
 |---|---|---|---|
 | Screener quality | leading or opinion-based | partial | behavior, terminates, articulation check |
 | Data minimum | collects extra personal data | some extra | selection and scheduling only |
-| Outreach honesty and approval | sends or pressures | missing approval step | honest, drafted for Kiran's approval |
+| Outreach honesty and approval | sends or pressures | missing approval step | honest, drafted for the owner's approval |
 | Consent completeness | missing | partial | purpose, recording, retention, withdrawal, contact |
 | Recruiting plan realism | panel or ads assumed | one channel | local channels, admin permission, over-recruit |
 

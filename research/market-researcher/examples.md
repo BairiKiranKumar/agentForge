@@ -3,7 +3,7 @@
 Figures below are illustrative of format only; they are not real counts. Business names are fictional unless stated.
 
 ## Example 1: Sizing print shops for the QR print-shop app
-**Request:** "WF-03 stage 2: how many print shops could use the QR upload app in Nizamabad and Hyderabad?"
+**Request:** "WF-03 stage 2: how many print shops could use the QR upload app in the town and Hyderabad?"
 
 **Key decisions:**
 - Unit defined as "shops offering walk-in document printing", excluding commercial offset presses.
@@ -12,13 +12,13 @@ Figures below are illustrative of format only; they are not real counts. Busines
 
 **Output (excerpt):**
 ```
-Definition: unit = walk-in document print and xerox shops | geography = Nizamabad city,
+Definition: unit = walk-in document print and xerox shops | geography = the town city,
 Hyderabad (GHMC) | window = today | inclusion = listed on Google Maps or Justdial
 
 | Tier | Estimate | Arithmetic | Sources | Confidence |
-| TAM Nizamabad | [illustrative] 150 to 200 | Maps "xerox shop" + Justdial, merged, 20-listing spot-check | S1, S2 | Medium |
-| SAM Nizamabad | 50 to 90 | TAM x near-college share [Assumption 0.35 to 0.45] | S1 | Low |
-| SOM 12 months | 6 to 10 | capacity: onboarding 1 shop per month plus pilot | Kiran | Low |
+| TAM the town | [illustrative] 150 to 200 | Maps "xerox shop" + Justdial, merged, 20-listing spot-check | S1, S2 | Medium |
+| SAM the town | 50 to 90 | TAM x near-college share [Assumption 0.35 to 0.45] | S1 | Low |
+| SOM 12 months | 6 to 10 | capacity: onboarding 1 shop per month plus pilot | Owner | Low |
 
 Sensitivity: if the near-college share is half the assumption, SAM falls to 25 to 45;
 the go/stop decision is not sensitive to this because SOM is capacity-bound.

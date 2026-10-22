@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Cost-optimized architecture for Hyderabad school portal
-**Request:** "Design the cloud hosting architecture for Pragathi Vidyalaya school portal (1,500 students, 4,000 parents). Budget is strict: under Rs. 10,000 per month."
+**Request:** "Design the cloud hosting architecture for Greenfield Vidyalaya school portal (1,500 students, 4,000 parents). Budget is strict: under Rs. 10,000 per month."
 
 **Key decisions:**
 - Evaluated AWS Fargate vs Vercel + Supabase PaaS.
@@ -14,7 +14,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Cloud Hosting Recommendation: Pragathi Vidyalaya
+### Cloud Hosting Recommendation: Greenfield Vidyalaya
 - Architecture: Edge Next.js Frontend + Managed Serverless Postgres
 - Primary Region: AWS Mumbai (`ap-south-1`)
 - Monthly Cost: ₹6,500 ($78 USD)

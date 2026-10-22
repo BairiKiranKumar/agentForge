@@ -38,7 +38,7 @@
 - [ ] List log updated with additions, removals and reasons
 
 ## Stop and escalate if
-- [ ] Complaint rate above 0.3 percent: stop sends to that list and escalate to Kiran
+- [ ] Complaint rate above 0.3 percent: stop sends to that list and escalate to the owner
 - [ ] The list has no consent record for the segment
 - [ ] The offer is regulated (loans, insurance, health, supplements, financial products)
 - [ ] Sender domain fails authentication after two fix attempts

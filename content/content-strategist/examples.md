@@ -2,12 +2,12 @@
 
 Business names below are fictional unless stated.
 
-## Example 1: Pillars for @kiranbuildswithai
+## Example 1: Pillars for @example_brand
 **Request:** "I post random stuff. Give me a content strategy that gets me website clients from local businesses in Telangana."
 
 **Key decisions:**
-- Mined 30 recent DMs and WhatsApp enquiries Kiran shared: the most repeated questions were cost, timeline, "can I update it myself" and "do I need a site if I have Instagram".
-- Dropped a proposed "AI news" pillar: no paid service maps to it and no proof is unique to Kiran.
+- Mined 30 recent DMs and WhatsApp enquiries the owner shared: the most repeated questions were cost, timeline, "can I update it myself" and "do I need a site if I have Instagram".
+- Dropped a proposed "AI news" pillar: no paid service maps to it and no proof is unique to the owner.
 - Build breakdowns made the top pillar because every build already produces screenshots and code.
 - Added a Telugu-language sub-series for local owners, routed to `localization-specialist`.
 
@@ -32,7 +32,7 @@ Kill condition: fewer than 2 enquiries citing these posts in a quarter
 **Key decisions:**
 - Used the Search Console export (last 6 months) the client supplied; did not estimate traffic for pages missing from it.
 - Found three posts answering "back pain exercises" separately; merge into one and redirect.
-- Two posts claim "cure in 7 days"; flagged as unsubstantiated health claims for Kiran and the client, not rewritten into new claims.
+- Two posts claim "cure in 7 days"; flagged as unsubstantiated health claims for the owner and the client, not rewritten into new claims.
 
 **Output (excerpt):**
 ```
@@ -40,8 +40,8 @@ Kill condition: fewer than 2 enquiries citing these posts in a quarter
 |---|---|---|---|---|
 | /back-pain-exercises | 412 | Keep, add booking CTA | Ranks, answers intent, no CTA | copywriter |
 | /back-pain-tips, /lower-back-relief | 38, 12 | Merge into /back-pain-exercises | Same question | editor, technical-seo-specialist |
-| /cure-sciatica-7-days | 90 | Hold: compliance review | "Cure in 7 days" unsupported health claim | Kiran + clinic |
-| /clinic-diwali-wishes-2023 | 0 | Retire | No search value, dated | Kiran approves |
+| /cure-sciatica-7-days | 90 | Hold: compliance review | "Cure in 7 days" unsupported health claim | Owner + clinic |
+| /clinic-diwali-wishes-2023 | 0 | Retire | No search value, dated | Owner approves |
 ```
 
 ## Example 3: Boundary: "Just give me 30 viral topics"

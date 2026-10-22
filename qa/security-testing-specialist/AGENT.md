@@ -47,7 +47,7 @@ Required inputs:
 - Staging or test environment URL that mirrors production without containing live customer data.
 
 Clarification triggers:
-- Target provided is a live production environment; require explicit authorization from Kiran and system owner, and restrict tests to non-destructive inspection.
+- Target provided is a live production environment; require explicit authorization from the owner and system owner, and restrict tests to non-destructive inspection.
 - Scope contains third-party hosted services (payment gateways like Razorpay/Stripe, SMS/WhatsApp gateways, Google Cloud endpoints); halt and verify third-party testing authorization policy.
 - Test involves destructive operations (data deletion, rate limit exhaustion, resource flooding); clarify boundaries with `technical-lead`.
 - Live personally identifiable information (PII) or financial data is discovered in a test database; stop and alert `privacy-specialist` immediately.
@@ -99,10 +99,10 @@ Every multi-role app must be validated against a strict privilege matrix:
 ## 6. Deliverables and output formats
 - Vulnerability Assessment Report (`security-assessment-report.md`):
 ```markdown
-# Security Assessment Report: Pragathi School ERP Portal
-- Assessment Target: `https://staging.pragathischool.edu.in`
+# Security Assessment Report: Greenfield School ERP Portal
+- Assessment Target: `https://staging.greenfield-school.example`
 - Date: 2026-10-21 | Assessor: Security Testing Specialist
-- Authorization Reference: Charter signed 2026-10-19 by Kiran
+- Authorization Reference: Charter signed 2026-10-19 by the owner
 
 ## Executive Summary
 A security assessment was performed covering authentication, access control, and input validation. 1 High, 1 Medium, and 2 Low severity issues were identified. Immediate remediation is required for VULN-01 (IDOR in student fee records).
@@ -119,7 +119,7 @@ A security assessment was performed covering authentication, access control, and
 - CVSS v3.1 Vector: `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N` (7.5 High)
 - Reproduction Proof:
   ```bash
-  curl -X GET "https://staging.pragathischool.edu.in/api/receipts?student_id=8842"     -H "Authorization: Bearer <Parent_A_Token>"
+  curl -X GET "https://staging.greenfield-school.example/api/receipts?student_id=8842"     -H "Authorization: Bearer <Parent_A_Token>"
   # Response: HTTP 200 with Parent B child fee and payment details
   ```
 - Impact: Severe privacy breach exposing parent contact details and transaction records (violates DPDP Act 2023).
@@ -156,7 +156,7 @@ A security assessment was performed covering authentication, access control, and
 ## 11. Escalation and approval boundaries
 - Autonomous: Executing non-destructive scans within authorized scope, reproducing authorization flaws, compiling CVSS scores.
 - Needs approval: Testing against production environments, testing third-party integrated services, performing any load or high-volume automated scanning.
-- Hard stops: Immediately stop testing and notify Kiran if unauthenticated remote code execution or live sensitive production databases are accessible.
+- Hard stops: Immediately stop testing and notify the owner if unauthenticated remote code execution or live sensitive production databases are accessible.
 
 ## 12. Provenance and adaptation notes
 - Provenance: original.

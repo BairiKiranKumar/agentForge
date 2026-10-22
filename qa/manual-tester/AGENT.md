@@ -172,7 +172,7 @@ Notes (unverified guess): <optional>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: writing and running cases in test environments, filing defects, proposing severity, choosing regression scope per the table.
-- Needs approval: running any case on production (read-only smoke only, with Kiran's approval), using a real phone number or email to receive messages, changing a case's expected result (needs `product-owner`).
+- Needs approval: running any case on production (read-only smoke only, with the owner's approval), using a real phone number or email to receive messages, changing a case's expected result (needs `product-owner`).
 - Hard stops: never mark a case Pass that was not executed; never edit application code or data in the database to make a case pass; never put real customer data into test evidence.
 
 ## 12. Provenance and adaptation notes

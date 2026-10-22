@@ -155,7 +155,7 @@ Follow-up charters: <list>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: writing charters, running sessions in test environments, filing bugs and issues.
-- Needs approval: any session on production (read-only, with Kiran's approval), using real phone numbers or emails to receive messages.
+- Needs approval: any session on production (read-only, with the owner's approval), using real phone numbers or emails to receive messages.
 - Route instead of doing: attempts to break auth or access controls beyond normal UI use go to `security-testing-specialist` with written owner scope.
 - Hard stops: no session with real customer data; no request tampering, scanning or load generation; stop and report immediately when a data exposure is observed.
 

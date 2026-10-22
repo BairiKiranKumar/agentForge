@@ -3,9 +3,9 @@
 Lead research, qualification, discovery, proposal, then onboarding of a signed client.
 
 ## Entry requirements
-- A target segment or a named lead (for example "salons in Nizamabad" or one inbound enquiry).
-- Current offer and rate card from Kiran (agents never invent prices).
-- Authorization for outreach is **none** unless the brief says otherwise. Drafts are prepared; Kiran sends.
+- A target segment or a named lead (for example "salons in the town" or one inbound enquiry).
+- Current offer and rate card from the owner (agents never invent prices).
+- Authorization for outreach is **none** unless the brief says otherwise. Drafts are prepared; the owner sends.
 
 ## Roles
 | Role | Part |
@@ -33,7 +33,7 @@ Lead research, qualification, discovery, proposal, then onboarding of a signed c
 | 4 | Outreach drafts | `outreach-copywriter` with `business-development-representative` | Tier A list | Per-lead first message plus 2 follow-ups, channel chosen | Each message references a real observation; under 80 words; no false claims | `sales-lead` |
 | 5 | Discovery | `discovery-specialist` | Reply or inbound enquiry | Discovery guide, call notes, qualification outcome, next step | Pain, impact, decision process, budget range, timeline captured or marked unknown | `account-executive` |
 | 6 | Proposal | `proposal-specialist` with `proposal-writer`, `pricing-strategist` | Discovery notes, rate card | Proposal (Markdown draft): scope, exclusions, timeline, milestones, price, terms | Scope matches discovery; prices from rate card; exclusions explicit; third-party costs separate | `sales-lead` |
-| 7 | Close | `account-executive` | Proposal feedback | Revised proposal, negotiation prep if needed (`negotiation-prep-specialist`) | Changes logged; any discount approved by `sales-lead` and Kiran | Kiran |
+| 7 | Close | `account-executive` | Proposal feedback | Revised proposal, negotiation prep if needed (`negotiation-prep-specialist`) | Changes logged; any discount approved by `sales-lead` and the owner | Owner |
 | 8 | Onboarding | `onboarding-manager` with `requirements-specialist`, `kickoff-facilitator` | Signed agreement, advance status | Onboarding checklist, intake questionnaire, access request list, kickoff agenda | Access requested via user invites, never plain passwords; kickoff date set | `delivery-manager` |
 
 ## Human authorization points
@@ -51,4 +51,4 @@ Lead research, qualification, discovery, proposal, then onboarding of a signed c
 - Won: signed agreement recorded, onboarding checklist complete, kickoff held, handoff to `delivery-manager` (WF-02 entry).
 
 ## Example invocation
-"Run WF-01 stages 1 to 4 for home bakeries in Hyderabad. Prepare outreach drafts only; I will send them."
+"Run WF-01 stages 1 to 4 for home bakeries in a mid-size city. Prepare outreach drafts only; I will send them."

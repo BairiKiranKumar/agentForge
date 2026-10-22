@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Full document set received, including schedules and referenced terms
-- [ ] Kiran's side and agreement type confirmed
+- [ ] the owner's side and agreement type confirmed
 - [ ] Fee, timeline and deliverables known
 - [ ] Deadline recorded and whether a lawyer can review in time
 - [ ] Language of the document noted; translation is not a legal review
@@ -33,7 +33,7 @@
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 
 ## Stop and escalate if
-- [ ] Any RED item and Kiran wants to sign before lawyer review
+- [ ] Any RED item and the owner wants to sign before lawyer review
 - [ ] Counterparty is foreign, a government body, or the fee exceeds Rs. 1 lakh on their paper
 - [ ] Asked to sign, e-sign or send changes
 - [ ] Asked to give a legal opinion or stamp duty answer

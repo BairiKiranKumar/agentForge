@@ -1,0 +1,567 @@
+schema: 1
+area: performance
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: cwv
+  name: 'web.dev: Web Vitals'
+  url: https://web.dev/articles/vitals
+  retrieved: *id001
+  note: Good thresholds for LCP, INP, CLS and the 75th percentile rule, split by mobile and desktop. Page
+    last updated 2024-10-31.
+- id: lcp
+  name: 'web.dev: Largest Contentful Paint'
+  url: https://web.dev/articles/lcp
+  retrieved: *id001
+  note: LCP good at 2.5 s or less, poor above 4.0 s; TTFB, preload, font text delay notes. Page last updated
+    2025-09-04.
+- id: inp
+  name: 'web.dev: Interaction to Next Paint'
+  url: https://web.dev/articles/inp
+  retrieved: *id001
+  note: INP good at 200 ms or less, poor above 500 ms, p75. Page last updated 2025-09-02.
+- id: cls
+  name: 'web.dev: Cumulative Layout Shift'
+  url: https://web.dev/articles/cls
+  retrieved: *id001
+  note: CLS good at 0.1 or less, poor above 0.25, p75. Page last updated 2023-04-12.
+- id: labfield
+  name: 'web.dev: Why lab and field data can be different'
+  url: https://web.dev/articles/lab-and-field-data-differences
+  retrieved: *id001
+  note: Lab versus field definitions and reasons they diverge; prefer field, use lab to debug. Page last
+    updated 2022-07-18.
+- id: budgets
+  name: 'web.dev: Performance budgets 101'
+  url: https://web.dev/articles/performance-budgets-101
+  retrieved: *id001
+  note: How to choose budget metrics, per page type, enforce in build. Page last updated 2018-11-05, its
+    numeric defaults are dated and not adopted here.
+- id: longtasks
+  name: 'web.dev: Optimize long tasks'
+  url: https://web.dev/articles/optimize-long-tasks
+  retrieved: *id001
+  note: Long task = over 50 ms; yielding techniques. Page last updated 2024-12-19.
+- id: thirdparty
+  name: 'web.dev: Identify slow third-party JavaScript'
+  url: https://web.dev/articles/identify-slow-third-party-javascript
+  retrieved: *id001
+  note: Finding third-party cost with Lighthouse and request blocking; median of at least three runs.
+    Page last updated 2019-08-14.
+- id: lighthouse
+  name: 'Chrome for Developers: Lighthouse overview'
+  url: https://developer.chrome.com/docs/lighthouse/overview
+  retrieved: *id001
+  note: Lighthouse is open source; runs in DevTools, CLI, Node, PageSpeed Insights. Page last updated
+    2025-06-02. Page does not state the tool licence.
+- id: lazy
+  name: 'web.dev: Browser-level image lazy loading'
+  url: https://web.dev/articles/browser-level-image-lazy-loading
+  retrieved: *id001
+  note: Do not lazy-load images likely in the first viewport, especially the LCP image. Page last updated
+    2024-08-13.
+- id: fonts
+  name: 'web.dev: Best practices for fonts'
+  url: https://web.dev/articles/font-best-practices
+  retrieved: *id001
+  note: Early discovery of fonts, preconnect, careful preload. Page last updated 2022-10-04.
+- id: video
+  name: 'web.dev: Replace animated GIFs with video'
+  url: https://web.dev/articles/replace-gifs-with-videos
+  retrieved: *id001
+  note: Video elements for animation, source order, muted playsinline loop; example size savings. Page
+    last updated 2018-11-05.
+- id: httpcache
+  name: 'web.dev: Prevent unnecessary network requests with the HTTP Cache'
+  url: https://web.dev/articles/http-cache
+  retrieved: *id001
+  note: Cache-Control, ETag, fingerprinted long-lived assets, revalidation. Page last updated 2018-11-05.
+- id: devtools
+  name: 'Chrome for Developers: Performance panel reference'
+  url: https://developer.chrome.com/docs/devtools/performance/reference
+  retrieved: *id001
+  note: Recording modes, CPU and network throttling, calibration; throttling is relative to the host machine.
+- id: reducedmotion
+  name: 'MDN: prefers-reduced-motion'
+  url: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+  retrieved: *id001
+  note: Media feature values no-preference and reduce; widely available since January 2020 per MDN.
+requirements:
+- id: PERF-001
+  title: Meet the LCP target in field data
+  description: At the 75th percentile of real page loads, LCP is 2.5 seconds or less, reported separately
+    for mobile and desktop. Applies once real-user or CrUX field data exists for the page type.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Field report (RUM or CrUX) with URL or origin, device class, date range, p75 value
+  owner: performance-engineer
+  reviewer: performance-tester
+  reference: lcp
+- id: PERF-002
+  title: Meet the INP target in field data
+  description: At the 75th percentile of real page loads, INP is 200 ms or less, mobile and desktop separately.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Field report with INP p75, device class, date range, URL
+  owner: performance-engineer
+  reviewer: performance-tester
+  reference: inp
+- id: PERF-003
+  title: Meet the CLS target in field data
+  description: At the 75th percentile of real page loads, CLS is 0.1 or less, mobile and desktop separately.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Field report with CLS p75, device class, date range, URL
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: cls
+- id: PERF-004
+  title: Run a synthetic mobile-profile check before release
+  description: Where field data does not yet exist (new or pre-release pages), run a repeatable lab test
+    on a stated mobile device and network profile and treat results as diagnostic, not as proof of the
+    field targets. Use the median of at least three runs.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: automated
+  evidence: 'Lighthouse or equivalent report: tool and version, device profile, throttling, URL, build
+    id, date, runs'
+  owner: performance-tester
+  reviewer: performance-engineer
+  reference: labfield
+- id: PERF-005
+  title: Keep field and synthetic results separate
+  description: Reports label every number as field or synthetic and never substitute one for the other.
+    A passing lab score is not evidence of passing field Web Vitals, and the reverse holds.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Reviewer note confirming every figure in the report is labelled field or lab
+  owner: performance-engineer
+  reviewer: qa-lead
+  reference: labfield
+- id: PERF-006
+  title: No performance claim without measured evidence
+  description: Any statement that a page is fast, improved or within target must cite measured evidence
+    recording tool, device profile, date, URL and build. Claims without a record are removed or marked
+    [Unverified].
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Performance evidence record (README template) attached to the claim
+  owner: performance-engineer
+  reviewer: code-reviewer
+  reference: cwv
+- id: PERF-007
+  title: Record before and after for each optimisation
+  description: Each performance change records a baseline and a post-change measurement taken with the
+    same tool, profile and URL, so the effect is attributable.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: minor
+  check: manual
+  evidence: Evidence records for baseline and after, same conditions
+  owner: performance-engineer
+  reviewer: technical-lead
+  reference: labfield
+- id: PERF-008
+  title: Set numeric performance budgets per page type
+  description: The project sets and documents numeric budgets (for example script size, image weight,
+    number of fonts, third-party request count) per page type. These numbers are project-set; this standard
+    supplies the method, not the values.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: manual
+  evidence: Budget file with page types, metrics, values, rationale and approver
+  owner: performance-engineer
+  reviewer: frontend-architect
+  reference: budgets
+- id: PERF-009
+  title: Derive budgets from a baseline and a target device
+  description: Budgets are derived by measuring the current build and a competitor or prior release on
+    the target low-end device profile, then choosing limits that keep the field targets reachable. Starting
+    points are examples only.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: minor
+  check: manual
+  evidence: 'Derivation note: measured baseline, device profile, chosen limits, date'
+  owner: performance-engineer
+  reviewer: frontend-architect
+  reference: budgets
+- id: PERF-010
+  title: Enforce budgets automatically in the build
+  description: Budget limits are checked in CI on each change and a breach fails or flags the build. Raising
+    a limit needs a recorded decision.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: automated
+  evidence: CI log showing budget check, a failing example, and the decision log for any raised limit
+  owner: cicd-engineer
+  reviewer: performance-engineer
+  reference: budgets
+- id: PERF-011
+  title: Serve right-sized, efficient images
+  description: Images are served at the dimensions they are displayed, use an efficient modern format
+    with fallback where needed, carry explicit width and height, and use responsive source sets for varying
+    viewports. [Inference] from general practice; the fetched pages cover lazy-loading and LCP only.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: 'Image audit: formats, dimensions versus rendered size, Lighthouse image audits'
+  owner: frontend-developer
+  reviewer: performance-engineer
+  reference: lcp
+- id: PERF-012
+  title: Prioritise the LCP resource and never lazy-load it
+  description: The LCP element is identified per page type, discovered early in the HTML, given loading
+    priority, and is not lazy-loaded.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: LCP element identified in a trace; waterfall showing early request; markup review
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: lazy
+- id: PERF-013
+  title: Lazy-load content outside the first viewport
+  description: Below-the-fold images, iframes and heavy widgets load on demand; above-the-fold ones load
+    eagerly.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: minor
+  check: both
+  evidence: Markup review plus network panel showing deferred requests until scroll
+  owner: frontend-developer
+  reviewer: code-reviewer
+  reference: lazy
+- id: PERF-014
+  title: Deliver video efficiently
+  description: Video uses appropriate compression, multiple encodings where needed, a poster or placeholder,
+    no autoplay of large files on constrained connections, and preload settings chosen deliberately. Short
+    silent loops use video elements rather than animated GIFs.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Network trace of video requests with sizes; markup review; encoding spec
+  owner: frontend-developer
+  reviewer: performance-engineer
+  reference: video
+- id: PERF-015
+  title: Replace animated GIFs
+  description: Animated GIFs larger than a trivial size are replaced with video or an efficient animated
+    format.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: minor
+  check: automated
+  evidence: Lighthouse animated-content audit result or asset listing
+  owner: frontend-developer
+  reviewer: performance-engineer
+  reference: video
+- id: PERF-016
+  title: Load fonts without blocking or shifting text
+  description: Fonts are limited in number and weight, subset where possible, discoverable early, use
+    a deliberate display strategy, and have fallbacks metrically close to avoid shifts. Preload only the
+    few critical files.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Network waterfall for fonts; CLS trace around font swap; font inventory
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: fonts
+- id: PERF-017
+  title: Avoid render-blocking and forced layout work
+  description: 'Critical rendering path is reviewed: no unnecessary render-blocking CSS or script, no
+    repeated forced reflow in loops, large DOM trees justified.'
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Performance panel trace and Lighthouse diagnostics reviewed with notes
+  owner: frontend-developer
+  reviewer: performance-engineer
+  reference: devtools
+- id: PERF-018
+  title: Split code by route and feature
+  description: JavaScript is split so a page loads only what it needs; large libraries are loaded on demand;
+    unused code is removed.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Bundle analysis report per route; coverage report
+  owner: frontend-architect
+  reviewer: performance-engineer
+  reference: budgets
+- id: PERF-019
+  title: Set deliberate caching policies
+  description: Fingerprinted static assets use long-lived caching; unversioned documents are revalidated
+    or not stored as appropriate; private data is never cached publicly.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Response header listing per asset class; cache test with repeat load
+  owner: devops-engineer
+  reviewer: performance-engineer
+  reference: httpcache
+- id: PERF-020
+  title: Review the network waterfall for each key page
+  description: The waterfall for each key page type is reviewed for late discovery, long chains, redundant
+    requests, large payloads and connection setup costs, and findings are fixed or accepted with reasons.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: manual
+  evidence: Annotated waterfall (HAR or panel screenshot) with findings and decisions
+  owner: performance-tester
+  reviewer: frontend-developer
+  reference: devtools
+- id: PERF-021
+  title: Keep main-thread long tasks under control
+  description: Tasks over 50 ms during load and key interactions are identified and broken up by yielding,
+    deferring or reducing work.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Trace showing long tasks before and after; interaction test results
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: longtasks
+- id: PERF-022
+  title: Inventory third-party scripts and justify each
+  description: Every third-party script has an owner, purpose, measured cost (requests, bytes, main-thread
+    time) and a decision to keep, defer or remove.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: manual
+  evidence: Third-party register with measured cost, using blocked-versus-unblocked runs
+  owner: frontend-architect
+  reviewer: performance-engineer
+  reference: thirdparty
+- id: PERF-023
+  title: Load third parties so they cannot block the page
+  description: Third-party code loads asynchronously or deferred, off the critical path, and the page
+    remains usable if it fails or is slow.
+  min_profile: high_assurance
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Test with the third-party host blocked or delayed; trace comparison
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: thirdparty
+- id: PERF-024
+  title: Check memory growth in long sessions
+  description: Long-running or navigation-heavy views are tested for memory growth and detached objects
+    across repeated actions.
+  min_profile: high_assurance
+  applies_to:
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Heap snapshots or memory timeline across repeated flows, with device profile and date
+  owner: performance-tester
+  reviewer: frontend-architect
+  reference: devtools
+- id: PERF-025
+  title: Keep animation frames stable
+  description: Animations and scroll effects hold a steady frame rate on the target low-end profile, favour
+    compositor-friendly properties, and avoid layout work per frame.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Frame timeline or trace showing dropped frames on the stated device profile
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: devtools
+- id: PERF-026
+  title: Test on a documented low-end mobile profile
+  description: Pages are tested under a written profile (CPU slowdown, network shape, viewport, ideally
+    a real low-end device) chosen from the audience; the profile is reused so runs compare. Throttling
+    is relative to the host machine, so calibrate it or confirm on real hardware.
+  min_profile: standard
+  applies_to:
+  - mobile-web
+  - web-app
+  - website
+  severity: major
+  check: both
+  evidence: Profile definition; trace showing it applied; real-device confirmation for high_assurance
+  owner: performance-tester
+  reviewer: qa-lead
+  reference: devtools
+- id: PERF-027
+  title: Check motion-heavy designs on mobile
+  description: Pages with heavy animation, video backgrounds, parallax or 3D are measured on the low-end
+    profile for frame stability, INP, battery-sensitive features and CPU load, and have a lighter fallback.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Trace on low-end profile; fallback demonstration; frame data
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: devtools
+- id: PERF-028
+  title: Honour reduced-motion preferences
+  description: Non-essential motion is removed or reduced when the user requests reduced motion, and the
+    reduced state is also lighter on resources.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Test with the preference enabled in the browser or OS; screenshots or recording
+  owner: frontend-developer
+  reviewer: qa-lead
+  reference: reducedmotion
+- id: PERF-029
+  title: Reserve space to prevent layout shifts
+  description: Images, embeds, ads, banners and late-injected content have reserved dimensions or placeholders.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Layout shift trace with sources listed; markup review
+  owner: frontend-developer
+  reviewer: performance-tester
+  reference: cls
+- id: PERF-030
+  title: Keep server response time within a set budget
+  description: Time to first byte for key pages is measured and a project-set limit is documented, since
+    slow responses push back LCP.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - api
+  severity: major
+  check: automated
+  evidence: Measured TTFB p75 from field or repeated synthetic runs with locations
+  owner: backend-developer
+  reviewer: performance-engineer
+  reference: lcp
+- id: PERF-031
+  title: Set latency budgets for API endpoints
+  description: Key API endpoints have project-set latency targets measured at a stated percentile under
+    a stated load.
+  min_profile: standard
+  applies_to:
+  - api
+  - web-app
+  - ai-app
+  severity: major
+  check: automated
+  evidence: 'Load test report: tool, load profile, percentiles, build, date'
+  owner: performance-tester
+  reviewer: backend-developer
+  reference: budgets
+- id: PERF-032
+  title: Monitor field vitals after release
+  description: Field metrics are collected continuously with alerts or review on regression, and results
+    feed the budgets.
+  min_profile: high_assurance
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Dashboard or scheduled report with thresholds and review log
+  owner: observability-specialist
+  reviewer: performance-engineer
+  reference: labfield

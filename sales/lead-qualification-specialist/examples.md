@@ -12,7 +12,7 @@ Business names below are fictional.
 
 **Output (excerpt):**
 ```markdown
-# Qualified batch: schools-nizamabad (2026-10-20)
+# Qualified batch: schools-localtown (2026-10-20)
 ICP v2 | Framework v1 | Leads in: 14 | A: 3 B: 6 C: 3 DQ: 2
 
 | Rank | Lead | Source | Fit | Intent | Reach | Score | Tier | Flags | Reason | Next motion |
@@ -38,7 +38,7 @@ Discovery must cover: who signs, budget range, whether a parent portal is wanted
 **Output (excerpt):**
 ```
 Lead: Spice Box Cloud Kitchen (fictional) | Tier B | Score 6.8 | Flags: budget-below-entry, deadline-7-days
-Reason: food brand with clear need and date; stated budget is below Kiran's entry band.
+Reason: food brand with clear need and date; stated budget is below the owner's entry band.
 Next motion (SDR): reply within 24 working hours, ask one question ("Is a one-page menu site with WhatsApp ordering enough for now?"), offer the entry package from the rate card or decline politely.
 ```
 

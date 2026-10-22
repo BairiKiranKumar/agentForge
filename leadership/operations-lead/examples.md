@@ -6,7 +6,7 @@ Business names below are fictional unless stated.
 **Request:** "Every website project loses a week or two waiting for logos, photos and text from clients. Fix it."
 
 **Key decisions:**
-- Mapped the last 4 projects from the run log Kiran shared: average 9 days from kickoff to "all assets received"; assets arrived across WhatsApp, email and Drive.
+- Mapped the last 4 projects from the run log the owner shared: average 9 days from kickoff to "all assets received"; assets arrived across WhatsApp, email and Drive.
 - Bottleneck is the client's asset delivery, made worse by no dated request. Maturity level 0.
 - Intervention: SOP plus a dated asset checklist sent at onboarding, not a new tool. Google Drive folder per client already exists.
 

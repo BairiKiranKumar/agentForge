@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Account tier confirmed (standard 280 or paid longer posts)
 - [ ] Week's material collected with sources for every number
-- [ ] For each news item: Kiran's hands-on basis written down, or the item dropped
+- [ ] For each news item: The owner's hands-on basis written down, or the item dropped
 - [ ] Target reply account list (20 to 30) current, each with a reason
 - [ ] Last week's review read and its one change applied
 
@@ -22,7 +22,7 @@
 
 ## Before handoff
 - [ ] Timely posts include the "timely basis" line
-- [ ] No benchmark or test result Kiran did not run
+- [ ] No benchmark or test result the owner did not run
 - [ ] Profile rewrite covers bio, link, pinned post and header brief
 - [ ] Posts passed `proofreader`; long threads passed `editor`
 - [ ] Assumptions, open questions and risks listed
@@ -31,6 +31,6 @@
 ## Stop and escalate if
 - [ ] A post names or mocks a person or company
 - [ ] A take touches politics, religion, layoffs or a breaking incident
-- [ ] Content involves Kiran's employer, clients or unreleased work
+- [ ] Content involves the owner's employer, clients or unreleased work
 - [ ] Asked to use automation, follow-for-follow or engagement groups
 - [ ] Asked to buy a paid tier or promote posts

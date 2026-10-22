@@ -39,3 +39,9 @@
 - [ ] Someone proposes an accessibility overlay script as the fix
 - [ ] You are asked to state the product is WCAG or legally compliant
 - [ ] A third-party widget blocks a core task and cannot be fixed in our code
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

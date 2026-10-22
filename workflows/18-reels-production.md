@@ -35,4 +35,4 @@ Publishing, paid audio, and boosts need the owner.
 The package is complete as instructions, or a real video path is listed because the export ran.
 
 ## Example invocation
-"Run WF-18 for kiranbuildswithai. A 30 second screen Reel on a homepage hero. Do not export video."
+"Run WF-18 for example-brand. A 30 second screen Reel on a homepage hero. Do not export video."

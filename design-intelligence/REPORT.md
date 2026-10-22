@@ -44,7 +44,7 @@ Workers wrote disjoint paths. The lead fixed three YAML quoting defects in worke
 ## Recommendations
 1. Connect Playwright or a browser MCP and run a rendered pass on the 12 references and on one real build; record the tool tier.
 2. Run the Task 3 (boundary) evaluations for the three new roles and `design-reviewer` first, scored by a different agent, and record results in `evaluations/STATUS.md`.
-3. Kiran decides on `anthropic-frontend-design` and `gsap-skills` (closest to approval); do not install `impeccable` without a full hook and binary review.
+3. The owner decides on `anthropic-frontend-design` and `gsap-skills` (closest to approval); do not install `impeccable` without a full hook and binary review.
 4. Calibrate the rubric with two reviewers on three captures.
 5. Configure a real scheduler if continuous refresh is wanted, then log runs in `guides/refresh-log.md`.
 6. Commit when ready (not done; needs your instruction).
@@ -75,7 +75,7 @@ Workers wrote disjoint paths. The lead fixed three YAML quoting defects in worke
 The orchestrator "route and plan" is checked through the router and scheduler tools and the orchestrator's workflow table. No live orchestrator agent session was run against WF-21 or WF-22.
 
 ## Skill approvals
-No skill is `approved`. The validator refuses `approved` without a 40-character pinned SHA, a clear licence, an evaluation file and an effectiveness statement, and a unit test asserts none is approved. Approval also requires Kiran per `skill-registry/policy.md`. The security, licence and compatibility review exists per skill in `skill-registry/evaluations/` but compatibility was read from READMEs, not tested.
+No skill is `approved`. The validator refuses `approved` without a 40-character pinned SHA, a clear licence, an evaluation file and an effectiveness statement, and a unit test asserts none is approved. Approval also requires the owner per `skill-registry/policy.md`. The security, licence and compatibility review exists per skill in `skill-registry/evaluations/` but compatibility was read from READMEs, not tested.
 
 ## End-to-end evaluation
 Record: `evaluations/runs/design-intelligence-e2e/README.md`. Summary: a research subagent produced a brief (fetch only; it self-reported falling short of its role's own standards on discovery channels, shortlist size and breadth); a producer subagent built a candidate page from it; the lead made a deliberately generic control page; both were captured with headless Chrome (static, tool tier 2) and reviewed blind by an independent reviewer subagent against the rubric. The control scored 31.5 percent (Rethink, blocker plus 8 failed anti-slop signals); the candidate scored 68.5 percent (Revise, accessibility floor missed). The tool output was re-run by the lead and reproduces.

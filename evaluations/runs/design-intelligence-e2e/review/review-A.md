@@ -7,7 +7,7 @@ Inputs reviewed: brief.md; page-A-375.png, page-A-768.png, page-A-1440.png (head
 Tier 2 style, static captures supplied by others (not captured by me). Widths seen: 375, 768, 1440. Not seen: 320, 1024, any scroll below the first screen, hover, focus, active, loading, error states, keyboard behaviour, motion and reduced motion, measured contrast values (contrast notes are by eye and labelled [Inference]). Page source was not read. No approved art-direction document exists, so no direction comparison was possible; judged against the brief.
 
 Verdict: Rethink. The page does not offer the brief's primary action and has no distinctive idea.
-Conditions to reach Ship: a new direction from creative-director grounded in the product; a "Request a demo" primary CTA; a real second section; AA contrast verified by measurement; interaction states evidenced; human approval (Kiran or client) recorded.
+Conditions to reach Ship: a new direction from creative-director grounded in the product; a "Request a demo" primary CTA; a real second section; AA contrast verified by measurement; interaction states evidenced; human approval (the owner or client) recorded.
 
 ### Scores (0 to 4)
 | Criterion | Score | Basis |

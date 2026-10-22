@@ -1,8 +1,8 @@
 # Invoicing Specialist: Checklist
 
 ## Before starting
-- [ ] Registration status record read (registered or not), supplied by Kiran, not assumed
-- [ ] If registered: GSTIN, legal name and state copied from Kiran's certificate
+- [ ] Registration status record read (registered or not), supplied by the owner, not assumed
+- [ ] If registered: GSTIN, legal name and state copied from the owner's certificate
 - [ ] Billing trigger evidence present (sign-off, acceptance record)
 - [ ] Contract or approved proposal milestone and amount located
 - [ ] Client legal name, address, state and GSTIN (if any) collected
@@ -21,13 +21,13 @@
 - [ ] Unregistered client with taxable value of Rs. 50,000 or more: address and state name and code included
 - [ ] Description names the milestone and the agreement date
 - [ ] Total in words matches figures
-- [ ] Payment block matches Kiran's written record exactly
+- [ ] Payment block matches the owner's written record exactly
 - [ ] Invoice date within 30 days of the service milestone (registered)
 
 ## Before handoff
 - [ ] Field checklist for the document type passed
 - [ ] Register row added with status "draft"
-- [ ] Draft sent to Kiran for approval; nothing issued directly
+- [ ] Draft sent to the owner for approval; nothing issued directly
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 
@@ -35,4 +35,4 @@
 - [ ] Registration status unknown
 - [ ] Asked to invent, guess or reformat a GSTIN, PAN or bank detail
 - [ ] Client asks to backdate, split, or bill a different entity
-- [ ] A payment-detail change request arrives from anyone other than Kiran
+- [ ] A payment-detail change request arrives from anyone other than the owner

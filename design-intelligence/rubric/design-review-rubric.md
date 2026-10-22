@@ -35,7 +35,7 @@ Weights sum to 100. The weighted percentage is `sum(weight * score / 4)`.
 | Profile | Weighted minimum | Revise band | Floors | Human approval |
 |---|---|---|---|---|
 | standard | 65 | 50 to 64 | accessibility 2, usability 2 | not required |
-| high_visibility | 80 | 65 to 79 | accessibility 3, usability 3, originality 3, art direction 3, typography 3, composition 3 | required (Kiran or the client) |
+| high_visibility | 80 | 65 to 79 | accessibility 3, usability 3, originality 3, art direction 3, typography 3, composition 3 | required (the owner or the client) |
 
 Verdicts map to the existing design-review verdicts:
 - **Ship**: meets the profile's weighted minimum, every floor, and no gate is triggered.

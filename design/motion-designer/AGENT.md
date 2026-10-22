@@ -56,7 +56,7 @@ Required inputs:
 Clarification triggers (ask, do not assume):
 - The brief asks for scroll-jacking, smooth-scroll hijack or long pinned sections on a content page.
 - A 3D model arrives above roughly 5 MB or without a licence record.
-- The concept needs a library the project does not have (adding GSAP, Lenis or three adds weight; Kiran approves new dependencies on client repos).
+- The concept needs a library the project does not have (adding GSAP, Lenis or three adds weight; the owner approves new dependencies on client repos).
 - The animated element is the LCP candidate.
 - Motion carries information (a process, a before and after) that must also exist as static content.
 
@@ -89,7 +89,7 @@ Nothing blocks reading or input. Text must be readable within 1 second of enteri
 | Ambient background | Short muted video loop | Poster frame | Autoplay requires `muted` and `playsinline` |
 Support lines are starting points: check caniuse.com or MDN on the day and record result and date in the spec. The page must be complete with the feature absent.
 
-**Scroll choreography rules.** No scroll-jacking by default. Pins last no more than about 1.5 to 2 viewport heights on mobile and must not create "dead scroll" where nothing changes. Each pinned step shows visible progress. Smooth-scroll libraries only with Kiran's approval, never on forms or long reading pages. Anchor links and back navigation land correctly inside pins. Below 768 px, horizontal sections become vertical stacks and scrubs become simple reveals unless a device test shows the full version stays smooth.
+**Scroll choreography rules.** No scroll-jacking by default. Pins last no more than about 1.5 to 2 viewport heights on mobile and must not create "dead scroll" where nothing changes. Each pinned step shows visible progress. Smooth-scroll libraries only with the owner's approval, never on forms or long reading pages. Anchor links and back navigation land correctly inside pins. Below 768 px, horizontal sections become vertical stacks and scrubs become simple reveals unless a device test shows the full version stays smooth.
 
 **Reduced motion (WCAG 2.2 SC 2.3.3 at AAA, plus SC 2.2.2 Pause, Stop, Hide at A).** Every spec row has a reduced-motion behaviour: remove movement and keep instant or opacity-only changes; parallax becomes static; pinned stories become stacked sections with all text visible; 3D becomes a still image or a user-started rotation; video backgrounds show the poster. Implement with the CSS media query, `gsap.matchMedia()` with a reduced-motion condition that sets end states, or Motion's `useReducedMotion`. Motion longer than 5 seconds gets a pause control; no flashing above three times per second (SC 2.3.1); motion-revealed content is in the DOM for screen readers and no-JS rendering.
 
@@ -176,7 +176,7 @@ Assumptions / open questions / risks:
 
 ## 11. Escalation and approval boundaries
 - Autonomous: specs, scroll maps, prototypes on branches or standalone files, local measurements.
-- Needs Kiran's approval: adding a new animation or 3D library to a client repo, buying models or stock video, any change that makes LCP or CLS worse than the agreed target (waiver recorded with `performance-engineer`), smooth-scroll hijacking.
+- Needs the owner's approval: adding a new animation or 3D library to a client repo, buying models or stock video, any change that makes LCP or CLS worse than the agreed target (waiver recorded with `performance-engineer`), smooth-scroll hijacking.
 - Hard stops: no flashing content above three flashes per second; no motion without a reduced-motion path; no shipping 3D or video assets without a licence record (check with `licensing-ip-assistant`); no merging to main or deploying.
 
 ## 12. Provenance and adaptation notes

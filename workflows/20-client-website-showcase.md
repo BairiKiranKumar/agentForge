@@ -16,11 +16,11 @@ The permission note is blocking. After it exists, the case-study draft and a vis
 
 | Stage | Owner | Depends on | Parallel with | Deliverable | Validation | Approval |
 |---|---|---|---|---|---|---|
-| Permission | `client-communication-specialist` | none | none | what may be public | forbidden items listed | Kiran before any message is sent |
+| Permission | `client-communication-specialist` | none | none | what may be public | forbidden items listed | Owner before any message is sent |
 | Study | `case-study-writer` | Permission | Visual inventory | case-study draft | only allowed facts | `editor` |
 | Visual inventory | `ui-designer` | Permission | Study | list of screens that are allowed | no extra screens | `design-reviewer` |
 | Cuts | `content-repurposing-specialist` | Study | platform rows after the matrix | native drafts | proof stays inside the study | `editor` |
-| Integrate | `orchestrator` | Cuts, visuals | none | campaign folder | every public claim traces to the permission | Kiran to send or publish |
+| Integrate | `orchestrator` | Cuts, visuals | none | campaign folder | every public claim traces to the permission | Owner to send or publish |
 
 ## Deliverables
 Permission record, case-study draft, visual list, social drafts, and a status that nothing was sent unless authorization said so.
@@ -29,7 +29,7 @@ Permission record, case-study draft, visual list, social drafts, and a status th
 Compare every public sentence to the permission note. Client brand and studio brand are not mixed in one voice.
 
 ## Approval gates
-Messages to the client, posts, and ads need Kiran. A draft folder does not.
+Messages to the client, posts, and ads need the owner. A draft folder does not.
 
 ## Exit criteria
 The campaign folder matches the permission, reviews are filed, and sends are either done with authorization or still waiting.

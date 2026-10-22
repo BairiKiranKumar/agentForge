@@ -19,7 +19,7 @@
 
 ## Before handoff
 - [ ] Ticket status, severity, and assigned owner updated in support tracker
-- [ ] First response draft dispatched (or approved by Kiran for client communication)
+- [ ] First response draft dispatched (or approved by the owner for client communication)
 - [ ] Open questions, assumptions and risks recorded
 - [ ] Handoff written in `orchestration/handoff-format.md` format
 

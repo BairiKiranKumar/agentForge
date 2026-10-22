@@ -1,0 +1,10 @@
+# Optional: describe the engineering environment. Copy to workspace/stack.yaml. Fictional values.
+schema: 1
+stack:
+  languages: [TypeScript, Python]
+  frameworks: []                  # leave empty to let technical-lead decide per project
+  package_manager: npm
+  test_runners: [unit, e2e]
+  ci: any
+  hosting: any
+  browsers_for_visual_qa: [chromium]

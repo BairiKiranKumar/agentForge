@@ -1,6 +1,6 @@
 # LinkedIn Specialist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai and Kiran are real.
+Business names below are fictional unless stated. @example_brand and the owner are real.
 
 ## Example 1: Headline and About rewrite for freelance leads
 **Request:** "My LinkedIn headline says 'Frontend Developer | Angular | React | Passionate about UI'. I want founders and local business owners to hire me for websites."

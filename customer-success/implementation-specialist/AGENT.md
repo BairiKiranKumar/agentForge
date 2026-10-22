@@ -89,8 +89,8 @@ Follow least-privilege principles during account setup:
 ## 6. Deliverables and output formats
 - Implementation Workplan (`implementation-workplan.md`):
 ```markdown
-# Implementation Workplan: Pragathi School Portal
-- Client: Pragathi Vidyalaya | Implementation Lead: Implementation Specialist
+# Implementation Workplan: Greenfield School Portal
+- Client: Greenfield Vidyalaya | Implementation Lead: Implementation Specialist
 - Target Go-Live Date: 2026-11-05 | Timeline: 15 Working Days
 
 ## Milestone Schedule

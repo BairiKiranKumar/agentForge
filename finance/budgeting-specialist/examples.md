@@ -9,7 +9,7 @@ Business names below are fictional.
 - Ledger from `bookkeeping-assistant` shows AI tools Rs. 9,840 vs budget Rs. 6,600.
 - Decomposed: budget 3 tools at Rs. 2,200 each; actual 4 tools at Rs. 2,460 average. Volume effect (4 - 3) x 2,200 = Rs. 2,200; price effect (2,460 - 2,200) x 4 = Rs. 1,040; total Rs. 3,240. Check passes.
 - Price effect traced to USD billing plus forex markup, not a plan change.
-- Kiran is not GST-registered, so GST charged by Indian vendors stays in the cost.
+- The owner is not GST-registered, so GST charged by Indian vendors stays in the cost.
 
 **Output (excerpt):**
 ```
@@ -33,7 +33,7 @@ Headline: total spend Rs. 31,900 vs budget Rs. 27,500 (16% over), AI tools expla
 **Output (excerpt):**
 | Line | Driver | Amount | Source | Alert at 80% |
 |---|---|---|---|---|
-| Stock photos | 6 images | Rs. 3,000 | Kiran's last purchase, Aug 2026 | Rs. 2,400 |
+| Stock photos | 6 images | Rs. 3,000 | Owner's last purchase, Aug 2026 | Rs. 2,400 |
 | Illustration freelancer | 8 h x Rs. 600 | Rs. 4,800 | freelancer quote | Rs. 3,840 |
 | Supabase | 2 months | price unknown, verify | vendor page | n/a |
 | Total known | | Rs. 7,800 + Supabase | | |

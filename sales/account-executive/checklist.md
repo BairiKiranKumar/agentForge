@@ -4,7 +4,7 @@
 - [ ] Discovery notes have pain, impact, decision process, budget range and timeline (or unknown)
 - [ ] Proposal version, date and rate card version recorded
 - [ ] Post-discovery message history read
-- [ ] Kiran's earliest honest start date confirmed
+- [ ] the owner's earliest honest start date confirmed
 
 ## While working
 - [ ] MEDDICC table filled, each element validated, assumed or unknown with evidence
@@ -23,14 +23,14 @@
 
 ## Before handoff
 - [ ] Deal plan, MAP and health updated within the last 7 days
-- [ ] Next client message drafted for Kiran to send
+- [ ] Next client message drafted for the owner to send
 - [ ] Won or lost recorded with a reason from the fixed list, plus a quote if available
-- [ ] Won handoff lists acceptance evidence, advance status as confirmed by Kiran, start date and every promise made
+- [ ] Won handoff lists acceptance evidence, advance status as confirmed by the owner, start date and every promise made
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff to `onboarding-manager` in `orchestration/handoff-format.md` format with `authorization: none`
 
 ## Stop and escalate if
 - [ ] Asked to agree a discount, free extra or new payment terms
-- [ ] Payment or bank details arrive from anyone other than Kiran
+- [ ] Payment or bank details arrive from anyone other than the owner
 - [ ] Asked to create a deadline, competing offer or scarcity that is not real
 - [ ] Asked to mark a deal won without acceptance evidence

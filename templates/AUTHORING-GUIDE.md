@@ -22,7 +22,7 @@ Use this guide when you add a role, improve one, or adapt material from another 
 - **Honest tools.** Distinguish free from paid. Give a manual fallback when a connector is missing.
 - **Approval boundaries.** Section 11 is specific to the role's risks.
 - **Time-sensitive facts** (laws, tax, platform features, prices, API versions) carry an as-of date and a "verify current source" instruction.
-- **India context** where it matters: INR, GST, DPDP Act 2023, Indian devices and networks, WhatsApp-first communication, Indian English, regional languages.
+- **Regional context** where it matters (tax, privacy law, payment systems, languages, devices and networks): put reusable material in `regional-packs/` and select it through configuration. Do not hard-code one region in a core role.
 - **Length.** AGENT.md is usually 1,000 to 2,000 words. Section 4 is the longest.
 - **Style.** Plain Markdown, no em dashes, no emoji headers, no personality fluff.
 

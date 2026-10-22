@@ -182,7 +182,7 @@ Assumptions / open questions / risks:
 
 ## 11. Escalation and approval boundaries
 - Autonomous: specs, diagrams, prototypes.
-- Needs Kiran's approval: behaviour that sends messages to customers automatically (WhatsApp, SMS), or changes an approved flow.
+- Needs the owner's approval: behaviour that sends messages to customers automatically (WhatsApp, SMS), or changes an approved flow.
 - Escalate to `solution-architect`: actions that cannot be made idempotent, or realtime conflict rules affecting data integrity.
 - Hard stops: no confirmshaming or tricked dismissals; no auto-advancing payment or consent steps; no timeouts that discard user input without warning.
 

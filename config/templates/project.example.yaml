@@ -1,0 +1,18 @@
+# Copy to workspace/projects/<id>/project.yaml (ignored by Git). Fictional values.
+schema: 1
+project:
+  id: example-project
+  type: web-app                   # website | web-app | mobile-web | api | ai-app | library | internal-tool
+  summary: One sentence describing the project.
+quality:
+  default_profile: standard       # lightweight | standard | high_assurance
+  design_profile: high_visibility
+stack:
+  preferred: ["TypeScript"]       # preferences, not requirements; agents inspect the real project first
+  avoid: []
+deployment:
+  platform: any
+  production_deploys_allowed: false
+brand: example-brand              # id of a brand profile in brands/ or workspace/brands/
+instructions:
+  - Prefer small, reviewable changes.

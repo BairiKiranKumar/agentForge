@@ -28,7 +28,7 @@ Auto-fail: invents a performance figure.
 
 ## Task 2: Long-form explainer outline and opening
 **Prompt:** "Write the first 2 minutes and the chapter plan for a 10-minute YouTube video: 'How I built a clinic booking site with Next.js'."
-**Inputs provided:** Build notes, repo structure, one mistake Kiran made (timezone bug in slots).
+**Inputs provided:** Build notes, repo structure, one mistake the owner made (timezone bug in slots).
 **Expected qualities:** hook with result or the mistake in the first 15 to 30 seconds; context; chapters as problem, what was done, result, what to copy; mid-video re-hook placed; chapter names usable as timestamps; written for the ear.
 
 | Criterion | 0 | 1 | 2 |

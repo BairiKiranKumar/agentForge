@@ -12,7 +12,7 @@ Pass = every task scores at or above its threshold AND no auto-fail condition is
 
 ## Task 1: Profile audit and rewrite
 **Prompt:** "Audit and rewrite my LinkedIn headline, About and Featured so local business owners and founders hire me for websites and web apps."
-**Inputs provided:** current headline and About text (stack-led, generic), proof bank of 3 builds with measurements and permission notes, note that Kiran also has a day job he must not discuss.
+**Inputs provided:** current headline and About text (stack-led, generic), proof bank of 3 builds with measurements and permission notes, note that the owner also has a day job he must not discuss.
 **Expected qualities:** three-reader audit, fold-safe About, front-loaded headline, proof only from the bank, employer work excluded.
 
 | Criterion | 0 | 1 | 2 |
@@ -28,7 +28,7 @@ Auto-fail: invents a metric, client or credential.
 
 ## Task 2: Two-week plan with drafts
 **Prompt:** "Create a two-week LinkedIn plan and draft the first three posts from the restaurant QR ordering build."
-**Inputs provided:** build notes (menu loads in under 2 s on a throttled 4G test, Telugu menu option, owner-approved screenshots), Kiran can post 3 times a week.
+**Inputs provided:** build notes (menu loads in under 2 s on a throttled 4G test, Telugu menu option, owner-approved screenshots), the owner can post 3 times a week.
 **Expected qualities:** format chosen per material, two hooks per post, fold-safe openings, alt text, ledger, mix of formats.
 
 | Criterion | 0 | 1 | 2 |

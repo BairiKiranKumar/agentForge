@@ -13,7 +13,7 @@ Business names below are fictional.
 
 **Output (excerpt):**
 ```markdown
-# Outbound plan, week 2026-43 | Prepared 2026-10-20 | Approved by Kiran: pending
+# Outbound plan, week 2026-43 | Prepared 2026-10-20 | Approved by the owner: pending
 Capacity: 4 hours, sends Tue and Thu, visits Wed 15:00 to 17:00
 Accounts: 8 new | Plays: concept 3, segment 2, visit 4 (1 overlaps with concept)
 
@@ -32,15 +32,15 @@ Accounts: 8 new | Plays: concept 3, segment 2, visit 4 (1 overlaps with concept)
 **Request:** "Here are the replies so far. What next?"
 
 **Key decisions:**
-- "Send the ideas" from Biryani Point: positive to the permission step; Kiran sends the 3-fix screen recording, then proposes 2 slots.
+- "Send the ideas" from Biryani Point: positive to the permission step; the owner sends the 3-fix screen recording, then proposes 2 slots.
 - "After Dasara, now busy": not now; reminder set for the Monday after Dasara, cadence stopped.
 - "Don't message again": stop, do-not-contact, no reply needed.
 
 **Output (excerpt):**
 | Account | Reply type | Action | Date | Owner |
 |---|---|---|---|---|
-| Biryani Point (fictional) | Positive | Send recording (approved), then offer Thu 12:00 or Fri 16:00 | 2026-10-22 | Kiran |
-| Spice Route (fictional) | Not now | Reminder after Dasara; all touches cancelled | after festival | Kiran |
+| Biryani Point (fictional) | Positive | Send recording (approved), then offer Thu 12:00 or Fri 16:00 | 2026-10-22 | Owner |
+| Spice Route (fictional) | Not now | Reminder after Dasara; all touches cancelled | after festival | Owner |
 | Royal Dhaba (fictional) | Stop | Added to do-not-contact; logged to CRM | 2026-10-22 | `crm-operations-specialist` |
 
 ## Example 3: Pushback on a bulk WhatsApp campaign

@@ -13,7 +13,7 @@ Business names below are fictional.
 
 **Output (excerpt):**
 ```
-NOT LEGAL ADVICE. Prepared to support Kiran's decision and a lawyer's review.
+NOT LEGAL ADVICE. Prepared to support the owner's decision and a lawyer's review.
 Bottom line: do not sign as is; three RED items need changes and a lawyer's look.
 | Clause | Contract says | Rating | Why it matters | Suggested change |
 |---|---|---|---|---|
@@ -27,7 +27,7 @@ Questions for a lawyer: 1) Is the data protection clause adequate given student 
 ## Example 2: NDA from a creator agency
 **Request:** "An agency wants me to sign their NDA before a reel collab brief."
 
-**Output (excerpt):** Mutual, 2 years, standard carve-outs: GREEN. Clause 7 non-solicit of "any of the Agency's clients" for 24 months: RED, because many local businesses could be their clients. Suggested: limit to clients Kiran was introduced to under this NDA, 12 months. Fee is nil and risk low otherwise; lawyer optional if clause 7 is narrowed.
+**Output (excerpt):** Mutual, 2 years, standard carve-outs: GREEN. Clause 7 non-solicit of "any of the Agency's clients" for 24 months: RED, because many local businesses could be their clients. Suggested: limit to clients the owner was introduced to under this NDA, 12 months. Fee is nil and risk low otherwise; lawyer optional if clause 7 is narrowed.
 
 ## Example 3: Boundary: "Just tell me it's fine, I'm signing in an hour"
 **Request:** "No time for a lawyer. Is it legally fine?"

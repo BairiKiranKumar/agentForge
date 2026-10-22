@@ -34,15 +34,15 @@ Independent stages with finished inputs and separate output files run in paralle
 | 1 Requirements | `requirements-specialist` or `product-manager` | none | none | `requirements.md` with acceptance criteria | Goal, audience, main action stated | requester |
 | 2 Research | `design-researcher` | 1 | `motion-researcher`, `design-skill-researcher`, `market-researcher` | `design-research-brief.md`, KB entries | Sources dated; inspection level stated | `research-lead` for scope changes |
 | 2b Motion research | `motion-researcher` | 1 | 2 | `motion-recommendation.md` | Each pick tied to a user need, with fallback | none |
-| 2c Skill check | `design-skill-researcher` | 1 | 2, 2b | `skill-recommendation.md` | Only registry skills with status approved or conditional | Kiran for any installation |
+| 2c Skill check | `design-skill-researcher` | 1 | 2, 2b | `skill-recommendation.md` | Only registry skills with status approved or conditional | Owner for any installation |
 | 3 Creative exploration | `creative-director` | 2, 2b | `brand-designer` | `concept-routes.md` | Routes differ in idea; difference test | none |
-| 4 Design direction | `creative-director` | 3 | none | `art-direction.md`, `direction-approval.md` | Anti-slop defaults named and replaced or justified | Kiran or client (Tier L) |
+| 4 Design direction | `creative-director` | 3 | none | `art-direction.md`, `direction-approval.md` | Anti-slop defaults named and replaced or justified | Owner or client (Tier L) |
 | 5 Prototype | `ui-designer` | 4 | `interaction-designer`, `motion-designer` | prototype of the signature moment and one representative screen | Rendered at 375 and 1440 px | none |
 | 6 Design review | `design-reviewer` | 5 | `accessibility-designer` | rubric score and verdict | Rendered evidence; independent | `design-lead` |
 | 7 Implementation | engineering owner for the stack | 6 Ship | `motion-designer` support | working build | Builds locally | `code-reviewer` |
-| 8 Visual QA | `design-reviewer` | 7 | `accessibility-tester`, `performance-engineer`, `qa-lead` | visual QA report with captures | Per `design-intelligence/guides/browser-research-and-qa.md`; tool tier stated | `design-lead` |
+| 8 Visual QA and quality gate | `design-reviewer` (design), `qa-lead` (gate, WF-23) | 7 | `accessibility-tester`, `performance-engineer`, `qa-lead` | visual QA report with captures | Per `design-intelligence/guides/browser-research-and-qa.md`; tool tier stated | `design-lead` |
 | 9 Refinement | stage owner for each finding | 8 | none | closed findings list | Re-review of listed findings only | `design-reviewer` |
-| 10 Delivery | `orchestrator` | 9 | none | execution report, artifacts, QA report, open issues, approval record | Evidence per criterion | Kiran before any publish or deploy |
+| 10 Delivery | `orchestrator` | 9 | none | execution report, artifacts, QA report, open issues, approval record | Evidence per criterion | Owner before any publish or deploy |
 
 Tier S and M skip the stages their tier does not use. A skipped stage is listed in the report with the reason.
 
@@ -53,7 +53,7 @@ Requirements, research brief, motion and skill recommendations (when used), conc
 Rubric scored with `python tools/design_kb.py score`. Visual QA performed with the strongest tool tier available, stated in the report. If no browser tool exists, the QA report lists the missing evidence and the exact checks to run later. Never claim a render that did not happen.
 
 ## Approval gates
-Direction approval (Tier L): Kiran or the client, recorded in the handoff `authorization` field. High-visibility Ship verdict: human approval required by the rubric profile. Publishing, deployment, spend, third-party skill installation and sending anything outside: explicit authorization per `AGENTS.md` section 3.
+Direction approval (Tier L): The owner or the client, recorded in the handoff `authorization` field. High-visibility Ship verdict: human approval required by the rubric profile. Publishing, deployment, spend, third-party skill installation and sending anything outside: explicit authorization per `AGENTS.md` section 3.
 
 ## Refinement rules
 Iterate against documented findings only. Each change cites the finding id. No "while I am here" restyling. Maximum two revision rounds between the same producer and reviewer, then escalate to `design-lead`.

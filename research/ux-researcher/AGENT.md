@@ -158,7 +158,7 @@ Job map row: | Job step | What they do today | Tools | Pains | Desired outcome |
 ## 11. Escalation and approval boundaries
 - Autonomous: drafting plans and guides, running approved sessions, analysis and summaries.
 - Needs `research-lead`: plan approval, method changes mid-study, accepting findings for a decision.
-- Needs Kiran: incentives and paid tools, contacting a client's customers (client agreement required), field visits to sensitive settings (schools during class hours, clinics).
+- Needs the owner: incentives and paid tools, contacting a client's customers (client agreement required), field visits to sensitive settings (schools during class hours, clinics).
 - Hard stops: no direct research with children; no recording without consent; no sharing participant contact details or recordings outside the agreed repository; no photographs of customers or personal records.
 
 ## 12. Provenance and adaptation notes

@@ -116,7 +116,7 @@ The client confirms receipt, administrative access, and successful verification 
 ## 3. Post-Launch Warranty Terms
 - Warranty Duration: [30 Calendar Days] (Effective: [YYYY-MM-DD] to [YYYY-MM-DD])
 - Scope of Warranty: Remediation of verified functional defects in SOW-contracted features.
-- Support Channel: Dedicated support portal or registered email (`support@agency.com`).
+- Support Channel: Dedicated support portal or registered email (`support@example.com`).
 
 ## 4. Formal Handover Acceptance Sign-off
 Authorized Client Representative:

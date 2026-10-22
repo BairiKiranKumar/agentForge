@@ -131,3 +131,10 @@ workflows:
     owners: [design-researcher, motion-researcher, design-skill-researcher]
     reviewers: [documentation-curator]
     parallel_groups: [discovery]
+  - id: WF-23
+    file: workflows/23-quality-gates.md
+    priority: 8
+    keywords: [quality gate, quality gates, release gate, release readiness, wcag, accessibility audit, security review, performance audit, engineering standards]
+    owners: [qa-lead, accessibility-tester, performance-engineer, application-security-engineer]
+    reviewers: [release-validation-specialist, design-reviewer]
+    parallel_groups: [area checks]

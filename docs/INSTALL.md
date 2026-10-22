@@ -25,7 +25,7 @@ python -m runtime.discover fetch workflows/16-instagram-carousel.md --ref <40-ch
 Order of resolution: live GitHub file, then `.agentforge/cache/<ref>/`, then the same path in a local checkout, then an error. The error tells you not to invent the missing rule.
 
 ## Add a brand
-Copy `brands/_template/` to `brands/<id>/` and replace the values. Do not point client work at `brands/kiranbuildswithai/`.
+Copy `brands/_template/` to `brands/<id>/` and replace the values. Do not point client work at `brands/example-brand/`.
 
 ## Add a role
 Follow `CONTRIBUTING.md`. A role is not real until `orchestration/roster.yaml` lists it and `tools/validate.py` passes.

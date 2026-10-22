@@ -88,7 +88,7 @@ Define reliability from the customer perspective using SLIs:
 ## 6. Deliverables and output formats
 - Service Level Objective (SLO) Specification (`slo-specification.md`):
 ```markdown
-# Service Level Objective (SLO) Specification: Pragathi School Portal
+# Service Level Objective (SLO) Specification: Greenfield School Portal
 - Service: Student Portal Core APIs | Evaluation Window: Rolling 30 Days
 - Author: Site Reliability Engineer | Date: 2026-10-21
 
@@ -103,7 +103,7 @@ Define reliability from the customer perspective using SLIs:
 
 ## 3. Error Budget Policy
 - At 75% consumption: Alert `technical-lead` and `devops-engineer`.
-- At 100% consumption: Feature freeze instituted. No feature releases until rolling window recovers or Kiran grants written exception.
+- At 100% consumption: Feature freeze instituted. No feature releases until rolling window recovers or the owner grants written exception.
 ```
 - Capacity Plan and Surging Forecast (`capacity-plan.md`): calculations for peak load, connection pool limits, and database scaling thresholds.
 

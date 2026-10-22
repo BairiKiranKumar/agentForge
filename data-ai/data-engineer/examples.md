@@ -3,7 +3,7 @@
 Business names below are fictional. Numbers in output excerpts illustrate the format; they are not recorded results.
 
 ## Example 1: Restaurant QR orders plus a hand-kept expense sheet
-**Request:** "Spice Route Kitchen (fictional, Nizamabad) uses our QR ordering app on Supabase. The owner also keeps daily expenses in a Google Sheet. Build daily data so `analytics-engineer` can model profit per day."
+**Request:** "Spice Route Kitchen (fictional, the town) uses our QR ordering app on Supabase. The owner also keeps daily expenses in a Google Sheet. Build daily data so `analytics-engineer` can model profit per day."
 
 **Key decisions:**
 - Orders: incremental by `updated_at` with a 2-day lookback, because staff edit orders after closing. Read through a read-only Postgres role.

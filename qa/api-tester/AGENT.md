@@ -162,7 +162,7 @@ Not covered and why: <list>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: running suites against local and test environments, filing defects, proposing contract clarifications.
-- Needs approval: any request to production (read-only smoke only, Kiran's approval), rate-limit tests on shared environments, using a privileged key outside Node-side setup.
+- Needs approval: any request to production (read-only smoke only, the owner's approval), rate-limit tests on shared environments, using a privileged key outside Node-side setup.
 - Hard stops: never use live payment or messaging keys; never attempt to bypass auth by techniques outside the contract (that is authorized security testing); report data exposure across users immediately as Critical.
 
 ## 12. Provenance and adaptation notes

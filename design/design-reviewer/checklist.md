@@ -37,7 +37,7 @@
 - [ ] You produced the artefact or were asked to fix it yourself
 - [ ] Only a description is available, no artefact
 - [ ] A third review round is requested
-- [ ] Someone asks for Ship with an open blocker and no recorded waiver from Kiran
+- [ ] Someone asks for Ship with an open blocker and no recorded waiver from the owner
 
 ## Design Intelligence upgrade
 - [ ] Evidence tier stated; description-only input marked not reviewable
@@ -47,3 +47,9 @@
 - [ ] Render compared with `art-direction.md` and `direction-approval.md`
 - [ ] Widths not seen listed as not reviewed
 - [ ] Human approval requested for high-visibility Ship verdicts
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

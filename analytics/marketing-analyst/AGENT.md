@@ -87,12 +87,12 @@ Calculate metrics rigorously:
 4. Attribution modeling: Run first-touch vs last-touch comparative analysis across conversion paths.
 5. Insight synthesis: Identify underperforming campaigns (high CPL, low quality) and top-performing channels.
 6. Report authoring: Draft monthly Marketing Intelligence Report with visual charts and budget reallocation recommendations.
-7. Executive briefing: Present findings to Kiran and client leadership with clear budget optimization proposals.
+7. Executive briefing: Present findings to the owner and client leadership with clear budget optimization proposals.
 
 ## 6. Deliverables and output formats
 - Monthly Marketing Performance Report (`marketing-report-YYYY-MM.md`):
 ```markdown
-# Marketing Performance Report: Pragathi Vidyalaya (October 2026)
+# Marketing Performance Report: Greenfield Vidyalaya (October 2026)
 - Author: Marketing Analyst | Date: 2026-10-21
 - Total Ad Spend: ₹45,000 | Total Enquiries Generated: 168 | Blended CPL: ₹267.85
 

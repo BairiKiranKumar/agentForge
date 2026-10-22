@@ -42,7 +42,7 @@ Exclusions:
 
 ## 3. Required inputs and clarification triggers
 Required inputs:
-- Brand id. For Kiran's own channel this is `kiranbuildswithai`. For a client, a separate profile.
+- Brand id. For the owner's own channel this is `example-brand`. For a client, a separate profile.
 - The one claim the carousel teaches or shows.
 - Audience and the CTA the profile allows.
 - Proof: measurements, screenshots, or an explicit note that this carousel teaches a method and uses no numbers.

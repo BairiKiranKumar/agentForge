@@ -1,0 +1,543 @@
+schema: 1
+area: testing
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: pw_bp
+  name: 'Playwright: best practices'
+  url: https://playwright.dev/docs/best-practices
+  retrieved: *id001
+  note: user-facing locators, isolation, web-first assertions, stubbing third parties, traces on CI
+- id: pw_snap
+  name: 'Playwright: visual comparisons'
+  url: https://playwright.dev/docs/test-snapshots
+  retrieved: *id001
+  note: same-environment baselines, reviewed updates, tolerance settings
+- id: pw_ci
+  name: 'Playwright: continuous integration'
+  url: https://playwright.dev/docs/ci
+  retrieved: *id001
+  note: CI workers, browser install, sharding, global timeout
+- id: sre_test
+  name: 'Google SRE book: testing for reliability'
+  url: https://sre.google/sre-book/testing-reliability/
+  retrieved: *id001
+  note: unit, integration, system, smoke, regression, canary, configuration, stress tests
+- id: sre_mon
+  name: 'Google SRE book: monitoring distributed systems'
+  url: https://sre.google/sre-book/monitoring-distributed-systems/
+  retrieved: *id001
+  note: four golden signals, symptoms versus causes, alerting philosophy
+- id: sre_inc
+  name: 'Google SRE book: managing incidents'
+  url: https://sre.google/sre-book/managing-incidents/
+  retrieved: *id001
+  note: incident roles, state document, handoffs, early declaration, practice
+- id: sre_pm
+  name: 'Google SRE book: postmortem culture'
+  url: https://sre.google/sre-book/postmortem-culture/
+  retrieved: *id001
+  note: blameless postmortems, triggers, review and follow-up
+- id: sre_emerg
+  name: 'Google SRE book: emergency response'
+  url: https://sre.google/sre-book/emergency-response/
+  retrieved: *id001
+  note: test rollback and out-of-band tools before need; canary even low-risk changes
+- id: dora
+  name: 'DORA: software delivery performance metrics'
+  url: https://dora.dev/guides/dora-metrics/
+  retrieved: *id001
+  note: five delivery metrics for throughput and instability
+- id: otel
+  name: 'OpenTelemetry: signals'
+  url: https://opentelemetry.io/docs/concepts/signals/
+  retrieved: *id001
+  note: traces, metrics, logs, baggage
+- id: pyramid
+  name: 'Martin Fowler: the practical test pyramid'
+  url: https://martinfowler.com/articles/practical-test-pyramid.html
+  retrieved: *id001
+  note: test layering, avoiding duplicate coverage, consumer-driven contracts
+- id: pact
+  name: Pact documentation
+  url: https://docs.pact.io/
+  retrieved: *id001
+  note: consumer-driven contract testing with example-based contracts
+requirements:
+- id: TEST-001
+  title: Separate executed checks from planned checks in every test report
+  description: Each report lists checks that were executed with command, environment, date and result,
+    apart from checks that were only planned. Nothing planned is described as passed.
+  min_profile: lightweight
+  applies_to: &id002
+  - all
+  severity: major
+  check: manual
+  evidence: Report with distinct Executed and Planned sections, each executed row carrying command, environment,
+    date, result
+  owner: qa-lead
+  reviewer: release-validation-specialist
+  reference: sre_test
+- id: TEST-002
+  title: State unavailable tools and environments
+  description: Every report names tools, devices, browsers, data or environments that were not available
+    and the checks therefore not run. Absence of a finding from an unrun check is never reported as a
+    pass.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Report section listing unavailable items and affected checks
+  owner: qa-lead
+  reviewer: release-validation-specialist
+  reference: sre_test
+- id: TEST-003
+  title: Keep an evidence record for each executed check
+  description: 'Evidence records use the template in this area README: id, requirement, command or procedure,
+    environment and version, date, result, artifact location and tester.'
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Evidence records or links attached to the report
+  owner: qa-lead
+  reviewer: code-reviewer
+  reference: pw_bp
+- id: TEST-004
+  title: Define a risk-based test strategy before building tests
+  description: The strategy lists critical user journeys, data and integrations, chosen test layers, and
+    what is out of scope. Layer choice follows risk and cost.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Test strategy document reviewed by technical lead
+  owner: qa-lead
+  reviewer: technical-lead
+  reference: pyramid
+- id: TEST-005
+  title: Cover logic with fast unit tests on public behaviour
+  description: Business rules and utilities have unit tests that assert observable behaviour through public
+    interfaces, so refactoring does not break them.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Unit test run output with command, date and result; review note on assertions
+  owner: backend-developer
+  reviewer: code-reviewer
+  reference: pyramid
+- id: TEST-006
+  title: Test UI components for behaviour users can observe
+  description: Front-end components are tested for rendered behaviour and interaction, not internal structure
+    or class names.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - library
+  severity: minor
+  check: both
+  evidence: Component test output and review note
+  owner: frontend-developer
+  reviewer: code-reviewer
+  reference: pw_bp
+- id: TEST-007
+  title: Add integration tests at data and service boundaries
+  description: Code that reads or writes databases, queues, files or other services has integration tests
+    using real or faithful local dependencies.
+  min_profile: standard
+  applies_to: &id004
+  - web-app
+  - api
+  - ai-app
+  - internal-tool
+  severity: major
+  check: automated
+  evidence: Integration run output with environment and dependency versions
+  owner: backend-developer
+  reviewer: api-tester
+  reference: pyramid
+- id: TEST-008
+  title: Limit end-to-end tests to critical journeys
+  description: End-to-end tests cover the few journeys whose failure blocks users or revenue. Lower-level
+    tests carry detail so coverage is not duplicated across layers.
+  min_profile: lightweight
+  applies_to: &id003
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: automated
+  evidence: E2E run output with command, browser and environment, and journey list
+  owner: automation-engineer
+  reviewer: qa-lead
+  reference: pyramid
+- id: TEST-009
+  title: Write resilient end-to-end tests
+  description: Tests are independent, use user-facing locators such as role and label, use auto-retrying
+    assertions, and avoid fixed sleeps.
+  min_profile: standard
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Test code review note and a run in randomised or parallel order
+  owner: playwright-specialist
+  reviewer: automation-engineer
+  reference: pw_bp
+- id: TEST-010
+  title: Do not depend on third-party sites in tests
+  description: Third-party services are stubbed or faked in automated tests, with a separate, labelled
+    check that the stub still matches reality.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Network stubs in test code and review note
+  owner: playwright-specialist
+  reviewer: code-reviewer
+  reference: pw_bp
+- id: TEST-011
+  title: Control test data and environment
+  description: Tests start from known, resettable data in a stable test environment. Production data containing
+    personal information is not used in tests.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Seed and reset procedure plus environment description
+  owner: backend-developer
+  reviewer: qa-lead
+  reference: pw_bp
+- id: TEST-012
+  title: Track and fix flaky tests
+  description: Intermittent failures are logged, quarantined with an owner and due date, and not hidden
+    by blanket retries. Retry counts are reported.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Flake log, retry statistics from CI runs
+  owner: automation-engineer
+  reviewer: qa-lead
+  reference: pw_ci
+- id: TEST-013
+  title: Add a regression test for every fixed defect
+  description: A defect fix includes a test at the lowest layer that reproduces it, or a recorded reason
+    why none is practical.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Pull request link showing the test and its failing-then-passing runs
+  owner: backend-developer
+  reviewer: code-reviewer
+  reference: sre_test
+- id: TEST-014
+  title: Run cross-browser checks on a stated matrix
+  description: The supported browser and version matrix is written down. Critical journeys run on each
+    engine in it. Unrun combinations are listed as gaps.
+  min_profile: standard
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Matrix with executed and unexecuted cells, run output per browser
+  owner: playwright-specialist
+  reviewer: qa-lead
+  reference: pw_bp
+- id: TEST-015
+  title: Capture responsive screenshots at declared viewports
+  description: Key pages are captured at the viewports defined in the responsive area and reviewed for
+    layout failures. Details of responsive criteria live in that area.
+  min_profile: standard
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Screenshot set with viewport sizes, date, tool and reviewer note
+  owner: visual-regression-tester
+  reviewer: frontend-developer
+  reference: pw_snap
+- id: TEST-016
+  title: Manage visual regression baselines in a fixed environment
+  description: Visual baselines are created and compared in the same environment, per browser and platform,
+    and updated only after a human reviews each change.
+  min_profile: standard
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Baseline commit review note and environment record
+  owner: visual-regression-tester
+  reviewer: frontend-developer
+  reference: pw_snap
+- id: TEST-017
+  title: Test device behaviour for mobile-first products
+  description: Phone-primary products are exercised on a stated set of real devices or emulators with
+    touch, orientation and slow network conditions. Emulator-only coverage is labelled.
+  min_profile: standard
+  applies_to:
+  - mobile-web
+  severity: major
+  check: manual
+  evidence: Device list, session notes and defects
+  owner: mobile-tester
+  reviewer: qa-lead
+  reference: sre_test
+- id: TEST-018
+  title: Run exploratory sessions on new or risky features
+  description: Time-boxed exploratory sessions with charters are done before release, and notes record
+    areas covered, findings and untested areas.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: Session charter and notes
+  owner: exploratory-tester
+  reviewer: qa-lead
+  reference: sre_test
+- id: TEST-019
+  title: Run manual test cases for flows not worth automating
+  description: Manual cases have steps, expected results and recorded outcomes with tester, date and build.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: Manual execution log
+  owner: manual-tester
+  reviewer: qa-lead
+  reference: sre_test
+- id: TEST-020
+  title: Test API contracts between services
+  description: HTTP and event interfaces have contract tests that check request and response shapes, status
+    codes and error cases against the agreed specification.
+  min_profile: standard
+  applies_to:
+  - api
+  - web-app
+  - ai-app
+  severity: major
+  check: automated
+  evidence: Contract test output with provider version and date
+  owner: api-tester
+  reviewer: backend-developer
+  reference: pact
+- id: TEST-021
+  title: Use consumer-driven contracts across team boundaries
+  description: Where separate teams own consumer and provider, consumers publish contracts and providers
+    verify them before release.
+  min_profile: high_assurance
+  applies_to:
+  - api
+  - web-app
+  severity: major
+  check: automated
+  evidence: Contract verification results per provider build
+  owner: api-tester
+  reviewer: technical-lead
+  reference: pact
+- id: TEST-022
+  title: Defer accessibility testing to the accessibility area
+  description: Test plans include the accessibility area checks and report them with the same executed
+    and planned rules. Criteria are not restated here.
+  min_profile: lightweight
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Link to accessibility test records within the test report
+  owner: accessibility-tester
+  reviewer: qa-lead
+  reference: pyramid
+- id: TEST-023
+  title: Defer security testing to the security area under written authorization
+  description: Security tests follow the security area and run only inside written, owner-authorized scope.
+    Results are reported under the same executed and planned rules.
+  min_profile: standard
+  applies_to: *id002
+  severity: critical
+  check: both
+  evidence: Authorization record and security test report link
+  owner: security-testing-specialist
+  reviewer: technical-lead
+  reference: sre_test
+- id: TEST-024
+  title: Defer performance testing to the performance area
+  description: Performance tests follow the performance area. This area only requires that results state
+    the environment and that regressions are checked before release.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Link to performance test records with environment
+  owner: performance-tester
+  reviewer: qa-lead
+  reference: sre_test
+- id: TEST-025
+  title: Run automated checks on every change in CI
+  description: Unit, integration, lint and type checks run on every pull request. E2E runs on pull requests
+    or on a defined schedule, with the choice documented. A global timeout lets the run still produce
+    a report.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: automated
+  evidence: CI pipeline definition and a recent run log
+  owner: cicd-engineer
+  reviewer: devops-engineer
+  reference: pw_ci
+- id: TEST-026
+  title: Keep CI test runs reproducible
+  description: CI uses pinned tool versions and a documented browser and OS setup, and failures keep diagnostic
+    artifacts such as traces and logs for the retention period.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: both
+  evidence: Pipeline config showing versions and artifact upload
+  owner: cicd-engineer
+  reviewer: playwright-specialist
+  reference: pw_ci
+- id: TEST-027
+  title: Block release on failed critical checks
+  description: Release gates fail the build on any failed critical requirement. Failures are never averaged
+    away or waived without a named approver and recorded reason.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: critical
+  check: both
+  evidence: Gate configuration and a gate decision record per release
+  owner: release-engineer
+  reviewer: qa-lead
+  reference: sre_test
+- id: TEST-028
+  title: Run smoke validation after each deployment
+  description: A short smoke suite runs against the deployed environment and results are recorded. A failed
+    smoke triggers the rollback decision.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Smoke run output with environment URL, build and time
+  owner: release-validation-specialist
+  reviewer: release-engineer
+  reference: sre_test
+- id: TEST-029
+  title: Prepare and rehearse rollback
+  description: Every release has a written rollback plan, and the procedure is tested before it is needed,
+    including data and configuration changes.
+  min_profile: standard
+  applies_to: *id002
+  severity: critical
+  check: both
+  evidence: Rollback plan and dated rehearsal record
+  owner: release-engineer
+  reviewer: site-reliability-engineer
+  reference: sre_emerg
+- id: TEST-030
+  title: Roll out risky changes progressively
+  description: Changes with wide impact are released to a small share of traffic or users first, observed,
+    then expanded, with revert criteria written in advance.
+  min_profile: high_assurance
+  applies_to: *id004
+  severity: major
+  check: manual
+  evidence: Rollout plan, observed signals and expansion decision
+  owner: devops-engineer
+  reviewer: site-reliability-engineer
+  reference: sre_test
+- id: TEST-031
+  title: Capture runtime errors with an error monitoring tool
+  description: Front-end and back-end exceptions are captured with release identifier, environment and
+    sanitised context. Personal data is not sent to the tool without approval.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Test error event visible in the tool, and data-handling note
+  owner: observability-specialist
+  reviewer: backend-developer
+  reference: otel
+- id: TEST-032
+  title: Emit traces, metrics and logs for key flows
+  description: Services expose the signals needed to answer what is broken and why, with correlation between
+    traces, metrics and logs for critical flows.
+  min_profile: high_assurance
+  applies_to: *id004
+  severity: major
+  check: both
+  evidence: Dashboard or query showing signals for a critical flow
+  owner: observability-specialist
+  reviewer: site-reliability-engineer
+  reference: otel
+- id: TEST-033
+  title: Monitor latency, traffic, errors and saturation
+  description: Production monitoring covers the four golden signals, with latency for successful and failed
+    requests measured separately.
+  min_profile: standard
+  applies_to: *id004
+  severity: major
+  check: both
+  evidence: Dashboard link and signal definitions
+  owner: site-reliability-engineer
+  reviewer: observability-specialist
+  reference: sre_mon
+- id: TEST-034
+  title: Page on user-facing symptoms with actionable alerts
+  description: Pages are urgent, actionable and tied to user impact. Causes feed dashboards. Each alert
+    has a runbook link, and noisy alerts are tuned.
+  min_profile: standard
+  applies_to: *id004
+  severity: major
+  check: manual
+  evidence: Alert inventory with runbook links and a review of recent firing history
+  owner: site-reliability-engineer
+  reviewer: observability-specialist
+  reference: sre_mon
+- id: TEST-035
+  title: Test backup restoration
+  description: Backups of data that matters are restored into a separate environment on a schedule and
+    checked for completeness. A backup never restored is not counted as a backup.
+  min_profile: standard
+  applies_to: *id004
+  severity: critical
+  check: both
+  evidence: Dated restore test log with data checks and elapsed time
+  owner: devops-engineer
+  reviewer: site-reliability-engineer
+  reference: sre_emerg
+- id: TEST-036
+  title: Define an incident process with named roles
+  description: The process covers declaration criteria, command, operations, communications and planning
+    roles, a live incident record and explicit handoffs, and is practised.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Incident procedure and a dated exercise record
+  owner: incident-coordinator
+  reviewer: technical-lead
+  reference: sre_inc
+- id: TEST-037
+  title: Hold blameless postmortems with tracked actions
+  description: Defined triggers lead to a written postmortem on impact, timeline, contributing causes
+    and actions with owners. Actions are tracked to closure.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Postmortem documents and action tracker status
+  owner: incident-coordinator
+  reviewer: site-reliability-engineer
+  reference: sre_pm
+- id: TEST-038
+  title: Track delivery performance metrics for learning, not targets
+  description: Lead time, deployment frequency, failed deployment recovery time, change fail rate and
+    rework rate are measured per service and used to find process problems. They are not personal performance
+    scores.
+  min_profile: high_assurance
+  applies_to: *id004
+  severity: minor
+  check: manual
+  evidence: Metric report with definitions and data source
+  owner: devops-engineer
+  reviewer: technical-lead
+  reference: dora

@@ -5,12 +5,15 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP = {".git", ".agentforge", "__pycache__", "node_modules", "work"}
+SKIP = {".git", ".agentforge", "__pycache__", "node_modules", "work", "workspace"}
 PATTERNS = [
     ("aws-access-key", re.compile(r"AKIA[0-9A-Z]{16}")),
     ("github-token", re.compile(r"ghp_[A-Za-z0-9]{20,}")),
     ("openai-key", re.compile(r"sk-[A-Za-z0-9]{20,}")),
     ("slack-token", re.compile(r"xox[baprs]-[A-Za-z0-9-]{10,}")),
+    ("google-api-key", re.compile(r"AIza[0-9A-Za-z_-]{35}")),
+    ("stripe-live-key", re.compile(r"sk_live_[0-9a-zA-Z]{20,}")),
+    ("jwt", re.compile(r"eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}")),
     ("private-key", re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----")),
     ("assigned-secret", re.compile(r"(?i)(api[_-]?key|secret|password|token)\s*[:=]\s*['\"][^'\"]{8,}['\"]")),
 ]

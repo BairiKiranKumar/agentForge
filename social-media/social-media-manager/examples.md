@@ -1,15 +1,15 @@
 # Social Media Manager: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
-## Example 1: Repurposing a salon website build for @kiranbuildswithai
-**Request:** "I just shipped the website for Mehndi & Mirrors Salon (fictional), Nizamabad. Plan next week's social around it. Metricool is connected."
+## Example 1: Repurposing a salon website build for @example_brand
+**Request:** "I just shipped the website for Mehndi & Mirrors Salon (fictional), the town. Plan next week's social around it. Metricool is connected."
 
 **Key decisions:**
 - Client permission to show the site was recorded in the project chat on 2026-10-14; the owner's name is not used.
 - Atoms extracted: mobile booking button decision, before/after of the services page, a 45-second screen walk, the prompt used for the first layout draft, one mistake (oversized hero images on 4G).
 - Spread across 8 days; one asset, never more than 2 posts a day.
-- Staging uses Metricool's create-for-review function; Kiran approves before anything is queued.
+- Staging uses Metricool's create-for-review function; the owner approves before anything is queued.
 
 **Output (excerpt):**
 | Date (IST) | Platform | Pillar | Atom | Format | Owner | Status |
@@ -24,13 +24,13 @@ Business names below are fictional unless stated. @kiranbuildswithai is Kiran's 
 **Request:** "Give me last week's social report."
 
 **Key decisions:**
-- Only 2 weeks of history exist after Kiran restarted posting, so no comparisons are judged.
+- Only 2 weeks of history exist after the owner restarted posting, so no comparisons are judged.
 - Metricool analytics did not include WhatsApp clicks; the website analytics event was not shared, so that is listed as a gap.
 
 **Output (excerpt):**
 ```
-Week: 2026-w42, accounts: LinkedIn, Threads, Instagram (@kiranbuildswithai)
-Data pulled: 2026-10-19 from Metricool; LinkedIn from Kiran's export
+Week: 2026-w42, accounts: LinkedIn, Threads, Instagram (@example_brand)
+Data pulled: 2026-10-19 from Metricool; LinkedIn from the owner's export
 Published: 9 of 10 planned (missed: Instagram Reel, filming time ran out)
 Enquiries: 3 DMs (2 LinkedIn, 1 Instagram). WhatsApp clicks: not available
 Baseline: forming (2 weeks of data), no trend judged

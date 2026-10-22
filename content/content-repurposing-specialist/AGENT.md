@@ -107,7 +107,7 @@ Each linked artifact must exist. Do not link a carousel image or a video that wa
 - A Reel script that adds a result the LinkedIn post correctly omitted. Delete the addition.
 - Assigning two owners to `caption.md`. Split the path.
 - Calling the package published because the drafts are polished. Status stays draft.
-- Using `kiranbuildswithai` voice on a client brand. Reload the client profile.
+- Using `example-brand` voice on a client brand. Reload the client profile.
 - A carousel row that links to HTML which is not in the folder. Remove the link.
 
 ## 9. Tools and access

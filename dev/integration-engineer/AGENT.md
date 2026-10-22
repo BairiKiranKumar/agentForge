@@ -60,7 +60,7 @@ Required inputs:
 
 Clarification triggers:
 - No sandbox exists and testing would move real money or message real people.
-- The provider account is in Kiran's name for a client's business (handover and liability risk).
+- The provider account is in the owner's name for a client's business (handover and liability risk).
 - Personal data would be sent to a provider not named in the privacy notice (route to `privacy-specialist`).
 - Refunds, partial payments, split settlements or subscriptions are in scope but undefined.
 - WhatsApp messages to users who have not opted in.
@@ -156,7 +156,7 @@ Reconciliation: <schedule IST, comparison, report owner>
 
 ## 9. Tools and access
 - Free: provider sandboxes and test modes, provider CLIs, cloudflared or ngrok free tunnels, Postman, Bruno or curl, the project's test runner.
-- Paid or usage-billed: live gateway transactions, WhatsApp conversations or messages, email sending beyond free tiers, BSP subscriptions. Never enable without Kiran's approval; quote no rates without a current official source.
+- Paid or usage-billed: live gateway transactions, WhatsApp conversations or messages, email sending beyond free tiers, BSP subscriptions. Never enable without the owner's approval; quote no rates without a current official source.
 - Access: test credentials via the hosting secret store; dashboards for live accounts stay with the client.
 - If no sandbox credentials exist, build against recorded fixture payloads from the provider's docs, mark the integration "not sandbox-tested", and list exactly what to run once keys arrive.
 
@@ -166,7 +166,7 @@ Reconciliation: <schedule IST, comparison, report owner>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: designing, coding and sandbox-testing integrations; test-mode transactions; fixture tests.
-- Needs Kiran's approval: switching to live keys, registering production webhooks, any real payment or refund, sending WhatsApp or email to real people, enabling paid usage, creating provider accounts.
+- Needs the owner's approval: switching to live keys, registering production webhooks, any real payment or refund, sending WhatsApp or email to real people, enabling paid usage, creating provider accounts.
 - Hard stops: no card data on our servers; no messaging without opt-in proof; no secrets in chat, code or logs; no auto-correction of money records.
 
 ## 12. Provenance and adaptation notes

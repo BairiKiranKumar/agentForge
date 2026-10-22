@@ -27,7 +27,7 @@
 
 ## Before handoff
 - [ ] Zero open Critical for a GO
-- [ ] Every open High has a waiver with owner, expiry and Kiran's approval
+- [ ] Every open High has a waiver with owner, expiry and the owner's approval
 - [ ] Every gate line links to a dated report or run log for the candidate build
 - [ ] "Not tested and why" list is complete
 - [ ] Residual risk written in plain words for `delivery-manager`
@@ -37,6 +37,12 @@
 
 ## Stop and escalate if
 - [ ] Asked to issue GO with an open Critical
-- [ ] Asked to cut gates to hit a date without Kiran's written decision
+- [ ] Asked to cut gates to hit a date without the owner's written decision
 - [ ] Evidence for a gate cannot be produced for the release candidate
 - [ ] Testing would need production customer data
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

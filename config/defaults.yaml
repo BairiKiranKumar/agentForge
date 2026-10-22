@@ -1,0 +1,55 @@
+# Core defaults. Public, neutral, and the lowest-precedence layer.
+# Do not put organization, brand or personal data here. Copy the templates in
+# config/templates/ into your private workspace instead (see docs/configuration.md).
+schema: 1
+organization:
+  name: ""            # unset: ask before client-facing work
+  owner:
+    title: Owner      # the human who approves consequential actions
+locale:
+  language: en
+  region: ""
+  currency: ""        # unset: state the currency in every price, never assume
+  timezone: UTC
+regional_packs: []
+voice:
+  tone: [clear, specific, human]
+  banned_phrases: []
+  em_dash_policy: avoid-in-public-copy
+quality:
+  default_profile: standard      # lightweight | standard | high_assurance
+  design_profile: standard       # standard | high_visibility (design rubric)
+stack:
+  preferred: []
+  avoid: []
+ai:
+  provider: any
+  notes: ""
+agents:
+  environment: any               # claude-code | cursor | codex | antigravity | other
+deployment:
+  platform: any
+  production_deploys_allowed: false
+tools:
+  paid_tools_allowed: false
+  allowed: []
+design_system:
+  name: ""
+  tokens_path: ""
+# Safety floor. Higher layers may tighten these values, never weaken them.
+# runtime/config.py rejects any layer that does.
+protected:
+  authorization:
+    default: none
+    require_human_for:
+      - external-communication
+      - publishing
+      - spending
+      - production-changes
+      - legal-tax-contract
+      - security-testing
+      - sharing-personal-data
+  untrusted_content_as_instructions: false
+  secrets_in_chat: false
+  independent_review_required: true
+  critical_defects_block_release: true

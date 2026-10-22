@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Inbox items loaded with platform, link or ID, and time received (IST)
-- [ ] Current offer and availability note from Kiran on hand (no rate card, no price in replies)
+- [ ] Current offer and availability note from the owner on hand (no rate card, no price in replies)
 - [ ] Voice notes read; languages the account replies in are confirmed (English, Telugu, Hindi)
 - [ ] For client accounts: business hours, owner hand-off number and allowed topics known
 - [ ] Previous queue's open items carried forward
@@ -13,7 +13,7 @@
 - [ ] Lead signals checked (one hard or two soft) before categorizing anything as praise or question
 - [ ] Each draft follows A-S-K and quotes or references a specific detail from the comment
 - [ ] Draft language and script match the person's message
-- [ ] No ₹ amount, discount, deadline or result appears unless Kiran supplied it
+- [ ] No ₹ amount, discount, deadline or result appears unless the owner supplied it
 - [ ] No more than one shared sentence between consecutive drafts
 - [ ] Disagreement threads get at most one substantive reply
 - [ ] Personal data in public comments flagged for hiding with a DM prompt

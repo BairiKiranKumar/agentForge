@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Triaging P1 payment gateway failure
-**Request:** "Client WhatsApp message from StyleCrest Salons: 'URGENT! None of our customers can book appointments online, it says Payment Error!'"
+**Request:** "Client WhatsApp message from Lumen Salon Salons: 'URGENT! None of our customers can book appointments online, it says Payment Error!'"
 
 **Key decisions:**
 - Ingested message at 11:02 IST.
@@ -15,7 +15,7 @@ Business names below are fictional unless stated.
 **Output (excerpt):**
 ```markdown
 ### Triage Log: Ticket #T-1082
-- Client: StyleCrest Salons | Severity: P1 Critical
+- Client: Lumen Salon Salons | Severity: P1 Critical
 - Classification: Checkout Failure / Payment Gateway Error
 - Routing: Assigned to `technical-support-specialist`; alerted `incident-coordinator`
 - Response Draft:
@@ -23,7 +23,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Filtering and routing an unquoted feature request
-**Request:** "Support email from Pragathi School: 'We want the portal to automatically send a happy birthday WhatsApp message to every student with a video animation.'"
+**Request:** "Support email from Greenfield School: 'We want the portal to automatically send a happy birthday WhatsApp message to every student with a video animation.'"
 
 **Key decisions:**
 - Analyzed request: existing portal functionality is working correctly; client is requesting a new automated messaging capability.
@@ -35,7 +35,7 @@ Business names below are fictional unless stated.
 **Output (excerpt):**
 ```markdown
 ### Triage Log: Ticket #T-1085
-- Client: Pragathi Vidyalaya | Severity: P4 Feature Request
+- Client: Greenfield Vidyalaya | Severity: P4 Feature Request
 - Classification: Feature Enhancement (Automated Birthday Video Bot)
 - Routing: Assigned to `account-manager`
 - Response Draft:

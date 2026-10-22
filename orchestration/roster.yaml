@@ -3,7 +3,7 @@
 # neighbouring role that owns the adjacent work, to prevent duplicate agents.
 # aliases: titles people may use for this role (including seniority titles that
 # map here instead of becoming duplicate agents).
-# flags: user_requested (named in Kiran's original request), india (India-specific knowledge required)
+# flags: user_requested (named in the owner's original request), india (India-specific knowledge required)
 
 departments:
   - leadership
@@ -369,7 +369,7 @@ roles:
   - slug: localization-specialist
     title: Localization Specialist
     dept: content
-    mission: "Adapt content for Indian languages and regional audiences (Telugu, Hindi, Indian English)."
+    mission: "Adapt content for other languages and regional audiences, using regional packs for language and market specifics."
     owns: "localized copy, transliteration choices, cultural review, glossary"
     excludes: "original copy (copywriter)"
     flags: [india]
@@ -474,7 +474,7 @@ roles:
   - slug: ecommerce-specialist
     title: E-commerce Specialist (Shopify)
     dept: dev
-    mission: "Build and optimize online stores on Shopify or headless commerce, including Indian payment setups."
+    mission: "Build and optimize online stores on Shopify or headless commerce, including regional payment setups (see regional packs)."
     owns: "Shopify themes and apps, catalog structure, checkout and payment gateway setup, store performance"
     excludes: "payment API integrations outside commerce platforms (integration-engineer)"
     flags: [india]
@@ -658,7 +658,7 @@ roles:
   - slug: privacy-specialist
     title: Privacy Specialist
     dept: security
-    mission: "Help products handle personal data lawfully and respectfully (India DPDP Act, GDPR where relevant)."
+    mission: "Help products handle personal data lawfully and respectfully (for example GDPR, CCPA/CPRA, India DPDP Act; see regional packs)."
     owns: "data inventories, privacy notices drafts, consent flows review, data retention plans"
     excludes: "legal opinions (human lawyer); contracts (contract-review-assistant)"
     flags: [india]
@@ -892,7 +892,7 @@ roles:
   - slug: business-development-representative
     title: Business Development Representative
     dept: sales
-    mission: "Open new accounts through outbound prospecting, including Indian local businesses."
+    mission: "Open new accounts through outbound prospecting, including local businesses."
     owns: "outbound cadences, multichannel outreach plans (WhatsApp, Instagram DM, email, visits), first meetings"
     excludes: "message copy craft (outreach-copywriter)"
     flags: [india]
@@ -1183,7 +1183,7 @@ roles:
     dept: legal-compliance
     mission: "Summarize contracts and flag risky or missing clauses for a human decision or lawyer review."
     owns: "contract summaries, clause risk flags, comparison to standard terms, question lists for a lawyer"
-    excludes: "legal advice and final approval (human lawyer, Kiran)"
+    excludes: "legal advice and final approval (human lawyer, the owner)"
   - slug: compliance-research-assistant
     title: Compliance Research Assistant
     dept: legal-compliance

@@ -2,11 +2,11 @@ id: example-client
 handle: "@exampleclient"
 display_name: Example Client
 owner: Client owner
-market: India
-locale: en-IN
-timezone: Asia/Kolkata
+market: global
+locale: en
+timezone: UTC
 do_not_mix_with:
-  - kiranbuildswithai
+  - example-brand
   - any brand other than example-client
 focus:
   - Replace these lines with the client's real offers

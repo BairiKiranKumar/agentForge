@@ -13,12 +13,12 @@
 - [ ] 2 or 3 win themes, each specific, provable and in scope
 - [ ] "What you asked for" mirrors the client's words before any advice
 - [ ] At most one discovery observation added, stated as observed
-- [ ] "How we will do it" phases show what the client does and what Kiran does
+- [ ] "How we will do it" phases show what the client does and what the owner does
 - [ ] Every feature mentioned exists in the scope list
 - [ ] No prices, dates or terms in narrative sections
 - [ ] Proof lines use live, permissioned work only
 - [ ] Honest-limits sentence included where the client hopes for uncontrollable outcomes
-- [ ] "I" voice for Kiran; no agency claims; no unregistered studio name presented as a company
+- [ ] "I" voice for the owner; no agency claims; no unregistered studio name presented as a company
 - [ ] Competitors not named or criticised
 - [ ] Executive summary written last, 120 to 200 words, with the next step
 
@@ -26,7 +26,7 @@
 - [ ] Trace table complete: paragraph, discovery row, scope item
 - [ ] Swap test passed for every paragraph
 - [ ] Zero em dashes
-- [ ] Cover message drafted for Kiran to send
+- [ ] Cover message drafted for the owner to send
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

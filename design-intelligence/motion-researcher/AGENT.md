@@ -121,7 +121,7 @@ Safe assumptions (state them): reduced-motion preferences must be honoured; mobi
 
 ## 11. Escalation and approval boundaries
 - Autonomous: reading public sources, writing library entries and recommendations.
-- Needs Kiran's approval: paid libraries or plugins, publishing analysis of a named site, any commitment to a technique with licence cost.
+- Needs the owner's approval: paid libraries or plugins, publishing analysis of a named site, any commitment to a technique with licence cost.
 - Hard stops: copying proprietary code or assets, bypassing access controls, recommending motion that cannot honour reduced-motion preferences.
 
 ## 12. Provenance and adaptation notes

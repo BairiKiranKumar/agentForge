@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Study plan approved by `research-lead` with criteria, quotas, mode, language, dates
-- [ ] Incentive amount approved by Kiran, or "no incentive" recorded
+- [ ] Incentive amount approved by the owner, or "no incentive" recorded
 - [ ] Client agreed to contact with its customers and named who sends the first message
 - [ ] Storage location, access list and retention period agreed
 - [ ] Consent template reviewed by `privacy-specialist` for sensitive topics
@@ -16,7 +16,7 @@
 - [ ] Participants from studies in the last 3 months excluded
 - [ ] At least two recruiting channels when the owner hand-picks participants
 - [ ] Group posts made only with the admin's permission; replies one-to-one
-- [ ] Outreach text approved by Kiran before sending
+- [ ] Outreach text approved by the owner before sending
 - [ ] IDs assigned at screening; names and numbers only in `_private/`
 - [ ] Consent notice sent in the participant's language before the session
 - [ ] Consent and recording consent recorded separately with dates

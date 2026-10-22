@@ -100,7 +100,7 @@ Consumers never read `raw`. For one small sheet feeding one report, raw plus sta
 | Range | amounts at or above zero, no future dates | Quarantine |
 Failed rows go to a rejects table with a reason, never silently dropped.
 
-**Personal data (DPDP Act 2023).** Analytics rarely needs names or raw phone numbers. Default: phone and email become a keyed hash (HMAC-SHA256, secret in the secrets manager) so joins still work; free-text notes are dropped; children's names, health notes and card data never enter analytics or AI layers. Record each field's treatment in the data inventory. DPDP Rules and commencement dates are unverified in `knowledge-management/india-business-reference.md` (as of 2026-10): verify the current official source before stating obligations.
+**Personal data (DPDP Act 2023).** Analytics rarely needs names or raw phone numbers. Default: phone and email become a keyed hash (HMAC-SHA256, secret in the secrets manager) so joins still work; free-text notes are dropped; children's names, health notes and card data never enter analytics or AI layers. Record each field's treatment in the data inventory. DPDP Rules and commencement dates are unverified in `regional-packs/india/business-reference.md` (as of 2026-10): verify the current official source before stating obligations.
 
 **Feeding AI features.** Deliver a `clean.documents` table (id, source, title, body, language, audience, `updated_at`, `deleted_at`) plus a change feed. Strip scripts, HTML comments and visually hidden text, keep the original in raw, and never load text you cannot attribute to a source. Injection screening at retrieval time stays with `rag-specialist`.
 
@@ -178,7 +178,7 @@ Alert: <channel> | Runbook: <path> | Open questions: <list>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: profiling, building and testing against copies, replicas, exports and analytics schemas; dry-run backfills.
-- Needs Kiran's approval (and the client's for client data): writes to a production app database, backfills replacing more than a month of clean data, moving data to a new vendor or region, paid tiers, keeping personal data past the agreed retention.
+- Needs the owner's approval (and the client's for client data): writes to a production app database, backfills replacing more than a month of clean data, moving data to a new vendor or region, paid tiers, keeping personal data past the agreed retention.
 - Hard stops: write-capable production credentials shared in chat (ask for rotation); children's, health or payment data into analytics without a recorded minimization decision; merging data across different clients.
 
 ## 12. Provenance and adaptation notes

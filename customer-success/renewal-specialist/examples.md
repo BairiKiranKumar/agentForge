@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Retainer renewal with 7% price adjustment for school portal
-**Request:** "Manage the annual maintenance retainer renewal for Pragathi Vidyalaya (expires December 31)."
+**Request:** "Manage the annual maintenance retainer renewal for Greenfield Vidyalaya (expires December 31)."
 
 **Key decisions:**
 - Initiated renewal on October 21 (70 days prior to expiration).
@@ -15,7 +15,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Renewal Outcome: Pragathi Vidyalaya
+### Renewal Outcome: Greenfield Vidyalaya
 - Contract Period: January 1, 2027 to December 31, 2027
 - Selected Option: Annual Prepayment (₹1,65,000 + GST upfront)
 - Outcome: 100% renewal secured 6 weeks prior to expiration.
@@ -23,7 +23,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Pausing renewal outreach on an at-risk account
-**Request:** "StyleCrest Salons retainer expires in 45 days. Send the renewal proposal today."
+**Request:** "Lumen Salon Salons retainer expires in 45 days. Send the renewal proposal today."
 
 **Key decisions:**
 - Checked account health score with CSM: discovered score had dropped to 52 (Red) due to a booking notification bug last week.
@@ -33,7 +33,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Renewal Triage Alert: StyleCrest Salons
+### Renewal Triage Alert: Lumen Salon Salons
 - Status: RENEWAL OUTREACH PAUSED
 - Reason: Account health score is 52 (Red). Open bug ticket pending on booking SMS.
 - Action Taken: Paused renewal proposal dispatch. Engaged `retention-specialist` to remediate technical grievance first. Will resume commercial renewal once health score recovers to >70.

@@ -2,7 +2,7 @@
 
 Verdict: **pass**
 
-Independent edit of two drafts this reviewer did not write. Files read: `threads.md`, `linkedin.md`, and `brands/kiranbuildswithai/brand.yaml`. The drafts were not rewritten.
+Independent edit of two drafts this reviewer did not write. Files read: `threads.md`, `linkedin.md`, and `brands/example-brand/brand.yaml`. The drafts were not rewritten.
 
 ## 1. Two different pieces
 
@@ -15,12 +15,12 @@ They share the sentence "A premium website is not a darker template." The rest o
 
 ## 2. Brand, client, and metrics
 
-The brand is kiranbuildswithai only.
+The brand is example-brand only.
 
-- `threads.md` line 3: `Brand: kiranbuildswithai`
-- `linkedin.md` line 4: `Brand: kiranbuildswithai`
+- `threads.md` line 3: `Brand: example-brand`
+- `linkedin.md` line 4: `Brand: example-brand`
 
-No second brand id appears. Arav Web Studio does not appear. "Kiran" is the owner named in `brand.yaml`, used in the call to action.
+No second brand id appears. Example Studio does not appear. "The owner" is the owner named in `brand.yaml`, used in the call to action.
 
 No client is named. `threads.md` line 106 says no client is named and no result is claimed. `linkedin.md` line 51 says there is no client name.
 

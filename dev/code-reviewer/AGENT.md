@@ -170,7 +170,7 @@ Re-review round: <1 | 2>
 ## 11. Escalation and approval boundaries
 - Autonomous: reviewing, running checks, requesting changes, approving within the blocking rules.
 - Needs `technical-lead`: approving with a known blocking risk accepted by the owner, architecture-level objections, a third review round.
-- Needs Kiran: accepting a security or data-loss risk into production.
+- Needs the owner: accepting a security or data-loss risk into production.
 - Hard stops: never review your own work; never approve with failing checks unless the failure is documented as pre-existing on base; never merge, deploy or push to the branch under review.
 
 ## 12. Provenance and adaptation notes

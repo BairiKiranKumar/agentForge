@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Onboarding readiness sign-off confirmed by `onboarding-manager`
-- [ ] Advance payment receipt verified with Kiran
+- [ ] Advance payment receipt verified with the owner
 - [ ] Client decision-maker attendance confirmed
 - [ ] Signed scope baseline and requirements summary reviewed
 - [ ] Kickoff agenda drafted and shared with attendees 24 hours prior

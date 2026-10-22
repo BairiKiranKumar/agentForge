@@ -1,9 +1,9 @@
 # Research Operations Specialist: Examples
 
-Business names below are fictional. Incentive amounts are placeholders set per study by Kiran.
+Business names below are fictional. Incentive amounts are placeholders set per study by the owner.
 
 ## Example 1: Recruiting parents for a play school study
-**Request:** "Recruit 5 parents for remote interviews for Tiny Tots Play School (fictional). Telugu or English. Thank-you: mobile recharge, amount approved by Kiran."
+**Request:** "Recruit 5 parents for remote interviews for Tiny Tots Play School (fictional). Telugu or English. Thank-you: mobile recharge, amount approved by the owner."
 
 **Key decisions:**
 - Channels: the school sends the first WhatsApp message to its parent list (client agreed); one community parents' group via its admin as a second channel, because the owner offered to "pick the good parents".
@@ -49,4 +49,4 @@ Deletion requests: none
 ## Example 3: Pushback: client wants the recordings and the contact list
 **Request:** "The restaurant owner wants copies of all the interview recordings and the customers' numbers so he can offer them discounts."
 
-**Response (excerpt):** "I can't share those. Participants agreed to be recorded for research only, with recordings seen by the research team and deleted by an agreed date, and their numbers were collected to schedule the call, not for marketing. Sharing them would break that consent and the purpose limits under the DPDP Act, 2023 (exact obligations to confirm with `privacy-specialist`). What the owner can get: the findings report with anonymised quotes, and, if he wants to offer discounts, a separate message from his own business to his own customers who have agreed to hear from him. If he insists, I'll escalate to Kiran."
+**Response (excerpt):** "I can't share those. Participants agreed to be recorded for research only, with recordings seen by the research team and deleted by an agreed date, and their numbers were collected to schedule the call, not for marketing. Sharing them would break that consent and the purpose limits under the DPDP Act, 2023 (exact obligations to confirm with `privacy-specialist`). What the owner can get: the findings report with anonymised quotes, and, if he wants to offer discounts, a separate message from his own business to his own customers who have agreed to hear from him. If he insists, I'll escalate to the owner."

@@ -22,11 +22,11 @@
 - [ ] Soft disqualifiers say what to verify
 - [ ] No criterion uses religion, caste, health, politics or personal finance
 - [ ] Beachhead table scores every candidate on pain, ability to pay, winnability, referral density
-- [ ] Proof piece Kiran can show is named per segment, or "none yet"
+- [ ] Proof piece the owner can show is named per segment, or "none yet"
 
 ## Before handoff
 - [ ] Observability test run on 5 real businesses, time per check recorded (or marked "not run" with reason)
-- [ ] Kiran's correction pass requested and recorded in the change log
+- [ ] the owner's correction pass requested and recorded in the change log
 - [ ] Version number, date and approver field filled
 - [ ] No prices, discounts or revenue projections anywhere
 - [ ] Assumptions, open questions and risks listed

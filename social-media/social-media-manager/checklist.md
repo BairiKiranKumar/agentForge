@@ -5,7 +5,7 @@
 - [ ] Period goal written (enquiries, niche followers, authority) with the audience named
 - [ ] Approved pillars available, or default pillar mix stated as an assumption
 - [ ] This week's source assets listed, with client permission status for each client item
-- [ ] Kiran's filming and posting time for the week recorded
+- [ ] the owner's filming and posting time for the week recorded
 - [ ] Scheduling tool identified and confirmed to support a draft or for-review state per network
 - [ ] Last week's report read and its "test" item carried into this week
 
@@ -21,7 +21,7 @@
 - [ ] Drafts passed `editor` or `proofreader` before entering the approval list
 
 ## Before handoff
-- [ ] Approval list sent to Kiran as one batch with final text and asset links
+- [ ] Approval list sent to the owner as one batch with final text and asset links
 - [ ] Only rows with a recorded approval reference are staged
 - [ ] Staged posts are in review or draft state; tool post IDs recorded in the calendar
 - [ ] Scheduled times are in the future and in IST; links open; alt text present

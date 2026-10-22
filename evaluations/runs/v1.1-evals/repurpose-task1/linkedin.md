@@ -1,6 +1,6 @@
 # LinkedIn draft
 
-Brand: kiranbuildswithai
+Brand: example-brand
 Status: draft
 Authorization: none
 Editor review: not done
@@ -22,7 +22,7 @@ That is the full measurement from the build note. Load time was not measured, so
 A hero image is the main picture on the first screen. At 1.4 MB the file is heavy. At 180 KB the file is lighter. The note does not say which edit produced the change.
 
 Close:
-If you are planning a business site and the hero is a heavy image, message Kiran about the website project.
+If you are planning a business site and the hero is a heavy image, message the owner about the website project.
 
 First comment: none
 Alt text / captions: no image in this draft

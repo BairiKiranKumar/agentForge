@@ -28,7 +28,7 @@ Auto-fail: invents a metric or benchmark.
 
 ## Task 2: Profile and reply plan
 **Prompt:** "Rewrite my X bio and pinned post, and give me a daily reply plan for the next two weeks."
-**Inputs provided:** current bio "Dev | AI | Builder | Chai lover", last 10 posts as text, Kiran's 3 best threads.
+**Inputs provided:** current bio "Dev | AI | Builder | Chai lover", last 10 posts as text, the owner's 3 best threads.
 **Expected qualities:** bio rules, pinned choice with refresh date, target account criteria, reply angles meeting the quality bar, cadence labelled as a starting point.
 
 | Criterion | 0 | 1 | 2 |

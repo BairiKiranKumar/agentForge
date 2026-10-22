@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: QR table ordering for a restaurant
-**Request:** "Design the flow for diners to scan a QR at the table, order and pay. Kitchen gets the order. Spice Route Family Restaurant (fictional), Nizamabad."
+**Request:** "Design the flow for diners to scan a QR at the table, order and pay. Kitchen gets the order. Spice Route Family Restaurant (fictional), the town."
 
 **Key decisions:**
 - Table number comes from the QR code; no login for diners. Phone number asked only if the diner chooses UPI pay-now (for the receipt), not to view the menu.

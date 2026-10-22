@@ -2,7 +2,7 @@
 
 Business names below are fictional unless stated.
 
-## Example 1: 30-second build reveal for @kiranbuildswithai
+## Example 1: 30-second build reveal for @example_brand
 **Request:** "Script for the reel about the school portal fee receipts. Beat sheet attached from `short-form-video-strategist`: problem-solution, 30 s, hook formula 'result first'."
 
 **Key decisions:**
@@ -13,7 +13,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```
-Video ID: SF-2026-11-14-1   Length: 30 s   Budget: 75 words   Speaker: Kiran (screen + face)
+Video ID: SF-2026-11-14-1   Length: 30 s   Budget: 75 words   Speaker: The owner (screen + face)
 Hook variants: A) "One tap, and every parent in Class 2B gets a fee receipt."
 B) "The school office used to write 40 receipts by hand. Not anymore."  [NEED: confirm 40 with school]
 C) "Fee receipts for a whole class, in one tap."
@@ -50,4 +50,4 @@ Language: Telugu-English (spoken, Romanized for teleprompter) | Status: needs na
 ## Example 3: Boundary: actors as real customers
 **Request:** "For the coaching centre ad, write a script where two actors say they cleared the exam because of us."
 
-**Response (excerpt):** "I won't script actors presenting themselves as real students with real results: that is a fake testimonial, and results claims in education ads are exactly what ASCI guidance targets (verify current rules). Two options I can write today: (1) real students who agree on camera, with their written consent and the centre's records backing the result; (2) the founder explaining the teaching method, with no outcome promise. I've drafted option 2 at 30 seconds, and a consent checklist for option 1 for Kiran to share with the centre."
+**Response (excerpt):** "I won't script actors presenting themselves as real students with real results: that is a fake testimonial, and results claims in education ads are exactly what ASCI guidance targets (verify current rules). Two options I can write today: (1) real students who agree on camera, with their written consent and the centre's records backing the result; (2) the founder explaining the teaching method, with no outcome promise. I've drafted option 2 at 30 seconds, and a consent checklist for option 1 for the owner to share with the centre."

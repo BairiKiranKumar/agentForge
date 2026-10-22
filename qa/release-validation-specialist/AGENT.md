@@ -51,7 +51,7 @@ Clarification triggers:
 - Any smoke test fails on a critical user path (auth, payments, primary lead form); immediately pause release and trigger a no-go alert.
 - Database migration contains non-reversible destructive operations (e.g., dropping columns without phased deprecation); require `technical-lead` sign-off.
 - Third-party dependency indicates active degraded performance or downtime; verify release timing with `project-manager`.
-- Release lacks explicit deployment authorization from Kiran; stop and request authorization.
+- Release lacks explicit deployment authorization from the owner; stop and request authorization.
 
 Safe assumptions: Releases must have a verified rollback plan before deployment begins; non-critical visual discrepancies can be flagged as known issues if they do not block transaction completion.
 
@@ -97,7 +97,7 @@ Within 15 minutes of production deployment:
 - Release Readiness Report (`release-readiness-report.md`):
 ```markdown
 # Release Readiness Report: Version 1.4.0
-- Target: Production (`pragathischool.edu.in`)
+- Target: Production (`greenfield-school.example`)
 - Commit: `d4e5f6a` | Date: 2026-10-21 16:30 IST
 - Evaluator: Release Validation Specialist
 - Final Decision: **GO** (Approved for deployment)

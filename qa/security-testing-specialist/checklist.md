@@ -1,7 +1,7 @@
 # Security Testing Specialist: Checklist
 
 ## Before starting
-- [ ] Explicit written authorization charter signed by system owner and Kiran
+- [ ] Explicit written authorization charter signed by system owner and the owner
 - [ ] Exact testing scope defined (domain, IP list, excluded endpoints, testing hours)
 - [ ] Staging environment verified as non-production (no live customer data)
 - [ ] Dual test accounts per role provisioned (e.g. Student 1, Student 2, Admin)

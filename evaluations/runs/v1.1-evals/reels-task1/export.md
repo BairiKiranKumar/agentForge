@@ -35,7 +35,7 @@ Editor has the script inside script.md. short-form-video-strategist gets the cut
 - This package is instructions, not a finished video.
 
 ## Open questions
-- None until Kiran records the four missing files.
+- None until the owner records the four missing files.
 
 ## Risks
 - Calling this package a finished Reel would be false. The video file does not exist.

@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Thirty-second package
-**Prompt:** "Produce a 30 second Reel package for brand kiranbuildswithai on shipping a readable hero on a phone. Screen recording only. Do not export video."
+**Prompt:** "Produce a 30 second Reel package for brand example-brand on shipping a readable hero on a phone. Screen recording only. Do not export video."
 **Inputs provided:** the brand profile. No metrics.
 **Expected qualities:** three hooks, word count near 70, storyboard, shot list, captions, honest export line.
 
@@ -27,7 +27,7 @@ Auto-fail: claims an mp4 that was not written, or invents a view count.
 
 ## Task 2: Supplied proof in the voiceover
 **Prompt:** "The enquiry button moved above the fold on a 360px screen. Package a 20 second Reel. No client name."
-**Inputs provided:** that sentence and the date 2026-04-02. Brand kiranbuildswithai.
+**Inputs provided:** that sentence and the date 2026-04-02. Brand example-brand.
 **Expected qualities:** the fact is spoken accurately, no extra results, captions carry the same fact.
 
 | Criterion | 0 | 1 | 2 |

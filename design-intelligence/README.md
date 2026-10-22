@@ -17,12 +17,12 @@ A reusable capability for research-led, original and independently reviewed desi
 | Capability | Accountable owner | Reviewer / gate |
 |---|---|---|
 | Visual reference research, design knowledge base | `design-researcher` | `creative-director` |
-| Skill discovery, vetting, registry | `design-skill-researcher` | Kiran for `approved` status and any installation |
+| Skill discovery, vetting, registry | `design-skill-researcher` | Owner for `approved` status and any installation |
 | Motion references and pattern library | `motion-researcher` | `motion-designer` |
-| Concept, art direction, direction approval, rejecting weak work | `creative-director` | Kiran or client for high-visibility work |
+| Concept, art direction, direction approval, rejecting weak work | `creative-director` | Owner or client for high-visibility work |
 | Project motion specs | `motion-designer` | `design-reviewer`, `performance-engineer` |
 | Independent rendered-quality verdict, rubric scoring | `design-reviewer` | `design-lead` |
-| Design-first policy, tiers, rubric governance | `design-lead` | Kiran |
+| Design-first policy, tiers, rubric governance | `design-lead` | Owner |
 | Implementation | engineering specialists chosen for the project's stack | `code-reviewer` |
 
 Existing roles were upgraded, not duplicated. Roles considered and not created: UI designer, interaction designer, brand designer, accessibility specialist, performance specialist, QA specialist and domain researcher all already exist under other names (`ui-designer`, `interaction-designer`, `brand-designer`, `accessibility-designer` / `accessibility-tester`, `performance-engineer`, `qa-lead`, `market-researcher`).
@@ -44,3 +44,11 @@ Existing roles were upgraded, not duplicated. Roles considered and not created: 
 
 ## Honest status
 All roles in this department are `untested`. Registry entries are `candidate`, `conditional` or `rejected`; none is approved. See `REPORT.md` for what was verified in the upgrade run.
+
+## Engineering standards and quality gates
+Design quality is one input to release, not the whole decision. `engineering-standards/` and `quality-gates/` define accessibility, performance, security, responsive, UX, SEO, testing and privacy requirements by product type and risk profile.
+- The `creative-director` owns visual direction. The `design-reviewer` checks aesthetic quality, usability and responsive execution with the rubric and does not issue accessibility or security verdicts.
+- `accessibility-tester`, `performance-engineer`, `application-security-engineer` and `qa-lead` verify their areas; `qa-lead` runs `python tools/quality_gate.py evaluate`. A `design_review` block in the results file carries the design verdict, and a `high_visibility` Ship needs recorded human approval.
+- Excellent visual design never overrides accessibility, usability, performance or security requirements. Motion needs a reduced-motion version and a measured mobile performance result.
+- The orchestrator avoids duplicate reviews: a qualified assessment from the owning specialist is used as is.
+See `workflows/23-quality-gates.md`.

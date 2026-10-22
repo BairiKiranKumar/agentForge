@@ -11,11 +11,11 @@
 Learn how to update product inventory quantities when new shipments arrive at your store.
 
 ## 2. What You Need
-- Store Manager login credentials (`manager@kiranastore.com`)
+- Store Manager login credentials (`manager@example.com`)
 - Physical delivery challan or packing slip
 
 ## 3. Step-by-Step Instructions
-1. Log In: Open `portal.kiranastore.com` in Google Chrome and enter your email and password.
+1. Log In: Open `portal.example.com` in Google Chrome and enter your email and password.
 2. Go to Inventory: Click on "Store Inventory" in the left-hand navigation menu.
 3. Select Your Store: Choose your location from the top dropdown (e.g. "Banjara Hills Branch").
 4. Search for the Product: Type the product name or 6-digit SKU from your challan into the search bar.

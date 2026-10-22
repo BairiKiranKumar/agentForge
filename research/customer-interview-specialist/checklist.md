@@ -5,7 +5,7 @@
 - [ ] Plan approved by `research-lead`
 - [ ] Participants recruited and consenting via `research-operations-specialist`
 - [ ] Friends, family or existing clients in the sample declared as bias
-- [ ] Commitment ask (if any) approved by Kiran, with price from `pricing-strategist`
+- [ ] Commitment ask (if any) approved by the owner, with price from `pricing-strategist`
 
 ## While working
 - [ ] Every guide question maps to an assumption or criterion

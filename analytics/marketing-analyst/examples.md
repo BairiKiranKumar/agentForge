@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Reconciling Meta Ads reporting vs real school enquiries
-**Request:** "Meta Ads Manager claims we generated 140 leads for Pragathi School this month at ₹150/lead, but the school office says they only received 85 enquiries. Find the truth."
+**Request:** "Meta Ads Manager claims we generated 140 leads for Greenfield School this month at ₹150/lead, but the school office says they only received 85 enquiries. Find the truth."
 
 **Key decisions:**
 - Exported Meta Instant Form lead CSV and compared against school CRM database by phone number.
@@ -14,7 +14,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Lead Audit & Reconciliation: Pragathi School (October 2026)
+### Lead Audit & Reconciliation: Greenfield School (October 2026)
 - Meta Ads Claim: 140 leads | Reported CPL: ₹150
 - CRM Actual Valid Leads: 85 leads | True CPL: ₹247
 - Discrepancy Analysis:
@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Multi-touch attribution for salon wedding package campaign
-**Request:** "StyleCrest Salons spent ₹30,000 on Instagram ads and ₹15,000 on Google Search. Last-touch attribution says Google generated all the wedding bookings. Should we cancel Instagram?"
+**Request:** "Lumen Salon Salons spent ₹30,000 on Instagram ads and ₹15,000 on Google Search. Last-touch attribution says Google generated all the wedding bookings. Should we cancel Instagram?"
 
 **Key decisions:**
 - Analyzed multi-touch customer journey paths in GA4.
@@ -35,12 +35,12 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Attribution Analysis: StyleCrest Bridal Campaign
+### Attribution Analysis: Lumen Salon Bridal Campaign
 - Last-Touch View: Google Search credited with 85% of revenue; Instagram credited with 15%.
 - Multi-Touch Journey Path View:
   - Step 1 (Discovery): 82% of bridal customers clicked Instagram Reel ad.
   - Step 2 (Evaluation): Customers visited website photo gallery.
-  - Step 3 (Conversion): Customers searched "StyleCrest bridal booking" on Google to complete booking.
+  - Step 3 (Conversion): Customers searched "Lumen Salon bridal booking" on Google to complete booking.
 - Conclusion: Instagram drives the awareness that Google Search harvests. Keep both active.
 ```
 

@@ -5,7 +5,7 @@
 - [ ] Decision maker and demo audience known (owner only, manager, technical person)
 - [ ] Portfolio inventory available: built projects with links or repo paths
 - [ ] Prospect's current setup captured: site, hosting, domain registrar, software in use, data format
-- [ ] Any request for unpaid custom work flagged to `account-executive` and Kiran
+- [ ] Any request for unpaid custom work flagged to `account-executive` and the owner
 
 ## While working
 - [ ] Each requirement has a priority (must, should, nice) and a coverage rating

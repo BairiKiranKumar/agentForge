@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: 90-day Client Success Plan for school ERP
-**Request:** "Build the post-launch customer success plan for Pragathi Vidyalaya school portal."
+**Request:** "Build the post-launch customer success plan for Greenfield Vidyalaya school portal."
 
 **Key decisions:**
 - Framed objectives around school outcomes: 80% online admission enquiries and 500 fee receipt downloads.
@@ -13,7 +13,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Client Success Plan: Pragathi Vidyalaya
+### Client Success Plan: Greenfield Vidyalaya
 - Account Tier: Annual Maintenance & Support Retainer (₹15,000 / month)
 - Target Business Outcome: Transition 80% of admission enquiries online.
 - Health Score Baseline: 85 / 100 (Green)

@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Implementing GA4 lead tracking for school portal in Next.js
-**Request:** "Set up conversion tracking for Pragathi School Portal in Next.js App Router so marketing knows which ads generate admission enquiries."
+**Request:** "Set up conversion tracking for Greenfield School Portal in Next.js App Router so marketing knows which ads generate admission enquiries."
 
 **Key decisions:**
 - Created technical measurement plan defining `generate_lead` and `whatsapp_click` events.

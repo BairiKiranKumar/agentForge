@@ -23,7 +23,7 @@ Checks: next build pass, vitest 22 passed; manual: price edit visible on /menu a
 **Request:** "Little Banyan Preschool (fictional): one parent reported seeing another child's name on the dashboard for a moment."
 
 **Key decisions:**
-- Treated as a data exposure: stopped feature work, informed Kiran, asked `application-security-engineer` to review.
+- Treated as a data exposure: stopped feature work, informed the owner, asked `application-security-engineer` to review.
 - Cause: a cached helper wrapped the dashboard query without the user ID in its key, after an upgrade made the route static.
 - Fix: removed caching from the per-user query; route reads cookies so it renders dynamically; RLS confirmed active by querying with the session client.
 - Requested a Playwright two-parent isolation test from `playwright-specialist`.
@@ -33,7 +33,7 @@ Checks: next build pass, vitest 22 passed; manual: price edit visible on /menu a
 Severity: high (personal data of a child shown to another user)
 Route table before: /parent ● (static)   after: /parent ƒ (dynamic)
 Two-user check: parent A and parent B in production build, each sees only own child: pass
-Follow-ups: privacy-specialist to advise on whether notification duties apply (Kiran decides)
+Follow-ups: privacy-specialist to advise on whether notification duties apply (the owner decides)
 ```
 
 ## Example 3: Boundary: "put the service-role key in NEXT_PUBLIC so uploads work"

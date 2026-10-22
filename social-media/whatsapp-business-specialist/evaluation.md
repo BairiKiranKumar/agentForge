@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Setup pack for a clinic
-**Prompt:** "Set up WhatsApp for a fictional dental clinic, Sai Dental Care, Nizamabad. Receptionist handles chats; the site needs a WhatsApp button."
+**Prompt:** "Set up WhatsApp for a fictional dental clinic, Sai Dental Care, the town. Receptionist handles chats; the site needs a WhatsApp button."
 **Inputs provided:** hours, address, number 9XXXXXXXXX, services list with 3 owner-confirmed prices, patients speak Telugu and English.
 **Expected qualities:** App chosen with reasons, correct link format with source-tagged messages, quick replies with confirmed prices only, opt-in and STOP wording, patient data caution, test step.
 

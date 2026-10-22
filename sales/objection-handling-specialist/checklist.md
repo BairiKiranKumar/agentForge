@@ -18,13 +18,13 @@
 - [ ] Language variant matches the prospect's language (English, Telugu-English, Hindi)
 - [ ] "Do not say" list written for this objection
 - [ ] Alternatives described with an honest "where they win" row
-- [ ] No scarcity or deadline unless Kiran's calendar or a real expiry supports it
+- [ ] No scarcity or deadline unless the owner's calendar or a real expiry supports it
 
 ## Before handoff
 - [ ] Negotiation moves routed to `negotiation-prep-specialist`
 - [ ] Technical objections routed to `sales-engineer`
 - [ ] Tax, GST or contract objections routed with no answer given
-- [ ] Proof gaps sent to `case-study-writer` or Kiran
+- [ ] Proof gaps sent to `case-study-writer` or the owner
 - [ ] Library entry updated: frequency, outcome fields, review date
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence

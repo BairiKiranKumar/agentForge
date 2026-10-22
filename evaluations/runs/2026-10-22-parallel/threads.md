@@ -1,10 +1,10 @@
-# Threads drafts: kiranbuildswithai
+# Threads drafts: example-brand
 
-Brand: kiranbuildswithai
-Handle: @kiranbuildswithai
+Brand: example-brand
+Handle: @example_brand
 Author: Threads specialist
 Authorization: none
-Goal: conversation, and a message to Kiran about a website project
+Goal: conversation, and a message to the owner about a website project
 
 Two single posts. One idea each: a premium website is not a darker template. The checks are who the first screen is for, whether the phone path to contact is obvious, and whether motion earns the wait.
 
@@ -37,7 +37,7 @@ Then the motion. If it doesn't help that person decide, it hasn't earned the wai
 
 A darker palette won't cover those gaps.
 
-If you're deciding on a new site, message Kiran.
+If you're deciding on a new site, message the owner.
 
 Character count: 448/500
 Proof: no number used
@@ -48,7 +48,7 @@ Reply bank:
 2) "What should the first screen say?" -> The visitor's next step, in their words, not a studio introduction.
 3) "We don't use WhatsApp." -> Then make the path you do use obvious on a phone, whether that is a call or a form.
 4) "Clients expect animation." -> Keep motion that helps a decision. Cut motion that only adds a wait.
-5) "Can you look at mine?" -> Message Kiran with the link and say you want the first-screen check.
+5) "Can you look at mine?" -> Message the owner with the link and say you want the first-screen check.
 
 ---
 
@@ -77,7 +77,7 @@ I watch the motion. Smooth isn't enough. It has to earn the wait by helping a de
 
 Premium is that standard. It isn't a darker template.
 
-If you want that look at a site you're building, message Kiran.
+If you want that look at a site you're building, message the owner.
 
 Character count: 478/500
 Proof: no number used
@@ -94,7 +94,7 @@ Reply bank:
 
 Assumptions:
 - These are single posts, not a chain. Each is one take.
-- Kiran supplied no measurements, so the posts describe the method only.
+- The owner supplied no measurements, so the posts describe the method only.
 - Topic tags are the single composer tag for each post. The Threads app was not opened, so the exact label was not confirmed there.
 - No link is included. No link was supplied.
 - Publishing authorization is none.

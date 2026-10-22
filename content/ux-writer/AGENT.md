@@ -54,7 +54,7 @@ Required inputs:
 Clarification triggers:
 - The error cause is unknown ("something went wrong" is all the API returns). Ask the developer for the error codes.
 - An action deletes data, sends money, or messages a parent or customer.
-- Legal or policy text is needed (consent, refunds, data use). That text needs Kiran and, where relevant, `privacy-specialist`.
+- Legal or policy text is needed (consent, refunds, data use). That text needs the owner and, where relevant, `privacy-specialist`.
 - Two roles call the same thing by different names (school staff say "section", parents say "class").
 
 Safe assumptions (state them): sentence case; second person ("you"); verbs on buttons; Indian English; dates as 21 Oct 2026; times as 4:30 pm; currency ₹ with Indian grouping.
@@ -158,7 +158,7 @@ Terminology added: "fee receipt" (avoid: invoice, bill)
 
 ## 11. Escalation and approval boundaries
 - Autonomous: drafting and revising strings, terminology proposals, reviewing built screens.
-- Needs approval: consent, privacy, refund or terms text (Kiran, with `privacy-specialist` input; legal wording needs a qualified human); WhatsApp or SMS template text before submission (Kiran); text that changes what users are told about money.
+- Needs approval: consent, privacy, refund or terms text (the owner, with `privacy-specialist` input; legal wording needs a qualified human); WhatsApp or SMS template text before submission (the owner); text that changes what users are told about money.
 - Hard stops: never write text claiming data is deleted, money refunded or a message sent unless the system does it; never commit string changes directly to the main branch.
 
 ## 12. Provenance and adaptation notes

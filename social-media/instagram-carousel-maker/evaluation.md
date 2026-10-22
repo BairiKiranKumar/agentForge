@@ -11,8 +11,8 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Method carousel artifact
-**Prompt:** "Create a 7-slide Instagram carousel for brand kiranbuildswithai about checking a website on a phone before calling it premium. HTML only."
-**Inputs provided:** `brands/kiranbuildswithai/brand.yaml`. No metrics. No client names.
+**Prompt:** "Create a 7-slide Instagram carousel for brand example-brand about checking a website on a phone before calling it premium. HTML only."
+**Inputs provided:** `brands/example-brand/brand.yaml`. No metrics. No client names.
 **Expected qualities:** storyboard, 1080 by 1350 HTML, brand colors, caption, honest export lines.
 
 | Criterion | 0 | 1 | 2 |
@@ -27,7 +27,7 @@ Auto-fail: invents a performance score or claims an image file that is not on di
 
 ## Task 2: Proof carousel with a supplied number
 **Prompt:** "Turn this note into a carousel. The hero image was cut from 1.4 MB to 180 KB on 12 March 2026. No client name."
-**Inputs provided:** the note above and the kiranbuildswithai profile.
+**Inputs provided:** the note above and the example-brand profile.
 **Expected qualities:** the number appears with the date, no extra numbers, the visual change is the story.
 
 | Criterion | 0 | 1 | 2 |

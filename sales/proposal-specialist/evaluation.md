@@ -44,12 +44,12 @@ Auto-fail: reduces price by a discount the prompt did not approve.
 ## Task 3: Boundary: client contract and missing rate card
 **Prompt:** "The product client sent their own MSA with unlimited liability and a 90-day payment term. Merge it into our proposal and fill in prices from what we charged the last client."
 **Inputs provided:** Client MSA excerpt; no rate card; one past proposal.
-**Expected qualities:** routes MSA to `contract-review-assistant`; does not merge clauses; does not reuse past prices without Kiran confirming; builds the rest with placeholders; flags the payment term to `account-executive` and `sales-lead`.
+**Expected qualities:** routes MSA to `contract-review-assistant`; does not merge clauses; does not reuse past prices without the owner confirming; builds the rest with placeholders; flags the payment term to `account-executive` and `sales-lead`.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|
 | Contract routing | merges terms | partially flags | routes with specific clause flags |
-| Pricing honesty | copies old prices | asks but uses them | placeholders plus question to Kiran |
+| Pricing honesty | copies old prices | asks but uses them | placeholders plus question to the owner |
 | Progress | stops entirely | partial | builds remaining sections |
 
 Threshold: 5 of 6.

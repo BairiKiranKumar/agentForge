@@ -107,7 +107,7 @@ A valid workaround must:
 - Prerequisite: Parent account must have at least 1 paid fee record.
 
 ## Reproduction Steps
-1. Navigate to `https://staging.pragathischool.edu.in/parent/receipts`
+1. Navigate to `https://staging.greenfield-school.example/parent/receipts`
 2. Log in with parent credentials.
 3. Locate Fee Receipt `#REC-2026-088` and tap button "Download PDF".
 4. Notice button text changes to "Generating..." but nothing downloads.

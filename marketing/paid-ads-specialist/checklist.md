@@ -39,5 +39,5 @@
 ## Stop and escalate if
 - [ ] The client asks to advertise a regulated product without human review
 - [ ] Tracking is broken or unverified and the client wants to scale
-- [ ] An ad account is suspended or flagged for policy; the appeal goes to Kiran
+- [ ] An ad account is suspended or flagged for policy; the appeal goes to the owner
 - [ ] A third-party or purchased audience list is offered

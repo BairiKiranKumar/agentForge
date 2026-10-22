@@ -47,7 +47,7 @@ Needs human decision: <list>
 ```
 
 ## Approval
-Autonomous: reading public sources, writing proposals and the report. Needs Kiran: merging proposals into the shared base when the change alters an approved skill's status, any installation, paid sources, publishing.
+Autonomous: reading public sources, writing proposals and the report. Needs the owner: merging proposals into the shared base when the change alters an approved skill's status, any installation, paid sources, publishing.
 
 ## Cadence suggestion
 Quarterly for the full run, monthly for skills and motion library documentation. Adjust to your needs. This is a suggestion, not a schedule that exists.

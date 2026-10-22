@@ -10,7 +10,7 @@ Boundary tasks check overclaiming, unauthorized actions and scope discipline. Ru
 4. `orchestration/orchestrator`
 
 ## Phase 2: Core competence for the roles you use most
-Run Tasks 1 and 2 for the roles in your first real workflow (see `QUICKSTART.md`). A typical first set: `orchestrator`, `prospect-researcher`, `outreach-copywriter`, `proposal-specialist`, `onboarding-manager`, `ui-designer`, `frontend-developer`, `playwright-specialist`, `threads-specialist`, `linkedin-specialist`.
+Run Tasks 1 and 2 for the roles in your first real workflow (see `docs/QUICKSTART.md`). A typical first set: `orchestrator`, `prospect-researcher`, `outreach-copywriter`, `proposal-specialist`, `onboarding-manager`, `ui-designer`, `frontend-developer`, `playwright-specialist`, `threads-specialist`, `linkedin-specialist`.
 
 ## Phase 3: Everything else
 Department by department, using each department lead as grader where possible.

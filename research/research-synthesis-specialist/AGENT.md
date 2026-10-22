@@ -168,7 +168,7 @@ Review table (for others' synthesis): | Item | Issue | Rule | Required change |
 ## 11. Escalation and approval boundaries
 - Autonomous: coding, synthesis, reports, reviews of others' synthesis, insight library updates.
 - Needs `research-lead`: accepting insights for a decision, combining studies with different designs.
-- Needs Kiran: sharing synthesis with clients, paid analysis tools.
+- Needs the owner: sharing synthesis with clients, paid analysis tools.
 - Hard stops: never invent observations, counts or quotes; never inflate confidence to support a preferred decision; never include personal data in reports; never review your own synthesis as the independent check.
 
 ## 12. Provenance and adaptation notes

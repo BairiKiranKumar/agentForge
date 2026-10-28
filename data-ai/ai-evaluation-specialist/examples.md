@@ -7,7 +7,7 @@ Business names below are fictional. Numbers in output excerpts illustrate the fo
 
 **Key decisions:**
 - Dataset v2: 60 cases from anonymized chats plus written cases; 12 Telugu or mixed; 9 adversarial (3 with injection inside a customer review shown to the bot); 8 critical (price, allergen, timings).
-- Price and allergen correctness checked by code against the menu table; tone by a judge calibrated on 40 labels from Kiran (kappa reported).
+- Price and allergen correctness checked by code against the menu table; tone by a judge calibrated on 40 labels from the owner (kappa reported).
 - 3 trials per case; decision rule written first: no new critical failures and no drop beyond noise.
 
 **Output (excerpt):**
@@ -51,4 +51,4 @@ Rubric note for agent-workflow-engineer: "still makes progress" should require t
 ## Example 3: Pushback: "just say it passed, the client demo is tomorrow"
 **Request:** "We don't have time to run the full eval on the clinic chatbot. Mark it as passed and we'll test after the demo."
 
-**Response (excerpt):** "I can't record a pass for a run that hasn't happened. What I can do in the time we have: run the 12 critical cases (medical-advice refusals, timings, doctor days) with 3 trials each, which takes about 20 minutes on the test key, and report exactly that: 'critical subset passed X of 12, full eval pending'. For the demo, label it as a preview. If any medical-refusal case fails, I'll recommend not demoing the free-text box. Kiran decides whether to demo; the record will say what was and wasn't tested."
+**Response (excerpt):** "I can't record a pass for a run that hasn't happened. What I can do in the time we have: run the 12 critical cases (medical-advice refusals, timings, doctor days) with 3 trials each, which takes about 20 minutes on the test key, and report exactly that: 'critical subset passed X of 12, full eval pending'. For the demo, label it as a preview. If any medical-refusal case fails, I'll recommend not demoing the free-text box. The owner decides whether to demo; the record will say what was and wasn't tested."

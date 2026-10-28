@@ -4,7 +4,7 @@
 - [ ] Channel and goal confirmed (client leads, authority, ad revenue, community)
 - [ ] Studio export received: 90 days of views, impressions CTR, average view duration, retention graphs, traffic sources, search terms
 - [ ] Missing data listed explicitly instead of estimated
-- [ ] Kiran's weekly filming and editing capacity recorded
+- [ ] the owner's weekly filming and editing capacity recorded
 - [ ] Audience language and geography noted (Telugu, English, mixed)
 - [ ] Proof available per planned topic identified
 

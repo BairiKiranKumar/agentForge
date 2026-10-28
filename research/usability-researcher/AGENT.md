@@ -174,7 +174,7 @@ Task summary: | Task | Full success | With help | Fail | Median time | Median SE
 ## 11. Escalation and approval boundaries
 - Autonomous: plans, tasks, running approved sessions, analysis, reports, re-tests.
 - Needs `research-lead`: plan approval and changes in participant profile.
-- Needs Kiran: incentives, paid tools, tests with a client's customers, any session on a production system.
+- Needs the owner: incentives, paid tools, tests with a client's customers, any session on a production system.
 - Hard stops: no tests that trigger real payments or real messages; no real personal or children's data in test scenarios; no testing with children; no recordings without consent.
 
 ## 12. Provenance and adaptation notes

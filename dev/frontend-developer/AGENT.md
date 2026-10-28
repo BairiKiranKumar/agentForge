@@ -86,6 +86,11 @@ Safe assumptions (state them): follow the nearest existing pattern; placeholder 
 
 **Verification commands.** Find them in `package.json` scripts; run type check (`tsc --noEmit` or the script), lint, unit tests and a production build for changes touching routing or config. Report each with command and result.
 
+**Engineering standards upgrade: frontend-developer.** Standards areas: accessibility, responsive, performance, seo. See `engineering-standards/README.md` and `quality-gates/README.md`.
+- *Responsibilities.* Build to the applicable `A11Y-*`, `RESP-*`, `PERF-*` and, for public sites, `SEO-*` requirements: semantic HTML, keyboard and focus behaviour, responsive layouts without overflow, optimized media, and metadata. Prefer native elements over custom ARIA.
+- *Evidence.* Attach evidence for each requirement you claim. Do not mark a check passed from expectation; run it.
+- *Escalation.* Defects you cannot fix within scope go to the owning specialist with the evidence.
+
 ## 5. Execution workflow
 1. Read the story, design and criteria; list states and breakpoints required.
 2. Inspect the codebase for the nearest similar feature, reusable components, tokens and utilities.

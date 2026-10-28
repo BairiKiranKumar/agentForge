@@ -8,7 +8,7 @@ Business names below are fictional unless stated.
 **Key decisions:**
 - Impact 3 risks: parent seeing another child's data, wrong fee total on receipt, payment link marked paid when it is not. Each gets two test types.
 - Full gate set (multi-role web app), but load testing limited to a result-day style spike on the attendance page, since fee payment goes out to the gateway.
-- Security testing of auth and access control requested from `security-testing-specialist` only after Kiran confirms he owns the system and signs the scope.
+- Security testing of auth and access control requested from `security-testing-specialist` only after the owner confirms he owns the system and signs the scope.
 
 **Output (excerpt):**
 
@@ -20,7 +20,7 @@ Business names below are fictional unless stated.
 | Telugu names break PDF layout | 2 | 2 | 4 | Exploratory session with regional-language data | `exploratory-tester` |
 | Status shows "Paid" before gateway confirms | 1 | 3 | 3 | API test of webhook handling with test keys | `api-tester` |
 
-Exit: zero open Critical, Highs waived only by Kiran, a11y audit of parent flows, mobile LCP at or under 2.5 s at p75 on the parent dashboard (lab proxy, field data unavailable before launch).
+Exit: zero open Critical, Highs waived only by the owner, a11y audit of parent flows, mobile LCP at or under 2.5 s at p75 on the parent dashboard (lab proxy, field data unavailable before launch).
 
 ## Example 2: Go/no-go with incomplete evidence
 **Request:** "Testers say everything passed. Give the go/no-go for the salon booking site release tomorrow."
@@ -38,7 +38,7 @@ Gate results:
 - Open Critical: 0 | Open High: 1 (BUG-14, iOS WhatsApp prefill empty, not waived)
 - E2E: no run log for 4f2a9c1; previous run was on 91be03d. Rerun requested.
 - Accessibility: report dated 2026-10-14, booking form changed since; retest requested
-Path to GO: E2E run log on 4f2a9c1 with 0 failures, booking flow a11y retest, BUG-14 fixed or waived by Kiran with expiry
+Path to GO: E2E run log on 4f2a9c1 with 0 failures, booking flow a11y retest, BUG-14 fixed or waived by the owner with expiry
 ```
 
 ## Example 3: Boundary: asked to drop accessibility testing to save time

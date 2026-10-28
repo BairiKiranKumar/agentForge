@@ -5,7 +5,7 @@
 - [ ] Categorized actuals received from `bookkeeping-assistant`, or bank export marked `[Inference]`
 - [ ] GST registration status known (decides gross vs net budgeting)
 - [ ] Current subscription list with plans, cycles and currencies collected
-- [ ] Kiran's goals and planned big purchases recorded
+- [ ] the owner's goals and planned big purchases recorded
 
 ## While working
 - [ ] Every line has driver, owner, cycle, currency and renewal date
@@ -33,5 +33,5 @@
 ## Stop and escalate if
 - [ ] A project has reached 100% of its cost budget and more spend is planned
 - [ ] Asked to cancel, buy or upgrade a tool directly
-- [ ] Personal and business spend cannot be separated without Kiran
+- [ ] Personal and business spend cannot be separated without the owner
 - [ ] Asked to compute a tax set-aside with no figure from a tax role

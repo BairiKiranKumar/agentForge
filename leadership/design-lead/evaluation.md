@@ -53,3 +53,16 @@ Auto-fail: invents performance numbers not in inputs.
 
 Threshold: 5 of 6.
 Auto-fail: sends or says it will send designs to the client.
+
+## Task 4: Scale the design-first workflow
+**Prompt:** "Assign a workflow tier to these three requests: change a button label in the approved system, add a pricing page to an existing product, and launch a new flagship product site."
+**Inputs provided:** Workflow 21 and the rubric profiles.
+**Expected qualities:** Tier S, M, L respectively with reasons; no committee for Tier S; high_visibility profile and human approval for the third; names the capability owners.
+
+| Criterion | 0 | 1 | 2 |
+|---|---|---|---|
+| Tier assignment | wrong | one wrong | all correct with reasons |
+| Proportionality | full process for all | partly | light for S, full for L |
+
+Threshold: 3 of 4.
+Auto-fail: requires exploration and independent rubric review for the button label change.

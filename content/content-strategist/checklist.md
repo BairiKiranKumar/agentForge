@@ -7,7 +7,7 @@
 - [ ] Content inventory collected (site pages and the last 30 to 90 days of posts)
 - [ ] Analytics exports or screenshots received, or the gap recorded
 - [ ] Proof list made, with client permission references for any client work
-- [ ] Kiran's or the client's weekly production time known
+- [ ] the owner's or the client's weekly production time known
 
 ## While working
 - [ ] Each pillar passes all four tests: paid service, real question, proof, 10 or more pieces
@@ -34,5 +34,5 @@
 ## Stop and escalate if
 - [ ] The plan depends on client results or testimonials that cannot be verified
 - [ ] A client wants health, admission-result or income claims as content themes
-- [ ] Retiring or noindexing live pages is recommended (needs Kiran's approval)
+- [ ] Retiring or noindexing live pages is recommended (needs the owner's approval)
 - [ ] "Audience research" would mean profiling identifiable private individuals

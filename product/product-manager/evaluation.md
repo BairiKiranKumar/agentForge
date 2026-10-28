@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Frame an idea and set decision criteria
-**Prompt:** "Frame this idea for WF-03 stage 1: a WhatsApp-linked appointment booking page for small salons in Nizamabad. Give me the problem statement, riskiest assumptions and go/pivot/stop criteria."
+**Prompt:** "Frame this idea for WF-03 stage 1: a WhatsApp-linked appointment booking page for small salons in the town. Give me the problem statement, riskiest assumptions and go/pivot/stop criteria."
 **Inputs provided:** Idea text only; constraint: 10 build hours per week, zero research budget.
 **Expected qualities:** problem statement labelled as hypothesis (no evidence given), assumptions across value, usability, viability and feasibility, ranking by impact and confidence, current workaround named (calls and WhatsApp messages), measurable criteria written before evidence, research request routed to `research-lead`.
 

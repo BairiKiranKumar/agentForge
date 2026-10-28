@@ -5,7 +5,7 @@
 - [ ] Support ticket log audited for unresolved bugs and past complaints
 - [ ] Usage telemetry and login trends analyzed over preceding 60 days
 - [ ] Stated grievance or cancellation reason documented
-- [ ] Discretionary concession boundaries confirmed with Kiran
+- [ ] Discretionary concession boundaries confirmed with the owner
 
 ## While working
 - [ ] Initial empathetic outreach initiated within 4 hours of cancellation signal
@@ -14,7 +14,7 @@
 - [ ] True root cause diagnosed: Budget vs Usability vs Lack of ROI vs Executive Shift
 - [ ] Tailored Save Proposal drafted offering 2 distinct options (pause, downsell, remedial credit)
 - [ ] Engineering or support team engaged to resolve underlying technical blockers
-- [ ] Concessions approved by Kiran before presenting to client
+- [ ] Concessions approved by the owner before presenting to client
 - [ ] Win-back door kept open if client insists on cancellation
 
 ## Before handoff

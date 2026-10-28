@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Facilitating kickoff for boutique fashion brand
-**Request:** "Run the project kickoff for Kavitha Sarees website redesign."
+**Request:** "Run the project kickoff for Kavitha Sarees (fictional) website redesign."
 
 **Key decisions:**
 - Designed a 45-minute agenda focusing on brand aesthetic, photography deadlines, and Diwali launch timeline.
@@ -15,7 +15,7 @@ Business names below are fictional unless stated.
 ```markdown
 # Kickoff Summary: Kavitha Sarees Redesign
 - Date: 2026-10-21 (15:00 - 15:45 IST) | Channel: Google Meet
-- Attendees: Kiran (Studio Lead), Smt. Kavitha (Owner), Mr. Rajesh (Store Manager)
+- Attendees: The owner (Studio Lead), Smt. Kavitha (Owner), Mr. Rajesh (Store Manager)
 
 ## Agreed Decisions & Protocols
 - Core Goal: Launch modern mobile-first e-commerce catalog before Diwali festival shopping surge.
@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 
 ## Week 1 Action Items
 1. Smt. Kavitha: Share brand logo vector files and raw festive saree photo drive by Oct 24.
-2. Kiran: Deliver 2 visual homepage concepts by Oct 28.
+2. The owner: Deliver 2 visual homepage concepts by Oct 28.
 ```
 
 ## Example 2: Handling scope expansion during kickoff call

@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Concept routes for a heritage sweet shop website
-**Request:** "Sri Lakshmi Sweets (fictional), a 40-year-old sweet shop in Nizamabad, wants a website for festival orders. Owner has about 20 phone photos of the kitchen and counter. Telugu and English."
+**Request:** "Sri Lakshmi Sweets (fictional), a 40-year-old sweet shop in the town, wants a website for festival orders. Owner has about 20 phone photos of the kitchen and counter. Telugu and English."
 
 **Key decisions:**
 - Ten nouns: ghee, brass kadai, kaju katli, silver varq, festival boxes, the owner's father's photo, the counter queue, Sankranti, order slips, the street name.
@@ -23,7 +23,7 @@ Source: owner's words in kickoff ("we still make it like my father did")
 Anti-generic check: default cream/terracotta replaced with kadai brass #A07B3B on deep tamarind #3B2418
 ```
 
-## Example 2: Art direction for a @kiranbuildswithai content series
+## Example 2: Art direction for a @example_brand content series
 **Request:** "Give my 'Build a local business site in a weekend' Instagram and Threads series a look so people recognise it."
 
 **Key decisions:**
@@ -37,10 +37,10 @@ Anti-generic check: default cream/terracotta replaced with kadai brass #A07B3B o
 Signature moment: cover split frame, 4:5, screenshot in device-free crop
 Colour mood: off-white #F7F6F2, ink #1A1D21, one accent per series taken from the client's brand
 Motion attitude: none on carousels; Reels cut on real cursor moves only
-Open question: permission status for each client's photos (Kiran to confirm)
+Open question: permission status for each client's photos (the owner to confirm)
 ```
 
 ## Example 3: Boundary: client wants a competitor's look
 **Request:** "Make our clinic site look exactly like the big chain hospital's site, same colours and layout."
 
-**Response (excerpt):** "I can't direct a copy of another clinic's identity: it confuses patients and puts the client at risk of a passing-off complaint. What I can do is study what that site does well (clear department finder, visible emergency number, calm photography) and build a route that carries those lessons in the clinic's own colours and photos. I've drafted two routes on that basis and flagged the request to Kiran so he can explain this to the client."
+**Response (excerpt):** "I can't direct a copy of another clinic's identity: it confuses patients and puts the client at risk of a passing-off complaint. What I can do is study what that site does well (clear department finder, visible emergency number, calm photography) and build a route that carries those lessons in the clinic's own colours and photos. I've drafted two routes on that basis and flagged the request to the owner so he can explain this to the client."

@@ -20,7 +20,7 @@ Reproduction comes first. The fix depends on it. After the fix, the regression c
 | Fix | `maintenance-engineer` | Reproduce | none | the smallest code change | local check | `code-reviewer` |
 | Regression | `playwright-specialist` | Fix | Code review | test or a manual script that was run | pass, fail, or not run, with the command | `qa-lead` |
 | Code review | `code-reviewer` | Fix | Regression | review notes | findings tied to lines | `technical-lead` if the fix widens scope |
-| Integrate | `orchestrator` | Regression, Code review | none | one fix report | both reports present | Kiran for production release |
+| Integrate | `orchestrator` | Regression, Code review | none | one fix report | both reports present | Owner for production release |
 
 ## Deliverables
 Reproduction note, patch, regression evidence, review note.
@@ -29,7 +29,7 @@ Reproduction note, patch, regression evidence, review note.
 The original steps no longer fail, and a neighbouring path was checked. If a browser test could not be run, say that. Do not invent a green suite.
 
 ## Approval gates
-Production release, data repair, and hotfix deploys need Kiran. A local branch does not.
+Production release, data repair, and hotfix deploys need the owner. A local branch does not.
 
 ## Exit criteria
 The defect is fixed or still blocked with the missing input named, and the regression status is evidenced.

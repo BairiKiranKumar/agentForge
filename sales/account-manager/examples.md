@@ -3,10 +3,10 @@
 Business names below are fictional.
 
 ## Example 1: School website client, quarterly account plan
-**Request:** "Run the account part of WF-09 for Sri Chaitanya Vidya Nilayam (fictional), Nizamabad. Their site launched in June."
+**Request:** "Run the account part of WF-09 for Sri Chaitanya Vidya Nilayam (fictional), the town. Their site launched in June."
 
 **Key decisions:**
-- Outcome health green (from `customer-success-manager`): enquiry form used during admissions. Commercial health green: both payments on time, owner and office manager both message Kiran.
+- Outcome health green (from `customer-success-manager`): enquiry form used during admissions. Commercial health green: both payments on time, owner and office manager both message the owner.
 - Evidence of intent: in the September review the correspondent asked "can parents pay fees online?"; readiness: a new campus mentioned in a local news post they shared.
 - Gallery update requests are refinements within the support window, not upsells.
 
@@ -35,8 +35,8 @@ Business names below are fictional.
 
 **Output (excerpt):**
 ```markdown
-Message for Kiran (44 words): "That's great to hear, thank you! If your friend wants, you can forward this note to her. Happy to show her your site and talk about what she needs, no pressure."
-Forwardable note: "Hi, I'm Kiran, I built Glam Point's booking site. If you're thinking of one for your salon, I can show you how it works in 10 minutes: <link>"
+Message for the owner (44 words): "That's great to hear, thank you! If your friend wants, you can forward this note to her. Happy to show her your site and talk about what she needs, no pressure."
+Forwardable note: "Hi, I'm the owner, I built Glam Point's booking site. If you're thinking of one for your salon, I can show you how it works in 10 minutes: <link>"
 ```
 
 ## Example 3: Boundary: upsell to a restaurant with an overdue invoice

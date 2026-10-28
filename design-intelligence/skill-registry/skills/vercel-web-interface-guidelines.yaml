@@ -1,0 +1,33 @@
+id: vercel-web-interface-guidelines
+name: Vercel Web Interface Guidelines (rule list)
+source_url: https://github.com/vercel-labs/web-interface-guidelines
+repo: vercel-labs/web-interface-guidelines
+maintainer: Vercel Labs
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: MIT, small, and the rules text can be vendored at a pinned SHA as a static checklist. The install.sh curls the live file into agent command folders, so use the pinned text, not the installer.
+categories: [design-critique, accessibility, ui-ux, responsive, component-design]
+capabilities:
+  - Living list of interface rules: interactions, focus, hit targets, mobile input size, loading states, URL as state, destructive actions and more
+  - command.md formatted as an agent command for review output
+limitations:
+  - Not a SKILL.md skill; it is a rules document and a command file
+  - Described by the authors as non-exhaustive; some rules are React or Next.js specific
+  - README rule text was read in part; command.md was not read in full
+compatible_agents: [claude-code, cursor]
+install_method: "install.sh downloads command.md with curl into detected agent folders (Amp noted in script); or vendor the pinned text manually"
+dependencies: [curl (for install.sh only)]
+scripts_present: true
+permissions_requested: [install.sh: network download, file write into home agent command directories]
+risks: [install.sh fetches from the main branch with no checksum, so installed content can change over time]
+pinned_ref: 434b7f91364665f2f733b310ec54809bf8f37937
+last_commit_observed: 2026-10-05
+activity: "GitHub API pushed_at 2026-10-05 (shallow clone, commit count not verified)"
+stars_observed: 1027
+overlaps: [design/design-reviewer, qa/*, vercel-web-design-guidelines, jakubkrehel-skills]
+evidence_of_effectiveness: "none found"
+owner_roles: [design/design-reviewer, dev/frontend-developer, qa/*]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

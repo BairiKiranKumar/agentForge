@@ -7,7 +7,7 @@ Business names below are fictional unless stated.
 
 **Key decisions:**
 - Permission: owner approved "Named" on WhatsApp but asked that no children appear; recorded as Named without children's photos.
-- Interview in Telugu-English by phone (Kiran ran it from the guide). Owner said "calls are much more"; asked for data. She shared WhatsApp Business label counts: 18 enquiries in September, 41 in November.
+- Interview in Telugu-English by phone (the owner ran it from the guide). Owner said "calls are much more"; asked for data. She shared WhatsApp Business label counts: 18 enquiries in September, 41 in November.
 - November is admission season; noted as another change, wording uses "after".
 
 **Output (excerpt):**

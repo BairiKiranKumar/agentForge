@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Weekly status report for school portal build
-**Request:** "Draft the Week 2 progress update for Pragathi School Portal to send to Dr. Rao."
+**Request:** "Draft the Week 2 progress update for Greenfield School Portal to send to Dr. Rao."
 
 **Key decisions:**
 - Collected completed items: mobile homepage layout and admissions enquiry form prototype.
@@ -13,14 +13,14 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-Subject: Pragathi School Portal: Weekly Progress Update (Week 2)
+Subject: Greenfield School Portal: Weekly Progress Update (Week 2)
 
 Dear Dr. Rao and Smt. Shanti,
 
-Here is our weekly progress update for the Pragathi School Web Portal:
+Here is our weekly progress update for the Greenfield School Web Portal:
 
 1. What We Completed This Week:
-- Mobile-First Home Page: Responsive layout complete. Preview here: https://pragathi-preview.vercel.app
+- Mobile-First Home Page: Responsive layout complete. Preview here: https://greenfield-preview.example
 - Admissions Form Prototype: Built the multi-step enquiry form with phone validation.
 - WhatsApp Notifications: Connected automated enquiry alerts to the school office number.
 
@@ -36,11 +36,11 @@ Here is our weekly progress update for the Pragathi School Web Portal:
 Thank you, and we look forward to our weekly demo on Thursday at 16:00 IST.
 
 Warm regards,
-Kiran
+The owner
 ```
 
 ## Example 2: Sensitive message regarding delayed client photos
-**Request:** "Draft a message to Dr. Sharma of Ayush Clinic. Launch is in 4 days, but he hasn't sent doctor profile photos and bio text."
+**Request:** "Draft a message to Dr. Sharma of Ayush Clinic (fictional). Launch is in 4 days, but he hasn't sent doctor profile photos and bio text."
 
 **Key decisions:**
 - Applied the SBI-C framework (Situation, Fact, Impact, Choices).
@@ -64,7 +64,7 @@ If the photos need more time to prepare, here are two constructive options:
 Please let us know your preferred choice by tomorrow morning so we can prepare accordingly.
 
 Warm regards,
-Kiran
+The owner
 ```
 
 ## Example 3: Boundary: client pushes for free extra page on WhatsApp
@@ -72,7 +72,7 @@ Kiran
 
 **Response (excerpt):**
 ```markdown
-# Draft Message for Kiran to send on WhatsApp
+# Draft Message for the owner to send on WhatsApp
 
 "Namaste Suresh garu. We received your request regarding the customer loyalty rewards points system.
 

@@ -1,0 +1,35 @@
+id: impeccable
+name: Impeccable
+source_url: https://github.com/pbakaus/impeccable
+repo: pbakaus/impeccable
+maintainer: Paul Bakaus (pbakaus)
+license: Apache-2.0
+registry_version: 1
+status: candidate
+status_reason: Most capable design-critique and anti-pattern tool found, but it installs Claude Code hooks that run a native engine binary after every Edit or Write, downloads that binary from GitHub Releases, and has a large Rust and JS surface that was not reviewed. Not adoptable without a full security review.
+categories: [design-critique, anti-pattern-detection, creative-frontend, browser-visual-testing, motion, responsive, accessibility]
+capabilities:
+  - One skill with 24 commands (craft, init, shape, critique, audit, polish, animate, bolder, quieter and others) as stated in README
+  - 61 deterministic detector rules via a CLI and browser extension, no LLM needed (README claim)
+  - Writes PRODUCT.md and DESIGN.md for durable context
+  - Live browser iteration mode
+limitations:
+  - Heavy: Rust workspace, extension, VS Code package and Cursor plugin in one repo
+  - Detector rule count and quality not verified by running it (running was forbidden)
+  - Needs project init; writes context files into the target repo
+compatible_agents: [claude-code, cursor]
+install_method: "npx impeccable install, then /impeccable init; Claude Code plugin; Cursor plugin"
+dependencies: [node or bun, prebuilt engine binary downloaded from GitHub Releases (ENGINE_VERSION pinned in repo), optional browser extension]
+scripts_present: true
+permissions_requested: [hooks on SessionStart, PostToolUse matcher Edit|Write, and Stop that execute scripts/impeccable; file write (PRODUCT.md, DESIGN.md); network download of engine binary; browser control in live mode]
+risks: [auto-running hooks execute a downloaded native binary, binary download optionally verified by a .sha256 only when present, huge repo (about 750 MB size per API) not reviewable in full, repo moves fast so a pin goes stale quickly, telemetry not checked]
+pinned_ref: 8644175285360c166e57b1e35ecadfbc85ff5209
+last_commit_observed: 2026-10-22
+activity: "Commit dated 2026-10-22; GitHub API pushed_at 2026-10-22 (shallow clone, commit count not verified)"
+stars_observed: 84767
+overlaps: [design/design-reviewer, design/creative-director, design/ui-designer, design/motion-designer, qa/*, taste-skill, anti-slop, anthropic-frontend-design]
+evidence_of_effectiveness: "none found in repo beyond README claims and demos; third-party blog posts surfaced by search were not opened"
+owner_roles: [design/design-reviewer, design/creative-director]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

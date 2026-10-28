@@ -1,0 +1,366 @@
+schema: 1
+area: ux
+version: 1.0.0
+verified_on: 2026-10-22
+references:
+  - {id: nng-heuristics, name: "Nielsen Norman Group: 10 Usability Heuristics for User Interface Design", url: "https://www.nngroup.com/articles/ten-usability-heuristics/", retrieved: 2026-10-22, note: "The ten heuristics: system status, real-world match, control and freedom, consistency, error prevention, recognition over recall, flexibility, minimalist design, error recovery, help."}
+  - {id: nng-usability, name: "Nielsen Norman Group: Usability 101", url: "https://www.nngroup.com/articles/usability-101-introduction-to-usability/", retrieved: 2026-10-22, note: "Five usability components and the case for testing with representative users, small and iterative."}
+  - {id: nng-progressive, name: "Nielsen Norman Group: Progressive Disclosure", url: "https://www.nngroup.com/articles/progressive-disclosure/", retrieved: 2026-10-22, note: "Defer rarely used features; base the split on evidence; usually two levels."}
+  - {id: nng-empty, name: "Nielsen Norman Group: Designing Empty States in Complex Applications", url: "https://www.nngroup.com/articles/empty-state-interface-design/", retrieved: 2026-10-22, note: "Show status not blank space, teach in context, give a direct next step, do not show no-results while loading."}
+  - {id: nng-response, name: "Nielsen Norman Group: Response Times, the 3 Important Limits", url: "https://www.nngroup.com/articles/response-times-3-important-limits/", retrieved: 2026-10-22, note: "0.1, 1 and 10 second limits and the feedback each implies."}
+  - {id: govuk-error, name: "GOV.UK Design System: Error message component", url: "https://design-system.service.gov.uk/components/error-message/", retrieved: 2026-10-22, note: "Error wording, placement next to the field, summary at top, keep user input."}
+  - {id: dtcg, name: "Design Tokens Community Group: Format Module (draft)", url: "https://www.designtokens.org/tr/drafts/format/", retrieved: 2026-10-22, note: "JSON token format; draft Community Group report, not a W3C standard; latest published version 2025.10. First 100000 of about 114985 characters read."}
+  - {id: wcag-understanding, name: "Understanding WCAG 2.2 pages: error identification, consistent navigation, error prevention, timing adjustable, accessible authentication", url: "https://www.w3.org/WAI/WCAG22/Understanding/", retrieved: 2026-10-22, note: "Text error description (3.3.1), consistent navigation order (3.2.3), review or reversal for commitments (3.3.4), time limit options (2.2.1), authentication without cognitive tests (3.3.8)."}
+requirements:
+  - id: UX-001
+    title: Define primary user tasks and success criteria before design
+    description: Name who the users are, the three to five tasks that matter most, and how success will be measured for each, so design choices can be judged against something.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, ai-app]
+    severity: major
+    check: manual
+    evidence: Task list with user description and success measures, approved by the product owner or equivalent.
+    owner: ux-designer
+    reviewer: usability-researcher
+    reference: "nng-usability (components of usability)"
+  - id: UX-002
+    title: Structure information so users can find content by the labels they expect
+    description: Group and label content using the words users use, validate the structure with real users through sorting or findability tasks, and revise labels that fail.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Sitemap or structure diagram with the validation method, participants, results and changes made.
+    owner: information-architect
+    reviewer: usability-researcher
+    reference: "nng-heuristics (match between system and real world)"
+  - id: UX-003
+    title: Map user journeys including entry points, decisions and failure paths
+    description: Document the journey for each primary task from first arrival to completion, including errors, interruptions and returning users, and design each step against it.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Journey map per primary task covering entry, decision, error and exit points.
+    owner: ux-designer
+    reviewer: design-reviewer
+    reference: "nng-usability"
+  - id: UX-004
+    title: Confirm task completion with representative users
+    description: Test the primary tasks with a small set of representative users, unaided, observe what they do, and record completion, errors and time; fix and retest rather than run one large test late.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, ai-app]
+    severity: major
+    check: manual
+    evidence: Usability test plan, participant profile, observation notes, task completion results and fixes.
+    owner: ux-designer
+    reviewer: usability-researcher
+    reference: "nng-usability (test with real users, small and iterative)"
+  - id: UX-005
+    title: Make navigation clear, labelled and consistent
+    description: Primary navigation shows where the user is, uses plain labels, and appears in the same place and order across pages and views.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Navigation review across sample pages, plus findability task results.
+    owner: information-architect
+    reviewer: design-reviewer
+    reference: "wcag-understanding SC 3.2.3 (consistent navigation order); nng-heuristics (consistency)"
+  - id: UX-006
+    title: Show system status promptly
+    description: Every user action gets visible feedback in step with response time, from instant for very short waits, a clear working indicator for about a second or more.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, ai-app]
+    severity: major
+    check: manual
+    evidence: Interaction review table listing each action, its expected latency band and the feedback shown, with a recording.
+    owner: interaction-designer
+    reviewer: design-reviewer
+    reference: "nng-heuristics (visibility of system status); nng-response"
+  - id: UX-007
+    title: Show progress and a way to cancel for long operations
+    description: Operations that may take around ten seconds or longer show real progress where the amount of work is known and offer cancel, rather than a bare spinner.
+    min_profile: standard
+    applies_to: [web-app, mobile-web, internal-tool, ai-app]
+    severity: major
+    check: manual
+    evidence: List of long operations with progress and cancel treatment, tested with throttled network.
+    owner: interaction-designer
+    reviewer: qa-lead
+    reference: "nng-response (10 second limit)"
+  - id: UX-008
+    title: Design loading states that hold layout and keep context
+    description: Loading shows a placeholder or indicator in the space the content will occupy and never displays a no-results message while data is still on the way.
+    min_profile: standard
+    applies_to: [web-app, website, mobile-web, internal-tool, ai-app]
+    severity: minor
+    check: manual
+    evidence: State screenshots of loading, loaded and failed for each data view.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "nng-empty (do not show no-results during loading)"
+  - id: UX-009
+    title: Design empty states that explain and offer a next step
+    description: When a view has no data, say why, teach what the feature does where it helps, and provide a direct action to fill it.
+    min_profile: standard
+    applies_to: [web-app, internal-tool, mobile-web, ai-app]
+    severity: minor
+    check: manual
+    evidence: Empty state screenshots for first use, no results and cleared states, with copy.
+    owner: ux-writer
+    reviewer: design-reviewer
+    reference: "nng-empty"
+  - id: UX-010
+    title: Confirm success clearly and say what happens next
+    description: After a completed action show an unmistakable confirmation with the outcome and next step, in text and not by colour alone, and make it available to assistive technology.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Success state screenshots and copy for each key action, plus a screen reader announcement check.
+    owner: ux-writer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (visibility of system status)"
+  - id: UX-011
+    title: Explain disabled states and avoid dead ends
+    description: When a control is disabled or unavailable, show the reason or the condition to enable it, and do not hide the only route to a task behind an unexplained disabled button.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Inventory of disabled states with reason text and the path to enable.
+    owner: interaction-designer
+    reviewer: design-reviewer
+    reference: "nng-heuristics (visibility of system status; help users recover)"
+  - id: UX-012
+    title: Write errors that say what happened and how to fix it
+    description: Error messages are specific, in plain language, placed next to the field and summarised on the page, without blame, and match the wording of the field label.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Copy review of every validation and system error with before and after wording, and screenshots of placement.
+    owner: ux-writer
+    reviewer: usability-researcher
+    reference: "govuk-error; wcag-understanding SC 3.3.1; nng-heuristics (help users recognize, diagnose, recover)"
+  - id: UX-013
+    title: Preserve user input after an error
+    description: Never clear fields when showing an error, and keep entered data across back navigation and timeouts where safe, so users edit rather than retype.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Test recordings of failed submission, back navigation and session expiry with input retained.
+    owner: interaction-designer
+    reviewer: qa-lead
+    reference: "govuk-error (keeping user input)"
+  - id: UX-014
+    title: Ask only for the information needed and explain why when it is sensitive
+    description: Forms contain only fields required for the purpose, group related questions, give hints before the field, and state why sensitive information is requested.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Field inventory with the purpose of each, and a usability test of the form.
+    owner: ux-designer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (error prevention; minimalist design)"
+  - id: UX-015
+    title: Prevent errors with constraints, defaults and confirmation of risky actions
+    description: Design the form and flow to remove error-prone conditions; destructive or irreversible actions ask for confirmation naming the consequence, or offer undo.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: List of destructive or irreversible actions, each with its confirmation or undo behaviour, and test results.
+    owner: interaction-designer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (error prevention, user control and freedom); wcag-understanding SC 3.3.4"
+  - id: UX-016
+    title: Give users control to undo, go back and exit
+    description: Users can cancel, go back, edit earlier steps and leave a flow without losing work unexpectedly; the browser back button behaves predictably.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Flow tests of cancel, back, edit and exit at every step.
+    owner: ux-designer
+    reviewer: qa-lead
+    reference: "nng-heuristics (user control and freedom)"
+  - id: UX-017
+    title: Warn before time limits and preserve work
+    description: Where sessions or steps expire, warn in advance, allow extension, and keep entered data so the user can resume.
+    min_profile: standard
+    applies_to: [web-app, website, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Timeout test showing warning, extension and data recovery.
+    owner: interaction-designer
+    reviewer: qa-lead
+    reference: "wcag-understanding SC 2.2.1"
+  - id: UX-018
+    title: Use progressive disclosure based on evidence of use
+    description: Show frequent options first and defer advanced ones behind a clearly labelled control, usually within two levels, deciding the split from task analysis or usage data.
+    min_profile: standard
+    applies_to: [web-app, website, mobile-web, internal-tool, ai-app]
+    severity: minor
+    check: manual
+    evidence: Rationale for what is primary and secondary with the data source, and a test that users find advanced options.
+    owner: ux-designer
+    reviewer: usability-researcher
+    reference: "nng-progressive"
+  - id: UX-019
+    title: Favour recognition over recall
+    description: Make options, previous choices and needed information visible or retrievable in context, so users do not rely on memory across steps or screens.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Heuristic review notes and test observations of users recalling information between steps.
+    owner: ux-designer
+    reviewer: design-reviewer
+    reference: "nng-heuristics (recognition rather than recall)"
+  - id: UX-020
+    title: Use consistent components and patterns for the same job
+    description: The same function looks and behaves the same everywhere, built from shared components, and follows established conventions unless there is evidence for a change.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: minor
+    check: manual
+    evidence: Component audit listing duplicates and deviations, plus design review notes.
+    owner: design-systems-specialist
+    reviewer: design-reviewer
+    reference: "nng-heuristics (consistency and standards)"
+  - id: UX-021
+    title: Define design tokens as the single source of visual decisions
+    description: Colour, spacing, type, radius, shadow and motion values are named tokens consumed by design and code, with a documented structure; if an interchange format is used, note its status.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: minor
+    check: both
+    evidence: Token file, a check that styles consume tokens rather than raw values, and a note on the interchange format and its draft status where used.
+    owner: design-systems-specialist
+    reviewer: design-reviewer
+    reference: "dtcg (draft community format, not a W3C standard)"
+  - id: UX-022
+    title: Document every interactive component state
+    description: Each component specifies default, hover, focus, active, disabled, loading, error and success where relevant, with accessibility behaviour and content rules.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: minor
+    check: manual
+    evidence: Component specification pages showing each state and its keyboard and announcement behaviour.
+    owner: design-systems-specialist
+    reviewer: qa-lead
+    reference: "nng-heuristics (consistency); wcag-understanding SC 4.1.2"
+  - id: UX-023
+    title: Keep conversion flows short, honest and free of obstructive patterns
+    description: Sign-up, purchase and enquiry flows remove steps that do not help the task, show cost and consequences before commitment, make cancelling as easy as joining, and avoid pressure or trick patterns.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Step count and drop-off review where data exists, copy review for cost and consent clarity, usability test of the flow. Label any benchmark claim as Unverified unless sourced.
+    owner: conversion-designer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (user control and freedom, error prevention, minimalist design)"
+  - id: UX-024
+    title: Write clear content in the users' words
+    description: Use plain language, short sentences, concrete labels and the terms users use; remove jargon and internal names unless users know them.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool, ai-app]
+    severity: major
+    check: manual
+    evidence: Content review checklist and comprehension check with a few representative users.
+    owner: ux-writer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (match between system and real world)"
+  - id: UX-025
+    title: Label links and buttons with their action or destination
+    description: Link and button text makes sense out of context, calls actions by what they do, and distinguishes similar actions on the same screen.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Label inventory reviewed alone out of context, with ambiguous labels fixed.
+    owner: ux-writer
+    reviewer: design-reviewer
+    reference: "nng-heuristics (match between system and real world; consistency)"
+  - id: UX-026
+    title: Establish a clear primary action and visual hierarchy per screen
+    description: Each screen has one dominant primary action, a visible reading order that matches the task, and secondary actions that do not compete.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Design review annotated screens naming the primary action and hierarchy.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "nng-heuristics (aesthetic and minimalist design)"
+  - id: UX-027
+    title: Offer help in context and make it findable
+    description: Provide short, task-focused help near where users need it, a searchable or well-labelled help section, and a consistent way to reach support.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, ai-app]
+    severity: minor
+    check: manual
+    evidence: Help inventory by screen and a test that users find support when stuck.
+    owner: ux-writer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (help and documentation)"
+  - id: UX-028
+    title: Provide efficient paths for expert users without hiding the basics
+    description: Offer shortcuts, defaults, saved preferences or bulk actions for frequent users while keeping the standard path clear for newcomers.
+    min_profile: high_assurance
+    applies_to: [web-app, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Expert path list and a test with experienced users measuring effort saved.
+    owner: interaction-designer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (flexibility and efficiency of use)"
+  - id: UX-029
+    title: Build with reusable accessible interaction patterns
+    description: Interaction patterns such as dialogs, menus, tabs and form validation come from a documented, accessibility-reviewed set instead of one-off inventions.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: major
+    check: manual
+    evidence: Pattern library entries with keyboard and screen reader behaviour, and a design review that cites the pattern used.
+    owner: design-systems-specialist
+    reviewer: design-reviewer
+    reference: "wcag-understanding SC 4.1.2; nng-heuristics (consistency and standards)"
+  - id: UX-030
+    title: Authenticate without memory or transcription burden and explain recovery
+    description: Sign-in and recovery flows allow paste and password managers, avoid puzzle or transcription steps without an alternative, and tell users plainly what happens next.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Walkthrough of sign-in, reset and second-factor flows, with copy for each step.
+    owner: ux-designer
+    reviewer: usability-researcher
+    reference: "wcag-understanding SC 3.3.8"
+  - id: UX-031
+    title: Include accessibility and states in every design review
+    description: Design reviews check focus order, contrast, targets, states, content and errors against the accessibility area before hand-off to build.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Design review checklist with accessibility and state items completed and signed by an independent reviewer.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "wcag-understanding; nng-heuristics"
+  - id: UX-032
+    title: Make AI-assisted interactions transparent and recoverable
+    description: Where an AI feature produces content or takes actions, show that it is automated, show status while it works, let users edit, undo and report problems, and keep human control of consequential actions.
+    min_profile: standard
+    applies_to: [ai-app]
+    severity: major
+    check: manual
+    evidence: Interaction review showing disclosure, progress, edit, undo and escalation paths, with a usability test of the main task.
+    owner: interaction-designer
+    reviewer: usability-researcher
+    reference: "nng-heuristics (visibility of system status, user control and freedom, error recovery)"

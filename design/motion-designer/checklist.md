@@ -37,4 +37,13 @@
 - [ ] The brief requires scroll-jacking or smooth-scroll on a content or form page
 - [ ] The design only works if a video or canvas is the LCP element
 - [ ] A 3D or video asset has no licence record
-- [ ] Budget cannot be met and no waiver is recorded with `performance-engineer` and Kiran
+- [ ] Budget cannot be met and no waiver is recorded with `performance-engineer` and the owner
+
+## Design Intelligence upgrade
+- [ ] Motion library entries cited by id for each technique used
+- [ ] Spec states behaviour, not a library choice
+- [ ] Reduced-motion version defined for every motion
+- [ ] Keyboard and screen-reader behaviour defined
+- [ ] Static fallback for slow or low-power devices defined
+- [ ] One-sentence user purpose written for each motion
+- [ ] Performance budget handed to `performance-engineer` for measurement

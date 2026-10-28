@@ -1,9 +1,9 @@
 # Content Repurposing Specialist: Examples
 
-@kiranbuildswithai is Kiran's real handle. Client companies below are fictional unless the brief names a real permissioned project.
+@example_brand is the owner's real handle. Client companies below are fictional unless the brief names a real permissioned project.
 
 ## Example 1: One build note, three native drafts
-**Request:** "Repurpose this note for kiranbuildswithai: I removed the homepage slider so the call button sits above the fold on a 360px screen. LinkedIn, Threads, and a Reel package. No carousel. Drafts only."
+**Request:** "Repurpose this note for example-brand: I removed the homepage slider so the call button sits above the fold on a 360px screen. LinkedIn, Threads, and a Reel package. No carousel. Drafts only."
 
 **Key decisions:**
 - One idea: the first screen should reach the action. The slider is the example, not a second essay.

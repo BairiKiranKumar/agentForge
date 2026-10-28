@@ -1,0 +1,481 @@
+schema: 1
+area: seo
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: starter
+  name: Google SEO Starter Guide
+  url: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+  retrieved: *id001
+  note: titles, descriptions, URL words, links, images, duplicate content, myths
+- id: title
+  name: 'Google: title links'
+  url: https://developers.google.com/search/docs/appearance/title-link
+  retrieved: *id001
+  note: unique, brief, accurate titles; brand placement; language; main heading
+- id: snippet
+  name: 'Google: snippets and meta descriptions'
+  url: https://developers.google.com/search/docs/appearance/snippet
+  retrieved: *id001
+  note: unique descriptions, snippet controls
+- id: canonical
+  name: 'Google: consolidate duplicate URLs'
+  url: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+  retrieved: *id001
+  note: canonical methods and pitfalls, HTTPS preference
+- id: sitemap
+  name: 'Google: build a sitemap'
+  url: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+  retrieved: *id001
+  note: limits, absolute URLs, lastmod, formats, location
+- id: robots
+  name: 'Google: robots.txt introduction'
+  url: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+  retrieved: *id001
+  note: robots.txt controls crawling, not indexing or security
+- id: robotsmeta
+  name: 'Google: robots meta tag and X-Robots-Tag'
+  url: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
+  retrieved: *id001
+  note: noindex and snippet directives, crawl access needed to read them
+- id: sd
+  name: 'Google: structured data introduction'
+  url: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+  retrieved: *id001
+  note: formats, visible-content rule, validation, no eligibility guarantee
+- id: js
+  name: 'Google: JavaScript SEO basics'
+  url: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+  retrieved: *id001
+  note: rendering queue, anchor links, History API, soft 404, SSR
+- id: hreflang
+  name: 'Google: localized versions'
+  url: https://developers.google.com/search/docs/specialty/international/localized-versions
+  retrieved: *id001
+  note: hreflang reciprocity, self-reference, x-default, codes, methods
+- id: images
+  name: 'Google: image SEO'
+  url: https://developers.google.com/search/docs/appearance/google-images
+  retrieved: *id001
+  note: img elements, alt text, filenames, formats, image sitemaps
+- id: helpful
+  name: 'Google: creating helpful, people-first content'
+  url: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+  retrieved: *id001
+  note: people-first content, E-E-A-T, who/how/why
+- id: gsc
+  name: 'Search Console: verify site ownership'
+  url: https://support.google.com/webmasters/answer/9008080
+  retrieved: *id001
+  note: verification methods and backup guidance
+- id: ogp
+  name: The Open Graph protocol
+  url: https://ogp.me/
+  retrieved: *id001
+  note: required og properties, image sub-properties
+- id: schemaorg
+  name: 'schema.org: getting started'
+  url: https://schema.org/docs/gs.html
+  retrieved: *id001
+  note: types, properties, mark up visible content only
+requirements:
+- id: SEO-001
+  title: Make no ranking or traffic promises
+  description: Plans, reports and client communication must not promise or guarantee rankings, positions
+    or traffic. Describe actions taken, expected mechanisms labelled as inference, and measured results
+    only.
+  min_profile: lightweight
+  applies_to:
+  - website
+  severity: major
+  check: manual
+  evidence: Reviewer note confirming deliverables contain no guarantee language
+  owner: seo-specialist
+  reviewer: editor
+  reference: starter
+- id: SEO-002
+  title: Scope SEO work to public pages
+  description: Apply this area to publicly crawlable sites. Authenticated app screens, staging and internal
+    tools should be excluded from indexing and not optimised for search.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - mobile-web
+  severity: minor
+  check: manual
+  evidence: Scope note listing indexable and non-indexable sections
+  owner: seo-specialist
+  reviewer: technical-seo-specialist
+  reference: robotsmeta
+- id: SEO-003
+  title: Give each page a unique, accurate title element
+  description: Every indexable page has a title that describes its own content, is brief, avoids keyword
+    repetition, and is not a placeholder such as Home.
+  min_profile: lightweight
+  applies_to: &id002
+  - website
+  severity: major
+  check: both
+  evidence: Crawl export of titles showing no blanks or duplicates, plus a sample reviewed by hand
+  owner: seo-specialist
+  reviewer: frontend-developer
+  reference: title
+- id: SEO-004
+  title: Write titles in the page's language and apply a consistent site-name pattern
+  description: Titles use the same language and script as the page. The site name appears consistently
+    at the start or end, separated by a simple delimiter.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: Reviewer note on a sample of titles per template
+  owner: copywriter
+  reviewer: editor
+  reference: title
+- id: SEO-005
+  title: Provide one visible primary heading per page
+  description: Each page has a single prominent h1 that matches the page topic, with lower headings nested
+    in order and used for structure, not styling.
+  min_profile: lightweight
+  applies_to: &id003
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Heading outline from a crawler or browser tool for each template
+  owner: frontend-developer
+  reviewer: technical-seo-specialist
+  reference: starter
+- id: SEO-006
+  title: Write unique meta descriptions for important pages
+  description: Home, hub and key landing pages carry a unique description that summarises the page with
+    concrete facts. No keyword lists. Treat it as a hint; search engines may write their own snippet.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: both
+  evidence: Crawl export of descriptions with duplicates flagged, and a human read of key pages
+  owner: copywriter
+  reviewer: editor
+  reference: snippet
+- id: SEO-007
+  title: Use descriptive, stable URLs
+  description: URLs use readable words, are lowercase and consistent, and avoid session identifiers and
+    random strings. Changes to live URLs get permanent redirects.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: both
+  evidence: URL pattern list and redirect map reviewed
+  owner: technical-seo-specialist
+  reviewer: frontend-developer
+  reference: starter
+- id: SEO-008
+  title: Declare an absolute self-referencing canonical URL
+  description: Each indexable page has one canonical URL in the head or HTTP header, absolute, pointing
+    to the preferred version, and not set to a fragment or conflicting through two methods.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: automated
+  evidence: Crawl report showing one canonical per page matching the final URL, no conflicts
+  owner: technical-seo-specialist
+  reviewer: frontend-developer
+  reference: canonical
+- id: SEO-009
+  title: Resolve duplicate URL variants with redirects and canonicals
+  description: Protocol, host, trailing slash, case and parameter variants resolve to one preferred URL.
+    HTTP redirects to HTTPS and internal links use the preferred form.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Test results of requesting each variant (command, response codes) and internal link sample
+  owner: technical-seo-specialist
+  reviewer: devops-engineer
+  reference: canonical
+- id: SEO-010
+  title: Never use a canonical to point at a different language version
+  description: Canonical tags must not substitute for hreflang. Each language version canonicalises to
+    itself.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: automated
+  evidence: Crawl check that canonical equals own URL on localised pages
+  owner: technical-seo-specialist
+  reviewer: localization-specialist
+  reference: canonical
+- id: SEO-011
+  title: Publish an XML sitemap of preferred indexable URLs
+  description: The sitemap lists only canonical, indexable, 200-status absolute URLs, is UTF-8, stays
+    under 50,000 URLs and 50 MB uncompressed per file, and is split with an index when larger.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: automated
+  evidence: Sitemap validation output and a status-code sweep of listed URLs, with date and command
+  owner: technical-seo-specialist
+  reviewer: qa-lead
+  reference: sitemap
+- id: SEO-012
+  title: Keep sitemap lastmod truthful or omit it
+  description: lastmod changes only for meaningful content changes. Do not rely on priority or changefreq,
+    which Google ignores.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: both
+  evidence: Generator code review note and sample comparison against real edit dates
+  owner: backend-developer
+  reviewer: technical-seo-specialist
+  reference: sitemap
+- id: SEO-013
+  title: Make the sitemap discoverable
+  description: Reference the sitemap from robots.txt and submit it in Search Console where access exists.
+    Submission is a hint only.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: robots.txt capture and Search Console submission screenshot or note
+  owner: technical-seo-specialist
+  reviewer: web-analytics-specialist
+  reference: sitemap
+- id: SEO-014
+  title: Publish a correct robots.txt
+  description: robots.txt exists at the host root, returns 200, blocks only paths that should not be crawled,
+    and does not block CSS, JavaScript or images needed for rendering.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: critical
+  check: both
+  evidence: Fetched robots.txt, test of key URLs against it, date and tool
+  owner: technical-seo-specialist
+  reviewer: devops-engineer
+  reference: robots
+- id: SEO-015
+  title: Do not use robots.txt to hide content or secure private data
+  description: Private content needs authentication. Pages to keep out of results use noindex while remaining
+    crawlable, or are removed.
+  min_profile: lightweight
+  applies_to:
+  - website
+  - web-app
+  severity: critical
+  check: manual
+  evidence: Review note showing sensitive paths are protected by access control
+  owner: technical-seo-specialist
+  reviewer: application-security-engineer
+  reference: robots
+- id: SEO-016
+  title: Block production indexing leaks from non-production environments
+  description: Staging and preview sites require authentication or send noindex, and production never
+    ships with a sitewide noindex or disallow-all by accident.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: critical
+  check: both
+  evidence: Pre-release check of production robots.txt, meta robots and X-Robots-Tag, with date
+  owner: release-engineer
+  reviewer: technical-seo-specialist
+  reference: robotsmeta
+- id: SEO-017
+  title: Use robots meta and X-Robots-Tag deliberately
+  description: Indexing and snippet directives are applied on purpose per page type, the more restrictive
+    rule is understood to win, and non-HTML files use the header form.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Directive inventory by template with crawl confirmation
+  owner: technical-seo-specialist
+  reviewer: frontend-developer
+  reference: robotsmeta
+- id: SEO-018
+  title: Return honest status codes
+  description: Missing pages return 404 or 410, moved pages 301 or 308, and error views in client-routed
+    apps do not return 200 as soft 404s.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: automated
+  evidence: Status-code sweep of sample and removed URLs, with command and date
+  owner: backend-developer
+  reviewer: technical-seo-specialist
+  reference: js
+- id: SEO-019
+  title: Expose links as crawlable anchors
+  description: Navigation and content links are anchor elements with href values to real URLs, and client-side
+    routing uses the History API rather than hash fragments.
+  min_profile: lightweight
+  applies_to: *id003
+  severity: major
+  check: both
+  evidence: Rendered-DOM link extraction compared to expected link set
+  owner: frontend-developer
+  reviewer: technical-seo-specialist
+  reference: js
+- id: SEO-020
+  title: Deliver primary content and metadata in initial HTML where feasible
+  description: Titles, canonicals, headings and main text should be present in server-rendered or pre-rendered
+    HTML, since rendering is queued and not every crawler runs JavaScript. If JavaScript changes metadata,
+    results must match the initial HTML.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Comparison of raw HTML fetch against rendered DOM for each template
+  owner: frontend-architect
+  reviewer: technical-seo-specialist
+  reference: js
+- id: SEO-021
+  title: Build an internal linking structure with descriptive anchors
+  description: Important pages are reachable through crawlable links from related pages and navigation.
+    Anchor text describes the target and orphan pages are identified.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Crawl depth and orphan-page report, plus hub and anchor review
+  owner: seo-specialist
+  reviewer: content-strategist
+  reference: starter
+- id: SEO-022
+  title: Mark up images as real img elements with useful alt text
+  description: Meaningful images use img (or picture) elements with specific alt text, accurate extensions
+    and descriptive filenames. Decorative images use empty alt. Do not stuff keywords.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Crawl export of images missing alt plus hand review of a sample
+  owner: frontend-developer
+  reviewer: seo-specialist
+  reference: images
+- id: SEO-023
+  title: Add structured data only for visible content, and validate it
+  description: JSON-LD (preferred) uses schema.org types and the feature's required properties, describes
+    content users can see, and passes validation before release. Rich result eligibility is never promised.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: both
+  evidence: Validator output for each template with tool, date and errors resolved
+  owner: technical-seo-specialist
+  reviewer: code-reviewer
+  reference: sd
+- id: SEO-024
+  title: Monitor structured data after release
+  description: Rich result and enhancement reports are checked after deployment since template changes
+    can break markup later.
+  min_profile: high_assurance
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: Dated Search Console report review note
+  owner: web-analytics-specialist
+  reviewer: seo-specialist
+  reference: sd
+- id: SEO-025
+  title: Provide Open Graph metadata for shareable pages
+  description: Shareable pages carry og:title, og:type, og:image and og:url (canonical), plus description
+    and image alt text. The share image is reachable over HTTPS.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: both
+  evidence: Share preview check on at least two platforms, with date, and tag capture
+  owner: frontend-developer
+  reviewer: copywriter
+  reference: ogp
+- id: SEO-026
+  title: Implement hreflang correctly on multilingual sites
+  description: Each version lists all versions including itself, with reciprocal annotations, valid language-region
+    codes, absolute URLs, an x-default where useful, and a single declaration method.
+  min_profile: standard
+  applies_to:
+  - website
+  severity: major
+  check: automated
+  evidence: Hreflang validation output across all version clusters, with tool and date
+  owner: localization-specialist
+  reviewer: technical-seo-specialist
+  reference: hreflang
+- id: SEO-027
+  title: Serve one language per page and avoid automatic redirects by visitor location
+  description: Content on a URL is in one language, users can switch versions, and crawlers can reach
+    every version without location-based redirects.
+  min_profile: high_assurance
+  applies_to:
+  - website
+  severity: minor
+  check: manual
+  evidence: Reviewer note and crawl from more than one location where tooling exists
+  owner: localization-specialist
+  reviewer: technical-seo-specialist
+  reference: hreflang
+- id: SEO-028
+  title: Create people-first, original content with visible authorship and sourcing
+  description: Content serves a reader need, shows first-hand knowledge, cites sources, names authors
+    where relevant, and discloses automation involvement honestly. No pages made only to attract visits.
+  min_profile: standard
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Editorial review checklist per page type with reviewer name and date
+  owner: content-strategist
+  reviewer: editor
+  reference: helpful
+- id: SEO-029
+  title: Avoid manipulative practices
+  description: No keyword stuffing, hidden text, fake freshness dates, or doorway pages. Do not target
+    word counts as a goal.
+  min_profile: lightweight
+  applies_to: *id002
+  severity: major
+  check: manual
+  evidence: Review note against the page set
+  owner: seo-specialist
+  reviewer: editor
+  reference: starter
+- id: SEO-030
+  title: Verify site ownership in Search Console with a backup method
+  description: Ownership is verified (DNS for domain-wide properties) with a second method kept as a backup.
+    Tokens are not removed by template changes.
+  min_profile: standard
+  applies_to: *id002
+  severity: minor
+  check: manual
+  evidence: Screenshot or note of verification status listing methods, with date
+  owner: web-analytics-specialist
+  reviewer: technical-seo-specialist
+  reference: gsc
+- id: SEO-031
+  title: Record SEO checks as executed or planned
+  description: Each SEO report separates checks that were run (tool, version, date, scope, result) from
+    those only planned, and states tools that were unavailable. Findings from tools are not presented
+    as ranking predictions.
+  min_profile: lightweight
+  applies_to:
+  - website
+  severity: major
+  check: manual
+  evidence: Report with executed versus planned table
+  owner: seo-specialist
+  reviewer: qa-lead
+  reference: starter
+- id: SEO-032
+  title: Keep local business details accurate and consistent
+  description: For location-based sites, name, address and contact details on pages match across the site
+    and any structured data, and are confirmed by the business owner.
+  min_profile: high_assurance
+  applies_to:
+  - website
+  severity: minor
+  check: manual
+  evidence: Owner-confirmed data sheet compared against pages
+  owner: local-seo-specialist
+  reviewer: seo-specialist
+  reference: schemaorg

@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Inventory lists every active, proposed and paused item with type and owner
 - [ ] Hours remaining recorded as ranges (founder, freelancer, agent)
-- [ ] Kiran's studio hours for the next 8 to 12 weeks confirmed (festivals, day job, family events)
+- [ ] the owner's studio hours for the next 8 to 12 weeks confirmed (festivals, day job, family events)
 - [ ] Strategic weights taken from the current strategy memo
 - [ ] Contract values and payment schedules available for client work
 
@@ -25,7 +25,7 @@
 ## Before handoff
 - [ ] Every stop or defer has a reason; every defer has a review date
 - [ ] New opportunities show what they displace
-- [ ] Decision note marked pending Kiran
+- [ ] Decision note marked pending the owner
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

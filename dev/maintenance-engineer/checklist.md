@@ -33,7 +33,7 @@
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 
 ## Stop and escalate if
-- [ ] A reachable critical vulnerability is found (same day to `application-security-engineer` and Kiran)
+- [ ] A reachable critical vulnerability is found (same day to `application-security-engineer` and the owner)
 - [ ] The fix needs a live data correction or schema migration on production
 - [ ] Someone asks for a direct edit on the server or production database
 - [ ] You are asked to skip or delete failing tests to ship

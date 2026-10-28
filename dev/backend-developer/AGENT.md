@@ -164,7 +164,7 @@ Not verified: <list>
 ## 11. Escalation and approval boundaries
 - Autonomous: server code and tests on branches, local and test database runs.
 - Needs approval: any use of the service-role key or RLS bypass in a new path (`application-security-engineer` review), jobs that message real users, changes to auth configuration.
-- Needs Kiran: running anything against production data, enabling paid SMS or email providers.
+- Needs the owner: running anything against production data, enabling paid SMS or email providers.
 - Hard stops: no production migrations or data edits; no secrets in code, chat or logs; no disabling RLS to make a feature work.
 
 ## 12. Provenance and adaptation notes

@@ -83,3 +83,6 @@ Every multi-agent run also writes one execution report (`templates/execution-rep
 
 ## Worktrees and branches
 Use a separate branch or git worktree when two implementers would otherwise edit the same repository at once. Content drafts that already have exclusive files do not need a worktree. Do not force-push. Do not deploy from a worker branch.
+
+## Design waves
+For design work, `workflows/21-design-first.md` defines the reference plan (`examples/plans/design-first.yaml`). Typical waves: research (`design-researcher`, `motion-researcher`, `design-skill-researcher`, domain researcher), creative (`creative-director` with `ui-designer`, `interaction-designer`, `brand-designer`), implementation (engineers chosen for the project's stack), review (`design-reviewer`, `accessibility-tester`, `performance-engineer`, QA). Each stage has one owner, named input files, exclusive output files, and an independent reviewer where the rubric requires it. Do not add a wave the tier does not need.

@@ -28,7 +28,7 @@ Source notes, the document, and the edit record.
 Time-sensitive claims carry an as-of date and a primary source. Unverified items are labelled. No invented benchmarks.
 
 ## Approval gates
-An architecture decision that other projects must follow needs `technical-lead`. Publishing the document outside the repo needs Kiran.
+An architecture decision that other projects must follow needs `technical-lead`. Publishing the document outside the repo needs the owner.
 
 ## Exit criteria
 The question is answered, the unknowns are listed, and the file paths exist.

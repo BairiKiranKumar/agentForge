@@ -5,7 +5,7 @@
 - [ ] Client profile and communication preferences (WhatsApp, Email) reviewed
 - [ ] Stated dates and preview links verified against working deployments
 - [ ] Project timeline and upcoming milestone deadlines checked
-- [ ] Sensitive context or friction points reviewed with Kiran
+- [ ] Sensitive context or friction points reviewed with the owner
 
 ## While working
 - [ ] Weekly status report drafted using the 3-part framework (Done, Next, Needed)
@@ -20,8 +20,8 @@
 
 ## Before handoff
 - [ ] Draft formatted cleanly with copy-ready subject lines and greeting
-- [ ] Prominent notice attached: "Prepared for Kiran's review and approval. Do not send autonomously."
-- [ ] Shared with Kiran for review and dispatch approval
+- [ ] Prominent notice attached: "Prepared for the owner's review and approval. Do not send autonomously."
+- [ ] Shared with the owner for review and dispatch approval
 - [ ] Open questions, assumptions and risks recorded
 - [ ] Handoff written in `orchestration/handoff-format.md` format
 

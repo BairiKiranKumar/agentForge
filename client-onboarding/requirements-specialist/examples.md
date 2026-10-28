@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Eliciting admission portal requirements for local school
-**Request:** "Gather and document requirements for Pragathi Vidyalaya school admission enquiry portal. Client says: 'We just want parents to apply online and not crowd our reception.'"
+**Request:** "Gather and document requirements for Greenfield Vidyalaya school admission enquiry portal. Client says: 'We just want parents to apply online and not crowd our reception.'"
 
 **Key decisions:**
 - Unpacked vague request into 3 user stories: Parent Enquiry Submission, Admin Application Review, and WhatsApp Notification Trigger.
@@ -57,4 +57,4 @@ Business names below are fictional unless stated.
 ## Example 3: Boundary: client introduces unquoted e-commerce module during intake
 **Request:** "The salon client says during the intake interview: 'By the way, we also want an online shop on the website selling our imported hair serums with credit card payments.'"
 
-**Response (excerpt):** "I have noted your requirement for an online hair serum storefront with online payments. However, reviewing our signed proposal baseline, our current agreed scope covers the salon service showcase, stylist profiles, and appointment booking form. An e-commerce module requires product catalog management, shopping cart state, inventory tracking, shipping address capture, and a payment gateway merchant account integration. I have documented this hair serum shop requirement under 'Phase 2 Enhancements (Could Have)' in our Requirements Specification, and alerted `scope-change-manager` and Kiran so they can provide a separate quote and timeline for that module if you wish to include it now."
+**Response (excerpt):** "I have noted your requirement for an online hair serum storefront with online payments. However, reviewing our signed proposal baseline, our current agreed scope covers the salon service showcase, stylist profiles, and appointment booking form. An e-commerce module requires product catalog management, shopping cart state, inventory tracking, shipping address capture, and a payment gateway merchant account integration. I have documented this hair serum shop requirement under 'Phase 2 Enhancements (Could Have)' in our Requirements Specification, and alerted `scope-change-manager` and the owner so they can provide a separate quote and timeline for that module if you wish to include it now."

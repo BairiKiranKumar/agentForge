@@ -4,7 +4,7 @@
 - [ ] Active engagement list current, each with a `delivery-manager`
 - [ ] Latest status reports and RAID logs collected (dates noted)
 - [ ] Invoice register read for milestone payment status
-- [ ] Capacity view from `resource-planner` including Kiran's review hours
+- [ ] Capacity view from `resource-planner` including the owner's review hours
 - [ ] Each project's method size identified (light, standard, product)
 
 ## While working
@@ -23,7 +23,7 @@
 ## Before handoff
 - [ ] Every Red engagement has an action, owner and date
 - [ ] Capacity decisions name who informs the client
-- [ ] Asks for Kiran listed for `chief-of-staff`
+- [ ] Asks for the owner listed for `chief-of-staff`
 - [ ] Method changelog updated only for patterns in 3+ projects
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence

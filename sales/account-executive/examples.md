@@ -17,14 +17,14 @@ Business names below are fictional.
 | Element | Status | Evidence | Next question |
 |---|---|---|---|
 | Metrics | validated | "Parents should find fees and apply on the phone" (discovery 2026-10-21) | Agree one measure: online enquiries per week |
-| Economic buyer | unknown person, known body | Trust board approves above a limit | Can Kiran show the concept at the 14 Nov meeting? |
+| Economic buyer | unknown person, known body | Trust board approves above a limit | Can the owner show the concept at the 14 Nov meeting? |
 | Champion | validated | Correspondent sent fee table and meeting date | |
 | Competition | assumed | Principal mentioned "a Hyderabad agency quoted" | Ask what they liked in that quote |
 ## Mutual action plan
-| # | Action | Kiran side | Client side | Due | Status |
+| # | Action | Owner side | Client side | Due | Status |
 |---|---|---|---|---|---|
-| 1 | Concept of admissions page with their fee table | Kiran | | 2026-11-08 | open |
-| 2 | 10-minute concept walkthrough at board meeting | Kiran | Correspondent arranges | 2026-11-14 | open |
+| 1 | Concept of admissions page with their fee table | Owner | | 2026-11-08 | open |
+| 2 | 10-minute concept walkthrough at board meeting | Owner | Correspondent arranges | 2026-11-14 | open |
 | 3 | Board decision on option | | Trust board | 2026-11-15 | open |
 | 4 | Content: photos, logo, fee table final | | Principal | 2026-12-01 | open |
 ```
@@ -33,16 +33,16 @@ Business names below are fictional.
 **Request:** "Weekly deal review please."
 
 **Key decisions:**
-- Glow Studio (fictional): no reply for 22 days, the owner's action (photos) overdue since 1 October, MAP only has Kiran's actions. Red. Removed from best case.
+- Glow Studio (fictional): no reply for 22 days, the owner's action (photos) overdue since 1 October, MAP only has the owner's actions. Red. Removed from best case.
 - Draft reset message rather than another "following up".
 
 **Output (excerpt):**
 | Business | Proposal total | Health | Forecast | Last client action | Next action | Risk |
 |---|---|---|---|---|---|---|
 | Green Valley School (fictional) | from proposal v1 | green | best case | 2026-10-25 | concept by 8 Nov | approver not met |
-| Glow Studio Unisex (fictional) | from proposal v2 | red | omitted | 2026-09-28 | reset message (draft below) | wedding season, owner busy |
+| Glow Studio (fictional) | from proposal v2 | red | omitted | 2026-09-28 | reset message (draft below) | wedding season, owner busy |
 
-Draft for Kiran: "Hi, I know wedding season is busy. Should we pause the website and pick it up in January, or is something on your side I can help with?"
+Draft for the owner: "Hi, I know wedding season is busy. Should we pause the website and pick it up in January, or is something on your side I can help with?"
 
 ## Example 3: Boundary: asked to close with a fake deadline and a discount
 **Request:** "The clinic is dragging. Tell them the price goes up 20% next week and that I'll give 15% off if they sign today."

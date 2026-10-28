@@ -1,0 +1,10 @@
+# Optional per-project quality gate overrides. Copy next to project.yaml. See quality-gates/README.md.
+schema: 1
+profile: standard                 # lightweight | standard | high_assurance
+product_types: [website]
+exceptions: []
+# Example exception (must be justified, approved, dated and time-boxed):
+# - requirement: PERF-012
+#   reason: Why this cannot be met now.
+#   approved_by: Name or role of the approver
+#   expires: 2027-01-31

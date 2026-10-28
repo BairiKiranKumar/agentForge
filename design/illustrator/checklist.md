@@ -5,7 +5,7 @@
 - [ ] Palette and type tokens received from `brand-designer`
 - [ ] Every slot listed with purpose, size at 375 px and desktop, and tier
 - [ ] Audience setting recorded (town, language, community, age group)
-- [ ] Allowed tools and Kiran's current plan for any AI generator confirmed
+- [ ] Allowed tools and the owner's current plan for any AI generator confirmed
 - [ ] Reference images have a recorded source and rights status
 
 ## While working
@@ -26,7 +26,7 @@
 
 ## Before handoff
 - [ ] Rights record complete for every asset, with human edits noted
-- [ ] Every "unclear" commercial-use item sent to `licensing-ip-assistant` and flagged to Kiran
+- [ ] Every "unclear" commercial-use item sent to `licensing-ip-assistant` and flagged to the owner
 - [ ] Disclosure decision recorded for any image used in advertising
 - [ ] Prompt log and rights log paths included in the handoff
 - [ ] Assumptions, open questions and risks listed

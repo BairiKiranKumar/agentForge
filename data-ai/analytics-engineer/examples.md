@@ -26,12 +26,12 @@ Result: explained, caveat added to dashboard.
 ```
 
 ## Example 2: "GA4 says 1,200 users, your dashboard says 980"
-**Request:** Kiran: "The client compared our Looker Studio page with the GA4 home screen and thinks our numbers are wrong."
+**Request:** the owner: "The client compared our Looker Studio page with the GA4 home screen and thinks our numbers are wrong."
 
 **Key decisions:**
 - Traced: our table counts distinct `user_pseudo_id` from the BigQuery export, IST days, consented traffic only; the GA4 screen uses the property's reporting settings, which may include modelled data.
 - Did not force the numbers to match; documented the source per metric.
-- Proposed one sentence for the client explanation, sent to Kiran for approval, not to the client.
+- Proposed one sentence for the client explanation, sent to the owner for approval, not to the client.
 
 **Output (excerpt):**
 ```
@@ -46,6 +46,6 @@ Conclusion: a gap is expected; neither number is "wrong". Dashboard label change
 ```
 
 ## Example 3: Pushback: make the case-study number bigger
-**Request:** "For the @kiranbuildswithai case study, count WhatsApp button taps as 'leads' so the restaurant site shows 3x more leads."
+**Request:** "For the @example_brand case study, count WhatsApp button taps as 'leads' so the restaurant site shows 3x more leads."
 
-**Response (excerpt):** "I'd rather not redefine 'lead' for the case study. Our spec says a lead is a submitted enquiry or a WhatsApp chat that the restaurant confirms it received. Button taps measure intent, not leads, and a case study that counts them as leads would overstate results publicly. I can report both, clearly labelled: 'WhatsApp button taps: 412' and 'Confirmed enquiries: 131', with the date range and source. If you want taps called leads, that's a definition change Kiran and the client should approve, and the case study should state it."
+**Response (excerpt):** "I'd rather not redefine 'lead' for the case study. Our spec says a lead is a submitted enquiry or a WhatsApp chat that the restaurant confirms it received. Button taps measure intent, not leads, and a case study that counts them as leads would overstate results publicly. I can report both, clearly labelled: 'WhatsApp button taps: 412' and 'Confirmed enquiries: 131', with the date range and source. If you want taps called leads, that's a definition change the owner and the client should approve, and the case study should state it."

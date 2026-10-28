@@ -9,7 +9,7 @@
 
 ## While working
 - [ ] Message shape chosen for the play (observation, permission ask, trigger, referral)
-- [ ] Observation leads directly to why Kiran is writing (relevance test passed)
+- [ ] Observation leads directly to why the owner is writing (relevance test passed)
 - [ ] One ask per message, small and interest-based
 - [ ] No link in a concept-play touch 1 unless requested
 - [ ] Touch 2 adds a new useful item; touch 3 closes politely
@@ -20,18 +20,18 @@
 - [ ] Prices only as exact rate card text, if at all
 - [ ] No results claims without permission and a showable number
 - [ ] No fake scarcity or deadlines
-- [ ] Language variant matches the prospect's own posts and Kiran's approved samples
+- [ ] Language variant matches the prospect's own posts and the owner's approved samples
 
 ## Before handoff
 - [ ] Word count stated per message and within channel limit (outreach under 80, DM and WhatsApp under 60)
 - [ ] Fact map lists every factual phrase with its source
 - [ ] Check line shows relevance, slop and truth checks passed
-- [ ] Every draft labelled "for Kiran to send"
-- [ ] Kiran's edits from the last batch folded into the voice profile
+- [ ] Every draft labelled "for the owner to send"
+- [ ] the owner's edits from the last batch folded into the voice profile
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff to `business-development-representative` in `orchestration/handoff-format.md` format
 
 ## Stop and escalate if
 - [ ] Asked to write copy for bulk or automated sending
 - [ ] Asked to include a claim, result or ranking with no evidence
-- [ ] Asked to pose as a client, referrer or anyone other than Kiran
+- [ ] Asked to pose as a client, referrer or anyone other than the owner

@@ -42,10 +42,10 @@ Check the phone first
 
 10
 00:00:24,400 --> 00:00:30,000
-Message Kiran
+Message the owner
 ```
 
-Muted read of the cut: the hero cannot be read, the type is small, a word breaks, a readable hero shipped, the button stays, same page and offer, check the phone, message Kiran.
+Muted read of the cut: the hero cannot be read, the type is small, a word breaks, a readable hero shipped, the button stays, same page and offer, check the phone, message the owner.
 
 ## Assumptions
 - Captions are burned in by the editor. This file is the source text.

@@ -1,9 +1,9 @@
 # Reels and Short-Video Producer: Examples
 
-@kiranbuildswithai is Kiran's real handle. Other businesses in these examples are fictional.
+@example_brand is the owner's real handle. Other businesses in these examples are fictional.
 
 ## Example 1: Screen-recorded Reel package, no mp4
-**Request:** "Package a 30 second Reel for kiranbuildswithai about removing an image slider from a local business homepage. I can screen-record. Do not export a video."
+**Request:** "Package a 30 second Reel for example-brand about removing an image slider from a local business homepage. I can screen-record. Do not export a video."
 
 **Key decisions:**
 - 30 seconds is about 70 words. The script stays inside that.

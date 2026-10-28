@@ -18,7 +18,7 @@ Idempotency key: fee-reminder:<student_id>:<yyyy-mm>
 Ran twice in test mode: first run 37 queued, second run 0 queued, duplicates 0
 Business rules tested: unpaid only, opted-in only, joined mid-month excluded until next period (confirmed with product-owner)
 npm test -> 29 passed, 0 failed
-Not verified: real BSP delivery (sandbox only; production run needs Kiran's authorization)
+Not verified: real BSP delivery (sandbox only; production run needs the owner's authorization)
 ```
 
 ## Example 2: Slot booking race in a salon app

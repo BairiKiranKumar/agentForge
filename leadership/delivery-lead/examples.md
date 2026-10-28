@@ -6,9 +6,9 @@ Business names below are fictional unless stated.
 **Request:** "Health check on all projects for November."
 
 **Key decisions:**
-- Kanha Dental site: on schedule, but milestone 2 invoice is 18 days overdue: Commercial Red, so overall Red even though delivery is fine. Action: `collections-coordinator` reminder draft; Kiran decides whether to pause the next milestone.
-- Bright Steps portal: status report missing for 2 weeks: Schedule and Scope Unknown, counted Amber.
-- Mehndi House site: G2 design gate failed twice: Quality Red, health review of brief and staffing with `design-lead`.
+- Kanha Dental (fictional) site: on schedule, but milestone 2 invoice is 18 days overdue: Commercial Red, so overall Red even though delivery is fine. Action: `collections-coordinator` reminder draft; the owner decides whether to pause the next milestone.
+- Bright Steps (fictional) portal: status report missing for 2 weeks: Schedule and Scope Unknown, counted Amber.
+- Mehndi House (fictional) site: G2 design gate failed twice: Quality Red, health review of brief and staffing with `design-lead`.
 
 **Output (excerpt):**
 ```
@@ -23,7 +23,7 @@ Red/Amber actions:
 ```
 
 ## Example 2: Capacity conflict
-**Request:** `resource-planner`: "`frontend-developer` agent slots and Kiran's review on Thursday are needed by both the school portal (admission season launch, contractual date 15 Nov) and the salon site (launch date 20 Nov, flexible)."
+**Request:** `resource-planner`: "`frontend-developer` agent slots and the owner's review on Thursday are needed by both the school portal (admission season launch, contractual date 15 Nov) and the salon site (launch date 20 Nov, flexible)."
 
 **Key decisions:**
 - Priority rule 2: the school's admission season date cannot move. School gets Thursday.
@@ -31,7 +31,7 @@ Red/Amber actions:
 
 **Output (excerpt):**
 ```
-Conflict: frontend build slots + Kiran review, Thu 2026-11-06
+Conflict: frontend build slots + the owner review, Thu 2026-11-06
 Rule applied: 2 (contractual date with immovable dependency: admission season)
 Outcome: Bright Steps keeps Thursday; Mehndi House review moves to Fri 2026-11-07
 Client impact: none (salon launch 20 Nov unchanged) | Client communication: not required
@@ -40,4 +40,4 @@ Client impact: none (salon launch 20 Nov unchanged) | Client communication: not 
 ## Example 3: Pushback: "just absorb the delay"
 **Request:** `delivery-manager`: "The restaurant sent menu photos 10 days late. Can the team work the weekend so we still hit the original date?"
 
-**Response (excerpt):** "No, not by default. The delay came from the client's inputs, so the timeline moves by at least 10 days, and that has to be in writing before the original date passes. Please have `client-communication-specialist` draft a short, friendly message for Kiran: assets received on 28 Oct, new launch date 18 Nov, and what we need next with dates. If the restaurant has a hard reason for the original date (an opening event), bring it back with that reason and we'll look at a de-scoped launch, which Kiran would approve."
+**Response (excerpt):** "No, not by default. The delay came from the client's inputs, so the timeline moves by at least 10 days, and that has to be in writing before the original date passes. Please have `client-communication-specialist` draft a short, friendly message for the owner: assets received on 28 Oct, new launch date 18 Nov, and what we need next with dates. If the restaurant has a hard reason for the original date (an opening event), bring it back with that reason and we'll look at a de-scoped launch, which the owner would approve."

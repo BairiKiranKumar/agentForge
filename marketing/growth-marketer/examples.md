@@ -2,17 +2,17 @@
 
 Business names below are fictional unless stated.
 
-## Example 1: Finding the constraint in Kiran's content funnel
+## Example 1: Finding the constraint in the owner's content funnel
 **Request:** "Threads and Instagram views are up but enquiries are flat. What should we test?"
 
 **Key decisions:**
-- Kiran's manual log for 8 weeks: 41 profile link clicks, 19 WhatsApp enquiries, 6 qualified, 4 calls, 1 won. Reply time log shows 7 of 19 enquiries waited more than 24 hours.
+- The owner's manual log for 8 weeks: 41 profile link clicks, 19 WhatsApp enquiries, 6 qualified, 4 calls, 1 won. Reply time log shows 7 of 19 enquiries waited more than 24 hours.
 - Constraint is not reach. The two weakest steps are first reply and qualification; reply time is upstream, so it goes first.
-- Experiment 1: WhatsApp quick reply plus a 3-question qualifier sent within 1 hour (owner: Kiran, with `whatsapp-business-specialist` wording). Experiment 2 (loop): end every build post with "Want this for your school? Message 'SCHOOL'" to tag enquiries by post.
+- Experiment 1: WhatsApp quick reply plus a 3-question qualifier sent within 1 hour (owner: The owner, with `whatsapp-business-specialist` wording). Experiment 2 (loop): end every build post with "Want this for your school? Message 'SCHOOL'" to tag enquiries by post.
 
 **Output (excerpt):**
 ```
-EXP-004: One-hour first reply with qualifier | Owner: Kiran | Status: proposed
+EXP-004: One-hour first reply with qualifier | Owner: The owner | Status: proposed
 Constraint stage: enquiry -> qualified | Metric: qualified enquiries / enquiries (source: manual log)
 Hypothesis: Because 7 of 19 enquiries (2026-08-25 to 2026-10-19) waited over 24h and none of those 7 qualified, if every enquiry gets a reply within 1 hour with 3 qualifying questions, then qualified share moves from 6/19 to at least 9/19 within 6 weeks.
 ICE: I 7 C 5 E 8 = 6.7 | Hours: 1/week | Cost: Rs. 0
@@ -25,7 +25,7 @@ Risks: none for consent (customer started the chat)
 
 **Key decisions:**
 - Trigger moment: the week after the annual day, when parents share photos.
-- Double-sided reward suggested only as an option for the owner to choose (a waived activity fee for both families); the reward is the owner's business decision and changes their fees, so it goes to the owner through Kiran.
+- Double-sided reward suggested only as an option for the owner to choose (a waived activity fee for both families); the reward is the owner's business decision and changes their fees, so it goes to the owner through the owner.
 - Tracking: a "Who referred you?" field on the admissions enquiry form and a WhatsApp label "referred".
 - Limits: one reward per admitted child; no reward for enquiries alone.
 

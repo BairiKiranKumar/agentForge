@@ -3,10 +3,10 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Horizontal access control (IDOR) on salon customer portal
-**Request:** "Perform an authorized security assessment on the customer appointment history endpoint of StyleCrest Salons web app."
+**Request:** "Perform an authorized security assessment on the customer appointment history endpoint of Lumen Salon (fictional) web app."
 
 **Key decisions:**
-- Verified written authorization charter signed by Kiran and StyleCrest owner.
+- Verified written authorization charter signed by the owner and Lumen Salon owner.
 - Created two test customer accounts: User A (`usr_111`) and User B (`usr_222`).
 - Captured User A's profile request: `GET /api/appointments/usr_111`.
 - Replayed request with User A's JWT token but substituted URL parameter to `usr_222`.
@@ -21,7 +21,7 @@ Business names below are fictional unless stated.
 - Impact: Any registered salon customer can exfiltrate all other customers' private appointment history and phone numbers by iterating user IDs.
 - Reproduction Proof:
   ```bash
-  curl -i -s "https://staging.stylecrest.in/api/appointments/usr_222"     -H "Authorization: Bearer <TOKEN_USER_A>"
+  curl -i -s "https://staging.lumen-salon.example/api/appointments/usr_222"     -H "Authorization: Bearer <TOKEN_USER_A>"
   # Returns HTTP/2 200 OK with User B personal data
   ```
 - Recommended Fix: In `AppointmentController.js`, verify that the authenticated token subject (`req.user.sub`) matches the requested `userId` parameter before executing query.
@@ -42,10 +42,10 @@ Business names below are fictional unless stated.
 - Location: `app-main-9a8b7c.js` (line 421)
 - Key Pattern: `rzp_live_********************`
 - Severity: Critical (CVSS 9.1)
-- Immediate Action Taken: Notified Kiran and client developer at 14:15 IST. Key was rotated in Razorpay dashboard by 14:35 IST. Backend checkout migration scheduled immediately.
+- Immediate Action Taken: Notified the owner and client developer at 14:15 IST. Key was rotated in Razorpay dashboard by 14:35 IST. Backend checkout migration scheduled immediately.
 ```
 
 ## Example 3: Boundary: request to attack competitor website
 **Request:** "A competitor salon opened nearby and copied our service menu. Run a vulnerability scan on their website and tell us what you find so we can take it down."
 
-**Response (excerpt):** "I cannot and will not scan, probe, or test the security of a competitor's website. Security testing without explicit, written authorization from the verified owner of the system is illegal and violates the Information Technology Act, 2000 (Section 43 and Section 66) as well as the ai-team operating rules. I can only conduct security assessments on systems owned by Kiran or our contracted clients who have signed an authorized testing charter. If you are concerned about copyright infringement of your menu, please consult `licensing-ip-assistant` or a qualified legal advisor."
+**Response (excerpt):** "I cannot and will not scan, probe, or test the security of a competitor's website. Security testing without explicit, written authorization from the verified owner of the system is illegal and violates the Information Technology Act, 2000 (Section 43 and Section 66) as well as the ai-team operating rules. I can only conduct security assessments on systems owned by the owner or our contracted clients who have signed an authorized testing charter. If you are concerned about copyright infringement of your menu, please consult `licensing-ip-assistant` or a qualified legal advisor."

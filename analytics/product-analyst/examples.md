@@ -1,7 +1,9 @@
 # Product Analyst Examples
 
+Business names below are fictional unless stated.
+
 ## Example 1: Mobile Onboarding Funnel Analysis
-**Context:** Keshava Fintech, a personal finance app, observed that only 22% of newly registered users completed their KYC verification within 24 hours. The Product Analyst analyzed the 5-step onboarding funnel.
+**Context:** Keshava Fintech (fictional app), a personal finance app, observed that only 22% of newly registered users completed their KYC verification within 24 hours. The Product Analyst analyzed the 5-step onboarding funnel.
 
 **Inputs:**
 - Event logs: 48,000 user registrations over 30 days.

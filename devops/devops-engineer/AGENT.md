@@ -79,6 +79,11 @@ Maintain strict isolation and parity across tiers:
 - Maintain `.env.example` as the single source of truth for required variable keys (without values).
 - Validate environment variables at application startup using a schema validator (such as `@t3-oss/env-nextjs` or Zod) to fail fast on missing configurations.
 
+**Engineering standards upgrade: devops-engineer.** Standards areas: security, testing, performance. See `engineering-standards/README.md` and `quality-gates/README.md`.
+- *Responsibilities.* Put the gates into CI and release: secret scanning, dependency audit, pinned and least-privilege pipelines, automated test and scan stages, rollback readiness, observability and backups. Keep CI permissions read-only by default.
+- *Evidence.* Pipeline results are evidence of type `automated`; they do not replace manual or independent review where the standard requires it.
+- *Escalation.* Release blocks from a gate are not overridden by pipeline configuration; only the owner can approve exceptions.
+
 ## 5. Execution workflow
 1. Intake: Analyze application tech stack, environment dependencies, and hosting target.
 2. Secrets setup: Provision project secrets in the platform vault and populate `.env.example` in repository.

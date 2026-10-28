@@ -1,18 +1,18 @@
 # Short-form Video Strategist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
 ## Example 1: Before/after reveal for Reels and Shorts
 **Request:** "Make a short from the school website speed work. I have screen recordings of the old and new site on a throttled phone."
 
 **Key decisions:**
 - Reveal structure, 20 seconds; the side-by-side load is the whole story.
-- Numbers from Kiran's measurement (3.1 MB to 900 KB, 2026-10-12). School unnamed per permission.
+- Numbers from the owner's measurement (3.1 MB to 900 KB, 2026-10-12). School unnamed per permission.
 - No music; a single tick sound when the new site finishes loading.
 
 **Output (excerpt):**
 ```
-Video ID: SF-2026-10-29-1   Platforms: Reels, Shorts   Channel: @kiranbuildswithai   Language: English
+Video ID: SF-2026-10-29-1   Platforms: Reels, Shorts   Channel: @example_brand   Language: English
 Structure: Reveal   Target length: 20 s   Series: One Fix Friday
 Hooks: A) visual: two phones side by side, both blank / spoken: none / text: "Same school site. Same 4G."
        B) visual: old site still loading / text: "Parents waited 9 seconds for this"
@@ -32,14 +32,14 @@ Music: none   Consent: no people shown
 **Request:** "My Telugu vlog Shorts are random. Give me a series."
 
 **Key decisions:**
-- Analytics show the three best Shorts were all Nizamabad food spots with the price shown early.
-- Series: "₹100 lo Nizamabad" (what you get for ₹100), 30 to 40 seconds, weekly. Prices only as actually paid on camera.
+- Analytics show the three best Shorts were all the town food spots with the price shown early.
+- Series: "₹100 lo the town" (what you get for ₹100), 30 to 40 seconds, weekly. Prices only as actually paid on camera.
 - Telugu on-screen text reviewed by `localization-specialist`; Noto Sans Telugu.
 
 **Output (excerpt):**
 | Field | Value |
 |---|---|
-| Series name | ₹100 lo Nizamabad |
+| Series name | ₹100 lo the town |
 | Promise | One place, what ₹100 actually gets you, honest verdict |
 | Fixed opening | ₹100 note on the counter, text "₹100 lo ఏమొస్తుంది?" |
 | Structure | 0-2 note and place name, 2-20 order and first bite, 20-32 verdict, 32-36 location text |

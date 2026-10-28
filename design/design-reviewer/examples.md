@@ -29,7 +29,7 @@ Not reviewed: interaction states (spec pending from interaction-designer).
 ```
 
 ## Example 2: Post-build review of a Canva carousel (WF-04 stage 4)
-**Request:** "Review this 8-slide carousel before Kiran approves it."
+**Request:** "Review this 8-slide carousel before the owner approves it."
 
 **Key decisions:**
 - Viewed slides at actual 1080 x 1350 scaled to phone size; slide 5 body text is too small to read on a 6-inch phone.

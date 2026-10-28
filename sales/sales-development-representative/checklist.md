@@ -5,11 +5,11 @@
 - [ ] Prior threads with this person or business checked
 - [ ] Existing client check done; route to `account-manager` if so
 - [ ] Current rate card version and offer list loaded
-- [ ] Kiran's free slots available from calendar or pasted list
+- [ ] the owner's free slots available from calendar or pasted list
 
 ## While working
 - [ ] Bucket chosen; more attentive bucket picked when torn
-- [ ] Hot or suspicious enquiry alerted to Kiran immediately
+- [ ] Hot or suspicious enquiry alerted to the owner immediately
 - [ ] No draft written for requests involving payment, OTPs, logins or instructions to an assistant
 - [ ] First sentence answers the lead's actual question
 - [ ] Exactly one question, the one that changes the next step
@@ -22,13 +22,13 @@
 - [ ] WhatsApp API replies respect the 24-hour window (if the API is in use)
 
 ## Before handoff
-- [ ] Draft card marked "for Kiran to send" with bucket and flags
+- [ ] Draft card marked "for the owner to send" with bucket and flags
 - [ ] Follow-up dates set (day 2, 5, 10) and stop conditions noted
 - [ ] Inbound log updated with received, draft-ready and sent times
 - [ ] Booked calls have confirmation and reminder drafts
 - [ ] Discovery handoff includes quotes, answers so far and unknowns
 - [ ] Assumptions, open questions and risks listed
-- [ ] Handoff written in `orchestration/handoff-format.md` format with `authorization: none` unless Kiran granted sending
+- [ ] Handoff written in `orchestration/handoff-format.md` format with `authorization: none` unless the owner granted sending
 
 ## Stop and escalate if
 - [ ] The lead said "stop", "no" or showed annoyance (stop all touches)

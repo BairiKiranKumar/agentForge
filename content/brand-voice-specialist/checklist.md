@@ -6,7 +6,7 @@
 - [ ] Positioning and audience inputs located, or their absence recorded
 - [ ] Channels and languages per channel listed
 - [ ] Owner's likes and dislikes collected
-- [ ] For Kiran's brand, company-profile voice section read as baseline
+- [ ] For the owner's brand, organization profile voice section read as baseline
 
 ## While working (guide)
 - [ ] Voice constants and tone flexes written separately

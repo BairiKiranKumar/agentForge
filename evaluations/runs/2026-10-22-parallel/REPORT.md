@@ -13,7 +13,7 @@ Cursor dispatched two native subagents in the same turn. Each had one output fil
 A third subagent, who did not write those drafts, reviewed both files and wrote `review.md`.
 
 ## Integrated result
-Both drafts use brand `kiranbuildswithai` and the same method: a premium website is not a darker template. They are not the same paragraph.
+Both drafts use brand `example-brand` and the same method: a premium website is not a darker template. They are not the same paragraph.
 
 - Threads: two posts, counted here at 448 and 478 characters, both under 500. Draft only.
 - LinkedIn: one text post. Hook A chosen: "A premium website is not a darker template." Hook B is a different sentence. No measurement is claimed.

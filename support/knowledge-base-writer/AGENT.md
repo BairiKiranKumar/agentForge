@@ -103,7 +103,7 @@ Learn how to view and download your official school fee payment receipts from yo
 ### Step-by-Step Instructions
 
 1. **Log in to the Parent Portal:**
-   Open [pragathischool.edu.in/login](https://pragathischool.edu.in/login) on your mobile browser and enter your registered mobile number and password.
+   Open [greenfield-school.example/login](https://greenfield-school.example/login) on your mobile browser and enter your registered mobile number and password.
 
 2. **Open the Fees Section:**
    Tap the **Menu** icon (three lines) in the top-right corner, then tap **Fee Receipts**.

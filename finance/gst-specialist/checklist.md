@@ -1,7 +1,7 @@
 # GST Specialist (India): Checklist
 
 ## Before starting
-- [ ] Registration status taken from Kiran's written record with date
+- [ ] Registration status taken from the owner's written record with date
 - [ ] Question and as-of date written down
 - [ ] Receipts for the financial year split by domestic, inter-state and export
 - [ ] Service lines listed separately (build, hosting, design, ads, content)
@@ -24,7 +24,7 @@
 - [ ] Not-licensed header present
 - [ ] No GSTIN, ARN, LUT number or date invented
 - [ ] CA question list present
-- [ ] Actions reserved for Kiran or a licensed professional listed
+- [ ] Actions reserved for the owner or a licensed professional listed
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

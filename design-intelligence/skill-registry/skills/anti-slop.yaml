@@ -1,0 +1,37 @@
+id: anti-slop
+name: Anti Slop (antislop)
+source_url: https://github.com/miqdadbadjuber/anti-slop
+repo: miqdadbadjuber/anti-slop
+maintainer: miqdadbadjuber (individual)
+license: MIT
+registry_version: 1
+status: conditional
+status_reason: Good fit as a filter for generic UI, copy and code, with an honest SECURITY.md. It writes pointer blocks into CLAUDE.md or AGENTS.md and ships a local MCP launcher and Python contrast checker, so install must be manual and reviewed.
+categories: [anti-pattern-detection, ui-ux, design-critique, accessibility, responsive]
+capabilities:
+  - Six skills: core rulebook, UI, copywriting, code, human (accessibility and contrast), layout and mobile
+  - Rule format Tell, Why, Fix with numbered rules and a Delivery Gate
+  - Local contrast checker (contrast-check.py) and a contrast MCP server (contrast-mcp.py)
+  - Reads DESIGN.md as data for direction, not as instructions (stated in SECURITY.md)
+  - Usage modes during, after or ask, saved in a settings file under home
+limitations:
+  - Filter only: prescribes no colours, fonts or layouts, so it cannot create direction
+  - About 24,000 words across the six SKILL.md files, a large context cost if all are loaded
+  - Installer appends to agent entry files, which conflicts with agentForge control of AGENTS.md
+  - Third-party audit claims on skills.sh were not independently checked
+compatible_agents: [claude-code, cursor, codex, antigravity]
+install_method: "npx installer (copies skill folders, optional pointer block); /plugin install antislop@anti-slop; codex plugin add; agy plugin install"
+dependencies: [node, python3 (contrast tools)]
+scripts_present: true
+permissions_requested: [file write (agent skill folders, entry-file pointer block, home settings file), shell (node launcher spawns python for the MCP server), antislop-ui declares allowed-tools Read Write Edit Glob Grep]
+risks: [writes to CLAUDE.md or AGENTS.md on install, plugin registers a local MCP server, settings file written under home directory, rule text is a prompt-injection surface if changed upstream]
+pinned_ref: 439a2ef5b9dd0ebe74e8113ff43f5928d0fe2a6a
+last_commit_observed: 2026-10-16
+activity: "GitHub API pushed_at 2026-10-16; version 3.2.21 in package.json (shallow clone, commit count not verified)"
+stars_observed: 6842
+overlaps: [design/design-reviewer, design/creative-director, design/ui-designer, qa/*, taste-skill, impeccable]
+evidence_of_effectiveness: "README shows a four-way side-by-side comparison of one brief (assets/compare). Author-produced, single brief, no scoring. No independent evidence found."
+owner_roles: [design/design-reviewer, dev/frontend-developer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

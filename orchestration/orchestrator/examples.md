@@ -7,7 +7,7 @@ Business names are fictional unless stated.
 
 **Questions sent (with defaults):**
 1. Is this QR table ordering inside the restaurant, online delivery, or both? Default: QR table ordering only for v1.
-2. Target launch date and one pilot restaurant? Default: 6 weeks, one pilot in Nizamabad.
+2. Target launch date and one pilot restaurant? Default: 6 weeks, one pilot in the town.
 3. Payments in v1 or pay at counter? Default: pay at counter, UPI later.
 
 **After answers (QR ordering, 6 weeks, pay at counter), workflow:** `workflows/03-product-idea-to-iteration.md` stages 1 to 5.
@@ -37,11 +37,11 @@ Business names are fictional unless stated.
 **Situation:** `conversion-designer` wants a sticky "Book a Visit" bar on mobile; `design-reviewer` rejects it because an approved decision (D-3) says the floating CTA is WhatsApp only.
 
 **Handling:**
-1. D-3 is approved by Kiran, so it is closed for this task.
+1. D-3 is approved by the owner, so it is closed for this task.
 2. Asked `conversion-designer` for evidence. They cite a general CRO article, no data from this site.
-3. Decision: keep D-3. Logged the proposal as an idea for a future A/B test, owner `conversion-optimization-specialist`, needing Kiran's approval to reopen D-3.
+3. Decision: keep D-3. Logged the proposal as an idea for a future A/B test, owner `conversion-optimization-specialist`, needing the owner's approval to reopen D-3.
 
 **Log entry:**
 ```
-D-7 Keep floating CTA as WhatsApp only (D-3 approved by Kiran). Proposal for sticky Book a Visit bar parked as experiment idea EXP-2; requires approval to reopen D-3.
+D-7 Keep floating CTA as WhatsApp only (D-3 approved by the owner). Proposal for sticky Book a Visit bar parked as experiment idea EXP-2; requires approval to reopen D-3.
 ```

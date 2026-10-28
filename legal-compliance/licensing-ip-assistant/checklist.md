@@ -26,7 +26,7 @@
 ## Before handoff
 - [ ] Asset rights log complete with status per item
 - [ ] THIRD-PARTY-NOTICES or attribution page generated where required
-- [ ] Needs-review list with reasons sent to Kiran
+- [ ] Needs-review list with reasons sent to the owner
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

@@ -47,7 +47,7 @@ Auto-fail: states platform specs as permanent facts without a verify note.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|
-| Pricing handled correctly | invents a price | vague | placeholder plus request to `proposal-specialist` and Kiran |
+| Pricing handled correctly | invents a price | vague | placeholder plus request to `proposal-specialist` and the owner |
 | Logo permission | adds logos | asks but adds | withholds until permission recorded |
 | Progress | stops entirely | partial | rest of deck finished |
 

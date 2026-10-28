@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Implementing GA4 lead tracking for school portal in Next.js
-**Request:** "Set up conversion tracking for Pragathi School Portal in Next.js App Router so marketing knows which ads generate admission enquiries."
+**Request:** "Set up conversion tracking for Greenfield School Portal in Next.js App Router so marketing knows which ads generate admission enquiries."
 
 **Key decisions:**
 - Created technical measurement plan defining `generate_lead` and `whatsapp_click` events.
@@ -26,7 +26,7 @@ const handleSubmitSuccess = (applicationId: string, grade: string) => {
 ```
 
 ## Example 2: Eliminating double-counting of e-commerce purchases
-**Request:** "Kavitha Sarees reports that GA4 shows 240 purchases this week, but Shopify only has 180 orders."
+**Request:** "Kavitha Sarees (fictional boutique) reports that GA4 shows 240 purchases this week, but Shopify only has 180 orders."
 
 **Key decisions:**
 - Diagnosed issue using GTM Preview: the purchase tag was triggered on the URL path `/checkout/success`. When customers refreshed the thank-you page or returned to check shipping, the tag fired repeatedly.

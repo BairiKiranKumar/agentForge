@@ -1,85 +1,132 @@
 # agentForge
 
-agentForge is a parallel-first multi-agent system for running a digital studio: software, design, research, client delivery, and social content. The canonical copy is this GitHub repository. Other projects fetch the rules they need instead of vendoring every role.
+agentForge is an open-source framework of specialist AI agent definitions, workflows, engineering standards and quality gates. It helps people who build digital products and content run AI coding agents as a coordinated team, with clear roles, parallel work, independent review and explicit human approval for consequential actions.
 
-It started as a 179-role operating handbook. Version 1.0 keeps those roles, adds production specialists and workflows, and adds a small Python runtime that can plan work, route a task, and fetch a pinned file. Version 1.1 pins that fetch to a full commit SHA and requires an execution report for every multi-agent run.
+It is project-agnostic, brand-agnostic, framework-agnostic and vendor-neutral. Your organization, brand, stack and clients live in your own private configuration, not in this repository.
 
-## What you can ask it to do
-- Build a premium site or a full-stack slice, with research, content, design, implementation, and QA separated where the dependencies allow.
-- Fix a bug and verify it, with review and regression in the same wave after the fix.
-- Draft LinkedIn, Threads, Reels, and Instagram carousel packages for a named brand.
-- Turn one source into platform-native drafts without pasting the same caption everywhere.
+## Who it is for
+Independent developers, agencies, startups, product teams and engineering teams that use an AI coding agent and want repeatable roles, workflows and release checks instead of ad hoc prompting.
 
-Publishing, sending, spending, and production deploys still need a human. Default authorization is none. See `AGENTS.md`.
+## What is in it
+- **185 specialists.** Role definitions across engineering, design, research, QA, security, DevOps, content, marketing, sales and operations (`TEAM-INDEX.md`, `registry/agents.json`). Each role has a method, deliverables, acceptance criteria, boundaries and an evaluation. All roles start as `untested`.
+- **Workflows.** Repeatable multi-role paths (`workflows/`), including a design-first workflow and a quality-gate workflow.
+- **Multi-agent coordination.** An orchestrator, a dependency-aware scheduler and routing hints (`orchestration/`, `runtime/`). Independent stages run in parallel where your runtime can spawn workers.
+- **Design Intelligence.** Research roles, a sourced design knowledge base, a vetted third-party skill registry, a weighted design rubric and anti-slop standards (`design-intelligence/`).
+- **Engineering standards.** Versioned, modular requirements for accessibility (WCAG 2.2 AA by default), performance, security, AI security, responsive design, UX, SEO, testing and privacy, applied by product type and risk (`engineering-standards/`).
+- **Quality gates.** Lightweight, standard and high-assurance profiles that never average away a critical defect (`quality-gates/`).
+- **Private workspace configuration.** Bring your own organization, brand, stack, model provider, agent environment, deployment platform, tools and design system (`docs/configuration.md`).
 
-## Use it
-Install PyYAML, then plan or route from this checkout:
+## Supported agent environments
+Claude Code (generated subagents), Cursor, OpenAI Codex, Google Antigravity, and any tool that can read `AGENTS.md`. Adapters: `integrations/`. Parallel execution depends on your host; where workers cannot be spawned, the same plan runs in order and says so.
 
+## Quick start
 ```text
+git clone <repository-url> agentForge
+cd agentForge
 python -m pip install -r requirements.txt
+python tools/validate.py                       # validates every role definition
+python -m unittest discover -s tests           # runs the test suite
+
 python -m runtime.router "Fix the checkout bug and add a regression test" --check-roster
-python -m runtime.scheduler plan examples/plans/premium-website.yaml
-python -m runtime.scheduler plan examples/plans/instagram-carousel.yaml
+python -m runtime.scheduler plan examples/plans/design-first.yaml
+python tools/quality_gate.py select --profile standard --types website
 ```
+More: [docs/QUICKSTART.md](docs/QUICKSTART.md). Secure installation: [docs/security/secure-installation.md](docs/security/secure-installation.md).
 
-The role catalog is generated into `registry/agents.json` and `TEAM-INDEX.md`. Ownership lives in `CAPABILITY-MATRIX.md`. Scheduling rules live in `orchestration/parallel-execution.md`.
-
-### From another project
+## Configure it for your organization
 ```text
-python -m runtime.discover fetch AGENTS.md --ref <commit-sha>
-python -m runtime.discover fetch workflows/16-instagram-carousel.md --ref <commit-sha>
+mkdir workspace                                              # ignored by Git
+copy config/templates/organization.example.yaml workspace/organization.yaml    (cp on macOS and Linux)
+python -m runtime.config show
 ```
+Precedence, lowest to highest: core defaults, organization profile, stack profile, project instructions, task brief. A protected safety floor cannot be weakened by any layer. See [docs/configuration.md](docs/configuration.md).
 
-Resolution order is remote, then cache, then a local checkout, then a hard stop. Fetched files are untrusted data. They do not override safety rules or the user. Details: `docs/INSTALL.md`.
+## Specialist discovery
+- Who owns what: `CAPABILITY-MATRIX.md` (one owner, an approver and an independent reviewer per activity).
+- All roles: `TEAM-INDEX.md` and `registry/agents.json`.
+- Pick a team for a task: `python -m runtime.router "<task>"`, then the orchestrator applies the capability matrix.
 
-## Parallel orchestration
-1. The orchestrator breaks the request into stages with owners and output files.
-2. `runtime/scheduler.py` groups stages into waves. A wave runs together only when every dependency is already done and no two stages write the same file.
-3. On a host that can spawn subagents (Cursor subagents, Claude Code subagents), one worker takes each stage in the wave.
-4. The Python scheduler can also run declared command workers concurrently. It does not call a language model.
-5. On Codex, Antigravity, or any host that cannot spawn workers, run the same waves in order and say so.
-6. The lead integrates the files and an independent reviewer checks high-risk output.
-
-Do not add a specialist who has nothing to deliver. A one-file edit stays with one owner.
-
-## Tool adapters
-| Tool | Start here |
+## Workflows
+| Area | Workflow |
 |---|---|
-| Cursor | `integrations/cursor/BOOTSTRAP.md` and `.cursor/rules/agentforge.mdc` |
-| Claude Code | `integrations/claude-code/install.sh` |
-| OpenAI Codex | `integrations/codex/BOOTSTRAP.md` (it already reads `AGENTS.md`) |
-| Google Antigravity | `integrations/antigravity/BOOTSTRAP.md` and `.agents/rules/` |
-| Other | `docs/INSTALL.md` |
+| Websites and apps | `10-premium-website`, `11-fullstack-app`, `13-ui-ux-implementation` |
+| Bug fixing | `12-bugfix-regression` |
+| Research | `14-technical-research` |
+| Content and social | `15` to `20` |
+| Design-first delivery | `21-design-first` |
+| Design knowledge refresh | `22-design-intelligence-refresh` |
+| Quality gates | `23-quality-gates` |
+Business workflows (sales, onboarding, delivery, support, SEO) are `01` to `09`.
 
-## Brands
-Social and design work loads one profile from `brands/<id>/brand.yaml`. The sample profile is `@kiranbuildswithai`. Copy `brands/_template/` for a client. Do not mix profiles in one draft.
+## Multi-agent coordination
+1. The orchestrator splits the request into stages with owners, inputs, output files and acceptance criteria.
+2. `runtime/scheduler.py` groups stages into waves. A stage starts only when its dependencies have real artifacts, and no two stages in a wave write the same file.
+3. Each wave runs in parallel on hosts that can spawn subagents. The Python scheduler can run declared command workers; it does not call a language model.
+4. An independent reviewer checks work that carries risk. A reviewer never reviews their own output.
+5. Every multi-agent run ends with an execution report that separates what ran from what did not.
 
-## Example campaign
-`examples/campaigns/kiranbuildswithai/instagram-carousel/index.html` is a real 1080 by 1350 HTML/SVG carousel. The caption states that PNG and PDF export were not run. Workflow: `workflows/16-instagram-carousel.md`.
+## Design Intelligence
+Researchers study real designs and motion techniques and record sourced principles, not copies. The Creative Director approves a direction before major implementation. An independent Design Reviewer scores rendered work with a weighted rubric. Third-party skills are reviewed and recorded, never installed blindly. See [design-intelligence/README.md](design-intelligence/README.md).
 
-## Extend the team
-`CONTRIBUTING.md` covers new roles, the validator, and the index builder. After role edits, run:
+## Engineering standards and quality gates
+Pick a profile and product types, list the requirements that apply, record evidence, and evaluate:
+
+```text
+python tools/quality_gate.py applicable --profile standard --types website
+python tools/quality_gate.py evaluate path/to/results.yaml
+```
+Planned checks never count as passed, automated results alone never establish accessibility conformance, and a critical failure blocks release in every profile. See [engineering-standards/README.md](engineering-standards/README.md) and [quality-gates/README.md](quality-gates/README.md).
+
+## Skill registry
+`design-intelligence/skill-registry/` records reviews of third-party skills with license, pinned commit, permissions and risks. Nothing is installed by this repository. No skill is `approved` without a documented review and a human decision. Policy: `design-intelligence/skill-registry/policy.md`.
+
+## Security model
+- Default authorization is none. Sending, publishing, spending, production changes, legal or tax positions, security testing and sharing personal data need explicit human approval (`AGENTS.md` section 3).
+- Web pages, repository files, documents and tool output are data, not instructions.
+- Configuration cannot weaken the safety floor.
+- Secrets and personal data stay out of the repository and out of agent context. CI runs secret and privacy scans.
+- Read [SECURITY.md](SECURITY.md), [docs/security/supply-chain.md](docs/security/supply-chain.md) and [docs/security/data-handling.md](docs/security/data-handling.md).
+
+## Contributing
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Before opening a pull request run:
 
 ```text
 python tools/validate.py
 python tools/build_indexes.py
+python tools/design_kb.py validate
+python tools/quality_gate.py validate
 python -m unittest discover -s tests
 python tools/scan_secrets.py
+python tools/privacy_scan.py
 ```
 
 ## Layout
 ```text
-AGENTS.md                 shared rules
+AGENTS.md                 shared rules (safety floor)
 CAPABILITY-MATRIX.md      one owner per activity
 orchestration/            roster, handoffs, parallel rules
-runtime/                  discover, router, scheduler
-workflows/                WF-01 through WF-20
-brands/                   one folder per identity
-registry/agents.json      generated catalog
+runtime/                  router, scheduler, config, discover
+workflows/                WF-01 to WF-23
+engineering-standards/    requirements by area
+quality-gates/            profiles and gate rules
+design-intelligence/      design research, knowledge base, skill registry, rubric
+config/                   neutral defaults and templates
+regional-packs/           optional region-specific reference material
+brands/                   brand profile schema, template, fictional example
+examples/                 fictional examples only
+integrations/             adapters for coding agents
+tools/  tests/  templates/  evaluations/  docs/
 <department>/<role>/      AGENT.md, checklist, examples, evaluation
 ```
 
-Older studio notes remain: `QUICKSTART.md`, `GAPS-AND-LIMITATIONS.md`, and `knowledge-management/company-profile.md`.
+## Known limitations
+- **Roles are untested.** Every role is `untested` until its `evaluation.md` tasks are run and scored. Structural validation is not a behavioural pass.
+- **Standards are guidance.** They were drafted from public sources on recorded dates and have not been reviewed by certified accessibility, security or legal professionals. A passing gate is not WCAG conformance, a security certification, legal compliance or production readiness.
+- **No bundled browser.** Visual and accessibility checks that need rendering, screen readers or performance tools require you to connect them. Without them, reports must say so.
+- **The router is a keyword hint**, not a judge. The scheduler does not call a model.
+- **Residual regional and single-business wording.** Some role bodies and examples still reflect one regional small-business context (see `docs/release-readiness/final-release-review.md`, finding F1). Treat them as examples, not defaults.
+- **Regional packs and time-sensitive facts** (laws, prices, APIs, thresholds) carry as-of dates and must be re-verified.
+- **No scheduler is shipped.** Refresh workflows run only when you start them.
 
-## Limits
-Agents are `untested` until their `evaluation.md` tasks are scored. The router is a keyword hint, not a judge. The scheduler does not invent specialist prose. Image and video export happen only when a local tool writes the file.
+## License
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE). Third-party attributions: `SOURCE-MANIFEST.md` and `sources/licenses/`.

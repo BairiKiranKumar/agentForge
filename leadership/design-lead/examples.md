@@ -38,4 +38,4 @@ Projects affected: 3 active (gates G1/G2 not yet passed)
 ## Example 3: Pushback: "just approve it, the client is waiting"
 **Request:** `delivery-manager`: "The clinic needs to see screens today. Skip the review and send them."
 
-**Response (excerpt):** "I won't skip G2. Clients seeing unreviewed screens is the main cause of extra revision rounds. What I can do today: `design-reviewer` runs a focused G2 on the three screens the clinic asked about (home, services, booking) within two hours, at 375 and 1440. The rest follow tomorrow. Sending to the client stays with Kiran once the verdict is in."
+**Response (excerpt):** "I won't skip G2. Clients seeing unreviewed screens is the main cause of extra revision rounds. What I can do today: `design-reviewer` runs a focused G2 on the three screens the clinic asked about (home, services, booking) within two hours, at 375 and 1440. The rest follow tomorrow. Sending to the client stays with the owner once the verdict is in."

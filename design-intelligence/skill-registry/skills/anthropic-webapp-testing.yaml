@@ -1,0 +1,34 @@
+id: anthropic-webapp-testing
+name: Anthropic webapp-testing
+source_url: https://github.com/anthropics/skills/tree/main/skills/webapp-testing
+repo: anthropics/skills
+maintainer: Anthropic
+license: Apache-2.0
+registry_version: 1
+status: conditional
+status_reason: Useful for screenshots and browser logs of local apps, but with_server.py starts arbitrary shell commands (shell=True) and the skill drives Playwright. Needs script review and a sandbox before use.
+categories: [browser-visual-testing]
+capabilities:
+  - Playwright-based interaction with local web apps: verify behaviour, debug UI, capture screenshots, read browser logs
+  - scripts/with_server.py starts one or more servers, waits for ports, runs a command, then cleans up
+  - Example scripts in examples/
+limitations:
+  - Local apps only; no visual baseline diffing or design scoring
+  - Requires Python and Playwright installed separately
+  - Example scripts were listed but not all read
+compatible_agents: [claude-code]
+install_method: "copy skills/webapp-testing folder into the agent skills directory"
+dependencies: [python3, playwright]
+scripts_present: true
+permissions_requested: [shell (server start commands passed by the agent), network (localhost), file write (screenshots)]
+risks: [with_server.py uses subprocess.Popen with shell=True on strings supplied by the agent, so a manipulated prompt could run arbitrary commands, drives a real browser]
+pinned_ref: dbd4588f9e1033efb41dad4bef2f7947c8993d44
+last_commit_observed: 2026-10-09
+activity: "GitHub API pushed_at 2026-10-09 (shallow clone, commit count not verified)"
+stars_observed: 182932
+overlaps: [qa/*, design/design-reviewer, playwright-cli]
+evidence_of_effectiveness: "none found"
+owner_roles: [qa/*, dev/frontend-developer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

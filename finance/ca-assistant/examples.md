@@ -6,7 +6,7 @@ Business names below are fictional.
 **Request:** "How much advance tax should I pay by 15 December?"
 
 **Key decisions:**
-- Books closed through September; October has 3 Suspense items worth Rs. 6,500, stated as an assumption with Kiran's okay.
+- Books closed through September; October has 3 Suspense items worth Rs. 6,500, stated as an assumption with the owner's okay.
 - Receipts April to September Rs. 7,20,000; `financial-analyst` forecast for October to March Rs. 6,00,000 to Rs. 8,00,000.
 - Presumptive computation shown only as a draft; profession classification is a CA question.
 - Slab rates under the 2025 Act not verified in this session: tax figure left as "pending rate verification" rather than guessed.
@@ -21,7 +21,7 @@ Tax on that income: pending rate verification on incometaxindia.gov.in
 TDS per 26AS to date: Rs. 28,000 (4 deductions, all matched)
 Calendar (secondary source, verify): if presumptive, 100% may be paid by 15 March 2027; otherwise 75% cumulative by 15 December 2026.
 Questions for the CA:
-1. Is web development a "profession" under Section 58 for Kiran?
+1. Is web development a "profession" under Section 58 for the owner?
 2. Confirm 2025 Act slab rates and regime for tax year 2026-27.
 ```
 
@@ -32,7 +32,7 @@ Questions for the CA:
 | Deductor | Books TDS | 26AS TDS | Quarter | Status | Next step |
 |---|---|---|---|---|---|
 | Bright Minds Academy (fictional) | Rs. 10,000 | Rs. 10,000 | Q2 | Matched | none |
-| Spice Route (fictional) | Rs. 4,500 | Rs. 0 | Q2 | In books, not in 26AS | Draft for Kiran asking client to file their TDS return |
+| Spice Route (fictional) | Rs. 4,500 | Rs. 0 | Q2 | In books, not in 26AS | Draft for the owner asking client to file their TDS return |
 | Care Plus Clinic (fictional) | Rs. 0 | Rs. 2,800 | Q1 | In 26AS, not in books | Find receipt; `bookkeeping-assistant` to check |
 
 ## Example 3: Boundary: "You're my CA, sign the return"

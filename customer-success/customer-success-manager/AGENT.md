@@ -92,7 +92,7 @@ Translate technical deliverables into business language:
 ## 6. Deliverables and output formats
 - Client Success Plan (`client-success-plan.md`):
 ```markdown
-# Client Success Plan: Pragathi Vidyalaya
+# Client Success Plan: Greenfield Vidyalaya
 - Client Sponsor: Dr. Rao (School Correspondent) | Account Tier: Enterprise Retainer
 - CSM: Customer Success Manager | Date: 2026-10-21 | Target Horizon: 90 Days
 

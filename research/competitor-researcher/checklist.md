@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Decision served and deadline known
 - [ ] Our offer and target segment stated in one line
-- [ ] Known competitors collected from client, Kiran and prior teardowns
+- [ ] Known competitors collected from client, the owner and prior teardowns
 - [ ] Publication intent checked (internal only by default)
 
 ## While working

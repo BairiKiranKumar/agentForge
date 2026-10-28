@@ -1,0 +1,345 @@
+schema: 1
+area: responsive
+version: 1.0.0
+verified_on: 2026-10-22
+references:
+  - {id: mdn-responsive, name: "MDN Responsive design (Learn web development)", url: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_design", retrieved: 2026-10-22, note: "Mobile-first approach, breakpoints placed where content breaks, relative units, viewport meta tag, flexible layouts without media queries."}
+  - {id: mdn-length, name: "MDN CSS length (viewport units svh, lvh, dvh)", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/length", retrieved: 2026-10-22, note: "Small, large and dynamic viewport units and the vh default. First 100000 of about 145750 characters read."}
+  - {id: mdn-env, name: "MDN env() and safe-area-inset-*", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/env", retrieved: 2026-10-22, note: "Safe area inset variables and fallback values. The viewport-fit=cover requirement was not on the page and is labelled Unverified in the guide."}
+  - {id: mdn-pointer, name: "MDN pointer and any-pointer media features", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer", retrieved: 2026-10-22, note: "pointer reports the primary input only; any-pointer covers all inputs."}
+  - {id: mdn-orientation, name: "MDN orientation media feature", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation", retrieved: 2026-10-22, note: "Describes the viewport, not the device; soft keyboard can flip it."}
+  - {id: mdn-logical, name: "MDN CSS logical properties and values", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values", retrieved: 2026-10-22, note: "Flow-relative properties for right-to-left and vertical writing modes."}
+  - {id: mdn-images, name: "MDN Responsive images", url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images", retrieved: 2026-10-22, note: "srcset with w or x descriptors, sizes, picture for art direction. The page did not cover width and height attributes."}
+  - {id: mdn-motion, name: "MDN prefers-reduced-motion", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion", retrieved: 2026-10-22, note: "Replace large motion with subtler effects when reduce is set."}
+  - {id: wcag-understanding, name: "Understanding WCAG 2.2 pages: reflow, orientation, target size, text spacing", url: "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html", retrieved: 2026-10-22, note: "Reflow 320 and 256 CSS px with 1280 at 400 percent equivalence and exceptions; orientation AA with essential exception; target size 24 by 24; text spacing multiples."}
+requirements:
+  - id: RESP-001
+    title: Declare a viewport meta tag and never disable user scaling
+    description: Every page sets the viewport width to the device width so layouts respond on phones, and does not block pinch zoom or text scaling.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Template review of the head element plus a phone or emulator check that breakpoints trigger and zoom works.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-responsive (viewport meta tag)"
+  - id: RESP-002
+    title: No horizontal page scroll at 320 CSS pixels wide
+    description: Pages and views fit a 320 CSS pixel viewport with vertical scrolling only, except components such as wide data tables or maps that truly need two dimensions and scroll inside their own container.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Screenshots at 320 px width and an overflow detection script result per template, with excepted components listed.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "wcag-understanding (reflow: 320 px width, 256 px height)"
+  - id: RESP-003
+    title: Write base styles for narrow screens and enhance upward where it suits the product
+    description: Where the audience is phone-heavy or the layout is content-led, author the single-column layout as the default and add wider layouts with min-width queries; a desktop-first choice is allowed when documented.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Stylesheet review note stating the chosen direction and reason.
+    owner: css-specialist
+    reviewer: design-reviewer
+    reference: "mdn-responsive (mobile first)"
+  - id: RESP-004
+    title: Set breakpoints from content behaviour, in relative units
+    description: Add a breakpoint where the layout starts to look cramped or stretched, not at named device sizes, and express it in relative units so it scales with user font size.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Breakpoint list with the content reason for each and a continuous resize review from 320 px upward.
+    owner: css-specialist
+    reviewer: design-reviewer
+    reference: "mdn-responsive (breakpoints)"
+  - id: RESP-005
+    title: Define and test a viewport matrix covering phone, tablet, desktop and ultrawide
+    description: The project records the widths and heights it checks, including a small phone, a large phone, tablet portrait and landscape, laptop, desktop and an ultrawide width, and the layout is reviewed at each.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Viewport matrix document and a screenshot set per template at each size.
+    owner: ui-designer
+    reviewer: qa-lead
+    reference: "mdn-responsive"
+  - id: RESP-006
+    title: Handle tablet widths deliberately rather than stretching phone or desktop layouts
+    description: Layouts between phone and laptop widths use the space sensibly, including both orientations, without oversized controls, empty bands or cramped columns.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Tablet portrait and landscape screenshots with a reviewer note.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "mdn-responsive"
+  - id: RESP-007
+    title: Constrain content on large and ultrawide screens
+    description: Set a maximum content or line width so text stays readable and layouts keep their balance on very wide viewports, and decide explicitly what full-bleed elements do.
+    min_profile: standard
+    applies_to: [website, web-app, internal-tool]
+    severity: minor
+    check: manual
+    evidence: Screenshots at ultrawide widths and a reviewer note on line length and alignment.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "mdn-responsive (line length example)"
+  - id: RESP-008
+    title: Choose viewport height units that match mobile browser chrome behaviour
+    description: Use small, large or dynamic viewport units deliberately for full-height layouts, because the default vh value matches the large viewport and can be hidden behind expanded browser bars.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: both
+    evidence: Style search for full-height rules, each marked with the unit chosen and reason, tested on a real phone or emulator with bars expanded and retracted.
+    owner: css-specialist
+    reviewer: mobile-tester
+    reference: "mdn-length (svh, lvh, dvh)"
+  - id: RESP-009
+    title: Respect safe areas on devices with notches, rounded corners and system bars
+    description: Fixed headers, footers and edge-aligned controls use the safe area inset values with fallbacks so nothing is hidden behind device UI.
+    min_profile: standard
+    applies_to: [mobile-web, web-app]
+    severity: major
+    check: manual
+    evidence: Screenshots on a notched device or emulator in portrait and landscape, with fixed elements visible.
+    owner: css-specialist
+    reviewer: mobile-tester
+    reference: "mdn-env (safe-area-inset-*)"
+  - id: RESP-010
+    title: Size touch targets for touch and keep at least 24 by 24 CSS pixels everywhere
+    description: Interactive targets meet at least 24 by 24 CSS pixels or the spacing exception, and larger sizing is applied for coarse pointers where the design calls for it.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Measured target sizes on a phone viewport and a media query review for pointer and any-pointer.
+    owner: ui-designer
+    reviewer: mobile-tester
+    reference: "wcag-understanding (target size 24 by 24); mdn-pointer"
+  - id: RESP-011
+    title: Do not infer touch from screen width or from the primary pointer alone
+    description: Detect input capability with pointer and any-pointer features, never from viewport size, because laptops with touch and tablets with mice report mixed capabilities.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Code review note and a test on a device with both touch and mouse.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-pointer (primary input only; any-pointer)"
+  - id: RESP-012
+    title: Make hover-only information and actions available without hover
+    description: Anything revealed on hover is also reachable by tap, focus and keyboard, so touch and keyboard users lose nothing.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Inventory of hover interactions with the non-hover alternative, checked on a touch device.
+    owner: interaction-designer
+    reviewer: mobile-tester
+    reference: "mdn-pointer"
+  - id: RESP-013
+    title: Support portrait and landscape and do not rely on the orientation media feature to detect device rotation
+    description: Layouts work in both orientations unless one is essential, and orientation queries are treated as describing the viewport shape, which a soft keyboard can change.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Screenshots in both orientations including with the on-screen keyboard open on a form page.
+    owner: frontend-developer
+    reviewer: mobile-tester
+    reference: "mdn-orientation; wcag-understanding (orientation, AA)"
+  - id: RESP-014
+    title: Serve images at appropriate size and density using srcset and sizes
+    description: Resolution-switching images offer several widths or density options with an accurate slot size hint so small screens do not download oversized files and dense displays stay sharp.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: both
+    evidence: Network panel or tool output showing the chosen file at several viewports and device pixel ratios.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-images (srcset, sizes)"
+  - id: RESP-015
+    title: Use picture for art direction and keep alt text on the fallback image
+    description: When a different crop is needed at different sizes, use picture with media conditions and an img with meaningful alt as the fallback.
+    min_profile: standard
+    applies_to: [website, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Screenshots of cropped variants at the breakpoints and the markup review.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "mdn-images (picture)"
+  - id: RESP-016
+    title: Reserve image and media space to avoid layout jumps
+    description: Give images and embeds dimensions or an aspect ratio so content does not shift as they load, and scale them with the container without distortion.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: both
+    evidence: Layout shift measurements and a screenshot sequence during load. Check whether width and height attributes are used [Unverified, not covered by the page read].
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-images"
+  - id: RESP-017
+    title: Detect overflow and clipping automatically at every matrix width
+    description: A scripted check in a real browser flags elements wider than their container, hidden text, and clipped controls at each viewport in the matrix, and results are reviewed.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: automated
+    evidence: Script output per template and viewport, plus screenshots of flagged items and fixes.
+    owner: frontend-developer
+    reviewer: visual-regression-tester
+    reference: "wcag-understanding (reflow)"
+  - id: RESP-018
+    title: Stress test layouts with long and short content
+    description: Check very long words, names, URLs, many items, one item and none, so text wraps, truncates deliberately with access to the full text, and containers never break.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Stress content fixtures and screenshots at narrow and wide viewports.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-responsive"
+  - id: RESP-019
+    title: Support right-to-left and other writing directions with flow-relative CSS
+    description: Use logical properties and direction-aware components so a right-to-left language mirrors correctly without separate override styles, and test icons, progress and carousels for direction.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Right-to-left screenshots of key templates and a stylesheet search for physical left and right properties with justifications.
+    owner: localization-specialist
+    reviewer: design-reviewer
+    reference: "mdn-logical"
+  - id: RESP-020
+    title: Plan for text expansion and different scripts
+    description: Interface labels, buttons and navigation tolerate longer translated text and scripts with different heights without truncation or overlap.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Pseudo-localisation or real translations rendered at narrow widths with screenshots.
+    owner: localization-specialist
+    reviewer: qa-lead
+    reference: "mdn-logical"
+  - id: RESP-021
+    title: Hold up at 200 percent zoom, large OS font sizes and user text spacing
+    description: Layouts remain usable with browser zoom to 200 percent, enlarged system fonts, and WCAG text spacing values applied, using flexible sizes rather than fixed heights.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screenshots at 200 percent zoom and with text spacing override for key templates.
+    owner: css-specialist
+    reviewer: qa-lead
+    reference: "wcag-understanding (text spacing; reflow)"
+  - id: RESP-022
+    title: Provide reduced-motion alternatives for layout and scroll animation
+    description: Parallax, large slides and auto-scroll effects are toned down or replaced with fades or static states under the reduced motion preference, keeping feedback visible.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: both
+    evidence: Style review and recordings with the reduce setting on.
+    owner: frontend-developer
+    reviewer: design-reviewer
+    reference: "mdn-motion"
+  - id: RESP-023
+    title: Keep sticky, fixed and overlay elements from consuming small viewports
+    description: Fixed bars, banners and chat widgets are limited in height on small and landscape viewports and do not cover content or focused controls, including when the on-screen keyboard is open.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Screenshots on a small phone in landscape and with the keyboard open on a form.
+    owner: ui-designer
+    reviewer: mobile-tester
+    reference: "mdn-length (dynamic viewport); mdn-orientation"
+  - id: RESP-024
+    title: Offer a responsive pattern for data tables and dense components
+    description: Wide tables, dashboards and toolbars use a deliberate small-screen pattern such as a scrolling region with visible cues, stacked rows or column prioritisation, preserving header associations.
+    min_profile: standard
+    applies_to: [web-app, internal-tool, website]
+    severity: major
+    check: manual
+    evidence: Screenshots at 320 px of each table and dense component type and a screen reader check that headers still associate.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "wcag-understanding (reflow exceptions for data tables)"
+  - id: RESP-025
+    title: Use input types and attributes that suit touch keyboards and autofill
+    description: Form controls use appropriate input types, input modes and autocomplete values so phones show the right keyboard and autofill works.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Form field inventory with attributes and a phone test of keyboard types.
+    owner: frontend-developer
+    reviewer: mobile-tester
+    reference: "mdn-responsive [Unverified: input attributes not on the page read]"
+  - id: RESP-026
+    title: Write a browser and device support policy and test against it
+    description: The project states which browsers, versions and devices it supports and how it checks them, using current usage data and feature support information, and records unsupported cases with a graceful fallback.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Support policy document with date and data source, and a test run log against the listed browsers.
+    owner: frontend-architect
+    reviewer: qa-lead
+    reference: "mdn-pointer (browser support data is published per feature)"
+  - id: RESP-027
+    title: Run rendered-browser checks for high-visibility interfaces
+    description: Landing pages, checkout, sign-in, dashboards and any interface with high traffic or contractual visibility must be checked in rendered browsers at the matrix viewports, not judged from code or unit tests alone.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Screenshots from a real browser per viewport and browser, with reviewer sign-off and the list of interfaces classed as high-visibility.
+    owner: frontend-developer
+    reviewer: qa-lead
+    reference: "mdn-responsive"
+  - id: RESP-028
+    title: Use visual regression checks across the viewport matrix
+    description: Key templates and states are captured at the matrix viewports and compared against approved baselines, with differences reviewed by a person.
+    min_profile: high_assurance
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: both
+    evidence: Visual regression run output with baselines, diffs and approvals recorded.
+    owner: frontend-developer
+    reviewer: visual-regression-tester
+    reference: "mdn-responsive"
+  - id: RESP-029
+    title: Verify on real devices for phone-first products
+    description: Critical flows are run on real phones and tablets for the supported operating systems, including with browser bars, keyboard and orientation changes.
+    min_profile: high_assurance
+    applies_to: [mobile-web, web-app]
+    severity: major
+    check: manual
+    evidence: Device test log with device, OS, browser and version, flow and result.
+    owner: frontend-developer
+    reviewer: mobile-tester
+    reference: "mdn-length; mdn-env; mdn-orientation"
+  - id: RESP-030
+    title: Design navigation that adapts across sizes without losing access
+    description: Primary navigation changes form between small and large viewports with the same destinations, order and labels, and is operable by touch, pointer and keyboard in each form.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Walkthrough of navigation at each matrix size with each input type.
+    owner: ui-designer
+    reviewer: design-reviewer
+    reference: "mdn-responsive"

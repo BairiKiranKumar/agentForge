@@ -7,15 +7,15 @@ Business names below are fictional unless stated.
 
 **Key decisions:**
 - 9 hours minus 2 fixed (client review call, carousel recording) minus 20% buffer leaves about 5.5 hours of plannable time.
-- Homepage revision is a dated external commitment: must. Unpaid milestone is revenue at risk: must, but the work is a reminder draft, not Kiran's hours.
+- Homepage revision is a dated external commitment: must. Unpaid milestone is revenue at risk: must, but the work is a reminder draft, not the owner's hours.
 - Two carousels do not fit. One stays as should; the second moves to "not this week" with the reason stated.
 
 **Output (excerpt):**
 ```
 Week: 2026-W43 | Founder hours: 9 (fixed: 2) | Buffer: 1.5
 Must
-1. Sunrise Dental revised homepage | owner: ui-designer -> Kiran review | done when: preview link with 375/1440 screenshots approved by Kiran | due: Thu
-2. Green Leaf milestone 2 (Rs. amount per invoice register) | owner: collections-coordinator | done when: polite reminder draft ready for Kiran to send on WhatsApp | due: Tue
+1. Sunrise Dental revised homepage | owner: ui-designer -> the owner review | done when: preview link with 375/1440 screenshots approved by the owner | due: Thu
+2. Green Leaf milestone 2 (Rs. amount per invoice register) | owner: collections-coordinator | done when: polite reminder draft ready for the owner to send on WhatsApp | due: Tue
 Should
 - Carousel: "Supabase RLS in 5 slides" | owner: content-calendar-manager | due: Fri
 Not this week
@@ -28,7 +28,7 @@ The one thing: the Sunrise homepage. It is promised for Thursday and the client 
 **Request:** `technical-lead` asks to standardize all new client sites on Next.js with Supabase. `marketing-lead` separately wants the agency site moved to a no-code builder for speed.
 
 **Key decisions:**
-- Routing score: crosses departments (+1), affects every future project (+1, hard to reverse in practice). Score 2: Kiran approves with yes/no after the leads' recommendations.
+- Routing score: crosses departments (+1), affects every future project (+1, hard to reverse in practice). Score 2: The owner approves with yes/no after the leads' recommendations.
 - The two requests partly conflict (stack standard vs an exception). Written as one decision point, not two.
 
 **Output (excerpt):**

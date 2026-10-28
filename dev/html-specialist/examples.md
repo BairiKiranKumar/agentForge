@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Dental clinic structured data and head tags (WF-06 stage 3)
-**Request:** "Backlog item SEO-07: add structured data and fix meta tags for Smile Point Dental Clinic (fictional), Nizamabad. Next.js App Router."
+**Request:** "Backlog item SEO-07: add structured data and fix meta tags for Smile Point Dental Clinic (fictional), the town. Next.js App Router."
 
 **Key decisions:**
 - Type `Dentist` (more specific than `LocalBusiness`), connected to `WebSite` via `@graph` and `@id`.
@@ -15,14 +15,14 @@ Business names below are fictional unless stated.
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "WebSite", "@id": "https://example-dental.in/#website", "name": "Smile Point Dental Clinic", "url": "https://example-dental.in/" },
+    { "@type": "WebSite", "@id": "https://example-dental.example/#website", "name": "Smile Point Dental Clinic", "url": "https://example-dental.example/" },
     {
       "@type": "Dentist",
-      "@id": "https://example-dental.in/#clinic",
+      "@id": "https://example-dental.example/#clinic",
       "name": "Smile Point Dental Clinic",
-      "url": "https://example-dental.in/",
+      "url": "https://example-dental.example/",
       "telephone": "+91-XXXXXXXXXX",
-      "address": { "@type": "PostalAddress", "streetAddress": "[from brief]", "addressLocality": "Nizamabad", "addressRegion": "Telangana", "postalCode": "[from brief]", "addressCountry": "IN" },
+      "address": { "@type": "PostalAddress", "streetAddress": "[from brief]", "addressLocality": "the town", "addressRegion": "Telangana", "postalCode": "[from brief]", "addressCountry": "IN" },
       "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "20:00" }]
     }
   ]

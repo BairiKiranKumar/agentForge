@@ -57,26 +57,26 @@ class SystemTests(unittest.TestCase):
 
     def test_carousel_artifact_exists_and_states_its_limits(self):
         html_path = os.path.join(
-            ROOT, "examples", "campaigns", "kiranbuildswithai", "instagram-carousel", "index.html"
+            ROOT, "examples", "campaigns", "example-brand", "instagram-carousel", "index.html"
         )
         note_path = os.path.join(
-            ROOT, "examples", "campaigns", "kiranbuildswithai", "instagram-carousel", "caption.md"
+            ROOT, "examples", "campaigns", "example-brand", "instagram-carousel", "caption.md"
         )
         html = open(html_path, encoding="utf-8").read()
         note = open(note_path, encoding="utf-8").read()
         self.assertIn("1080", html)
         self.assertIn("1350", html)
         self.assertIn("<svg", html.lower())
-        self.assertIn("@kiranbuildswithai", note)
+        self.assertIn("@example_brand", note)
         self.assertIn("PNG export was not run", note)
 
     def test_brand_profile_is_separate_from_the_template(self):
         brand = yaml.safe_load(
-            open(os.path.join(ROOT, "brands", "kiranbuildswithai", "brand.yaml"), encoding="utf-8")
+            open(os.path.join(ROOT, "brands", "example-brand", "brand.yaml"), encoding="utf-8")
         )
         template = yaml.safe_load(open(os.path.join(ROOT, "brands", "_template", "brand.yaml"), encoding="utf-8"))
-        self.assertEqual(brand["id"], "kiranbuildswithai")
-        self.assertEqual(brand["handle"], "@kiranbuildswithai")
+        self.assertEqual(brand["id"], "example-brand")
+        self.assertEqual(brand["handle"], "@example_brand")
         self.assertNotEqual(template["id"], brand["id"])
         self.assertIn("do_not_mix_with", brand)
 

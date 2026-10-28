@@ -21,7 +21,7 @@ User-flow notes and interface copy can be drafted together. High-fidelity UI dep
 | UI | `ui-designer` | Flow, Copy | none | screen spec | type, space, and contrast described | `design-reviewer` |
 | Build | `frontend-developer` | UI | none | implemented screens | matches the spec or lists gaps | `code-reviewer` |
 | QA | `accessibility-tester` | Build | `design-reviewer` | findings | tool or method named | `qa-lead` |
-| Integrate | `orchestrator` | QA, design review | none | one implementation report | open gaps listed | client or Kiran before release |
+| Integrate | `orchestrator` | QA, design review | none | one implementation report | open gaps listed | client or the owner before release |
 
 ## Deliverables
 Flow, copy, UI spec, code, and QA notes.
@@ -30,7 +30,7 @@ Flow, copy, UI spec, code, and QA notes.
 Keyboard path on the built screens if a browser is available. If it is not, the report says the keyboard path was not run.
 
 ## Approval gates
-A new visual direction needs the client or Kiran. Shipping to users needs authorization.
+A new visual direction needs the client or the owner. Shipping to users needs authorization.
 
 ## Exit criteria
 The slice is implemented, reviewed, and the untested parts are named.

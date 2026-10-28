@@ -3,7 +3,7 @@
 Draft a LinkedIn post, article, or document-post script for one brand profile. The owner is `linkedin-specialist` (alias LinkedIn Content Creator).
 
 ## Inputs
-- Brand id. Use `kiranbuildswithai` only for that handle.
+- Brand id. Use `example-brand` only for that handle.
 - The idea, the proof, and the format: text, article, document, or single image.
 - Audience and the ask.
 - Authorization. Default is a draft. Posting needs the brand owner.
@@ -20,7 +20,7 @@ Proof check and the graphic brief can run together after the angle is chosen. Th
 | Proof | `linkedin-specialist` | Angle | Graphic brief | proof lines with sources | no unsourced numbers | `editor` |
 | Graphic brief | `linkedin-specialist` | Angle | Proof | slide or image script | one idea per slide | `design-reviewer` if a designed file will be public |
 | Draft | `linkedin-specialist` | Proof | none | post or article draft | one idea, one CTA | `editor` |
-| Stage for review | `social-media-manager` | Draft | none | calendar row in draft | not live | Kiran or the brand owner to publish |
+| Stage for review | `social-media-manager` | Draft | none | calendar row in draft | not live | Owner or the brand owner to publish |
 
 ## Deliverables
 Hook options, the draft, alt text if there is an image, and the proof list.
@@ -35,4 +35,4 @@ Publishing and messaging people from the post need the owner. Default authorizat
 A draft the editor has seen, or a blocked note that names the missing proof.
 
 ## Example invocation
-"Run WF-15 for kiranbuildswithai. Text post on removing sliders. Draft only."
+"Run WF-15 for example-brand. Text post on removing sliders. Draft only."

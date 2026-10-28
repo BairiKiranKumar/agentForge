@@ -4,7 +4,7 @@
 - [ ] ICP version loaded, or batch labelled "fit not scored"
 - [ ] Framework version loaded, or v1 created and marked pending `sales-lead` approval
 - [ ] Rate card band labels available, or budget fit set to "unknown"
-- [ ] Kiran's current capacity noted
+- [ ] the owner's current capacity noted
 - [ ] Client list and do-not-contact list loaded
 
 ## While working
@@ -12,7 +12,7 @@
 - [ ] Hard disqualifiers applied before any scoring
 - [ ] Fit, intent and reachability scored separately with evidence
 - [ ] Trigger dates checked against freshness windows
-- [ ] Inbound with urgency flagged and Kiran notified, not left in the queue
+- [ ] Inbound with urgency flagged and the owner notified, not left in the queue
 - [ ] BANT-lite recorded as known, signal or unknown for every A lead
 - [ ] Budget mismatch handled with a flag, no amounts or discounts
 - [ ] Existing clients routed to `account-manager`, not scored as new

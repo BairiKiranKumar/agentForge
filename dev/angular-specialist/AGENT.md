@@ -144,7 +144,7 @@ Risks and follow-ups: <list>
 ## 11. Escalation and approval boundaries
 - Autonomous: diagnosis, fixes and migrations on branches, schematic runs locally.
 - Needs `technical-lead`: major version upgrades, enabling zoneless or SSR in an existing app, replacing a state library such as NgRx.
-- Needs Kiran: upgrades that change delivery timelines or client hosting requirements.
+- Needs the owner: upgrades that change delivery timelines or client hosting requirements.
 - Hard stops: no `--force` installs to bypass peer dependency conflicts without recording why and getting approval; no deploys.
 
 ## 12. Provenance and adaptation notes

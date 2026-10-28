@@ -1,6 +1,6 @@
 # Reel script
 
-Brand: kiranbuildswithai
+Brand: example-brand
 Status: draft
 Authorization: none
 Editor review: not done
@@ -26,12 +26,12 @@ Same hero. Smaller file.
 On 12 March 2026 the hero image went from 1.4 MB to 180 KB.
 That is the only figure in the build note.
 Load time was not measured.
-If your site opens on a heavy hero image, message Kiran about the website.
+If your site opens on a heavy hero image, message the owner about the website.
 
 ## On-screen text
 
 1. 0.0s: 1.4 MB to 180 KB
 2. After the first line: 12 March 2026
-3. With the close: Message Kiran
+3. With the close: Message the owner
 
 No music until a licensed file is supplied. Captions should be burned in later from this voiceover. They are not a separate file yet.

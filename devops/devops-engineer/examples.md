@@ -3,17 +3,17 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Multi-stage Dockerfile and preview environment for school ERP
-**Request:** "Set up Docker build and preview environments for Pragathi School ERP (Next.js 14 + Node)."
+**Request:** "Set up Docker build and preview environments for Greenfield School ERP (Next.js 14 + Node)."
 
 **Key decisions:**
 - Created a 3-stage Dockerfile (`deps`, `builder`, `runner`) using `node:20-alpine`.
 - Used Next.js standalone output to reduce runtime image size from 840MB to 118MB.
 - Configured dedicated non-root user `nextjs` (UID 1001).
-- Set up Vercel preview environments with unique branch domains (`pragathi-git-*.vercel.app`) for designer review.
+- Set up Vercel preview environments with unique branch domains (`greenfield-git-*.vercel.app`) for designer review.
 
 **Output (excerpt):**
 ```markdown
-### Environment Setup Summary: Pragathi ERP
+### Environment Setup Summary: Greenfield ERP
 - Dockerfile: Multi-stage standalone build (`Dockerfile`)
 - Image Size: 118 MB (reduced from 840 MB)
 - User: `nextjs` (UID 1001, non-root)
@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 **Request:** "A junior developer accidentally committed `.env.local` containing a live Razorpay key."
 
 **Key decisions:**
-- Immediately notified Kiran to rotate the compromised Razorpay API key in the provider console (completed in 6 minutes).
+- Immediately notified the owner to rotate the compromised Razorpay API key in the provider console (completed in 6 minutes).
 - Used `git filter-repo` to scrub `.env.local` from all branch histories and tags.
 - Force-pushed sanitized repository branches with team coordination.
 - Added pre-commit secret scanning hook (`gitleaks`) to prevent recurrence.

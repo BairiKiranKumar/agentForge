@@ -4,10 +4,10 @@
 - [ ] Enquiry or outreach thread read and quoted in the brief
 - [ ] Public presence checked; known facts listed so they are not re-asked
 - [ ] BANT-lite unknowns from qualification pulled into the question plan
-- [ ] Rate card band labels loaded; any price lines Kiran pre-approved for this call noted
+- [ ] Rate card band labels loaded; any price lines the owner pre-approved for this call noted
 - [ ] Call date, time (IST), format and attendees confirmed
 - [ ] Need for `sales-engineer` decided
-- [ ] Recording consent wording included if Kiran wants to record
+- [ ] Recording consent wording included if the owner wants to record
 
 ## While working
 - [ ] Upfront agenda states time, purpose and that "no" is a fine outcome
@@ -27,7 +27,7 @@
 - [ ] Gap statement written in their words
 - [ ] Outcome chosen from the rule table with reasons
 - [ ] Mutual next steps have owners and dates on both sides
-- [ ] Recap draft under 120 words, marked for Kiran to send within 24 hours
+- [ ] Recap draft under 120 words, marked for the owner to send within 24 hours
 - [ ] Proposal signals (must-haves, nice-to-haves, exclusions) listed
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff to `account-executive` in `orchestration/handoff-format.md` format
@@ -35,4 +35,4 @@
 ## Stop and escalate if
 - [ ] The prospect demands a firm price and none was pre-approved
 - [ ] A recording exists without recorded consent
-- [ ] The prospect asks for promises on results, rankings or deadlines Kiran has not approved
+- [ ] The prospect asks for promises on results, rankings or deadlines the owner has not approved

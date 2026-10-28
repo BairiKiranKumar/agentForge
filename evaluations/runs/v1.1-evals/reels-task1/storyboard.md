@@ -1,6 +1,6 @@
 # Storyboard
 
-Brand: kiranbuildswithai. 30 seconds. 1080 by 1920. Screen recording only.
+Brand: example-brand. 30 seconds. 1080 by 1920. Screen recording only.
 Chosen hook A. Speech, picture, and on-screen text start together at 0.0.
 On-screen text is 6 words or fewer, shorter than the speech, ink #14120e on a paper #f4f0e6 bar.
 
@@ -15,14 +15,14 @@ On-screen text is 6 words or fewer, shorter than the speech, ink #14120e on a pa
 | 15.3-17.8 | Message button visible without scrolling. | The message button stays on screen. | Button stays on screen | hero-phone-after.mp4 (missing) |
 | 17.8-19.4 | Hold on that same hero. Do not cut to another site. | Same page. Same offer. | Same page, same offer | hero-phone-after.mp4 (missing) |
 | 19.4-24.4 | Browser at phone width on the readable hero. No width number on screen. | I would repeat the phone check before I call a hero done. | Check the phone first | hero-phone-check.mp4 (missing) |
-| 24.4-29.0 | Back to the readable hero and the message button. | If your homepage opens like the first frame, message Kiran today. | Message Kiran | hero-phone-after.mp4 (missing) |
-| 29.0-30.0 | Hold on the readable hero. | none | Message Kiran | hero-phone-after.mp4 (missing) |
+| 24.4-29.0 | Back to the readable hero and the message button. | If your homepage opens like the first frame, message the owner today. | Message the owner | hero-phone-after.mp4 (missing) |
+| 29.0-30.0 | Hold on the readable hero. | none | Message the owner | hero-phone-after.mp4 (missing) |
 
 The rows cover 0.0 to 30.0 with no gap.
 
 ## Assumptions
 - One demo page, two states: before the readable hero, and after it shipped.
-- Kiran records the screen. The files above are not on disk.
+- The owner records the screen. The files above are not on disk.
 
 ## Open questions
 - None for the frame plan. File names stay as written when the recordings are made.

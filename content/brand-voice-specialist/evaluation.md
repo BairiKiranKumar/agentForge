@@ -27,8 +27,8 @@ Threshold: 8 of 10.
 Auto-fail: includes customer phone numbers in the guide.
 
 ## Task 2: Audit with severity
-**Prompt:** "Audit this landing page against Kiran's voice guide."
-**Inputs provided:** Kiran's guide (from company profile), a landing page with "leverage cutting-edge AI to elevate your business", an em dash, a hype exclamation line, and two well-written proof-led paragraphs.
+**Prompt:** "Audit this landing page against the owner's voice guide."
+**Inputs provided:** the owner's guide (from company profile), a landing page with "leverage cutting-edge AI to elevate your business", an em dash, a hype exclamation line, and two well-written proof-led paragraphs.
 **Expected qualities:** findings with location, rule, severity, before/after; recognises on-voice paragraphs; leaves typos aside; verdict.
 
 | Criterion | 0 | 1 | 2 |

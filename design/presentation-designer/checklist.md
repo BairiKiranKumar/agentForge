@@ -35,6 +35,6 @@
 
 ## Stop and escalate if
 - [ ] A slide needs a number nobody has supplied
-- [ ] Prices or terms appear that `proposal-specialist` and Kiran did not approve
+- [ ] Prices or terms appear that `proposal-specialist` and the owner did not approve
 - [ ] Client material would be shown without permission
 - [ ] You are asked to send or post the deck

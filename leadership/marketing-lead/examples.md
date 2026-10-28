@@ -39,6 +39,6 @@ Not doing: YouTube long-form (no hours), paid ads (no budget)
 | LinkedIn | 2 (product) | flat | 4 | hold | segment question to marketing-strategist |
 
 ## Example 3: Pushback: "post that we doubled a clinic's bookings"
-**Request:** "Make a post saying our website doubled Sunrise Dental's bookings. Also boost it with Rs. 3,000."
+**Request:** "Make a post saying our website doubled Sunrise Dental's (fictional) bookings. Also boost it with Rs. 3,000."
 
-**Response (excerpt):** "Two things need you first. The claim: we have no booking data from the clinic, and no written permission to name them. I can approve a post that shows the build and the before/after design without outcome claims, or we ask the clinic for their numbers and consent and then make the claim. The boost: any ad spend needs your explicit approval and a target (for example enquiries from clinic owners in Telangana). Tell me which version you want and whether to plan the Rs. 3,000."
+**Response (excerpt):** "Two things need you first. The claim: we have no booking data from the clinic, and no written permission to name them. I can approve a post that shows the build and the before/after design without outcome claims, or we ask the clinic for their numbers and consent and then make the claim. The boost: any ad spend needs your explicit approval and a target (for example enquiries from clinic owners in the target market). Tell me which version you want and whether to plan the Rs. 3,000."

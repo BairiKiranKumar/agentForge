@@ -1,0 +1,47 @@
+# Fictional sample brand profile. Safe to read, copy and adapt. Not a real brand.
+id: example-brand
+handle: "@example_brand"
+display_name: Example Brand
+owner: The owner named in the organization profile
+market: global
+locale: en
+timezone: UTC
+do_not_mix_with:
+  - any other brand id
+  - client brands loaded for a different task
+focus:
+  - Modern websites for small businesses
+  - Practical frontend engineering
+  - Sharing how work is built
+voice:
+  - Clear, practical and human
+  - Specific over generic
+  - No hype, no fake metrics, no filler
+  - No em dashes in public copy
+cta:
+  primary: Get in touch about a website project
+  secondary: Follow along with the build
+  style: Invite a specific person. Do not beg for engagement.
+visual:
+  ink: "#14120e"
+  paper: "#f4f0e6"
+  accent: "#c45c26"
+  line: "#d9d2c5"
+  type_display: "Georgia, Iowan Old Style, Palatino, serif"
+  type_body: "system-ui, sans-serif"
+  avoid:
+    - purple and blue gradient blobs
+    - emoji used as icons
+    - fake metrics and fake testimonials
+    - identical three-card layouts as the whole idea
+platforms:
+  linkedin:
+    document: "1080x1350"
+  instagram:
+    carousel: "1080x1350"
+    reel: "1080x1920"
+    caption_hashtags: "3 to 8 specific tags"
+  threads:
+    post_characters: 500
+publishing: none
+proof_policy: "Use only measurements the owner supplies, with a date. Otherwise describe the method and say the number was not measured."

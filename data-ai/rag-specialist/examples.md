@@ -3,7 +3,7 @@
 Business names below are fictional. Numbers in output excerpts illustrate the format; they are not recorded results.
 
 ## Example 1: Parent help assistant for a school
-**Request:** "Little Banyan School (fictional, Nizamabad) wants parents to ask questions about circulars, timings and fees in Telugu or English."
+**Request:** "Little Banyan School (fictional, the town) wants parents to ask questions about circulars, timings and fees in Telugu or English."
 
 **Key decisions:**
 - Fees and bus timings are tables in the ERP: served through SQL tools, not embedded. Circulars and the parent handbook go to RAG.
@@ -30,7 +30,7 @@ Failures: q17 "sports day dress code" (two circulars conflict; owner to retire t
 **Key decisions:**
 - Price questions removed from RAG scope: the PDF price table was 4 months old and the live price list is in the booking database. The bot calls a price tool instead.
 - Service descriptions chunked one service per chunk with the category in the header.
-- Flagged: the PDF has no owner for updates; asked Kiran to confirm the salon manager owns it, with a 30-day review date.
+- Flagged: the PDF has no owner for updates; asked the owner to confirm the salon manager owns it, with a 30-day review date.
 
 **Output (excerpt):**
 ```
@@ -44,4 +44,4 @@ Risk: service PDF last updated June; owner not named (blocking for launch)
 ## Example 3: Pushback: index all customer chats
 **Request:** "Just index all 3 years of the clinic's WhatsApp chats with patients so the bot knows everything."
 
-**Response (excerpt):** "I won't index raw patient chats. They contain health details and other patients' personal data, and anything in the index can surface in someone else's answer; that is a leakage path no prompt reliably blocks. Safer route: staff and I pull the 40 most common questions from the chats (names and numbers removed), the clinic writes approved answers, and I index those as an FAQ with an owner and review date. `privacy-specialist` should confirm the extraction approach, and Kiran and the clinic need to approve before any chat export is touched."
+**Response (excerpt):** "I won't index raw patient chats. They contain health details and other patients' personal data, and anything in the index can surface in someone else's answer; that is a leakage path no prompt reliably blocks. Safer route: staff and I pull the 40 most common questions from the chats (names and numbers removed), the clinic writes approved answers, and I index those as an FAQ with an owner and review date. `privacy-specialist` should confirm the extraction approach, and the owner and the clinic need to approve before any chat export is touched."

@@ -1,0 +1,33 @@
+id: vercel-web-design-guidelines
+name: Vercel web-design-guidelines (UI code reviewer skill)
+source_url: https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines
+repo: vercel-labs/agent-skills
+maintainer: Vercel Labs
+license: unclear
+registry_version: 1
+status: candidate
+status_reason: The skill fetches its rules from a raw GitHub URL at every run, so its behaviour can change without a commit here, and the repo has no LICENSE file (README says MIT, GitHub API reports none). Cannot be approved until both are resolved.
+categories: [design-critique, accessibility, ui-ux]
+capabilities:
+  - Reviews given files against Web Interface Guidelines and prints terse file:line findings
+  - Trigger phrases: review my UI, check accessibility, audit design, review UX
+limitations:
+  - Rules are not in the skill; they are fetched live with WebFetch from vercel-labs/web-interface-guidelines main
+  - Needs network access at run time; no offline mode
+  - Some guidelines are React and Next.js specific
+compatible_agents: [claude-code]
+install_method: "npx skills add vercel-labs/agent-skills (skills CLI); or copy skills/web-design-guidelines"
+dependencies: [network access to raw.githubusercontent.com]
+scripts_present: false
+permissions_requested: [network (WebFetch to raw.githubusercontent.com), file read]
+risks: [remote instructions fetched at run time are an unpinned prompt-injection surface, licence file missing, repo also holds unrelated skills and a build script that were not reviewed]
+pinned_ref: 063bee94c3f4df8453406c830b0a7df0f2860278
+last_commit_observed: 2026-08-28
+activity: "Clone HEAD dated 2026-08-28; GitHub API pushed_at 2026-10-14 (so HEAD may differ from latest; shallow clone, commit count not verified)"
+stars_observed: 32810
+overlaps: [design/design-reviewer, qa/*, vercel-web-interface-guidelines, jakubkrehel-skills]
+evidence_of_effectiveness: "none found in repo. A web listing (Tessl registry) gives a third-party quality score of 61 percent; not opened directly, so [Unverified]."
+owner_roles: [design/design-reviewer, dev/frontend-developer]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

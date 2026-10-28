@@ -21,7 +21,7 @@ Research and content may run together. They write different files. Design starts
 | Design | `ui-designer` | Research, Content | none | UI for the templates | Phone and desktop, brand profile if any | `design-reviewer` |
 | Implementation | `frontend-developer` | Design | none | working pages | builds locally | `code-reviewer` |
 | QA | `accessibility-tester` | Implementation | `code-reviewer` | QA notes | checks that were actually run | `qa-lead` |
-| Integrate | `orchestrator` | QA, code review | none | one report | evidence per criterion | Kiran before any production deploy |
+| Integrate | `orchestrator` | QA, code review | none | one report | evidence per criterion | Owner before any production deploy |
 
 ## Deliverables
 Page copy, UI, implemented templates, review notes, and a report that separates what was run from what was not.
@@ -30,7 +30,7 @@ Page copy, UI, implemented templates, review notes, and a report that separates 
 Local build or the project's documented check. Accessibility pass on the templates that were built. No claim of Lighthouse scores without a run log.
 
 ## Approval gates
-Client-facing copy and visual direction need the client or Kiran. DNS, hosting, and production deploy need explicit authorization. Default is a local or preview build.
+Client-facing copy and visual direction need the client or the owner. DNS, hosting, and production deploy need explicit authorization. Default is a local or preview build.
 
 ## Exit criteria
 The agreed pages exist in the build, reviews are filed, and anything not verified is listed as not verified.

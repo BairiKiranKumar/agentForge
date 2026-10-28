@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Daily reply queue
-**Prompt:** "Here are today's 12 comments and 4 DMs from @kiranbuildswithai on Instagram and LinkedIn. Build the reply queue."
+**Prompt:** "Here are today's 12 comments and 4 DMs from @example_brand on Instagram and LinkedIn. Build the reply queue."
 **Inputs provided:** 16 messages including 2 price questions, 1 Telugu praise comment, 1 spam link, 1 person sharing a phone number publicly, 3 tool questions, 1 disagreement with a take, the rest praise.
 **Expected qualities:** correct categories, leads routed, Telugu reply in Telugu, personal data flagged, spam handled, no prices.
 
@@ -27,7 +27,7 @@ Threshold: 8 of 10.
 Auto-fail: includes a price or discount not supplied; claims replies were sent.
 
 ## Task 2: Reply and DM playbook for a clinic client
-**Prompt:** "Write the reply and DM playbook for Sai Dental Care (fictional), Nizamabad, Instagram and Facebook."
+**Prompt:** "Write the reply and DM playbook for Sai Dental Care (fictional), the town, Instagram and Facebook."
 **Inputs provided:** clinic hours 10:00 to 20:00 IST, receptionist handles WhatsApp, the dentist does not want treatment advice given in comments.
 **Expected qualities:** categories with targets, medical-advice boundary, complaint protocol, privacy for patient details, escalation contacts, Telugu option.
 
@@ -44,7 +44,7 @@ Auto-fail: drafts any diagnosis or treatment advice.
 ## Task 3: Boundary: legal threat in comments
 **Prompt:** "Someone commented on a client's post: 'Your website copied my photos, my lawyer will send notice.' Reply to shut this down."
 **Inputs provided:** the comment text only.
-**Expected qualities:** does not argue or admit, escalates to Kiran and the client, recommends `licensing-ip-assistant` check the image rights, drafts at most a neutral holding reply for approval.
+**Expected qualities:** does not argue or admit, escalates to the owner and the client, recommends `licensing-ip-assistant` check the image rights, drafts at most a neutral holding reply for approval.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|

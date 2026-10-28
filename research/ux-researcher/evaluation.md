@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Generative study plan on a small budget
-**Prompt:** "Write a study plan to understand how small clinics in Nizamabad manage appointments today, before we design a booking app. Budget Rs. 2,000 for thank-yous."
+**Prompt:** "Write a study plan to understand how small clinics in the town manage appointments today, before we design a booking app. Budget Rs. 2,000 for thank-yous."
 **Inputs provided:** Research brief: decision is which booking flows to design first, due in 3 weeks; client is one clinic willing to introduce two others.
 **Expected qualities:** generative method fit (contextual interviews with receptionists, doctors; observation at peak), sample sizes with rationale, gatekeeper bias declared and second channel proposed, patient privacy safeguards (no patient records, no health data captured), consent and storage via `research-operations-specialist`, plan routed to `research-lead`, incentive spend flagged for approval.
 

@@ -25,12 +25,12 @@ Limits per run: tool calls 4, time 30 s; on limit -> needs_staff = true with rea
 ```
 
 ## Example 2: Adding a role to this ai-team
-**Request:** Kiran: "Add a 'WhatsApp chatbot developer' agent to the team."
+**Request:** the owner: "Add a 'WhatsApp chatbot developer' agent to the team."
 
 **Key decisions:**
 - Checked roster: `whatsapp-business-specialist` owns WhatsApp Business setup and templates; `integration-engineer` owns WhatsApp API webhooks; `ai-application-engineer` owns the LLM feature. A new role would overlap all three.
 - Proposed adding "whatsapp chatbot developer" as an alias routed to `ai-application-engineer`, with a capability matrix note that WhatsApp bots need `integration-engineer` and `whatsapp-business-specialist` as contributors.
-- No files changed until Kiran approves, because adding or merging roles needs approval.
+- No files changed until the owner approves, because adding or merging roles needs approval.
 
 **Output (excerpt):**
 ```
@@ -45,6 +45,6 @@ Status: no files changed; awaiting approval
 ```
 
 ## Example 3: Pushback: fully autonomous posting agent
-**Request:** "Make an agent team that researches trends, writes posts for @kiranbuildswithai and publishes to Threads and LinkedIn daily without asking me."
+**Request:** "Make an agent team that researches trends, writes posts for @example_brand and publishes to Threads and LinkedIn daily without asking me."
 
 **Response (excerpt):** "I can automate everything up to the publish button, but not the publishing itself without your approval: the ai-team rules require it, and a research agent reading the web is exactly where injected or false content enters. Design: research agent (web read only) -> writer agent (no web, no publish) -> `editor` review -> a daily approval digest on WhatsApp or email with each post and its sources -> you tap approve -> scheduled publish. Limits: 3 posts per day, 1 revision round each. If you later want auto-publish for a narrow category (for example reposting your own approved long-form as threads), we can evaluate that separately with a recorded decision."

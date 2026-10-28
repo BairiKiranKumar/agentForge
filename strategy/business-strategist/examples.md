@@ -8,7 +8,7 @@ Business names below are fictional unless stated. Figures are illustrative input
 **Key decisions:**
 - Decision: one beachhead segment for portfolio examples, content and outreach until April 2027.
 - Scored with evidence: 2 delivered school projects (proof), 1 clinic, 0 restaurants but a QR ordering prototype.
-- Contribution per founder hour from Kiran's last projects: school portals higher value but more founder hours; clinic sites smaller, faster, repeatable.
+- Contribution per founder hour from the owner's last projects: school portals higher value but more founder hours; clinic sites smaller, faster, repeatable.
 
 **Output (excerpt):**
 ```
@@ -28,7 +28,7 @@ Risk: clinic patient data under DPDP Act 2023; booking forms collect minimum dat
 **Request:** "Should I sell a fixed salon website package instead of custom quotes?"
 
 **Key decisions:**
-- Compared custom project vs package on contribution per founder hour using Kiran's 3 salon projects: custom averaged 22 founder hours; a template could cut that to about 8 `[Inference]`.
+- Compared custom project vs package on contribution per founder hour using the owner's 3 salon projects: custom averaged 22 founder hours; a template could cut that to about 8 `[Inference]`.
 - Package needs a template, strict scope and a price from `pricing-strategist`.
 
 **Output (excerpt):**

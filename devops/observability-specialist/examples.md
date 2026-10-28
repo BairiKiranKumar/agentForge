@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Instrumenting Sentry and structured Pino logging for school portal
-**Request:** "Set up error tracking and structured logging for Pragathi School Portal (Next.js + Node API). We need clear stack traces and zero leaked passwords."
+**Request:** "Set up error tracking and structured logging for Greenfield School Portal (Next.js + Node API). We need clear stack traces and zero leaked passwords."
 
 **Key decisions:**
 - Configured Pino logger with JSON output and automatic sensitive key redaction.
@@ -26,7 +26,7 @@ export const logger = pino({
 ```
 
 ## Example 2: Resolving alert fatigue on e-commerce storefront
-**Request:** "Our team is getting 60+ alert emails every day from Kavitha Sarees website. Engineers have muted the notification channel."
+**Request:** "Our team is getting 60+ alert emails every day from Kavitha Sarees (fictional) website. Engineers have muted the notification channel."
 
 **Key decisions:**
 - Audited active alerts: 45 daily alerts were triggered by harmless single 404s caused by web crawlers probing old image links.

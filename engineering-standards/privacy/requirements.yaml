@@ -1,0 +1,432 @@
+schema: 1
+area: privacy
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: agents
+  name: agentForge AGENTS.md section 5 Data handling (repository file)
+  url: AGENTS.md
+  retrieved: *id001
+  note: Minimum personal data, no credentials in chat or code, no profiling beyond business need. Internal
+    project rule, read from the repository.
+- id: ccpa
+  name: 'California Attorney General: California Consumer Privacy Act page'
+  url: https://oag.ca.gov/privacy/ccpa
+  retrieved: *id001
+  note: Used only as an example of a regulation with consumer rights (know, delete, correct, opt out,
+    limit), notice duties and applicability thresholds. Page shows last updated 2026-08-28. Summary read
+    through a fetch tool; verify thresholds on the page before relying on them.
+- id: cs-logging
+  name: 'OWASP Cheat Sheet: Logging'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+  retrieved: *id001
+  note: What not to log (secrets, session ids, sensitive personal data), log protection, retention and
+    disposal.
+- id: cs-secrets
+  name: 'OWASP Cheat Sheet: Secrets Management'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+  retrieved: *id001
+  note: Key and secret handling, separation of environments, tested backups and restore.
+- id: cs-session
+  name: 'OWASP Cheat Sheet: Session Management'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+  retrieved: *id001
+  note: No PII in session ids, no-store on sensitive responses.
+- id: asvs
+  name: OWASP ASVS 5.0.0 (chapter names only)
+  url: https://github.com/OWASP/ASVS
+  retrieved: *id001
+  note: Chapter V14 Data Protection and V12 Secure Communication named in the v5.0.0 directory listing.
+    Chapter text not read.
+- id: mdn-hsts
+  name: 'MDN: Strict-Transport-Security'
+  url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security
+  retrieved: *id001
+  note: HTTPS-only enforcement for browsers, preload gap on first visit.
+requirements:
+- id: PRIV-001
+  title: Keep a data inventory of personal data
+  description: List each category of personal data, where it is collected, stored, processed, who can
+    access it and where it flows, including logs, backups and third parties.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Data inventory table with owner and review date
+  owner: privacy-specialist
+  reviewer: solution-architect
+  reference: agents
+- id: PRIV-002
+  title: Record the purpose for each data item
+  description: Every personal data field has a stated purpose; fields without one are not collected.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Field-to-purpose map reviewed by a second role
+  owner: privacy-specialist
+  reviewer: technical-lead
+  reference: agents
+- id: PRIV-003
+  title: Minimise collection and retention by default
+  description: Collect the least data that serves the purpose, prefer optional over mandatory fields,
+    avoid collecting sensitive categories unless required, and prefer coarse or derived values.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Form and API field review against the purpose map
+  owner: backend-developer
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-004
+  title: Apply privacy by design at design and change time
+  description: Features that add personal data, tracking or sharing get a privacy review before build
+    and when changed, with decisions recorded.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Privacy review record linked to the feature
+  owner: privacy-specialist
+  reviewer: solution-architect
+  reference: agents
+- id: PRIV-005
+  title: Obtain and record consent where it is the chosen basis
+  description: Where consent is required or chosen for a processing activity, it is specific, freely given,
+    easy to withdraw, not pre-ticked, and recorded with timestamp and version of the text. Whether consent
+    is required is a legal determination.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - ai-app
+  severity: major
+  check: both
+  evidence: Consent flow walkthrough and consent record sample
+  owner: frontend-developer
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-006
+  title: Provide a clear privacy notice at the point of collection
+  description: Users see in plain language what is collected, why, who receives it, how long it is kept
+    and how to exercise choices.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: manual
+  evidence: Notice text and screenshots at collection points; reviewer note
+  owner: privacy-specialist
+  reviewer: compliance-research-assistant
+  reference: ccpa
+- id: PRIV-007
+  title: Handle opt-out and preference signals where applicable
+  description: If the project context makes opt-out of sale, sharing or tracking relevant, the product
+    honours the user's choice and any browser-level signal the applicable rules recognise, and records
+    it.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Test with preference signal enabled; log of honoured requests
+  owner: frontend-developer
+  reviewer: privacy-specialist
+  reference: ccpa
+- id: PRIV-008
+  title: Encrypt data in transit
+  description: Personal data travels only over encrypted channels, with HTTPS enforced for browsers and
+    TLS for service links.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: critical
+  check: automated
+  evidence: TLS scan and redirect test results
+  owner: devops-engineer
+  reviewer: security-testing-specialist
+  reference: mdn-hsts
+- id: PRIV-009
+  title: Encrypt personal data at rest
+  description: Databases, object stores, backups and device storage holding personal data use encryption
+    at rest with managed keys.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Storage encryption configuration evidence per data store
+  owner: cloud-architect
+  reviewer: privacy-specialist
+  reference: asvs V14
+- id: PRIV-010
+  title: Separate and protect encryption keys
+  description: Keys are stored apart from the data they protect, access is least-privilege and logged,
+    and rotation procedure exists.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Key management description and access list
+  owner: cloud-architect
+  reviewer: application-security-engineer
+  reference: cs-secrets
+- id: PRIV-011
+  title: Exclude personal data from logs by default
+  description: Logs, traces, analytics events and error reports do not contain credentials, tokens, session
+    ids or unneeded personal data; identifiers are pseudonymous where possible.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Log schema review and sampled log scan
+  owner: observability-specialist
+  reviewer: privacy-specialist
+  reference: cs-logging
+- id: PRIV-012
+  title: Redact before data leaves its trust zone
+  description: Personal data is masked or removed before sharing with analytics tools, error trackers,
+    support tools and AI services.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Redaction rules and test outputs showing masked fields
+  owner: data-engineer
+  reviewer: privacy-specialist
+  reference: cs-logging
+- id: PRIV-013
+  title: Define a retention schedule per data category
+  description: Each category has a retention period and trigger, and logs and backups have their own periods.
+    Periods are project decisions that may be legally constrained.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Retention schedule with approver and date
+  owner: privacy-specialist
+  reviewer: database-engineer
+  reference: cs-logging
+- id: PRIV-014
+  title: Implement deletion that actually works
+  description: Deletion removes or irreversibly anonymises data in primary stores, search indexes, caches,
+    analytics and derived data; backups expire on schedule; the process is tested.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Deletion test record showing data absent in each store
+  owner: database-engineer
+  reviewer: qa-lead
+  reference: agents
+- id: PRIV-015
+  title: Run a process for user requests about their data
+  description: A documented route receives, verifies, tracks and answers access, correction and deletion
+    requests within the timelines that apply to the project. Timelines depend on the applicable rules.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Request procedure and a tested dry run
+  owner: privacy-specialist
+  reviewer: backend-developer
+  reference: ccpa
+- id: PRIV-016
+  title: Restrict personal data access by role
+  description: Role-based access limits who and what can read, export or change personal data, with periodic
+    access reviews and no shared accounts.
+  min_profile: lightweight
+  applies_to:
+  - web-app
+  - mobile-web
+  - api
+  - internal-tool
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Role matrix and access test results
+  owner: backend-developer
+  reviewer: privacy-specialist
+  reference: asvs V14
+- id: PRIV-017
+  title: Log access to sensitive personal data
+  description: Reads and exports of sensitive personal data by staff or services are recorded for audit,
+    with the log itself minimal and protected.
+  min_profile: high_assurance
+  applies_to:
+  - web-app
+  - api
+  - internal-tool
+  severity: major
+  check: both
+  evidence: Audit log samples and access policy for the log
+  owner: observability-specialist
+  reviewer: privacy-specialist
+  reference: cs-logging
+- id: PRIV-018
+  title: Back up personal data safely and test recovery
+  description: Backups are encrypted, access-controlled, retained per schedule and restoration is tested,
+    including re-applying deletions after restore.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Restore test report with date, scope and result
+  owner: site-reliability-engineer
+  reviewer: database-engineer
+  reference: cs-secrets
+- id: PRIV-019
+  title: Inventory third parties that receive personal data
+  description: Each processor, SaaS, analytics or ad service has a recorded purpose, data categories,
+    location, and a contract or terms reviewed by someone qualified.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Third-party register with review dates
+  owner: compliance-research-assistant
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-020
+  title: Control trackers, cookies and embeds
+  description: Cookies, pixels, SDKs and embedded content are inventoried, loaded only after any required
+    consent, and removed when unused.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  severity: major
+  check: both
+  evidence: Cookie and request inventory from a clean browser session; consent-gating test
+  owner: frontend-developer
+  reviewer: privacy-specialist
+  reference: ccpa
+- id: PRIV-021
+  title: Keep real personal data out of non-production
+  description: Development, test and demo environments use synthetic or properly anonymised data.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: both
+  evidence: Data source note for each environment and a scan for real identifiers
+  owner: data-engineer
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-022
+  title: Flag sensitive categories and children's data for specialist review
+  description: Health, financial, biometric, precise location, government identifiers and children's data
+    trigger a documented escalation to qualified legal or privacy review before collection.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: critical
+  check: manual
+  evidence: Escalation record with decision and reviewer
+  owner: privacy-specialist
+  reviewer: compliance-research-assistant
+  reference: agents
+- id: PRIV-023
+  title: Track cross-border storage and transfer
+  description: Storage and processing locations of personal data are recorded and checked against any
+    transfer restrictions identified for the project.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Location register and legal-review note
+  owner: cloud-architect
+  reviewer: compliance-research-assistant
+  reference: agents
+- id: PRIV-024
+  title: Prepare a breach response procedure
+  description: A written procedure covers detection, containment, assessment, decision on notifying affected
+    people and authorities, and communication; notification duties vary by rules that apply.
+  min_profile: standard
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Procedure and tabletop record
+  owner: site-reliability-engineer
+  reviewer: privacy-specialist
+  reference: cs-secrets
+- id: PRIV-025
+  title: Limit personal data in AI prompts and training
+  description: Personal data sent to AI services is minimised and redacted, provider retention and training-use
+    terms are reviewed, and user data is not used for training without a recorded decision.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Data-flow description and provider terms review
+  owner: ai-application-engineer
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-026
+  title: Keep personal data out of URLs, client storage and caches
+  description: Identifiers and personal data are not placed in URLs, are not stored in persistent browser
+    storage without need, and sensitive responses are not cached.
+  min_profile: standard
+  applies_to:
+  - website
+  - web-app
+  - mobile-web
+  - api
+  severity: major
+  check: both
+  evidence: Network and storage inspection of key flows
+  owner: frontend-developer
+  reviewer: application-security-engineer
+  reference: cs-session
+- id: PRIV-027
+  title: Record which regulations the project context triggers
+  description: 'A dated note records which privacy rules might apply (examples: GDPR, CCPA/CPRA, India
+    DPDP Act 2023, HIPAA) and why, with a request for legal review. This is an applicability decision,
+    not a compliance claim.'
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Applicability note with date, assumptions and legal-review status
+  owner: compliance-research-assistant
+  reviewer: privacy-specialist
+  reference: agents
+- id: PRIV-028
+  title: Do not claim legal compliance from checklists
+  description: Reports state that meeting these requirements is evidence of good practice only; claims
+    of compliance or certification require qualified legal review.
+  min_profile: lightweight
+  applies_to:
+  - all
+  severity: major
+  check: manual
+  evidence: Report wording review
+  owner: privacy-specialist
+  reviewer: qa-lead
+  reference: agents

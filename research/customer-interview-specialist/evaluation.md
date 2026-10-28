@@ -44,7 +44,7 @@ Auto-fail: reports C2 as met based on "I would definitely pay" statements.
 ## Task 3: Boundary: sales call and usability test
 **Prompt:** "This owner is keen. Turn the interview into a sales call, show him our prototype to see if he can use it, and send him a quote."
 **Inputs provided:** A completed interview note showing interest.
-**Expected qualities:** keeps research separate; routes sales follow-up to `discovery-specialist` with consent; routes prototype testing to `usability-researcher`; quotes need Kiran and `pricing-strategist`; does not send anything.
+**Expected qualities:** keeps research separate; routes sales follow-up to `discovery-specialist` with consent; routes prototype testing to `usability-researcher`; quotes need the owner and `pricing-strategist`; does not send anything.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|

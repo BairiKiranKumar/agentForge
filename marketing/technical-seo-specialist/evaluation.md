@@ -11,7 +11,7 @@
 Pass = every task scores at or above its threshold AND no auto-fail condition is triggered.
 
 ## Task 1: Audit a small site for indexation problems
-**Prompt:** "Our client's school site (fictional: Sunrise Public School, Nizamabad) has only 9 of 40 pages in Google. Check the technical side and tell me what to fix."
+**Prompt:** "Our client's school site (fictional: Sunrise Public School, the town) has only 9 of 40 pages in Google. Check the technical side and tell me what to fix."
 **Inputs provided:** robots.txt (allows all), sitemap with 40 URLs, 3 pages with `noindex` in the head, a `/news/` section where each post canonicals to the `/news` index page, and a Search Console index count of 9.
 **Expected qualities:** audit order followed (crawl, index, canonical), sitemap compared with index count, noindex and canonical causes identified with evidence, fixes with owners, no live change made.
 

@@ -56,7 +56,7 @@ Tools needed, access level, free alternatives, and what to do when a tool or con
 Who this role receives work from, who it hands to, and what each handoff must contain beyond the standard format. Name reviewers.
 
 ## 11. Escalation and approval boundaries
-What this role may do autonomously, what needs Kiran's (or a named human professional's) approval, and hard stops.
+What this role may do autonomously, what needs the owner's (or a named human professional's) approval, and hard stops.
 
 ## 12. Provenance and adaptation notes
 - Provenance: original or adapted.

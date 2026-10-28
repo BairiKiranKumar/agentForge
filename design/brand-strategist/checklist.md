@@ -36,4 +36,4 @@
 - [ ] Asked to state a name is legally safe to register or use
 - [ ] The only available proof would be invented reviews or numbers
 - [ ] Partners want incompatible audiences and will not choose
-- [ ] A public positioning test would go out without Kiran's approval
+- [ ] A public positioning test would go out without the owner's approval

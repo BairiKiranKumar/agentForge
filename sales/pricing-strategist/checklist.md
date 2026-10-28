@@ -1,7 +1,7 @@
 # Pricing Strategist: Checklist
 
 ## Before starting
-- [ ] Kiran's actual current prices collected, with 5 to 10 recent proposals and outcomes
+- [ ] the owner's actual current prices collected, with 5 to 10 recent proposals and outcomes
 - [ ] Income target, monthly business costs and realistic billable hours obtained, or marked missing
 - [ ] Offer list and ICP segments read
 - [ ] Current rate card version identified, or "none yet" recorded
@@ -18,7 +18,7 @@
 - [ ] Competitor prices labelled with source and `[Unverified]` when weak
 - [ ] Each package differs by at least two concrete limits; one option marked recommended
 - [ ] Third-party services kept out of package prices
-- [ ] Every amount in drafts shown as `[Kiran to set]` or as an option with math
+- [ ] Every amount in drafts shown as `[the owner to set]` or as an option with math
 - [ ] Discount policy rows have reason, give, get, cap, expiry and approver
 - [ ] Sample size stated for any price test or win and loss reading
 
@@ -32,7 +32,7 @@
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 
 ## Stop and escalate if
-- [ ] Asked to set final prices without Kiran's confirmation
+- [ ] Asked to set final prices without the owner's confirmation
 - [ ] Asked to approve a discount on a live deal
 - [ ] A proposal price is below the floor with no recorded reason
 - [ ] Asked to change a price in a proposal already sent

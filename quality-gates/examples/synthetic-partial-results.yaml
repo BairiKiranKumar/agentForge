@@ -1,0 +1,24 @@
+# SYNTHETIC EXAMPLE. Invented project and results, for learning the result format only.
+# It is intentionally incomplete: most applicable requirements have no result, so the
+# evaluation outcome is BLOCKED. Run:
+#   python tools/quality_gate.py evaluate quality-gates/examples/synthetic-partial-results.yaml
+profile: lightweight
+product_types: [website]
+results:
+  - requirement: A11Y-001
+    status: pass
+    performed_by: example-agent-a
+    evidence:
+      - {type: automated, ref: "example scan output, synthetic", date: 2026-10-22}
+      - {type: manual, ref: "example keyboard walkthrough notes, synthetic", date: 2026-10-22}
+  - requirement: A11Y-002
+    status: fail
+    notes: Synthetic failing example.
+    evidence:
+      - {type: manual, ref: "example finding, synthetic", date: 2026-10-22}
+  - requirement: TEST-001
+    status: pass
+    evidence:
+      - {type: planned, ref: "test plan only", date: 2026-10-22}   # planned evidence does not count as a pass
+exceptions: []
+approvals: {}

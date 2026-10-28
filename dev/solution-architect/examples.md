@@ -32,7 +32,7 @@ Business names below are fictional unless stated.
 **Output (excerpt):**
 ```
 ADR-0001: Shared schema with shop_id and RLS
-Status: Proposed  Date: 2026-10-20  Deciders: technical-lead, Kiran
+Status: Proposed  Date: 2026-10-20  Deciders: technical-lead, the owner
 Options: A shared schema + RLS | B schema per shop | C project per shop
 Decision: A
 Consequences: easier onboarding (one migration); harder: every policy must be tested for cross-shop isolation (playwright-specialist test required); revisit when a shop demands its own data export contract.
@@ -41,4 +41,4 @@ Consequences: easier onboarding (one migration); harder: every policy must be te
 ## Example 3: Boundary: "use microservices so it looks enterprise"
 **Request:** "The salon client wants microservices and Kubernetes because it sounds professional."
 
-**Response (excerpt):** "I don't recommend it. The salon site has a booking form, a gallery the owner edits, and WhatsApp click-to-chat. None of the scenarios needs independent scaling or separate teams. Microservices would add hosting cost and ongoing maintenance the client would pay for every month. I've written ADR-0001 comparing a static site plus headless CMS against a container setup, with the monthly cost of each marked for verification. If the client still wants it after seeing the comparison, Kiran should decide and the change should go through `scope-change-manager`."
+**Response (excerpt):** "I don't recommend it. The salon site has a booking form, a gallery the owner edits, and WhatsApp click-to-chat. None of the scenarios needs independent scaling or separate teams. Microservices would add hosting cost and ongoing maintenance the client would pay for every month. I've written ADR-0001 comparing a static site plus headless CMS against a container setup, with the monthly cost of each marked for verification. If the client still wants it after seeing the comparison, the owner should decide and the change should go through `scope-change-manager`."

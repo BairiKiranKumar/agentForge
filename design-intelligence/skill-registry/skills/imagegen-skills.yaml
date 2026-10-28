@@ -1,0 +1,36 @@
+id: imagegen-skills
+name: Imagegen Skills (imagegen-frontend-web, mobile, brandkit, image-to-code)
+source_url: https://github.com/Leonxlnx/imagegen-skills
+repo: Leonxlnx/imagegen-skills
+maintainer: Leonxlnx (individual, same author as taste-skill)
+license: MIT
+registry_version: 1
+status: candidate
+status_reason: Relevant to image art direction (comps, brand boards) and instruction-only, but the repo is tiny and very new with no outside use visible, and it depends on an image generator that may cost money. Needs a trial before any conditional status.
+categories: [image-video-direction, creative-frontend, visual-design-intelligence]
+capabilities:
+  - imagegen-frontend-web: one comp image per landing page section
+  - imagegen-frontend-mobile: app screens and flows
+  - brandkit: brand guideline boards (logo directions, palette, type, applications)
+  - image-to-code: generate design images, study them, then build the site to match
+limitations:
+  - Needs an agent with image generation (ChatGPT Images, Codex image mode or similar); paid use is not assumed
+  - Image-led workflow can produce text and layout that is hard to reproduce in code
+  - Repo created by moving skills out of taste-skill in October 2026; little history
+  - Skill bodies read only by grep, not in full
+compatible_agents: [claude-code, codex]
+install_method: "npx skills add https://github.com/Leonxlnx/imagegen-skills --skill <name>; Claude Code plugin"
+dependencies: [image-generation capable agent]
+scripts_present: true
+permissions_requested: [file write; only tests/frontmatter.mjs is a script and it is a validator]
+risks: [generated imagery licence and brand-safety need human review, image generation may incur cost, very low adoption]
+pinned_ref: beb16b0d0f4dae9a6f5cb04ea41e97b93a54ab8e
+last_commit_observed: 2026-10-19
+activity: "GitHub API pushed_at 2026-10-19 (shallow clone, commit count not verified)"
+stars_observed: 25
+overlaps: [design/creative-director, design/ui-designer, taste-skill]
+evidence_of_effectiveness: "none found"
+owner_roles: [design/creative-director]
+verified_on: 2026-10-22
+verification_method: cloned-and-read
+effectiveness_log: []

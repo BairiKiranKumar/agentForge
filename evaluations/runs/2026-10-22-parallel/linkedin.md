@@ -1,7 +1,7 @@
 # LinkedIn text post draft
 
 Post ID: LI-2026-10-22-1
-Brand: kiranbuildswithai
+Brand: example-brand
 Pillar: Modern premium websites
 Format: text
 Reader: a founder or operator who will hire a website build
@@ -31,7 +31,7 @@ The phone path to contact stays short. From that first screen, one thumb tap ope
 
 Motion earns the wait when it helps that buyer see the work or find the tap. I use a brief move that reveals the real interface, then lets the page sit still. When the move ends, they can tell who the screen is for and how to make contact.
 
-If you want a website built this way, message Kiran about a website project. Tell him who your first screen is for.
+If you want a website built this way, message the owner about a website project. Tell him who your first screen is for.
 
 Hashtags: 0
 
@@ -41,7 +41,7 @@ No measurement was supplied, so none is claimed.
 ## Publication
 This is a draft and was not published.
 
-Drafted by the LinkedIn specialist for kiranbuildswithai.
+Drafted by the LinkedIn specialist for example-brand.
 
 ## Checks
 - Fold: the body opens with Hook A, a complete sentence of 43 characters (counted 2026-10-22). LinkedIn's live truncation in the composer was not rechecked [Unverified].
@@ -51,14 +51,14 @@ Drafted by the LinkedIn specialist for kiranbuildswithai.
 - No client name. No Lighthouse score. No revenue figure. No enquiry count.
 
 ## Assumptions
-- The body is in Kiran's voice, for him to post later if he chooses.
-- Type and colour values are the tokens in brands/kiranbuildswithai/brand.yaml. They are design choices, not measured results.
+- The body is in the owner's voice, for him to post later if he chooses.
+- Type and colour values are the tokens in brands/example-brand/brand.yaml. They are design choices, not measured results.
 - The buyer on the first screen is a type of reader, not a named client.
 
 ## Open questions
-- Kiran has not confirmed a narrower buyer than the person who will decide on a phone.
+- The owner has not confirmed a narrower buyer than the person who will decide on a phone.
 - No proof bank or permission record was included in this brief.
 
 ## Risks
-- Default authorization is none. This draft stays unpublished until Kiran says otherwise.
+- Default authorization is none. This draft stays unpublished until the owner says otherwise.
 - A later edit could add a score or a client. This draft does not.

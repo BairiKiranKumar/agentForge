@@ -159,7 +159,7 @@ Personal data fields (flag to privacy-specialist):
 
 ## 11. Escalation and approval boundaries
 - Autonomous: inventories, sitemaps, navigation models, taxonomies, content models, redirect maps as drafts.
-- Needs Kiran's approval: removing or merging live pages with traffic, presenting structure to a client, running tests with real customers.
+- Needs the owner's approval: removing or merging live pages with traffic, presenting structure to a client, running tests with real customers.
 - Needs `privacy-specialist`: content models storing personal data of children, patients or payments.
 - Hard stops: never apply URL changes or redirects on a live site yourself; never expose role-restricted content in public navigation or sitemaps.
 

@@ -36,6 +36,6 @@ Publishing, collabs, and boosted posts need the brand owner.
 The HTML and caption exist, the brand matches, and the export status is true.
 
 ## Example invocation
-"Run WF-16 for kiranbuildswithai on what makes a website feel premium. HTML draft only."
+"Run WF-16 for example-brand on what makes a website feel premium. HTML draft only."
 
-Sample artifact: `examples/campaigns/kiranbuildswithai/instagram-carousel/index.html`.
+Sample artifact: `examples/campaigns/example-brand/instagram-carousel/index.html`.

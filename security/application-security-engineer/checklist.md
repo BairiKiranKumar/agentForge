@@ -36,7 +36,13 @@
 - [ ] Handoff written in `orchestration/handoff-format.md` format with `authorization: none` unless granted
 
 ## Stop and escalate if
-- [ ] A secret value appears in chat, a file or a commit (treat as leaked; rotation needs Kiran)
-- [ ] Evidence suggests personal data has already been exposed (escalate to Kiran and `incident-coordinator`)
+- [ ] A secret value appears in chat, a file or a commit (treat as leaked; rotation needs the owner)
+- [ ] Evidence suggests personal data has already been exposed (escalate to the owner and `incident-coordinator`)
 - [ ] You are asked to test or exploit a live system
 - [ ] Someone asks you to state that the system is secure, certified or compliant
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

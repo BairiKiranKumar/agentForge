@@ -34,4 +34,4 @@ Publishing and outbound replies that mention a private person need the owner. De
 Drafts the proofreader has seen, or a shorter set because the source could not fill a week.
 
 ## Example invocation
-"Run WF-17 for kiranbuildswithai. Three posts about a homepage decision. Draft only."
+"Run WF-17 for example-brand. Three posts about a homepage decision. Draft only."

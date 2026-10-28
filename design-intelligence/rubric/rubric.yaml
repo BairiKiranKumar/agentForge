@@ -1,0 +1,61 @@
+# Weighted design review rubric. Read by tools/design_kb.py score.
+# Scores per criterion are integers 0 to 4. See design-review-rubric.md for anchors.
+schema: 1
+version: 1.0.0
+scale: {min: 0, max: 4}
+criteria:
+  - {id: originality, name: Originality, weight: 14}
+  - {id: art_direction, name: Art direction, weight: 12}
+  - {id: composition, name: Composition, weight: 12}
+  - {id: typography, name: Typography, weight: 12}
+  - {id: imagery, name: Imagery, weight: 8}
+  - {id: interaction, name: Interaction quality, weight: 10}
+  - {id: responsive, name: Responsive execution, weight: 10}
+  - {id: usability, name: Usability, weight: 10}
+  - {id: accessibility, name: Accessibility, weight: 8}
+  - {id: feasibility, name: Technical feasibility, weight: 4}
+# Acceptance profiles. weighted_min is a percentage of the maximum score.
+# floors: criterion id -> minimum raw score, applied in addition to weighted_min.
+profiles:
+  standard:
+    description: Routine interface work with normal visibility
+    weighted_min: 65
+    revise_min: 50
+    floors: {accessibility: 2, usability: 2}
+    human_approval: false
+  high_visibility:
+    description: Launches, flagship pages, brand-defining or public-facing campaigns
+    weighted_min: 80
+    revise_min: 65
+    floors: {accessibility: 3, usability: 3, originality: 3, art_direction: 3, typography: 3, composition: 3}
+    human_approval: true
+# Any of these forces a failure of the Ship verdict regardless of score.
+gates:
+  - Open Blocker finding (breaks the goal, an approved decision, accessibility AA basics or honesty rules)
+  - Accessibility score of 1 or less
+  - Review based on description only, with no rendered or screenshot evidence
+  - Reviewer is not independent of the producer
+# Rethink applies when the direction itself fails.
+rethink:
+  originality_max: 1
+  art_direction_max: 1
+anti_slop_signals:
+  - repetitive-generic-layout
+  - default-ai-visual-pattern
+  - overused-gradient
+  - unnecessary-glassmorphism
+  - excessive-rounded-cards
+  - weak-typography
+  - poor-visual-hierarchy
+  - generic-stock-imagery
+  - unnecessary-decoration
+  - inconsistent-spacing
+  - predictable-section-composition
+  - meaningless-motion
+  - excessive-animation
+  - weak-mobile-layout
+  - generic-copywriting
+  - uninspired-navigation
+  - inconsistent-components
+  - poor-footer
+  - weak-interaction-states

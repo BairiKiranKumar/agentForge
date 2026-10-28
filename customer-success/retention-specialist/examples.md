@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Intervening on disengaged school portal account
-**Request:** "Pragathi School has not logged into their admin portal in 20 days and sent an email asking to cancel their monthly maintenance retainer."
+**Request:** "Greenfield School has not logged into their admin portal in 20 days and sent an email asking to cancel their monthly maintenance retainer."
 
 **Key decisions:**
 - Reached out within 2 hours; spoke directly with Correspondent Dr. Rao.
@@ -14,17 +14,17 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Save Play Summary: Pragathi Vidyalaya
+### Save Play Summary: Greenfield Vidyalaya
 - Problem: Report card printing confusion caused clerk to abandon software.
 - Action Taken:
   1. Fixed PDF formatting within 24 hours (`DEV-112`).
   2. Conducted 30-minute retraining with clerk.
-  3. Applied 50% credit for November retainer (approved by Kiran).
+  3. Applied 50% credit for November retainer (approved by the owner).
 - Outcome: CANCELLATION WITHDRAWN. Retainer secured for remainder of academic year.
 ```
 
 ## Example 2: Structuring a temporary pause for cash-strapped local business
-**Request:** "A boutique salon client (StyleCrest) says they are facing severe cash flow issues and must cancel their website hosting and maintenance contract."
+**Request:** "A boutique salon client (Lumen Salon, fictional) says they are facing severe cash flow issues and must cancel their website hosting and maintenance contract."
 
 **Key decisions:**
 - Recognized root cause was temporary external macroeconomic cash crunch, not dissatisfaction with service.
@@ -34,7 +34,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Retention Agreement: StyleCrest Salons
+### Retention Agreement: Lumen Salon
 - Original Contract: ₹8,000 / month full maintenance
 - Intervention: 90-Day Uptime Pause Package at ₹1,500 / month
 - Scope during pause: Site hosting active, daily backups, security monitoring. Feature changes on hold.

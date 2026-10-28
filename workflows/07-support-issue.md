@@ -16,11 +16,11 @@ Support issue, triage, reproduction, fix, verification, customer response draft.
 | 2 | Reproduce | `technical-support-specialist` | Repro steps, environment, expected vs actual, logs, workaround | Reproduced or marked "cannot reproduce" with what was tried | developer accepts |
 | 3 | Fix | owning developer (`maintenance-engineer` for shipped projects) | Minimal-diff fix with test that fails before and passes after | Root cause stated; regression test added | `code-reviewer` |
 | 4 | Verify | `playwright-specialist` or `manual-tester` | Verification note on preview, then production smoke after approved deploy | Original repro now passes; related flows unaffected | `qa-lead` for S1/S2 |
-| 5 | Respond | `client-communication-specialist` | Customer reply draft: what happened, what was fixed, any action needed | Honest, no blame, no overpromising | Kiran approves sending |
+| 5 | Respond | `client-communication-specialist` | Customer reply draft: what happened, what was fixed, any action needed | Honest, no blame, no overpromising | Owner approves sending |
 | 6 | Learn | `knowledge-base-writer` / `incident-coordinator` | Help article update or postmortem for S1/S2 | Action items have owners | `documentation-curator` |
 
 ## Exit criteria
-Fix verified, reply approved and sent by Kiran, ticket closed with root cause recorded.
+Fix verified, reply approved and sent by the owner, ticket closed with root cause recorded.
 
 ## Example invocation
 "A parent says the fee receipt PDF is blank on their phone. Run WF-07; draft the reply but don't send."

@@ -2,7 +2,7 @@
 # once the storyboard is approved. QA waits for both.
 task_id: instagram-carousel-demo
 workflow: workflows/16-instagram-carousel.md
-brand: kiranbuildswithai
+brand: example-brand
 stages:
   - id: brand
     owner: instagram-carousel-maker
@@ -19,11 +19,11 @@ stages:
   - id: slides
     owner: instagram-carousel-maker
     depends_on: [storyboard]
-    outputs: [examples/campaigns/kiranbuildswithai/instagram-carousel/index.html]
+    outputs: [examples/campaigns/example-brand/instagram-carousel/index.html]
   - id: caption
     owner: instagram-specialist
     depends_on: [storyboard]
-    outputs: [examples/campaigns/kiranbuildswithai/instagram-carousel/caption.md]
+    outputs: [examples/campaigns/example-brand/instagram-carousel/caption.md]
   - id: qa
     owner: design-reviewer
     depends_on: [slides, caption]

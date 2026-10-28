@@ -117,3 +117,31 @@ workflows:
     owners: [support-triage-specialist]
     reviewers: [technical-lead]
     parallel_groups: []
+  - id: WF-21
+    file: workflows/21-design-first.md
+    priority: 8
+    keywords: [design-first, art direction, creative direction, design direction, visual qa, design exploration]
+    owners: [creative-director, design-researcher, ui-designer]
+    reviewers: [design-reviewer, accessibility-tester]
+    parallel_groups: [research wave, review wave]
+  - id: WF-22
+    file: workflows/22-design-intelligence-refresh.md
+    priority: 8
+    keywords: [design refresh, design knowledge base, skill registry, design skills, motion library, design intelligence]
+    owners: [design-researcher, motion-researcher, design-skill-researcher]
+    reviewers: [documentation-curator]
+    parallel_groups: [discovery]
+  - id: WF-23
+    file: workflows/23-quality-gates.md
+    priority: 8
+    keywords: [quality gate, quality gates, release gate, release readiness, wcag, accessibility audit, security review, performance audit, engineering standards]
+    owners: [qa-lead, accessibility-tester, performance-engineer, application-security-engineer]
+    reviewers: [release-validation-specialist, design-reviewer]
+    parallel_groups: [area checks]
+  - id: WF-24
+    file: workflows/24-public-release-audit.md
+    priority: 8
+    keywords: [public release, release audit, open source release, privacy audit, history remediation, license review, pre-release audit]
+    owners: [privacy-specialist, licensing-ip-assistant, application-security-engineer, release-engineer]
+    reviewers: [security-testing-specialist, qa-lead]
+    parallel_groups: [privacy license security and history review]

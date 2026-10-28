@@ -39,3 +39,9 @@
 - [ ] A flow collects children's, health or payment data with no consent or retention rule
 - [ ] A requested pattern is a dark pattern (pre-ticked consent, hidden cancel, fake urgency)
 - [ ] A business rule that decides money or access is unknown and nobody can confirm it
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

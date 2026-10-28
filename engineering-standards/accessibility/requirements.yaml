@@ -1,0 +1,493 @@
+schema: 1
+area: accessibility
+version: 1.0.0
+verified_on: 2026-10-22
+references:
+  - {id: wcag22, name: "WCAG 2.2 (W3C Recommendation)", url: "https://www.w3.org/TR/WCAG22/", retrieved: 2026-10-22, note: "Contrast ratios 4.5:1 and 3:1, reflow 320 and 256 CSS px, text spacing multiples, flash frequency, and the AA status of several 2.2 criteria. Only the first 100000 of about 269700 characters were read."}
+  - {id: wcag-understanding, name: "Understanding WCAG 2.2 pages (W3C WAI)", url: "https://www.w3.org/WAI/WCAG22/Understanding/", retrieved: 2026-10-22, note: "Individual pages read for target size, status messages, audio description, captions, text spacing, flashing, accessible authentication, dragging, focus not obscured, error prevention, bypass blocks, use of colour, non-text content, pointer gestures, error identification, timing adjustable, language, name role value, reflow, orientation."}
+  - {id: apg, name: "WAI-ARIA Authoring Practices Guide: home and modal dialog pattern", url: "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/", retrieved: 2026-10-22, note: "Modal dialog keyboard behaviour, required roles and attributes. The APG home page was also read but gave only the purpose of the guide."}
+  - {id: apg-readme, name: "APG Read Me First", url: "https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/", retrieved: 2026-10-22, note: "Incorrect ARIA is worse than none, ARIA does not add keyboard behaviour, test with real browser and AT pairs. The page did not state a native-first rule in the text returned."}
+  - {id: wai-tutorials, name: "W3C WAI tutorials (forms, images decision tree, tables, headings)", url: "https://www.w3.org/WAI/tutorials/", retrieved: 2026-10-22, note: "Label, instruction, validation and notification guidance; alt text decisions; table header markup; heading rank rules."}
+  - {id: axe-core, name: "axe-core repository (Deque)", url: "https://github.com/dequelabs/axe-core", retrieved: 2026-10-22, note: "Vendor statement that it finds on average 57 percent of WCAG issues automatically and reports uncertain items as incomplete."}
+  - {id: playwright-a11y, name: "Playwright accessibility testing docs", url: "https://playwright.dev/docs/accessibility-testing", retrieved: 2026-10-22, note: "Automated tests catch only some issues; passing a scan does not mean full compliance; axe integration."}
+  - {id: a11y-insights, name: "Accessibility Insights for Web overview", url: "https://accessibilityinsights.io/docs/web/overview/", retrieved: 2026-10-22, note: "FastPass, guided manual Assessment, automated checks. Licence not stated on the page read."}
+  - {id: lighthouse-a11y, name: "Lighthouse accessibility scoring (Chrome developers)", url: "https://developer.chrome.com/docs/lighthouse/accessibility/scoring", retrieved: 2026-10-22, note: "Score is a weighted average of automated audits; manual checks do not affect it."}
+  - {id: pa11y, name: "Pa11y repository", url: "https://github.com/pa11y/pa11y", retrieved: 2026-10-22, note: "CLI runner with htmlcs and axe runners, LGPL-3.0-only, exit codes for CI."}
+  - {id: nvda, name: "NVDA user guide (NV Access)", url: "https://download.nvaccess.org/documentation/userGuide.html", retrieved: 2026-10-22, note: "Free open source Windows screen reader. Only the first 100000 of about 405700 characters were read, so browse mode and focus mode definitions were not read."}
+  - {id: voiceover, name: "VoiceOver user guide for Mac (Apple)", url: "https://support.apple.com/guide/voiceover/welcome/mac", retrieved: 2026-10-22, note: "Built-in macOS screen reader, rotor exists. The page gave no steps or cost."}
+  - {id: talkback, name: "TalkBack help (Google)", url: "https://support.google.com/accessibility/android/answer/6283677", retrieved: 2026-10-22, note: "Android screen reader. Gesture list was not on the page read."}
+  - {id: mdn-motion, name: "MDN prefers-reduced-motion", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion", retrieved: 2026-10-22, note: "Values no-preference and reduce; replace large motion with subtler effects rather than removing feedback."}
+requirements:
+  - id: A11Y-001
+    title: Use native semantic HTML elements for structure and controls
+    description: Build links, buttons, lists, form controls, tables and sections with the element that has the matching meaning, and avoid generic containers with scripted behaviour.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Automated rule results plus a reviewer note that interactive elements are native or justified; DOM and accessibility tree snapshot of key screens.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 4.1.2 (name, role, value are met by standard controls used to specification)"
+  - id: A11Y-002
+    title: Keep a logical heading hierarchy
+    description: Use one clear page title heading, nest headings by rank without skipping levels except when closing a section, and never choose a heading level for its look.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: minor
+    check: both
+    evidence: Heading outline export from the accessibility tree and a reviewer note on whether the outline reads sensibly alone.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wai-tutorials (page structure, headings)"
+  - id: A11Y-003
+    title: Provide landmarks and consistent navigation regions
+    description: Mark the main content, primary navigation, header and footer with landmark elements, label repeated landmarks so they can be told apart, and keep one main region per page.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Landmark list from a screen reader or extension, automated landmark rules, reviewer note.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.4.1 (landmarks as a bypass technique)"
+  - id: A11Y-004
+    title: Give each page or view a unique descriptive title and keep repeated navigation in the same order
+    description: The document title states the page purpose, and navigation repeated across pages keeps the same relative order so people can predict where things are.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: both
+    evidence: Title inventory for all templates and a before and after comparison of navigation order across sample pages.
+    owner: ux-writer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 3.2.3"
+  - id: A11Y-005
+    title: Provide a way to bypass repeated blocks
+    description: Offer a skip link that is the first focusable item and moves focus to the main content, or an equivalent mechanism such as proper landmarks and headings.
+    min_profile: standard
+    applies_to: [website, web-app, internal-tool]
+    severity: major
+    check: manual
+    evidence: Keyboard-only recording showing the link appearing on focus and focus landing in the main region.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.4.1"
+  - id: A11Y-006
+    title: Give every informative image a text alternative that conveys its purpose
+    description: Write alt text for the role the image plays in context, not a literal description of pixels, and for linked or button images state the destination or action.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Automated missing-alt results plus a manual review of alt quality against surrounding context for a sample of images.
+    owner: ux-writer
+    reviewer: accessibility-tester
+    reference: "wai-tutorials (images decision tree); wcag-understanding SC 1.1.1"
+  - id: A11Y-007
+    title: Mark decorative images so assistive technology skips them
+    description: Use an empty alt attribute or CSS background for purely decorative images, and do not use placeholder alt text.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: both
+    evidence: Automated results and a review list of images classified informative, functional, decorative.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.1.1 (decorative content)"
+  - id: A11Y-008
+    title: Provide long text alternatives for complex images and charts
+    description: Charts, diagrams and maps get a short name plus a longer description or data table nearby that carries the same information.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Reviewer note comparing the visual with the text version, and a screen reader pass confirming the long text is reachable.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.1.1 (charts, situation B)"
+  - id: A11Y-009
+    title: Provide synchronised captions for prerecorded video with sound
+    description: Captions include speaker identification and meaningful non-speech sound, are accurate, and are reviewed by a person if generated automatically.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Caption file plus a reviewer sample check of accuracy and timing, noting who reviewed it.
+    owner: technical-writer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.2.2 (Level A)"
+  - id: A11Y-010
+    title: Provide transcripts or text alternatives for audio-only and video-only content
+    description: Offer a text transcript, or for silent video a text or audio alternative, that carries the same information as the media.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Transcript file linked next to the media and a reviewer note on completeness.
+    owner: technical-writer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 1.2.1 (level not confirmed in text read) [Unverified]"
+  - id: A11Y-011
+    title: Provide audio description for prerecorded video when visual information is not in the audio
+    description: Add audio description, or an equivalent that meets the target level, for prerecorded synchronised video unless the audio track already carries the important visual information.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Media inventory marking each video as needs or does not need description with justification, and the described version where needed.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.2.5 (Level AA)"
+  - id: A11Y-012
+    title: Meet text contrast of 4.5:1, or 3:1 for large text
+    description: Normal text against its background reaches at least 4.5:1 and large text at least 3:1, in all states and themes, including text over images and gradients.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Contrast measurements for the colour tokens and states, automated results, and manual checks of text over images.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 1.4.3"
+  - id: A11Y-013
+    title: Meet 3:1 contrast for interactive component boundaries, states and meaningful graphics
+    description: Visual cues needed to identify a control or understand a graphic, such as input borders, focus indicators and chart lines, reach at least 3:1 against adjacent colours.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Measurements for borders, icons, focus rings and chart elements, with screenshots.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 1.4.11"
+  - id: A11Y-014
+    title: Never rely on colour alone to convey information
+    description: Status, errors, required fields, links in text and chart series carry a second cue such as text, icon, pattern or underline.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Greyscale or colour-blind simulation screenshots of key screens with reviewer note.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.4.1 (Level A)"
+  - id: A11Y-015
+    title: Support text resize to 200 percent without loss of content or function
+    description: Using browser zoom or text-only enlargement up to 200 percent, no content is clipped or overlapped and every function remains usable.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screenshots at 200 percent for key templates with reviewer note.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 1.4.4"
+  - id: A11Y-016
+    title: Reflow at 320 CSS pixels wide without two-dimensional scrolling
+    description: Content that scrolls vertically works in a 320 CSS pixel wide viewport, equal to 400 percent zoom from 1280, without horizontal scrolling, except parts that truly need two dimensions such as maps or data tables.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Screenshots at 320 px width, automated overflow script result, and a list of any excepted components with reasons.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.4.10 (320 px width, 256 px height)"
+  - id: A11Y-017
+    title: Survive user text spacing overrides
+    description: With line height 1.5 times, paragraph spacing 2 times, letter spacing 0.12 times and word spacing 0.16 times the font size applied, nothing is lost or obscured.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screenshots with a text spacing override applied (bookmarklet or injected stylesheet) for key templates.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.4.12"
+  - id: A11Y-018
+    title: Make all functionality operable by keyboard
+    description: Every action available to a pointer can be done with a keyboard alone, with no path-dependent timing requirement.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: critical
+    check: manual
+    evidence: Keyboard-only walkthrough recording of each primary task with pass or fail notes.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 2.1.1 (not confirmed in text read) [Unverified]"
+  - id: A11Y-019
+    title: Never trap keyboard focus
+    description: Focus can always be moved away from any component using standard keys, or the needed key is told to the user, and only intentional modal contexts contain focus.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: critical
+    check: manual
+    evidence: Tab and Shift+Tab traversal log across embedded widgets, editors and third-party components.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 2.1.2 (not confirmed in text read) [Unverified]"
+  - id: A11Y-020
+    title: Keep focus order logical and meaningful
+    description: Tab order follows the reading and task order, and dynamic content that appears moves focus or is reachable in a sensible position.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Keyboard walkthrough notes mapping tab sequence to visual order for key screens.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 2.4.3 (not confirmed in text read) [Unverified]"
+  - id: A11Y-021
+    title: Show a visible keyboard focus indicator on every focusable element
+    description: Never remove the outline without a replacement, and make the indicator clearly visible against its surroundings in every theme.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screenshots of focus on each component type, and a CSS search showing no unreplaced outline removal.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 2.4.7 (Level AA)"
+  - id: A11Y-022
+    title: Ensure focused elements are not entirely hidden by sticky or overlay content
+    description: Sticky headers, cookie banners and chat widgets must not completely cover the element that has keyboard focus, so scroll padding or layout must account for them.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Keyboard walkthrough with sticky elements present at several viewport sizes, with screenshots of focused items near the edges.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.4.11 (Level AA, partial obscuring allowed)"
+  - id: A11Y-023
+    title: Build dialogs that move focus in, contain it while modal, and restore it on close
+    description: Modal dialogs have a role and accessible name, move focus inside on open, keep Tab within, close with Escape and return focus to the trigger; prefer the native dialog element where it fits.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: critical
+    check: manual
+    evidence: Keyboard and screen reader recording of open, tab cycle, Escape, close and focus return for every dialog type.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "apg (modal dialog pattern)"
+  - id: A11Y-024
+    title: Label every form control and give instructions before the control
+    description: Each input has a programmatically associated visible label, required status and format hints are stated in text, and placeholders are not used as the only label.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Automated label rules, plus screen reader pass confirming label, instructions and group names are announced.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wai-tutorials (forms)"
+  - id: A11Y-025
+    title: Identify errors in text, tie them to the field, and suggest a fix
+    description: When validation fails, describe the problem in text next to the field and in a summary, move or announce focus appropriately, and say how to correct it.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screen reader recording of a failed submission showing the error is announced and reachable, plus screenshots.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 3.3.1 (Level A)"
+  - id: A11Y-026
+    title: Allow review, correction or reversal for legal, financial and data-changing submissions
+    description: Submissions that create commitments or change or delete user data must be reversible, checked with correction possible, or confirmed on a review step.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Flow walkthrough naming which of the three safeguards each such submission has.
+    owner: ux-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 3.3.4 (Level AA)"
+  - id: A11Y-027
+    title: Announce status messages without moving focus
+    description: Results, success notices, counts and progress that appear without a focus change are exposed with an appropriate status or alert role or live region; reserve assertive alerts for urgent items.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Screen reader recording showing each message announced once, at a sensible moment, without interrupting typing.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 4.1.3 (Level AA)"
+  - id: A11Y-028
+    title: Expose name, role and value for every custom component
+    description: Any scripted widget exposes an accurate name, role, state and value to the accessibility tree and updates them as they change.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: critical
+    check: both
+    evidence: Accessibility tree inspection output per component state and screen reader announcement notes.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 4.1.2 (Level A)"
+  - id: A11Y-029
+    title: Prefer native elements; use ARIA and APG patterns only when no native element fits
+    description: Reach for a native element first. If a custom widget is unavoidable, follow the matching APG pattern fully including keyboard behaviour, because adding a role does not add behaviour and wrong ARIA misleads users.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool, library]
+    severity: major
+    check: both
+    evidence: Component inventory marking native or custom with the pattern followed, automated ARIA rule results, and tests across the supported browser and AT pairs.
+    owner: frontend-architect
+    reviewer: accessibility-tester
+    reference: "apg-readme"
+  - id: A11Y-030
+    title: Make pointer targets at least 24 by 24 CSS pixels or spaced equivalently
+    description: Pointer targets are at least 24 by 24 CSS pixels, or have enough spacing that a 24 pixel circle around each does not overlap another target, unless an exception such as inline links applies.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Measured target sizes for controls on key screens, with exceptions listed and justified.
+    owner: ui-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.5.8 (Level AA)"
+  - id: A11Y-031
+    title: Offer a single-pointer alternative to dragging
+    description: Anything done by dragging, such as reordering, sliders or map pans, can also be done with click or tap alone, and keyboard support is added as well.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Inventory of drag interactions with the alternative control and a recorded walkthrough of each.
+    owner: interaction-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.5.7 (Level AA)"
+  - id: A11Y-032
+    title: Provide single-pointer alternatives to multipoint and path gestures
+    description: Pinch, multi-finger and swipe-path gestures must have a tap-based alternative unless the gesture is essential.
+    min_profile: standard
+    applies_to: [web-app, mobile-web]
+    severity: major
+    check: manual
+    evidence: Gesture inventory with alternative controls, tested on a touch device.
+    owner: ux-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.5.1 (Level A)"
+  - id: A11Y-033
+    title: Do not require a cognitive test to authenticate without an alternative or aid
+    description: Login and recovery must allow paste and password managers, avoid transcription or puzzle steps, and offer an alternative method where a memory or puzzle step exists.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: critical
+    check: manual
+    evidence: Walkthrough of login, reset and second-factor steps confirming paste works, autofill attributes are present and no puzzle without alternative exists.
+    owner: ux-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 3.3.8 (Level AA)"
+  - id: A11Y-034
+    title: Respect reduced motion and let users stop moving content
+    description: Honour the reduced motion preference by replacing large motion with fades or static states while keeping feedback, and give controls to pause moving or auto-updating content.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Stylesheet review for the media query, recordings with the OS reduced motion setting on, and list of auto-playing elements with pause controls.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "mdn-motion"
+  - id: A11Y-035
+    title: Keep flashing below three flashes per second
+    description: No content flashes more than three times in any one second, or stays below the general and red flash thresholds, because flashing can trigger seizures.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: critical
+    check: manual
+    evidence: Media and animation inventory with flash frequency reviewed, or a stated absence of flashing content.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.3.1 (Level A, three per second)"
+  - id: A11Y-036
+    title: Set the page language and mark passages in other languages
+    description: The document language attribute is present and correct, and passages or phrases in another language carry their own language attribute.
+    min_profile: lightweight
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Automated language rule results and a reviewer check of mixed-language content.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 3.1.1 and 3.1.2"
+  - id: A11Y-037
+    title: Mark up data tables with headers, captions and scope
+    description: Real data tables use header cells with scope or header associations and a caption; layout is done with CSS, not tables.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web, internal-tool]
+    severity: major
+    check: both
+    evidence: Automated table rules and a screen reader pass reading a sample cell with its headers.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "wai-tutorials (tables)"
+  - id: A11Y-038
+    title: Make data visualisations perceivable without sight or colour discrimination
+    description: Provide a data table or text summary, label series directly or with patterns, check contrast of marks, keep interactive charts keyboard reachable, and do not use tooltips as the only way to read values.
+    min_profile: standard
+    applies_to: [web-app, website, internal-tool]
+    severity: major
+    check: manual
+    evidence: Chart review sheet covering text alternative, contrast, non-colour cues, keyboard and screen reader access.
+    owner: accessibility-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.1.1 (charts); wcag22 SC 1.4.11"
+  - id: A11Y-039
+    title: Allow zoom and pinch scaling and do not lock orientation
+    description: The viewport must not disable user scaling, and content must work in both portrait and landscape unless one orientation is essential.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: major
+    check: both
+    evidence: Viewport meta review, orientation tests on a phone or emulator, and any essential exceptions documented.
+    owner: frontend-developer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 1.3.4 (Level AA); wcag22 SC 1.4.4"
+  - id: A11Y-040
+    title: Let users extend or remove time limits
+    description: Session timeouts and timed steps can be turned off, adjusted, or extended after a warning, unless the limit is essential or for a real-time event.
+    min_profile: standard
+    applies_to: [web-app, website, mobile-web, internal-tool]
+    severity: major
+    check: manual
+    evidence: Inventory of time limits with the option used for each, and a test of the warning and extension.
+    owner: ux-designer
+    reviewer: accessibility-tester
+    reference: "wcag-understanding SC 2.2.1 (Level A)"
+  - id: A11Y-041
+    title: Avoid asking users to re-enter information and keep help in a consistent place
+    description: Within a process, previously entered information is auto-filled or selectable, and help mechanisms repeated across pages appear in the same relative position.
+    min_profile: standard
+    applies_to: [website, web-app, mobile-web]
+    severity: minor
+    check: manual
+    evidence: Multi-step flow walkthrough listing repeated fields, and a comparison of help placement across pages.
+    owner: ux-designer
+    reviewer: accessibility-tester
+    reference: "wcag22 SC 3.3.7 and SC 3.2.6"
+  - id: A11Y-042
+    title: Test on mobile screen readers for mobile-first products
+    description: Key tasks are run with VoiceOver on iOS and TalkBack on Android, with results recorded per task, device and OS version.
+    min_profile: high_assurance
+    applies_to: [mobile-web, web-app]
+    severity: major
+    check: manual
+    evidence: Mobile test log with device, OS, browser, screen reader version and task outcomes.
+    owner: accessibility-engineer
+    reviewer: accessibility-tester
+    reference: "talkback; voiceover"
+  - id: A11Y-043
+    title: Record automated and manual accessibility results separately and never claim conformance from a score
+    description: Reports list automated tool output and manual or assistive technology findings in separate sections, state planned versus executed checks, and treat an automated score as a signal only.
+    min_profile: standard
+    applies_to: [all]
+    severity: major
+    check: manual
+    evidence: Accessibility test report showing two separate sections, the test matrix with executed marks, and no conformance claim based solely on a tool score.
+    owner: qa-lead
+    reviewer: accessibility-tester
+    reference: "lighthouse-a11y; axe-core; playwright-a11y"

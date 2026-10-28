@@ -27,19 +27,19 @@ Open question: may teachers see fee dues for their class? Not in the permission 
 ```
 
 ## Example 2: Leaked Razorpay secret in a public repo
-**Request:** "Kiran noticed `RAZORPAY_KEY_SECRET` in a commit on the public showcase repo for a cloud kitchen site. What now?"
+**Request:** "The owner noticed `RAZORPAY_KEY_SECRET` in a commit on the public showcase repo for a cloud kitchen site. What now?"
 
 **Key decisions:**
 - Treat as leaked from the moment of push; deleting the commit does not help.
-- Rotation of a live payment key can break checkout, so it needs Kiran's go-ahead, but it is the first action.
+- Rotation of a live payment key can break checkout, so it needs the owner's go-ahead, but it is the first action.
 - Check the payment dashboard for unexpected API activity during the exposure window.
 
 **Output (excerpt):**
 ```
-Leak response plan (needs Kiran's approval to execute step 1)
-1. Regenerate the key secret in the Razorpay dashboard (live mode). Owner: Kiran. Checkout fails until step 2 is done; do both within 10 minutes.
+Leak response plan (needs the owner's approval to execute step 1)
+1. Regenerate the key secret in the Razorpay dashboard (live mode). Owner: The owner. Checkout fails until step 2 is done; do both within 10 minutes.
 2. Update RAZORPAY_KEY_SECRET in Vercel production and preview envs; redeploy. Owner: devops-engineer.
-3. Review dashboard API logs and orders from <push time> to now for unknown refunds or orders. Owner: Kiran.
+3. Review dashboard API logs and orders from <push time> to now for unknown refunds or orders. Owner: The owner.
 4. Remove the value from history (git filter-repo), force-push, ask GitHub support to purge cached views if needed. Owner: devops-engineer.
 5. Add gitleaks pre-commit hook and CI secret scan. Owner: cicd-engineer.
 Root cause note for postmortem: .env.local was not in .gitignore in the template repo.

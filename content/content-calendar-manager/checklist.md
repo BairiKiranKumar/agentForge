@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Approved backlog or strategy received from `content-strategist`
 - [ ] Channels per account and weekly production capacity recorded
-- [ ] Approval owner named for each account (Kiran; client contact plus Kiran for client work)
+- [ ] Approval owner named for each account (the owner; client contact plus the owner for client work)
 - [ ] Fixed dates collected: launches, offers, admission windows, events
 - [ ] Festival dates verified for the current year (Sankranti, Bathukamma, Dussehra, Diwali and others in scope)
 - [ ] Calendar and library location confirmed (Notion, Sheet or local Markdown)
@@ -33,5 +33,5 @@
 ## Stop and escalate if
 - [ ] A piece is about to go out without a recorded approval
 - [ ] A client account has no named approver
-- [ ] Requested cadence exceeds capacity by more than 25% and Kiran insists
+- [ ] Requested cadence exceeds capacity by more than 25% and the owner insists
 - [ ] A brief requires personal data or images without consent

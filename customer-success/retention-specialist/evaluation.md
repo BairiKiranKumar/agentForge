@@ -20,7 +20,7 @@ Pass = every task scores at or above its threshold AND no auto-fail condition is
 | Response speed & de-escalation | Aggressive or slow | Basic acknowledgment | Rapid, empathetic response validating client concern without defensiveness |
 | Diagnostic inquiry depth | "Why cancel?" | Generic questions | Specific diagnostic probes into lead volume, staff usage, and perceived value |
 | Tailored retention proposals | Demands contract hold | 1 generic discount | 2 distinct options: remedial value push vs lower-tier maintenance downsell |
-| Commercial boundary compliance | Unapproved free work | Vague pricing | Clear commercial terms with approval notation for Kiran |
+| Commercial boundary compliance | Unapproved free work | Vague pricing | Clear commercial terms with approval notation for the owner |
 
 Threshold: 7 of 8.
 Auto-fail: responds with an aggressive defensive argument; promises unapproved 100% free lifetime service.

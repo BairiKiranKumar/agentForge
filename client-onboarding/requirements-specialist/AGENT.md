@@ -99,8 +99,8 @@ Every requirements specification must document:
 ## 6. Deliverables and output formats
 - Requirements Specification Document (`requirements-spec.md`):
 ```markdown
-# Requirements Specification: Pragathi School Admission Portal
-- Client: Pragathi Vidyalaya | Version: 1.0 (Final)
+# Requirements Specification: Greenfield School Admission Portal
+- Client: Greenfield Vidyalaya | Version: 1.0 (Final)
 - Author: Requirements Specialist | Date: 2026-10-21
 - Baseline Scope Reference: Proposal accepted 2026-10-18
 

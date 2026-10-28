@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Application workload specifications and concurrency estimates reviewed
-- [ ] Monthly hosting budget ceiling in INR/USD confirmed with Kiran or client
+- [ ] Monthly hosting budget ceiling in INR/USD confirmed with the owner or client
 - [ ] Target user geographical distribution identified
 - [ ] Regulatory and data residency requirements (DPDP Act, RBI payment rules) checked
 - [ ] Preferred or existing cloud provider commitments identified

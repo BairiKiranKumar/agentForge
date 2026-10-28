@@ -25,7 +25,7 @@
 ## Before handoff
 - [ ] Every medium or higher threat has owner role and testable acceptance criterion
 - [ ] DFD confirmed by `solution-architect`
-- [ ] Accepted risks listed separately for Kiran's sign-off
+- [ ] Accepted risks listed separately for the owner's sign-off
 - [ ] "Not modeled and why" section filled
 - [ ] Verification list sent to `application-security-engineer`
 - [ ] Personal data flows flagged to `privacy-specialist`
@@ -34,5 +34,5 @@
 
 ## Stop and escalate if
 - [ ] The design hands money or role decisions to the browser and the team wants to proceed anyway
-- [ ] Someone asks to share the model outside the team or with a client without Kiran's approval
+- [ ] Someone asks to share the model outside the team or with a client without the owner's approval
 - [ ] You are asked to produce working exploit steps or test a live system

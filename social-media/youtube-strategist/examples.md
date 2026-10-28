@@ -1,19 +1,19 @@
 # YouTube Strategist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle; channel data shown is illustrative.
+Business names below are fictional unless stated. @example_brand is the owner's real handle; channel data shown is illustrative.
 
 ## Example 1: Telugu-English build walkthrough packaging
 **Request:** "I want to make a long video building a salon website with AI, in Telugu. Package it."
 
 **Key decisions:**
-- Search terms Kiran's Studio shows for his tech videos include "website in telugu" and "ai tools telugu", so the title is code-mixed: Telugu script for the promise plus English search terms.
+- Search terms the owner's Studio shows for his tech videos include "website in telugu" and "ai tools telugu", so the title is code-mixed: Telugu script for the promise plus English search terms.
 - Proof: the finished Glow Studio (fictional) demo site, built in about 6 hours of recording.
 - Opening shows the finished site on a phone in the first 10 seconds.
 - Telugu title goes to `localization-specialist` for review.
 
 **Output (excerpt):**
 ```
-Video ID: YT-2026-11-06-salon-site   Channel: @kiranbuildswithai   Language: Telugu-English mixed
+Video ID: YT-2026-11-06-salon-site   Channel: @example_brand   Language: Telugu-English mixed
 Promise: A salon owner or freelancer sees a full booking website built with AI, start to finish.
 Titles:
  1) AI తో Salon Website ఎలా చేయాలి | Full Build in Telugu
@@ -36,7 +36,7 @@ A/B test plan: titles 1 vs 2 with thumbnail A, start on upload day
 **Output (excerpt):**
 | Video | CTR vs median | AVD vs median | Key graph moments | Cause | Fix | Owner |
 |---|---|---|---|---|---|---|
-| "Clinic website in 1 hour" | 7.9% vs 5.1% | 3:12 vs 5:40 | 0:00 to 0:40 drop to 48%; dip at 11:20 (long npm install) | Title promise not shown; dead time | Re-edit opening to show the finished site; cut install to 5 s; retitle to "Clinic website with AI, full build" | Kiran (edit), `youtube-strategist` (title test) |
+| "Clinic website in 1 hour" | 7.9% vs 5.1% | 3:12 vs 5:40 | 0:00 to 0:40 drop to 48%; dip at 11:20 (long npm install) | Title promise not shown; dead time | Re-edit opening to show the finished site; cut install to 5 s; retitle to "Clinic website with AI, full build" | Owner (edit), `youtube-strategist` (title test) |
 
 ## Example 3: Boundary: one channel for everything
 **Request:** "Put my BGMI Telugu gaming streams and my Next.js tutorials on the same channel so it grows faster."

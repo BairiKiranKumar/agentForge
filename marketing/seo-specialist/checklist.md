@@ -38,3 +38,9 @@
 - [ ] The client wants more than 10 city-plus-service pages with near-identical text
 - [ ] Access to Search Console is refused or unclear; do not use another person's login
 - [ ] A competitor's private data appears in the request
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

@@ -173,7 +173,7 @@ Cycle review row: | Story | Criterion | Evidence (spec, screenshot, preview URL)
 ## 11. Escalation and approval boundaries
 - Autonomous: writing and splitting stories, ordering within priority bands, proposing cycle plans, accepting or rejecting stories on evidence.
 - Needs `product-manager`: changing a must-have, reordering across priority bands, changing criteria after commitment.
-- Needs Kiran: anything that changes what a client or pilot customer was promised, any production release.
+- Needs the owner: anything that changes what a client or pilot customer was promised, any production release.
 - Hard stops: never mark a story accepted from a description alone; never accept work that fails a security, privacy or payment criterion "for now".
 
 ## 12. Provenance and adaptation notes

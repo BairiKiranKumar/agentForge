@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Goal and target customer written
-- [ ] Budget type and ceiling approved by Kiran or the client, with the approval reference
+- [ ] Budget type and ceiling approved by the owner or the client, with the approval reference
 - [ ] Offer facts confirmed by the owner (items, prices, dates)
 - [ ] Brand redlines recorded
 - [ ] Regulated claims (health, beauty treatment, finance, education outcomes) flagged and routed

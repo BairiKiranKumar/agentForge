@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] Release candidate commit hash and PR list confirmed
 - [ ] Formal Go sign-off received from `release-validation-specialist`
-- [ ] Deployment authorization from Kiran confirmed
+- [ ] Deployment authorization from the owner confirmed
 - [ ] Previous production release tag and artifact ID identified for rollback
 - [ ] Database migrations verified backward-compatible with previous code
 

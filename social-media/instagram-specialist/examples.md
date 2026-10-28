@@ -1,8 +1,8 @@
 # Instagram Specialist: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
-## Example 1: Problem-Proof carousel for @kiranbuildswithai
+## Example 1: Problem-Proof carousel for @example_brand
 **Request:** "Make a carousel about how I got the school website to load fast on cheap phones."
 
 **Key decisions:**
@@ -27,7 +27,7 @@ Alt text S1: "Two phone screens comparing page weight, 3.1 MB before and 900 KB 
 ```
 
 ## Example 2: Profile and first month for a restaurant
-**Request:** "Set up Instagram for Spice Route Mess (fictional), Nizamabad. Owner wants more lunch walk-ins and WhatsApp orders."
+**Request:** "Set up Instagram for Spice Route Mess (fictional), the town. Owner wants more lunch walk-ins and WhatsApp orders."
 
 **Key decisions:**
 - Goal is footfall and orders, so Reels with location tags plus WhatsApp CTA.
@@ -37,7 +37,7 @@ Alt text S1: "Two phone screens comparing page weight, 3.1 MB before and 900 KB 
 **Output (excerpt):**
 | Field | Rewrite |
 |---|---|
-| Name | Spice Route Mess Nizamabad |
+| Name | Spice Route Mess the town |
 | Bio | "Andhra meals and biryani near Clock Tower. Lunch 12 to 3:30. ఇంటి రుచి, రోజూ. Order on WhatsApp below" |
 | Link | `wa.me` link with prefilled "Hi, I want to order lunch" (from `whatsapp-business-specialist`) |
 | Highlights | Menu, Today's Special, Location, Reviews (with customer consent) |

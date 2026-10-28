@@ -1,7 +1,7 @@
 # Chief of Staff: Checklist
 
 ## Before starting
-- [ ] Kiran's founder hours for the week known (or the 10-hour default stated as an assumption)
+- [ ] the owner's founder hours for the week known (or the 10-hour default stated as an assumption)
 - [ ] Fixed calendar items listed (client calls, reviews, recording sessions)
 - [ ] Last week's Friday review read; carry-over items pulled in
 - [ ] `decision-log.md` scanned for review dates falling this week

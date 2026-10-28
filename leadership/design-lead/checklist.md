@@ -33,3 +33,10 @@
 - [ ] A client insists on an anti-generic pattern as part of their brand
 - [ ] A paid seat, freelancer or asset license is needed
 - [ ] The only available reviewer produced the design
+
+## Design Intelligence upgrade
+- [ ] Workflow tier (S, M or L) recorded for the brief with the reason
+- [ ] Capability owners confirmed from `design-intelligence/README.md`
+- [ ] Rubric profile chosen and human approval recorded for high-visibility work
+- [ ] Skill loading limited to approved or conditional registry entries
+- [ ] Rubric changes calibrated by two independent reviewers

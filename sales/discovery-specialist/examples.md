@@ -31,7 +31,7 @@ Correspondent recommends; trust board approves above an internal limit (amount n
 ## Mutual next steps
 | Who | Action | By |
 |---|---|---|
-| Kiran | Send two-option proposal | 2026-10-25 |
+| Owner | Send two-option proposal | 2026-10-25 |
 | School | Send logo, fee table, 10 campus photos | 2026-10-28 |
 | Correspondent | Share board meeting date | 2026-10-25 |
 ```
@@ -47,7 +47,7 @@ Correspondent recommends; trust board approves above an internal limit (amount n
 **Output (excerpt):**
 ```
 Outcome: nurture. Reasons: clear pain, owner engaged, timing after renovation (owner's words: "after Sankranti, once the new counter is ready").
-Mutual next steps: Kiran messages on 2027-01-19 with a menu-page concept using the new interiors (owner agreed). Owner shares new menu when printed.
+Mutual next steps: The owner messages on 2027-01-19 with a menu-page concept using the new interiors (owner agreed). Owner shares new menu when printed.
 Budget range: unknown (not discussed). Decision: owner alone (stated).
 ```
 

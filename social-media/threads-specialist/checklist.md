@@ -3,7 +3,7 @@
 ## Before starting
 - [ ] The week's material listed: builds, decisions, prompts, mistakes, sourced numbers
 - [ ] Week goal set (conversation, profile visits, product interest, DMs)
-- [ ] Product or offer details confirmed by Kiran (link, price, what is included) if mentioned
+- [ ] Product or offer details confirmed by the owner (link, price, what is included) if mentioned
 - [ ] Last week's review read and its one change applied
 - [ ] Platform facts table re-checked if older than 3 months
 

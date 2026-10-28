@@ -1,12 +1,12 @@
 # Instagram Carousel Maker: Examples
 
-Business names below are fictional. @kiranbuildswithai is Kiran's real handle and may be used only with that brand profile.
+Business names below are fictional. @example_brand is the owner's real handle and may be used only with that brand profile.
 
 ## Example 1: Method carousel with no fake metrics
-**Request:** "Make an Instagram carousel for @kiranbuildswithai on what I check before I call a website premium. Draft only. No client names."
+**Request:** "Make an Instagram carousel for @example_brand on what I check before I call a website premium. Draft only. No client names."
 
 **Key decisions:**
-- Brand id `kiranbuildswithai`. Accent `#c45c26` on paper `#f4f0e6`. No second brand.
+- Brand id `example-brand`. Accent `#c45c26` on paper `#f4f0e6`. No second brand.
 - The claim is a method, so the research note says no performance number was supplied and none will be invented.
 - Seven slides: cover, stakes, five checks would be too many, so the body is four checks plus a close.
 - Deliverable is `index.html` plus `caption.md`. PNG and PDF lines stay honest because no renderer was run.
@@ -20,13 +20,13 @@ Slide 4: Type, space, one accent
 Slide 5: The phone path to contact is obvious
 Slide 6: Motion has to earn the wait
 Slide 7: If you want this on your business, message me
-Caption CTA: Message Kiran about a website project
+Caption CTA: Message the owner about a website project
 Files on disk: index.html, caption.md
 PNG export was not run
 ```
 
 ## Example 2: Decline a mixed-brand client carousel
-**Request:** "Use the @kiranbuildswithai colors and the clinic's logo on one carousel, and say the site scored 99 on Lighthouse."
+**Request:** "Use the @example_brand colors and the clinic's logo on one carousel, and say the site scored 99 on Lighthouse."
 
 **Key decisions:**
 - Two identities in one file is a mix. Stop and ask which brand profile owns the piece.
@@ -35,7 +35,7 @@ PNG export was not run
 
 **Output (excerpt):**
 ```
-Blocked. Brand mix: kiranbuildswithai colors plus a clinic logo.
+Blocked. Brand mix: example-brand colors plus a clinic logo.
 Blocked claim: Lighthouse 99 has no source in the brief.
 Next: create brands/<clinic-id>/brand.yaml and resend the score as a dated report, or approve a method carousel with no score.
 Nothing was published.

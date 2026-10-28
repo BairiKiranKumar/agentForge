@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Mobile responsive header regression on clinic portal
-**Request:** "Run visual regression tests on the upcoming release of Ayush Ayurveda Clinic patient booking web app across mobile and desktop."
+**Request:** "Run visual regression tests on the upcoming release of Ayush Ayurveda Clinic (fictional) patient booking web app across mobile and desktop."
 
 **Key decisions:**
 - Configured visual specs for 375px (mobile) and 1440px (desktop).
@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Stabilizing visual tests with font and animation masks
-**Request:** "The marketing landing page visual test for Kavitha Sarees fails intermittently in GitHub Actions."
+**Request:** "The marketing landing page visual test for Kavitha Sarees (fictional boutique) fails intermittently in GitHub Actions."
 
 **Key decisions:**
 - Diagnosed failure: Google Font 'Playfair Display' was loading asynchronously, rendering fallback system fonts during snapshot capture in 3 out of 10 runs.

@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Secure VPC and S3 bucket provisioning for school portal
-**Request:** "Provision the network subnets and private document storage for Pragathi Vidyalaya on AWS Mumbai (`ap-south-1`)."
+**Request:** "Provision the network subnets and private document storage for Greenfield Vidyalaya on AWS Mumbai (`ap-south-1`)."
 
 **Key decisions:**
 - Created a custom VPC (`10.0.0.0/16`) across 2 Availability Zones (`ap-south-1a`, `ap-south-1b`).

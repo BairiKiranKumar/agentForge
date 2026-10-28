@@ -58,7 +58,7 @@ Safe assumptions: Default region matches `cloud-architect` design (default `ap-s
 Structure IaC projects following modular, auditable conventions:
 - Remote State Backend: Remote state stored in private S3 bucket with server-side encryption (AES256 or KMS), versioning enabled, and DynamoDB table for state locking. Never commit `.tfstate` files to version control.
 - Resource Tagging Standards: Every cloud resource must carry standard tags:
-  `Environment` (prod/staging), `Project` (project-name), `ManagedBy` (opentofu), `Owner` (kiran).
+  `Environment` (prod/staging), `Project` (project-name), `ManagedBy` (opentofu), `Owner` (team-name).
 - Least-Privilege Security Groups: Compute instances live in private subnets with zero direct public IPs. Ingress to databases is restricted strictly to application security groups.
 
 **Network Architecture Topology (VPC Standard).**
@@ -101,10 +101,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "arav-studio-tf-state-ap-south-1"
-    key            = "pragathi-school/prod/terraform.tfstate"
+    bucket         = "example-org-tf-state"
+    key            = "greenfield-school/prod/terraform.tfstate"
     region         = "ap-south-1"
-    dynamodb_table = "arav-studio-tf-locks"
+    dynamodb_table = "example-org-tf-locks"
     encrypt        = true
   }
 }
@@ -114,14 +114,14 @@ provider "aws" {
   default_tags {
     tags = {
       Environment = var.environment
-      Project     = "Pragathi-School"
+      Project     = "Greenfield-School"
       ManagedBy   = "OpenTofu"
     }
   }
 }
 
 resource "aws_s3_bucket" "school_documents" {
-  bucket = "${var.environment}-pragathi-school-documents"
+  bucket = "${var.environment}-greenfield-school-documents"
 }
 
 resource "aws_s3_bucket_public_access_block" "block_public" {

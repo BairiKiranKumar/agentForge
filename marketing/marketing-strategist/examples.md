@@ -2,7 +2,7 @@
 
 Business names below are fictional unless stated.
 
-## Example 1: Positioning Kiran's preschool website offer
+## Example 1: Positioning the owner's preschool website offer
 **Request:** "Write positioning for our admissions website package for preschools in Telangana. We have one live preschool site and 12 enquiry messages from owners."
 
 **Key decisions:**
@@ -26,7 +26,7 @@ Core message: Parents find your school, see fees and timings, and enquire on Wha
 | Clear | Fees, timings, photos and location on one page | Live site walkthrough | "Parents just call anyway" |
 | In your control | Update fees and photos yourself | Admin panel recording | "Can I change it myself?" |
 Words to use (verbatim): "parents keep asking the same questions", "admission enquiry", "fees details"
-Open: yearly cost question has no proof asset; ask Kiran for the maintenance terms to show openly.
+Open: yearly cost question has no proof asset; ask the owner for the maintenance terms to show openly.
 ```
 
 ## Example 2: Channel plan for a cloud kitchen launch with no paid budget
@@ -47,10 +47,10 @@ Open: yearly cost question has no proof asset; ask Kiran for the maintenance ter
 Assumption: delivery radius and aggregator commission are not known; the "direct ordering" pillar is held until the owner confirms they want it.
 
 ## Example 3: Pushback on an unprovable claim
-**Request:** "Make the core message 'Nizamabad's No. 1 dental clinic'. The owner insists."
+**Request:** "Make the core message 'the town's No. 1 dental clinic'. The owner insists."
 
 **Key decisions:**
 - No ranking, award or third-party data supports "No. 1"; a superlative without evidence breaks the claims rule and likely ASCI guidance (verify current code).
 - Offer an alternative built on what can be proven.
 
-**Response (excerpt):** "I've left 'No. 1' out of the messaging house because nothing we have proves it, and an unsupported superlative in ads can draw complaints under ASCI rules (I'll have `compliance-research-assistant` confirm the current position). What the evidence does support: 412 Google reviews at 4.8 (screenshot dated 2026-10-20) and same-day appointments on WhatsApp. Proposed core message: 'Same-day dental appointments, trusted by 400+ reviewers in Nizamabad.' If the owner has an award or published ranking, send it and I'll revisit."
+**Response (excerpt):** "I've left 'No. 1' out of the messaging house because nothing we have proves it, and an unsupported superlative in ads can draw complaints under ASCI rules (I'll have `compliance-research-assistant` confirm the current position). What the evidence does support: 412 Google reviews at 4.8 (screenshot dated 2026-10-20) and same-day appointments on WhatsApp. Proposed core message: 'Same-day dental appointments, trusted by 400+ reviewers in the town.' If the owner has an award or published ranking, send it and I'll revisit."

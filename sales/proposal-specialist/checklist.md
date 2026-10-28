@@ -2,12 +2,12 @@
 
 ## Before starting
 - [ ] Discovery notes and deal plan read; approver and deadline known
-- [ ] Kiran's rate card version and date recorded, or "no rate card: placeholders" noted
+- [ ] the owner's rate card version and date recorded, or "no rate card: placeholders" noted
 - [ ] Solution sketch and dependency table received for non-template work
 - [ ] Estimate with ranges received for custom work
-- [ ] Kiran's standard terms file located
+- [ ] the owner's standard terms file located
 - [ ] Client-supplied contract or PO terms routed to `contract-review-assistant`
-- [ ] Kiran's GST registration status confirmed or marked unknown
+- [ ] the owner's GST registration status confirmed or marked unknown
 
 ## While working
 - [ ] Format chosen from the table (one-page, standard, phased)
@@ -28,11 +28,11 @@
 - [ ] Every discovery must-have is in scope, a later phase or an exclusion
 - [ ] Scope, estimate and solution sketch agree
 - [ ] Header has proposal number, version, date and valid-until date
-- [ ] No GSTIN, entity name, address or bank details unless supplied by Kiran
+- [ ] No GSTIN, entity name, address or bank details unless supplied by the owner
 - [ ] Indian number format used (₹1,50,000); no em dashes
-- [ ] Risk note written for Kiran with open placeholders listed
+- [ ] Risk note written for the owner with open placeholders listed
 - [ ] Version log updated
-- [ ] No PDF produced before Kiran approves wording
+- [ ] No PDF produced before the owner approves wording
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 

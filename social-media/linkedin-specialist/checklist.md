@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Goal and target reader written (client enquiries, authority, hiring); job search and freelancing not mixed without a decision
-- [ ] Profile text supplied by Kiran (pasted or PDF export); nothing scraped
+- [ ] Profile text supplied by the owner (pasted or PDF export); nothing scraped
 - [ ] Proof bank listed with dates, measurements and permission status
 - [ ] Employer and NDA work identified so it stays out of every draft
 - [ ] Services and availability to promote confirmed; no prices unless supplied

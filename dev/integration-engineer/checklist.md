@@ -37,4 +37,4 @@
 - [ ] Testing would move real money or message real people
 - [ ] Asked to switch to live keys or register production webhooks without approval
 - [ ] Card data would reach our servers
-- [ ] A provider account would be created in Kiran's name for a client business
+- [ ] A provider account would be created in the owner's name for a client business

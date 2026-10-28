@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Sanitizing and migrating 1,200 student records for school portal
-**Request:** "Migrate Pragathi Vidyalaya's legacy student enrollment data from messy Excel sheets into the new portal database."
+**Request:** "Migrate Greenfield Vidyalaya's legacy student enrollment data from messy Excel sheets into the new portal database."
 
 **Key decisions:**
 - Audited client Excel sheet: discovered 1,240 rows with 48 duplicate student entries and 62 invalid 9-digit phone numbers.
@@ -14,8 +14,8 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Data Migration Summary: Pragathi Vidyalaya
-- Source File: `Pragathi_Students_2025_Master.xlsx` (1,240 raw rows)
+### Data Migration Summary: Greenfield Vidyalaya
+- Source File: `Greenfield_Students_Master.xlsx` (1,240 raw rows)
 - Sanitization Results:
   - Clean Rows Ingested: 1,192 records
   - Duplicate Records Merged: 48 entries
@@ -25,7 +25,7 @@ Business names below are fictional unless stated.
 ```
 
 ## Example 2: Verifying WhatsApp and Razorpay integrations on salon app
-**Request:** "Configure and verify payment gateway and WhatsApp alerts for StyleCrest Salons before customer launch."
+**Request:** "Configure and verify payment gateway and WhatsApp alerts for Lumen Salon (fictional) before customer launch."
 
 **Key decisions:**
 - Inputted Razorpay live API credentials in secure backend configuration.
@@ -35,7 +35,7 @@ Business names below are fictional unless stated.
 
 **Output (excerpt):**
 ```markdown
-### Integration Verification Log: StyleCrest Salons
+### Integration Verification Log: Lumen Salon
 1. Razorpay Webhook:
    - Event: `payment.captured` | Payment ID: `pay_test_998877`
    - Result: Webhook returned HTTP 200; Booking #104 marked Confirmed.

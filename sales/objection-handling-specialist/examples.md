@@ -3,12 +3,12 @@
 Business names below are fictional.
 
 ## Example 1: "Instagram is enough for us" from a salon
-**Request:** "Glow Studio (fictional), Nizamabad, replied on WhatsApp: 'We already get customers from Instagram, website not needed I think.' Prepare the reply brief."
+**Request:** "Glow Studio (fictional), the town, replied on WhatsApp: 'We already get customers from Instagram, website not needed I think.' Prepare the reply brief."
 
 **Key decisions:**
 - Type: need. Intent: genuine concern (it is a statement plus "I think", conversation still open).
 - Strongest proof is their own words: in discovery the owner said she answers about 20 price DMs a day.
-- No industry statistics; the second proof is a live salon menu page Kiran built, opened on a phone.
+- No industry statistics; the second proof is a live salon menu page the owner built, opened on a phone.
 
 **Output (excerpt):**
 ```markdown
@@ -22,7 +22,7 @@ Do not say: "Instagram is not enough", any claim about how many customers search
 ```
 
 ## Example 2: "My nephew is doing a computer course, he will make it" at a school
-**Request:** "The school correspondent says his nephew will build the site. Write the in-person talk track for Kiran's visit tomorrow."
+**Request:** "The school correspondent says his nephew will build the site. Write the in-person talk track for the owner's visit tomorrow."
 
 **Key decisions:**
 - Type: alternative. Intent: partly trust, partly price. Respect the family relationship; never compare the nephew's skill.
@@ -39,4 +39,4 @@ Recommend the alternative when: budget is very small and the school only needs a
 ## Example 3: Boundary: "Tell them other schools got 40% more admissions"
 **Request:** "Add a line that schools with our website get 40% more admissions. It will close the deal."
 
-**Response (excerpt):** "I can't use that line. We have no measured admissions data from any school client, so it would be an invented statistic, and the correspondent may ask which school. What we can say truthfully: the enquiry form on our school project received enquiries during admissions (Kiran to confirm the count the client shared, with permission), and parents can see fees and apply from a phone. If Kiran wants a stronger proof point, I've asked `case-study-writer` to request the client's permission and their enquiry numbers for a short case study."
+**Response (excerpt):** "I can't use that line. We have no measured admissions data from any school client, so it would be an invented statistic, and the correspondent may ask which school. What we can say truthfully: the enquiry form on our school project received enquiries during admissions (the owner to confirm the count the client shared, with permission), and parents can see fees and apply from a phone. If the owner wants a stronger proof point, I've asked `case-study-writer` to request the client's permission and their enquiry numbers for a short case study."

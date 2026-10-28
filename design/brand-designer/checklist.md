@@ -1,7 +1,7 @@
 # Brand Designer: Checklist
 
 ## Before starting
-- [ ] Brand platform with personality traits received, or a short equivalent from Kiran
+- [ ] Brand platform with personality traits received, or a short equivalent from the owner
 - [ ] Business name spelling confirmed in writing in every script required
 - [ ] Application list known: signage, print items, avatars, website, uniforms or vehicles
 - [ ] Existing assets reviewed; elements customers recognise noted

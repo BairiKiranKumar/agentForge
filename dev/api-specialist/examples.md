@@ -50,13 +50,13 @@ Lint: redocly lint -> 0 errors, 2 warnings (missing operation descriptions on GE
 **Key decisions:**
 - Both are breaking: rename removes a field; making a field required breaks old writes.
 - Proposed: add `name` alongside `student_name` (additive, v1.4 contract), mark `student_name` deprecated; keep `section` optional in v1, required in v2.
-- Kiran approval needed because a released app consumes v1.
+- The owner approval needed because a released app consumes v1.
 
 **Output (excerpt):**
 | Change | Additive/Breaking | Migration for consumers |
 |---|---|---|
 | Add `name` (same value as `student_name`) | Additive | New app versions read `name` |
-| Deprecate `student_name` | Additive (deprecation) | Removed in v2 after sunset date agreed by Kiran |
+| Deprecate `student_name` | Additive (deprecation) | Removed in v2 after sunset date agreed by the owner |
 | `section` required on create | Breaking | Only in v2; v1 defaults to class's first section |
 
 ## Example 3: Boundary: "design the Razorpay webhook API too"

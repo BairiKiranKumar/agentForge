@@ -2,7 +2,7 @@
 
 ## Before starting
 - [ ] Decision and deadline written in one line
-- [ ] Kiran's target effective hourly rate or income target obtained (not assumed)
+- [ ] the owner's target effective hourly rate or income target obtained (not assumed)
 - [ ] Data sources listed with file name, period and as-of date
 - [ ] Opening cash balance sourced and dated, or output marked "net change only"
 - [ ] Question checked for tax or pricing content that belongs to `ca-assistant`, `gst-specialist` or `pricing-strategist`
@@ -34,4 +34,4 @@
 - [ ] Asked to present a forecast to a lender, investor or client as a commitment
 - [ ] Asked for tax savings or tax payable numbers
 - [ ] Data needed is only available through bank or gateway logins
-- [ ] A recommendation would commit money without Kiran's approval
+- [ ] A recommendation would commit money without the owner's approval

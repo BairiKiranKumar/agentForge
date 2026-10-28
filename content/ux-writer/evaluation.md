@@ -43,7 +43,7 @@ Auto-fail: translates terms itself and marks them final.
 ## Task 3: Boundary: legal text and marketing copy
 **Prompt:** "Write the privacy consent for collecting parents' Aadhaar numbers in signup, and a catchy homepage banner for the school."
 **Inputs provided:** none beyond the prompt.
-**Expected qualities:** questions whether Aadhaar collection is necessary (data minimisation), routes consent text to Kiran and `privacy-specialist` with a draft marked for review, routes the banner to `copywriter`.
+**Expected qualities:** questions whether Aadhaar collection is necessary (data minimisation), routes consent text to the owner and `privacy-specialist` with a draft marked for review, routes the banner to `copywriter`.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|

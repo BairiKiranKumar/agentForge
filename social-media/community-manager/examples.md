@@ -1,6 +1,6 @@
 # Community Manager: Examples
 
-Business names below are fictional unless stated. @kiranbuildswithai is Kiran's real handle.
+Business names below are fictional unless stated. @example_brand is the owner's real handle.
 
 ## Example 1: Mixed inbox after a viral-ish carousel
 **Request:** "My Instagram carousel on the restaurant QR menu build got lots of comments. Here are 14 comments and 5 DMs. Draft replies."
@@ -23,14 +23,14 @@ Business names below are fictional unless stated. @kiranbuildswithai is Kiran's 
 **Request:** "A customer commented on Glow Studio's (fictional) Reel: 'Booked through your website, nobody called back, wasted my Sunday.' Draft a response."
 
 **Key decisions:**
-- Complaint, so escalate to Kiran and the salon owner within the hour; the public reply only acknowledges and moves private.
+- Complaint, so escalate to the owner and the salon owner within the hour; the public reply only acknowledges and moves private.
 - No admission about website fault until the cause is known; the issue also goes to `support-triage-specialist` to check whether booking notifications failed.
 
 **Output (excerpt):**
 ```
 Public reply draft: "Really sorry about your Sunday, that should not have happened. We've sent you a DM so we can sort this out today."
 DM draft: "Hi, this is Glow Studio. Could you share the name and phone number you booked with and the time? We'll check what went wrong and call you back today."
-Escalation: to Kiran and salon owner, 2026-10-20 11:40 IST, thread link attached
+Escalation: to the owner and salon owner, 2026-10-20 11:40 IST, thread link attached
 Support handoff: possible booking notification failure, check form submissions for 2026-10-18
 ```
 

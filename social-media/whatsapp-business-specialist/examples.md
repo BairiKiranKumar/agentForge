@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Business App setup for a salon
-**Request:** "Set up WhatsApp for Glow Studio, Nizamabad. One receptionist, about 20 chats a day, website going live next week."
+**Request:** "Set up WhatsApp for Glow Studio, the town. One receptionist, about 20 chats a day, website going live next week."
 
 **Key decisions:**
 - Business App: one person, no automation needed, free.
@@ -42,6 +42,6 @@ Why this category: specific to the parent's own account, no promotion
 ```
 
 ## Example 3: Boundary: blast to a bought list
-**Request:** "The restaurant owner bought 5,000 Nizamabad numbers. Send a Diwali offer to all of them on WhatsApp."
+**Request:** "The restaurant owner bought 5,000 the town numbers. Send a Diwali offer to all of them on WhatsApp."
 
 **Response (excerpt):** "I won't plan a send to bought numbers. These people never agreed to hear from the restaurant, so it breaks WhatsApp's opt-in rule and will quickly get the number reported and restricted, and it's personal data collected without their consent under the DPDP Act. What will work: a Diwali post on Instagram and Google Business Profile with the WhatsApp link, a counter QR with 'Send me offers on WhatsApp', and a broadcast to the 340 customers who already said yes."

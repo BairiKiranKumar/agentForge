@@ -1,0 +1,405 @@
+schema: 1
+area: ai-security
+version: 1.0.0
+verified_on: &id001 2026-10-22
+references:
+- id: llm
+  name: OWASP Top 10 for LLM Applications 2025 (GenAI Security Project)
+  url: https://genai.owasp.org/llm-top-10/
+  retrieved: *id001
+  note: 'Current edition shown as 2025. Ids and titles LLM01 to LLM10 read from this page: Prompt Injection,
+    Sensitive Information Disclosure, Supply Chain, Data and Model Poisoning, Improper Output Handling,
+    Excessive Agency, System Prompt Leakage, Vector and Embedding Weaknesses, Misinformation, Unbounded
+    Consumption. Per-item descriptions were not read.'
+- id: agentic
+  name: OWASP Top 10 for Agentic Applications for 2026
+  url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  retrieved: *id001
+  note: Page confirms the resource exists and shows publication date 2025-12-09. The page did not list
+    the ten risks. Risk names ASI01 to ASI10 were seen only in secondary summaries and are [Unverified]
+    against the primary document.
+- id: pi-cheat
+  name: 'OWASP Cheat Sheet: LLM Prompt Injection Prevention'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
+  retrieved: *id001
+  note: Filters are not a boundary, enforce permissions outside the model, human approval bound to the
+    exact operation, treat model output and external content as untrusted, measured smoke tests.
+- id: cs-logging
+  name: 'OWASP Cheat Sheet: Logging'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+  retrieved: *id001
+  note: What to log and what never to log, including secrets and sensitive personal data.
+- id: cs-secrets
+  name: 'OWASP Cheat Sheet: Secrets Management'
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+  retrieved: *id001
+  note: Scoped, short-lived, rotated credentials; revoke on exposure.
+requirements:
+- id: AISEC-001
+  title: Threat-model every LLM feature and agent workflow
+  description: Before build, list assets, trust boundaries, untrusted inputs (user text, retrieved documents,
+    web pages, tool outputs), available tools and worst-case outcomes, and map mitigations to the OWASP
+    LLM risks that apply.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Threat model with data flows, tool list, mapped LLM ids and mitigations
+  owner: threat-modeling-specialist
+  reviewer: ai-application-engineer
+  reference: llm
+- id: AISEC-002
+  title: Treat all external and retrieved content as data, not instructions
+  description: Content from users, documents, web pages, emails, search results and tool outputs cannot
+    change the system task or grant permissions; attempts are flagged.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Design note; adversarial test cases with injected instructions and results
+  owner: ai-application-engineer
+  reviewer: security-testing-specialist
+  reference: llm LLM01
+- id: AISEC-003
+  title: Do not rely on prompt wording or filters as the security boundary
+  description: Instruction separation, keyword filters and guardrail classifiers are treated as one layer;
+    security-relevant decisions are enforced in code outside the model.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Architecture review note listing which controls are enforced in code
+  owner: prompt-engineer
+  reviewer: application-security-engineer
+  reference: pi-cheat
+- id: AISEC-004
+  title: Enforce permissions outside the model
+  description: Authorization for every tool call and data access is decided by deterministic code using
+    the real caller identity, never by model output alone.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Code review of the enforcement layer; tests with a model forced to request forbidden actions
+  owner: agent-workflow-engineer
+  reviewer: application-security-engineer
+  reference: llm LLM06
+- id: AISEC-005
+  title: Give each tool the narrowest scope
+  description: Tools expose the minimum operations, data and credentials needed; broad shell, database
+    or file access is avoided or sandboxed; unused tools are removed.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Tool inventory with scope per tool and removal log
+  owner: agent-workflow-engineer
+  reviewer: security-testing-specialist
+  reference: llm LLM06
+- id: AISEC-006
+  title: Validate tool arguments and results
+  description: Tool inputs are checked against schemas and allowlists before execution, and tool outputs
+    are validated before being reused or passed to other tools.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Schema definitions and negative tests with malformed or hostile arguments
+  owner: ai-application-engineer
+  reviewer: code-reviewer
+  reference: pi-cheat
+- id: AISEC-007
+  title: Require human approval for consequential actions
+  description: Actions that send external messages, spend money, change production, delete data, change
+    access or share personal data need explicit human approval recorded before execution.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Approval log samples and a test showing the action is blocked without approval
+  owner: agent-workflow-engineer
+  reviewer: privacy-specialist
+  reference: pi-cheat
+- id: AISEC-008
+  title: Bind approval to the exact operation
+  description: The approval screen shows the real target and arguments, and the executor verifies the
+    approved values, so the model cannot alter them after approval.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Test that changing arguments after approval invalidates it
+  owner: agent-workflow-engineer
+  reviewer: security-testing-specialist
+  reference: pi-cheat
+- id: AISEC-009
+  title: Treat model output as untrusted before downstream use
+  description: Output rendered in a browser, used in queries, shell commands, file paths or code execution
+    passes through the same encoding, parameterisation and validation as any user input.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Tests with hostile model output reaching each sink
+  owner: frontend-developer
+  reviewer: application-security-engineer
+  reference: llm LLM05
+- id: AISEC-010
+  title: Prevent sensitive data leakage through prompts, context and outputs
+  description: Data entering the model context is limited to what the task needs and is access-checked
+    per user; outputs are checked for secrets and personal data where risk warrants.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Data-flow list of what enters context; leakage test cases and results
+  owner: ai-application-engineer
+  reviewer: privacy-specialist
+  reference: llm LLM02
+- id: AISEC-011
+  title: Keep secrets out of prompts, context and logs
+  description: API keys, tokens and credentials are never placed in system prompts, retrieved text or
+    logs; the system prompt is assumed extractable.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: automated
+  evidence: Secret scan across prompt files, configs and logs; extraction test result
+  owner: prompt-engineer
+  reviewer: application-security-engineer
+  reference: llm LLM07
+- id: AISEC-012
+  title: Apply access control to retrieval and vector stores
+  description: Retrieval honours per-user or per-tenant permissions at query time, embeddings of sensitive
+    data are protected, and cross-tenant retrieval is tested.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Cross-tenant retrieval tests and index access configuration
+  owner: rag-specialist
+  reviewer: security-testing-specialist
+  reference: llm LLM08
+- id: AISEC-013
+  title: Control what enters knowledge bases and memory
+  description: Ingestion sources are vetted and logged, user-submitted content is isolated or reviewed
+    before becoming trusted knowledge, and poisoned entries can be found and removed.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Ingestion policy, source register, and removal procedure test
+  owner: rag-specialist
+  reviewer: ai-evaluation-specialist
+  reference: llm LLM04
+- id: AISEC-014
+  title: Inventory and vet models, plugins and data suppliers
+  description: Models, adapters, embeddings, datasets, plugins and tool servers are listed with source,
+    version, integrity check and owner; unvetted components are not used in production.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: AI bill of materials with source and version pins
+  owner: ai-application-engineer
+  reviewer: devops-engineer
+  reference: llm LLM03
+- id: AISEC-015
+  title: Limit consumption and cost abuse
+  description: Per-user and per-session limits on requests, tokens, tool calls, recursion depth and spend
+    exist, with timeouts and budget alerts.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Limit configuration and abuse test results
+  owner: backend-developer
+  reviewer: site-reliability-engineer
+  reference: llm LLM10
+- id: AISEC-016
+  title: Design for wrong or invented output
+  description: Where wrong output has material consequences, answers are grounded in cited sources, uncertainty
+    is shown, and a human or deterministic check precedes consequential use.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Design note and evaluation results on factuality for the use case
+  owner: ai-evaluation-specialist
+  reviewer: ai-application-engineer
+  reference: llm LLM09
+- id: AISEC-017
+  title: Give agents their own scoped, short-lived credentials
+  description: Agents use dedicated identities with the minimum permissions and short-lived tokens, never
+    a user's or administrator's standing credentials.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Credential inventory with scope and lifetime
+  owner: agent-workflow-engineer
+  reviewer: cloud-architect
+  reference: cs-secrets
+- id: AISEC-018
+  title: Sandbox code execution and file access
+  description: Any model-generated code or command runs in an isolated environment with restricted network,
+    filesystem and resource limits.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: critical
+  check: both
+  evidence: Sandbox configuration and escape-attempt tests in a test environment
+  owner: agent-workflow-engineer
+  reviewer: security-testing-specialist
+  reference: llm LLM06
+- id: AISEC-019
+  title: Secure agent memory and inter-agent messages
+  description: Persistent memory and messages between agents are treated as untrusted input, are scoped
+    per user, and can be inspected and cleared. [Unverified] the matching OWASP agentic risk names; confirm
+    against the primary document.
+  min_profile: high_assurance
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Memory design note and tests with poisoned memory entries
+  owner: agent-workflow-engineer
+  reviewer: threat-modeling-specialist
+  reference: agentic
+- id: AISEC-020
+  title: Contain cascading failures with limits and a stop switch
+  description: Agent loops have step, time and spend caps, anomalous behaviour triggers a halt, and operators
+    can disable an agent or tool quickly.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Cap configuration and a drill showing the stop switch works
+  owner: site-reliability-engineer
+  reviewer: agent-workflow-engineer
+  reference: agentic
+- id: AISEC-021
+  title: Log AI decisions and tool calls without sensitive content
+  description: Prompts, tool calls, approvals and policy decisions are logged for audit with identifiers;
+    credentials, secrets and unnecessary personal data are excluded or redacted.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Log samples and redaction test
+  owner: observability-specialist
+  reviewer: privacy-specialist
+  reference: cs-logging
+- id: AISEC-022
+  title: Maintain an adversarial test suite with defined objectives
+  description: A versioned set of injection, leakage, misuse and tool-abuse tests states what counts as
+    a violation, measures false positives on benign requests, repeats runs, and reports limits of the
+    sample. A small suite does not prove resistance.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: both
+  evidence: Test suite, run reports with date, model version and violation rates
+  owner: ai-evaluation-specialist
+  reviewer: application-security-engineer
+  reference: pi-cheat
+- id: AISEC-023
+  title: Re-run adversarial tests when model, prompt or tools change
+  description: Changes to model version, system prompt, retrieval sources or tool set trigger the adversarial
+    suite before release.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: automated
+  evidence: CI run records linked to each change
+  owner: cicd-engineer
+  reviewer: ai-evaluation-specialist
+  reference: pi-cheat
+- id: AISEC-024
+  title: Authorize AI red-team activity in writing
+  description: Adversarial testing against a deployed system, third-party model provider or live data
+    needs written scope from the owner; test in non-production by default.
+  min_profile: lightweight
+  applies_to:
+  - ai-app
+  severity: critical
+  check: manual
+  evidence: Written authorization with scope and window
+  owner: security-testing-specialist
+  reviewer: compliance-research-assistant
+  reference: pi-cheat
+- id: AISEC-025
+  title: Review model provider data handling
+  description: Before sending data to an external model service, the data categories, retention, training
+    use and region terms from the provider's current documents are reviewed and recorded with an as-of
+    date.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Provider review note with source URLs and date
+  owner: compliance-research-assistant
+  reviewer: privacy-specialist
+  reference: llm LLM02
+- id: AISEC-026
+  title: Version and review prompts, tools and policies as code
+  description: System prompts, tool definitions, guardrail settings and routing rules are in version control
+    with review and rollback.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: minor
+  check: automated
+  evidence: Repository history and review records
+  owner: ai-application-engineer
+  reviewer: code-reviewer
+  reference: llm LLM03
+- id: AISEC-027
+  title: Prepare an AI-specific incident response path
+  description: Runbook covers prompt-injection incidents, data exposure through the model, runaway agents
+    and compromised tools, including how to disable features, revoke credentials and notify owners.
+  min_profile: high_assurance
+  applies_to:
+  - ai-app
+  severity: major
+  check: manual
+  evidence: Runbook and tabletop exercise record
+  owner: site-reliability-engineer
+  reviewer: application-security-engineer
+  reference: llm
+- id: AISEC-028
+  title: Disclose AI use and limits to users where relevant
+  description: Users are told when they interact with AI output that may be wrong, and how to report problems,
+    without overstating accuracy.
+  min_profile: standard
+  applies_to:
+  - ai-app
+  severity: minor
+  check: manual
+  evidence: Screenshot of disclosure and reporting path
+  owner: prompt-engineer
+  reviewer: ai-evaluation-specialist
+  reference: llm LLM09

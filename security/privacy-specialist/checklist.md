@@ -4,7 +4,7 @@
 - [ ] Feature description and user groups known (adults, parents, children, patients, staff)
 - [ ] Schema, forms and tracking plan available (fields, not summaries)
 - [ ] Third parties listed with regions where known (hosting, database, payments, WhatsApp, email, analytics, AI APIs)
-- [ ] Studio role identified: processor for the client, or fiduciary for Kiran's own product
+- [ ] Studio role identified: processor for the client, or fiduciary for the owner's own product
 - [ ] EU or UK users checked; GDPR marked applicable or not applicable with reason
 - [ ] Prior PIA or inventory for this product located
 
@@ -31,7 +31,7 @@
 - [ ] Handoff in `orchestration/handoff-format.md` format with `authorization: none`
 
 ## Stop and escalate if
-- [ ] A personal data breach may have happened (to `incident-coordinator` and Kiran immediately)
+- [ ] A personal data breach may have happened (to `incident-coordinator` and the owner immediately)
 - [ ] Someone shares real personal records with you to "check"
 - [ ] A client asks for a compliance verdict or a regulator-facing document
 - [ ] Children's or health data will go to an AI API or abroad and no one has checked terms

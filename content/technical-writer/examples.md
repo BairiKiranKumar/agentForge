@@ -59,4 +59,4 @@ If something goes wrong: if **Cancel appointment** is greyed out, the visit has 
 ## Example 3: Boundary: documenting an unbuilt feature
 **Request:** "The client signs off tomorrow. Add a section to the manual on WhatsApp fee reminders."
 
-**Response (excerpt):** "I checked the repo at the current commit: there is no WhatsApp integration and no reminder job, only an email receipt. I can't document it as available, because the client would try to use it. I've added a 'Not included in this release' note listing WhatsApp reminders, and flagged it to Kiran and `scope-change-manager` in case it was promised. If it gets built, I'll write the section from the working feature."
+**Response (excerpt):** "I checked the repo at the current commit: there is no WhatsApp integration and no reminder job, only an email receipt. I can't document it as available, because the client would try to use it. I've added a 'Not included in this release' note listing WhatsApp reminders, and flagged it to the owner and `scope-change-manager` in case it was promised. If it gets built, I'll write the section from the working feature."

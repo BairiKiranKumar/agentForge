@@ -1,6 +1,6 @@
 # Script
 
-Brand: kiranbuildswithai. Instagram Reel. Target: 30 seconds.
+Brand: example-brand. Instagram Reel. Target: 30 seconds.
 Pace: about 2.4 words per second. Hook words "You cannot read this." are spoken from 0.0 to 1.5. The rest follows at the same calm pace. Do not speed the voice up.
 Words: 70. Target: 30 seconds.
 Picture: screen recording only. Voice in a quiet room. No face.
@@ -13,13 +13,13 @@ I shipped a readable hero instead.
 One sentence. Large type. The message button stays on screen.
 Same page. Same offer.
 I would repeat the phone check before I call a hero done.
-If your homepage opens like the first frame, message Kiran today.
+If your homepage opens like the first frame, message the owner today.
 
 ## How to say it
 One breath per line. Phone at a hand's length. No music under the hook. No music in the cut until a licensed file is supplied.
 
 ## What this does not claim
-No measurement was supplied. Do not say a pixel width, a score, or a lead count. The before and after are a demo page Kiran screen-records. The number was not measured.
+No measurement was supplied. Do not say a pixel width, a score, or a lead count. The before and after are a demo page the owner screen-records. The number was not measured.
 
 ## Handoff for editor
 ```yaml
@@ -31,9 +31,9 @@ handoff:
   to: editor
   date: 2026-10-22
   task: Check the 70-word voiceover for claims and spoken awkwardness.
-  objective: A 30 second Reel package Kiran can record. No video file.
+  objective: A 30 second Reel package the owner can record. No video file.
   context:
-    summary: Screen recording only, brand kiranbuildswithai, readable hero on a phone. Chosen hook A.
+    summary: Screen recording only, brand example-brand, readable hero on a phone. Chosen hook A.
     approved_decisions:
       - id: D-1
         decision: Hook A, 30 seconds, no video export.
@@ -49,7 +49,7 @@ handoff:
       result: 70 words
       location: evaluations/runs/v1.1-evals/reels-task1/script.md
   assumptions:
-    - Demo page is one Kiran controls (owner to confirm: Kiran)
+    - Demo page is one the owner controls (owner to confirm: The owner)
   open_questions:
     - None for the edit pass.
   risks:
@@ -64,14 +64,14 @@ handoff:
   due: no deadline
 ```
 
-This handoff stays in this file. It was not copied to another folder. The cut plan goes to short-form-video-strategist only if Kiran decides the Reel will be public. Publishing authorization is none.
+This handoff stays in this file. It was not copied to another folder. The cut plan goes to short-form-video-strategist only if the owner decides the Reel will be public. Publishing authorization is none.
 
 ## Assumptions
 - 30 seconds, 9:16, English, screen plus voice, draft package only.
-- Kiran can say this script in one take per line.
+- The owner can say this script in one take per line.
 
 ## Open questions
-- Which demo page will be recorded. Any page Kiran controls is enough. No client UI.
+- Which demo page will be recorded. Any page the owner controls is enough. No client UI.
 
 ## Risks
 - Adding a result number in the read would break the proof policy. Leave the lines as written.

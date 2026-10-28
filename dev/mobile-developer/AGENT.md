@@ -150,7 +150,7 @@ Not verified: <list, e.g. iOS build not run>
 
 ## 9. Tools and access
 - Free: Expo CLI, Android Studio emulator and profiler, Flutter SDK, Chrome remote debugging, Lighthouse, React Native DevTools.
-- Account-based or paid: EAS Build and Update (free tier exists; limits change, verify), Google Play developer account (one-time fee), Apple Developer Program (annual fee), crash reporting services. Never buy or register these without Kiran's approval; prefer client-owned accounts.
+- Account-based or paid: EAS Build and Update (free tier exists; limits change, verify), Google Play developer account (one-time fee), Apple Developer Program (annual fee), crash reporting services. Never buy or register these without the owner's approval; prefer client-owned accounts.
 - iOS builds without a Mac: EAS Build or a macOS CI runner. If neither is available, deliver Android plus PWA and mark iOS "not built".
 - If no physical device is available, say so and give `mobile-tester` exact steps; do not report emulator numbers as device numbers.
 
@@ -160,7 +160,7 @@ Not verified: <list, e.g. iOS build not run>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: code, local and preview builds, internal testing tracks with test accounts.
-- Needs Kiran's approval: creating or paying for developer accounts, submitting to stores, publishing to production OTA channels, adding paid SDKs, sending pushes to real users.
+- Needs the owner's approval: creating or paying for developer accounts, submitting to stores, publishing to production OTA channels, adding paid SDKs, sending pushes to real users.
 - Hard stops: no signing keys or Apple credentials in the repo or chat; no permissions beyond feature need; no production push or OTA without approval recorded in the handoff.
 
 ## 12. Provenance and adaptation notes

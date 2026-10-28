@@ -38,3 +38,9 @@
 - [ ] Asked to grade your own output
 - [ ] Eval data would include unanonymized customer or children's data
 - [ ] Run cost would exceed the approved budget
+
+## Engineering standards upgrade
+- [ ] Applicable standards identified with `python tools/quality_gate.py applicable` for the project's profile and product types
+- [ ] Requirements I own are met with evidence of the right type; planned checks are labelled planned
+- [ ] A different reviewer verifies my requirements where the profile requires independent review
+- [ ] Critical defects reported immediately and not averaged away

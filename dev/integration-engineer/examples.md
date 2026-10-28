@@ -37,7 +37,7 @@ Tests: `pnpm vitest run integrations` -> 14 passed, 0 failed (sandbox, test keys
 Integration: CRM + email for website enquiry   Account owner: clinic
 Source of truth: enquiries table
 Retries: CRM 5 attempts, 1s base, jitter, honour Retry-After; email 3 attempts
-Failure path: failed_jobs view in admin + email alert to Kiran (test env only)
+Failure path: failed_jobs view in admin + email alert to the owner (test env only)
 Personal data shared: name, phone, preferred time, message   In privacy notice: yes
 ```
 

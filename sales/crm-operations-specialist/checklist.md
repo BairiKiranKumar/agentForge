@@ -3,9 +3,9 @@
 ## Before starting
 - [ ] Every current lead location listed (WhatsApp, Instagram, notebook, sheets, exports)
 - [ ] WF-01 stages and neighbouring code lists (tiers, DQ, loss reasons) read
-- [ ] Tools Kiran already has free access to confirmed
+- [ ] Tools the owner already has free access to confirmed
 - [ ] Vendor free-tier limits checked on the vendor page, with the date, before recommending a tool
-- [ ] Any paid plan or trial request routed to Kiran and `procurement-specialist`
+- [ ] Any paid plan or trial request routed to the owner and `procurement-specialist`
 
 ## Setup
 - [ ] Every stage has entry criteria, exit criteria, required fields and owner
@@ -30,12 +30,12 @@
 ## Before handoff
 - [ ] Weekly report shows counts and proposal totals by stage
 - [ ] Monthly report shows n alongside any percentage when under 20 closed deals
-- [ ] Won set only on Kiran's confirmation
+- [ ] Won set only on the owner's confirmation
 - [ ] Assumptions, open questions and risks listed
 - [ ] Handoff written in `orchestration/handoff-format.md` format with evidence
 
 ## Stop and escalate if
 - [ ] Asked to store IDs, bank or UPI details, or full chat exports
-- [ ] Asked to delete records or share CRM access without Kiran's approval
+- [ ] Asked to delete records or share CRM access without the owner's approval
 - [ ] Asked to set up anything that messages prospects or clients automatically
 - [ ] A person asks to see or delete their data (route to `privacy-specialist`)

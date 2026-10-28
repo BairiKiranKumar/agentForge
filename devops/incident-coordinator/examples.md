@@ -3,10 +3,10 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Managing P1 database connection exhaustion outage
-**Request:** "Pragathi School Portal is throwing 500 errors on all pages during morning fee payments. Take incident command."
+**Request:** "Greenfield School Portal is throwing 500 errors on all pages during morning fee payments. Take incident command."
 
 **Key decisions:**
-- Declared P1 Critical Incident at 09:05 IST; opened `#incident-20261021-pragathi`.
+- Declared P1 Critical Incident at 09:05 IST; opened `#incident-20261021-greenfield`.
 - Appointed `backend-developer` as Operations Lead and self as Communications Lead.
 - Published client status update at 09:12 IST stating investigation into database connections was underway.
 - At 09:20 IST, diagnosed that morning traffic surged connection count past the 100 limit; ordered immediate deployment of PgBouncer connection pooler.
@@ -20,7 +20,7 @@ The database connection pooler has been deployed to production. Error rates on t
 ```
 
 ## Example 2: Facilitating a blameless postmortem
-**Request:** "Run the postmortem for yesterday's 45-minute checkout outage on Royal Silks e-commerce store."
+**Request:** "Run the postmortem for yesterday's 45-minute checkout outage on Royal Silks (fictional) e-commerce store."
 
 **Key decisions:**
 - Opened meeting establishing ground rules: human error is the result of missing system guardrails; focus is on systemic prevention.

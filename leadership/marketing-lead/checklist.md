@@ -32,5 +32,5 @@
 ## Stop and escalate if
 - [ ] Any paid spend, trial or ad budget change is proposed
 - [ ] Client names, logos or results would appear without written permission
-- [ ] The plan needs more founder hours than Kiran gave
+- [ ] The plan needs more founder hours than the owner gave
 - [ ] A campaign makes performance promises to prospects

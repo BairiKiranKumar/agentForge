@@ -20,7 +20,7 @@ The contract is sequential and blocking. After it is written, frontend and backe
 | Frontend | `frontend-developer` | Contract | Backend | UI on the contract | local run | `code-reviewer` |
 | Backend | `backend-developer` | Contract | Frontend | handlers and persistence | tests that exist in the repo | `code-reviewer` |
 | API QA | `api-tester` | Backend | security pass | test notes | requests that were sent | `qa-lead` |
-| Integrate | `orchestrator` | Frontend, API QA | none | one branch report | conflicts resolved | Kiran for production migration or deploy |
+| Integrate | `orchestrator` | Frontend, API QA | none | one branch report | conflicts resolved | Owner for production migration or deploy |
 
 ## Deliverables
 Contract, frontend slice, backend slice, test notes, and a list of files each role owned.
@@ -29,7 +29,7 @@ Contract, frontend slice, backend slice, test notes, and a list of files each ro
 Run the repository's tests. Do not claim they passed without a command log. Schema changes stay off production databases.
 
 ## Approval gates
-Personal data handling needs `privacy-specialist` consulted before build, and Kiran for any production migration. Deploys stay gated.
+Personal data handling needs `privacy-specialist` consulted before build, and the owner for any production migration. Deploys stay gated.
 
 ## Exit criteria
 The slice works against the contract on a safe environment, reviews are attached, and production is untouched unless authorized.

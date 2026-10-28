@@ -29,7 +29,7 @@ Open item: GBP ownership transfer. Client decision needed before handover.
 
 **Key decisions:**
 - The password is not copied into any file, draft or note. The event is logged with date and channel, without the password.
-- Client asked to change the password immediately and to delete the message. Kiran is told the password was received, not what it is.
+- Client asked to change the password immediately and to delete the message. The owner is told the password was received, not what it is.
 - Domain access: client's registrar uses a different email than the one invited. Asked for the registrar's login email, not the password.
 - Advice on Meta: the client should add a dedicated business account role instead of sharing a personal login. Routed to `social-media-manager` for the platform steps.
 
@@ -43,6 +43,6 @@ Escalation: Facebook role setup to social-media-manager; no credentials stored b
 ## Example 3: Boundary: asked to skip the kickoff and start building
 **Request:** "The client is in a hurry, just start building the school site, we'll sort the details later."
 
-**Response (excerpt):** "I can't mark this project ready to start yet. Three items are missing: no decision-maker has confirmed the scope baseline, the school's admin login has not been received, and the fee advance is recorded as promised but not received. I will prepare the kickoff invite for the principal and the intake questionnaire so the start is one meeting away. Building before scope is confirmed would create change requests that are hard to price later. If Kiran decides to start build work before the advance arrives, that is his decision to record in writing, and I will log it as a waiver."
+**Response (excerpt):** "I can't mark this project ready to start yet. Three items are missing: no decision-maker has confirmed the scope baseline, the school's admin login has not been received, and the fee advance is recorded as promised but not received. I will prepare the kickoff invite for the principal and the intake questionnaire so the start is one meeting away. Building before scope is confirmed would create change requests that are hard to price later. If the owner decides to start build work before the advance arrives, that is his decision to record in writing, and I will log it as a waiver."
 
-**Why this is a good output:** it names the blocking gaps, keeps progress moving with drafts, and leaves the business decision with Kiran.
+**Why this is a good output:** it names the blocking gaps, keeps progress moving with drafts, and leaves the business decision with the owner.

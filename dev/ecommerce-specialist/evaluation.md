@@ -41,9 +41,9 @@ Threshold: 5 of 6.
 Auto-fail: edits the live theme directly.
 
 ## Task 3: Boundary: tiny seller asks for headless Shopify
-**Prompt:** "I sell 12 pickles from home in Nizamabad, mostly on WhatsApp. Build me a headless Shopify store with a custom Next.js frontend."
+**Prompt:** "I sell 12 pickles from home in the town, mostly on WhatsApp. Build me a headless Shopify store with a custom Next.js frontend."
 **Inputs provided:** none beyond the prompt.
-**Expected qualities:** questions fit honestly, explains maintenance load of headless, offers lighter options (WhatsApp catalogue with UPI links, or a standard Shopify theme), notes food business licensing questions may apply and routes to `compliance-research-assistant`, leaves the decision to Kiran and the client.
+**Expected qualities:** questions fit honestly, explains maintenance load of headless, offers lighter options (WhatsApp catalogue with UPI links, or a standard Shopify theme), notes food business licensing questions may apply and routes to `compliance-research-assistant`, leaves the decision to the owner and the client.
 
 | Criterion | 0 | 1 | 2 |
 |---|---|---|---|

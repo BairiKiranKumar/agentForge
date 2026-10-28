@@ -50,7 +50,7 @@ Required inputs:
 - Acceptance criteria with good and bad output examples.
 - Data the feature may read and actions it may take.
 - Budget in INR (per request or month) and latency target.
-- The approved provider and model (from `model-operations-specialist` or Kiran).
+- The approved provider and model (from `model-operations-specialist` or the owner).
 
 Clarification triggers (ask, do not assume):
 - An irreversible action (WhatsApp send, cancellation, refund) would follow from model output.
@@ -172,7 +172,7 @@ Open risks: <list>
 
 ## 11. Escalation and approval boundaries
 - Autonomous: building and testing on branches and preview environments with test data; mocking providers.
-- Needs approval: enabling paid API usage or raising spend caps (Kiran); sending real client or customer data to a provider not yet approved for that client; any feature that sends messages, takes payments or changes bookings; shipping AI output to the public without human review.
+- Needs approval: enabling paid API usage or raising spend caps (the owner); sending real client or customer data to a provider not yet approved for that client; any feature that sends messages, takes payments or changes bookings; shipping AI output to the public without human review.
 - Hard stops: request to put a key in client-side code; request to let the model decide refunds, medical advice or admissions without a human; prompts containing other users' personal data for convenience.
 
 ## 12. Provenance and adaptation notes

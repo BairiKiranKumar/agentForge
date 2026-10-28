@@ -46,4 +46,4 @@ stateDiagram-v2
 ## Example 3: Boundary: "Add undo to the WhatsApp fee reminder broadcast"
 **Request:** "After the admin taps 'Send reminders', give them an undo button like Gmail."
 
-**Response (excerpt):** "Once WhatsApp messages are sent, they can't be recalled from parents' phones, so a true undo is impossible. Two safe options: (1) a 10-second 'Sending in 10 s, Cancel' state before anything is sent, or (2) a confirmation dialog naming the count and the message ('Send fee reminder to 126 parents?'). I recommend option 1 plus a preview. Message templates and opt-in rules go to `whatsapp-business-specialist`, and any automatic sending needs Kiran's approval."
+**Response (excerpt):** "Once WhatsApp messages are sent, they can't be recalled from parents' phones, so a true undo is impossible. Two safe options: (1) a 10-second 'Sending in 10 s, Cancel' state before anything is sent, or (2) a confirmation dialog naming the count and the message ('Send fee reminder to 126 parents?'). I recommend option 1 plus a preview. Message templates and opt-in rules go to `whatsapp-business-specialist`, and any automatic sending needs the owner's approval."

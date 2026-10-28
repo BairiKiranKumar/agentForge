@@ -3,7 +3,7 @@
 Business names below are fictional unless stated.
 
 ## Example 1: Executing zero-downtime release for school ERP
-**Request:** "Deploy release v1.4.0 for Pragathi School Portal with verified changelog and rollback safety."
+**Request:** "Deploy release v1.4.0 for Greenfield School Portal with verified changelog and rollback safety."
 
 **Key decisions:**
 - Confirmed Go sign-off from `release-validation-specialist`.
@@ -19,7 +19,7 @@ Business names below are fictional unless stated.
 1. Verified Go sign-off from release-validation-specialist on commit e7f8a9b
 2. Generated changelog: 2 features added, 2 bug fixes
 3. Promoted deployment:
-   vercel alias set dpl_9a8b7c pragathischool.edu.in
+   vercel alias set dpl_9a8b7c greenfield-school.example
 4. Notified release-validation-specialist for post-deployment verification
 5. Pushed tag: git tag -a v1.4.0 -m "Release v1.4.0" && git push origin v1.4.0
 Deployment complete in 48 seconds. Rollback target: dpl_8z7y6x.
